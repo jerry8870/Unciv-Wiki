@@ -1,7 +1,7 @@
 ---
 {
   "title": "埃及",
-  "description": "埃及：4.21.20（1293）文明基础属性、规则和关联条目。",
+  "description": "埃及：文明基础属性、规则和关联条目。",
   "gameVersion": "4.21.20",
   "appBuild": 1293,
   "ruleset": "Civ V - Gods & Kings",

@@ -33,7 +33,7 @@
 
 选择内置 Gods & Kings 规则集、远古时代开局和生成地图。初学时可选小地图和较低难度，先不加模组，便于对照[数据库](/zh/database/)。选文明前读一遍能力；例如[罗马](/zh/database/civilizations/rome/)的能力与城市建设有关。
 
-iPhone 或 iPad 用户先看 [iOS 安装指南](/zh/ios/)。实际能安装的版本以 TestFlight 显示为准。如果希望同时收集成就，开局前阅读[成就资格](/zh/achievements/)；普通练习局不一定满足所有成就要求。
+iPhone 或 iPad 用户先看 [iOS 安装指南](/zh/ios/)。是否可以安装，以 TestFlight 显示为准。如果希望同时收集成就，开局前阅读[成就资格](/zh/achievements/)；普通练习局不一定满足所有成就要求。
 
 ## 2. 建立首都，检查市民工作的地块
 

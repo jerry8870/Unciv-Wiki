@@ -17,15 +17,19 @@ class Page(HTMLParser):
     def __init__(self, text):
         super().__init__(convert_charrefs=True)
         self.tags=[]; self.ids=[]; self.h1=0; self.jsonld=[]; self.script=None
+        self.text=[]; self.ignore_text=False
         self.feed(text)
     def handle_starttag(self, tag, attrs):
         attrs=dict(attrs); self.tags.append((tag,attrs))
+        if tag in ('script','style'): self.ignore_text=True
         if 'id' in attrs: self.ids.append(attrs['id'])
         if tag=='h1': self.h1+=1
         if tag=='script' and attrs.get('type')=='application/ld+json': self.script=''
     def handle_data(self,data):
+        if not self.ignore_text: self.text.append(data)
         if self.script is not None: self.script+=data
     def handle_endtag(self,tag):
+        if tag in ('script','style'): self.ignore_text=False
         if tag=='script' and self.script is not None:
             self.jsonld.append(json.loads(self.script)); self.script=None
     def attr(self,tag,key,value,out):
@@ -58,6 +62,9 @@ def check_ref(source,ref,anchor=True):
 
 for url,page in pages.items():
     meta=expected[url]
+    reader_text=' '.join(page.text + [attrs.get('content','') for tag,attrs in page.tags if tag=='meta'])
+    if re.search(r'4\.21\.20|(?<!\d)1293(?!\d)|\bV3\b|内容基线|Content baseline|版本|\bversions?\b', reader_text, re.I):
+        errors.append(f'Game version wording in reader content or metadata: {url}')
     if page.h1!=1: errors.append(f'H1 count {page.h1}: {url}')
     if page.attr('link','rel','canonical','href')!=[url]: errors.append(f'Canonical mismatch: {url}')
     if page.attr('meta','name','description','content')!=[meta['description']]: errors.append(f'Description mismatch: {url}')

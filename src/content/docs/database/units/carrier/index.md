@@ -1,7 +1,7 @@
 ---
 {
   "title": "Carrier",
-  "description": "Carrier: base values, rules and related units in Unciv 4.21.20 (1293).",
+  "description": "Carrier: base values, rules and related units in Unciv.",
   "gameVersion": "4.21.20",
   "appBuild": 1293,
   "ruleset": "Civ V - Gods & Kings",

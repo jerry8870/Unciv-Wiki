@@ -1,7 +1,7 @@
 ---
 {
   "title": "Palace",
-  "description": "Palace: base values, rules and related buildings in Unciv 4.21.20 (1293).",
+  "description": "Palace: base values, rules and related buildings in Unciv.",
   "gameVersion": "4.21.20",
   "appBuild": 1293,
   "ruleset": "Civ V - Gods & Kings",

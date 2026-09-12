@@ -1,7 +1,7 @@
 ---
 {
   "title": "家畜驯养",
-  "description": "家畜驯养：4.21.20（1293）科技基础属性、规则和关联条目。",
+  "description": "家畜驯养：科技基础属性、规则和关联条目。",
   "gameVersion": "4.21.20",
   "appBuild": 1293,
   "ruleset": "Civ V - Gods & Kings",

@@ -1,7 +1,7 @@
 ---
 {
   "title": "摩索拉斯王陵墓",
-  "description": "摩索拉斯王陵墓：4.21.20（1293）建筑基础属性、规则和关联条目。",
+  "description": "摩索拉斯王陵墓：建筑基础属性、规则和关联条目。",
   "gameVersion": "4.21.20",
   "appBuild": 1293,
   "ruleset": "Civ V - Gods & Kings",

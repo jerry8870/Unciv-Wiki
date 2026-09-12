@@ -58,7 +58,7 @@ Relations with major civilizations also matter, but friendly language is not a p
 
 ## The UN builder and the elected leader are separate
 
-[Globalization](/database/technologies/globalization/) unlocks the [United Nations](/database/buildings/united-nations/), which starts diplomatic-victory voting. Anyone's completion satisfies the global building stage. One benefit of ownership in this version is that the owner's vote counts as **two votes**, while ordinary votes count as **one**.
+[Globalization](/database/technologies/globalization/) unlocks the [United Nations](/database/buildings/united-nations/), which starts diplomatic-victory voting. Anyone's completion satisfies the global building stage. One benefit of ownership in this ruleset is that the owner's vote counts as **two votes**, while ordinary votes count as **one**.
 
 If someone else is building it, prepare for elections even if your own construction queue contains no UN. If you build it, arrive at completion with relationships, cash and defenses ready, instead of exhausting the entire budget on development.
 

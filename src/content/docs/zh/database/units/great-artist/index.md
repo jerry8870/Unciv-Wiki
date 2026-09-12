@@ -1,7 +1,7 @@
 ---
 {
   "title": "大艺术家",
-  "description": "大艺术家：4.21.20（1293）单位基础属性、规则和关联条目。",
+  "description": "大艺术家：单位基础属性、规则和关联条目。",
   "gameVersion": "4.21.20",
   "appBuild": 1293,
   "ruleset": "Civ V - Gods & Kings",

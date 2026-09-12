@@ -1,7 +1,7 @@
 ---
 {
   "title": "成就未解锁排查",
-  "description": "检查 V3 成就资格、回合时机、战斗经验晋升、专属建筑以及 N32/N35 攻城窗口。",
+  "description": "检查 成就资格、回合时机、战斗经验晋升、专属建筑以及 N32/N35 攻城窗口。",
   "gameVersion": "4.21.20",
   "appBuild": 1293,
   "ruleset": "Civ V - Gods & Kings",
@@ -30,7 +30,7 @@
 
 ## 1. 先查对局资格，再查单项条件
 
-是否使用内置规则集新建单人对局、仅一名人类主要文明、生成地图、远古时代开局？模组、编辑器地图、上帝模式和调试行为可能使对局不合格。升级 App 不会让旧存档自动变成合格新局。V3 允许 AI 自动托管，但仍须满足其他规则。
+是否使用内置规则集新建单人对局、仅一名人类主要文明、生成地图、远古时代开局？模组、编辑器地图、上帝模式和调试行为可能使对局不合格。升级 App 不会让旧存档自动变成合格新局。允许 AI 自动托管，但仍须满足其他规则。
 
 再检查开局难度和 AI 数量：简单至少 1 个 AI；中等要求王子及以上、至少 3 个 AI；困难要求国王及以上、至少 3 个 AI；极难按每项条件执行。后续调整难度或击败对手不能替代开局要求。
 
@@ -64,8 +64,8 @@
 
 ## 6. 整理可复现的问题反馈
 
-记录 App 版本与构建号、成就 ID、开局设置、操作顺序、是否已经结束回合，以及愿意分享的相关截图或存档。附件中有个人信息时先移除。可复现的问题提交到 [Unciv4iOS Issues](https://github.com/jerry8870/Unciv4iOS/issues)。
+记录 成就 ID、开局设置、操作顺序、是否已经结束回合，以及愿意分享的相关截图或存档。附件中有个人信息时先移除。可复现的问题提交到 [Unciv4iOS Issues](https://github.com/jerry8870/Unciv4iOS/issues)。
 
-成就只记录在本机。登录 Game Center 或 iCloud 不会同步这一版 V3 目录；读取旧存档也不会抹去本机已经记录的勋章。
+成就只记录在本机。登录 Game Center 或 iCloud 不会同步成就目录；读取旧存档也不会抹去本机已经记录的勋章。
 
-<a id="tf-troubleshooting-zh" href="https://testflight.apple.com/join/XSgMMQjt">查看 Unciv4iOS TestFlight 邀请</a> · [安装与版本说明](/zh/ios/)
+<a id="tf-troubleshooting-zh" href="https://testflight.apple.com/join/XSgMMQjt">查看 Unciv4iOS TestFlight 邀请</a> · [安装说明](/zh/ios/)

@@ -1,7 +1,7 @@
 ---
 {
   "title": "青铜器",
-  "description": "青铜器：4.21.20（1293）科技基础属性、规则和关联条目。",
+  "description": "青铜器：科技基础属性、规则和关联条目。",
   "gameVersion": "4.21.20",
   "appBuild": 1293,
   "ruleset": "Civ V - Gods & Kings",

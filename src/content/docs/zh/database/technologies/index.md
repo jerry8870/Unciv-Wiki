@@ -1,7 +1,7 @@
 ---
 {
   "title": "科技",
-  "description": "4.21.20 (1293) · 科技 · Gods & Kings",
+  "description": "科技 · Gods & Kings",
   "gameVersion": "4.21.20",
   "appBuild": 1293,
   "ruleset": "Civ V - Gods & Kings",

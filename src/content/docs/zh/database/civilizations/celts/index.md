@@ -1,7 +1,7 @@
 ---
 {
   "title": "凯尔特",
-  "description": "凯尔特：4.21.20（1293）文明基础属性、规则和关联条目。",
+  "description": "凯尔特：文明基础属性、规则和关联条目。",
   "gameVersion": "4.21.20",
   "appBuild": 1293,
   "ruleset": "Civ V - Gods & Kings",

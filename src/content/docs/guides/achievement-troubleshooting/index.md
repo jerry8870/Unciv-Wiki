@@ -30,7 +30,7 @@ Use this checklist to troubleshoot **locked achievements**. It describes the pin
 
 ## 1. Check the game before the medal
 
-Was this a new single-player game with a built-in ruleset, one human major civilization, a generated map and an Ancient-era start? Mods, editor-created games, god mode and debug actions can invalidate eligibility. Old saves do not become qualifying games just by updating the app. AI autoplay is permitted by V3, subject to the remaining rules.
+Was this a new single-player game with a built-in ruleset, one human major civilization, a generated map and an Ancient-era start? Mods, editor-created games, god mode and debug actions can invalidate eligibility. Old saves do not become qualifying games just by updating the app. AI autoplay is permitted, subject to the remaining rules.
 
 Check the starting difficulty and AI count. Easy requires at least one AI opponent; Intermediate requires Prince and at least three; Hard requires King and at least three. Extreme medals have their own requirements. Raising difficulty later or defeating more opponents does not replace the starting conditions.
 
@@ -64,8 +64,8 @@ For [N11](/achievements/#N11), the qualifying city must be one you founded, have
 
 ## 6. Collect a useful bug report
 
-Record the app version/build, achievement ID, game-start settings, action sequence, whether the check reached turn end, and any relevant screenshot or save you are comfortable sharing. Remove personal information before attaching files. Report reproducible problems through [Unciv4iOS issues](https://github.com/jerry8870/Unciv4iOS/issues).
+Record achievement ID, game-start settings, action sequence, whether the check reached turn end, and any relevant screenshot or save you are comfortable sharing. Remove personal information before attaching files. Report reproducible problems through [Unciv4iOS issues](https://github.com/jerry8870/Unciv4iOS/issues).
 
-Achievements are local to the device. Game Center or iCloud sign-in will not synchronize this V3 catalogue. Reloading an old save also does not erase medals already recorded locally.
+Achievements are local to the device. Game Center or iCloud sign-in will not synchronize this achievement catalogue. Reloading an old save also does not erase medals already recorded locally.
 
-<a id="tf-troubleshooting-en" href="https://testflight.apple.com/join/XSgMMQjt">Check the Unciv4iOS TestFlight invitation</a> · [Installation and version notes](/ios/)
+<a id="tf-troubleshooting-en" href="https://testflight.apple.com/join/XSgMMQjt">Check the Unciv4iOS TestFlight invitation</a> · [Installation notes](/ios/)

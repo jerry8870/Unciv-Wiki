@@ -1,7 +1,7 @@
 ---
 {
   "title": "Units",
-  "description": "4.21.20 (1293) · Units · Gods & Kings",
+  "description": "Units · Gods & Kings",
   "gameVersion": "4.21.20",
   "appBuild": 1293,
   "ruleset": "Civ V - Gods & Kings",

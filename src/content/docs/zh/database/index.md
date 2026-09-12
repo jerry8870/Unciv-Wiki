@@ -1,7 +1,7 @@
 ---
 {
   "title": "数据库总览",
-  "description": "查询 1293 Gods & Kings 规则集的文明、单位、建筑、奇观和科技。",
+  "description": "查询 Gods & Kings 规则集的文明、单位、建筑、奇观和科技。",
   "gameVersion": "4.21.20",
   "appBuild": 1293,
   "ruleset": "Civ V - Gods & Kings",
@@ -12,7 +12,7 @@
 }
 ---
 
-在规划下一回合前，先查清规则。本数据库使用固定的 4.21.20（1293）**Gods & Kings** 源码快照。
+在规划下一回合前，先查清规则。本数据库使用固定的 **Gods & Kings** 源码快照。
 
 - [文明](/zh/database/civilizations/)：领袖、能力以及专属单位和建筑。
 - [单位](/zh/database/units/)：战斗力、移动力、升级与科技要求。

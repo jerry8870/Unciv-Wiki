@@ -1,7 +1,7 @@
 ---
 {
   "title": "建筑",
-  "description": "4.21.20 (1293) · 建筑 · Gods & Kings",
+  "description": "建筑 · Gods & Kings",
   "gameVersion": "4.21.20",
   "appBuild": 1293,
   "ruleset": "Civ V - Gods & Kings",

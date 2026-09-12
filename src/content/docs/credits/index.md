@@ -13,17 +13,17 @@
 ---
 
 - [Unciv](https://github.com/yairm210/Unciv): the upstream open-source game, ruleset and community contributors.
-- [Unciv4iOS](https://github.com/jerry8870/Unciv4iOS): the community iOS port, corresponding V3 achievement text and N01–N40 icons.
+- [Unciv4iOS](https://github.com/jerry8870/Unciv4iOS): the community iOS port, corresponding achievement text and N01–N40 icons.
 - Chinese data names and rules use the pinned game's Simplified Chinese translations. Thanks to the translation contributors.
 - The site interface uses [Astro](https://astro.build/) and [Starlight](https://starlight.astro.build/).
 
 Upstream assets can have different attribution and license requirements; consult the game's [Credits](https://github.com/yairm210/Unciv/blob/master/docs/Credits.md) and [LICENSE](https://github.com/yairm210/Unciv/blob/master/LICENSE). This page records sources and does not relicense all game assets under a single license.
 
-No gameplay screenshots are copied here. Achievement icons come from the directory corresponding to 1293; check the relevant project's usage terms before reusing them elsewhere.
+No gameplay screenshots are copied here. Achievement icons come from the game source directory; check the relevant project's usage terms before reusing them elsewhere.
 
 ## Guide illustration assets
 
-Strategy, mechanics, first-game and achievement-troubleshooting articles use original PNGs from the same pinned source commit as the 1293 baseline. The wiki arranges them into teaching illustrations; they are not screenshots of a game played for these articles. The rules and conditions in the text still apply.
+Strategy, mechanics, first-game and achievement-troubleshooting articles use original PNGs from the game source. The wiki arranges them into teaching illustrations; they are not screenshots of a game played for these articles. The rules and conditions in the text still apply.
 
 - Civilization, unit, building, policy, promotion and stat icons: authors and original work links are preserved in the [complete upstream credits](/game-assets/UPSTREAM-CREDITS.md), including Noun Project CC BY 3.0 / Public Domain works and separately identified sources.
 - AbsoluteUnits pixel units: letstalkaboutdune, CC BY 4.0; upstream exceptions remain listed in the preserved credits.

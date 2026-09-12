@@ -1,7 +1,7 @@
 ---
 {
   "title": "水上园圃",
-  "description": "水上园圃：4.21.20（1293）建筑基础属性、规则和关联条目。",
+  "description": "水上园圃：建筑基础属性、规则和关联条目。",
   "gameVersion": "4.21.20",
   "appBuild": 1293,
   "ruleset": "Civ V - Gods & Kings",

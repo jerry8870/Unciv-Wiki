@@ -1,7 +1,7 @@
 ---
 {
   "title": "飞船休眠舱",
-  "description": "飞船休眠舱：4.21.20（1293）单位基础属性、规则和关联条目。",
+  "description": "飞船休眠舱：单位基础属性、规则和关联条目。",
   "gameVersion": "4.21.20",
   "appBuild": 1293,
   "ruleset": "Civ V - Gods & Kings",

@@ -1,6 +1,6 @@
 # Unciv Wiki
 
-> Bilingual community guide to Unciv and the Unciv4iOS port. Content baseline: 4.21.20 (1293), Civ V - Gods & Kings. Not an official Civilization product or a live latest-version feed.
+> Bilingual community guide to Unciv and the Unciv4iOS port. Covers Civ V - Gods & Kings. Not an official Civilization product.
 
 ## Start here
 - [Your first game](https://jerry8870.github.io/Unciv-Wiki/getting-started/)
@@ -9,9 +9,9 @@
 - [Culture victory](https://jerry8870.github.io/Unciv-Wiki/strategies/culture-victory/): five completed policy branches and Utopia.
 - [Database overview](https://jerry8870.github.io/Unciv-Wiki/database/): base values, not final prices in every game.
 - [Practical mechanics and costs](https://jerry8870.github.io/Unciv-Wiki/mechanics/): policies, citizens/resources, combat/promotions, religion/beliefs; original cost reference retained.
-- [V3 achievements](https://jerry8870.github.io/Unciv-Wiki/achievements/): 40 local achievements, 600 points. No Game Center or iCloud achievement sync.
+- [Achievements](https://jerry8870.github.io/Unciv-Wiki/achievements/): 40 local achievements, 600 points. No Game Center or iCloud achievement sync.
 - [Achievement troubleshooting](https://jerry8870.github.io/Unciv-Wiki/guides/achievement-troubleshooting/)
-- [Unciv on iOS](https://jerry8870.github.io/Unciv-Wiki/ios/): real TestFlight invitation; build 1293 tester availability is not confirmed.
+- [Unciv on iOS](https://jerry8870.github.io/Unciv-Wiki/ios/): TestFlight invitation and installation guidance.
 - [About and source boundaries](https://jerry8870.github.io/Unciv-Wiki/about/)
 
 ## 简体中文
@@ -21,7 +21,7 @@
 - [文化胜利](https://jerry8870.github.io/Unciv-Wiki/zh/strategies/culture-victory/)
 - [机制实操与花费](https://jerry8870.github.io/Unciv-Wiki/zh/mechanics/): 政策、市民与改良、战斗与晋升、信条与收益。
 - [数据百科](https://jerry8870.github.io/Unciv-Wiki/zh/database/)
-- [1293 成就未解锁排查](https://jerry8870.github.io/Unciv-Wiki/zh/guides/achievement-troubleshooting/)
+- [成就未解锁排查](https://jerry8870.github.io/Unciv-Wiki/zh/guides/achievement-troubleshooting/)
 - [iOS 安装](https://jerry8870.github.io/Unciv-Wiki/zh/ios/)
 
 Generated data is pinned to checksummed source snapshots. Editorial advice is not a claim of full live iOS verification. This file helps readers discover content; it is not a search ranking or AI inclusion guarantee.

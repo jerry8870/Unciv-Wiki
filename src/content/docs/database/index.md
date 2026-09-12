@@ -1,7 +1,7 @@
 ---
 {
   "title": "Database",
-  "description": "Explore civilizations, units, buildings and technologies in the 1293 Gods & Kings ruleset.",
+  "description": "Explore civilizations, units, buildings and technologies in the Gods & Kings ruleset.",
   "gameVersion": "4.21.20",
   "appBuild": 1293,
   "ruleset": "Civ V - Gods & Kings",
@@ -12,7 +12,7 @@
 }
 ---
 
-Use the database to check a rule before planning a turn. Values come from the pinned 4.21.20 (1293) **Gods & Kings** source snapshot.
+Use the database to check a rule before planning a turn. Values come from the pinned **Gods & Kings** source snapshot.
 
 - [Civilizations](/database/civilizations/): leaders, abilities and unique units or buildings.
 - [Units](/database/units/): combat values, movement, upgrades and technology requirements.

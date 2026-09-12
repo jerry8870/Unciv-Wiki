@@ -1,7 +1,7 @@
 ---
 {
   "title": "Economics",
-  "description": "Economics: base values, rules and related technologies in Unciv 4.21.20 (1293).",
+  "description": "Economics: base values, rules and related technologies in Unciv.",
   "gameVersion": "4.21.20",
   "appBuild": 1293,
   "ruleset": "Civ V - Gods & Kings",

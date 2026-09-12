@@ -1,7 +1,7 @@
 ---
 {
   "title": "Civilizations",
-  "description": "4.21.20 (1293) · Civilizations · Gods & Kings",
+  "description": "Civilizations · Gods & Kings",
   "gameVersion": "4.21.20",
   "appBuild": 1293,
   "ruleset": "Civ V - Gods & Kings",

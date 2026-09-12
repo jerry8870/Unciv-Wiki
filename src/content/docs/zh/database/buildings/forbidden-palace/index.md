@@ -1,7 +1,7 @@
 ---
 {
   "title": "紫禁城",
-  "description": "紫禁城：4.21.20（1293）建筑基础属性、规则和关联条目。",
+  "description": "紫禁城：建筑基础属性、规则和关联条目。",
   "gameVersion": "4.21.20",
   "appBuild": 1293,
   "ruleset": "Civ V - Gods & Kings",

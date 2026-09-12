@@ -1,7 +1,7 @@
 ---
 {
   "title": "The Great Lighthouse",
-  "description": "The Great Lighthouse: base values, rules and related buildings in Unciv 4.21.20 (1293).",
+  "description": "The Great Lighthouse: base values, rules and related buildings in Unciv.",
   "gameVersion": "4.21.20",
   "appBuild": 1293,
   "ruleset": "Civ V - Gods & Kings",

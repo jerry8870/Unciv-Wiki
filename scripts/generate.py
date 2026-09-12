@@ -135,13 +135,13 @@ def main():
                     body += ('## 对局与机制攻略\n\n' if ix else '## Match and mechanics guides\n\n')
                     body += '\n'.join(f'- [{GUIDES[g][ix]}]({url(g + "/")})' for g in dict.fromkeys(guides)) + '\n\n'
                 if item.get('quote'): body += '> ' + html.escape(tr(item['quote'])) + '\n\n'
-                desc = f'{tr(name)}：4.21.20（1293）{title}基础属性、规则和关联条目。' if ix else f'{name}: base values, rules and related {title.lower()} in Unciv 4.21.20 (1293).'
+                desc = f'{tr(name)}：{title}基础属性、规则和关联条目。' if ix else f'{name}: base values, rules and related {title.lower()} in Unciv.'
                 page(f'database/{category}/{slug(name)}/', tr(name), desc, body)
             headers = (['文明', '领袖', '独特能力', '偏好胜利'] if ix else ['Civilization', 'Leader', 'Unique ability', 'Preferred victory']) if category == 'civilizations' else (['名称', '类型 / 时代', '基础花费', '所需 / 前置科技'] if ix else ['Name', 'Type / era', 'Base cost', 'Required / prerequisite technology'])
             body = note + table(headers, rows) + credit_link + '\n\n'
             if category == 'civilizations':
                 body += ('## 城邦\n\n' if ix else '## City-states\n\n') + table(['城邦', '类型', '性格'] if ix else ['City-state', 'Type', 'Personality'], [[tr(n['name']), tr(n.get('cityStateType', '—')), tr(n.get('personality', '—'))] for n in data['rules']['Nations'] if n.get('cityStateType')])
-            page('database/' + category + '/', title, f'4.21.20 (1293) · {title} · Gods & Kings', body)
+            page('database/' + category + '/', title, f'{title} · Gods & Kings', body)
         body = fragments[lang].replace('{{BASE}}', CONFIG['base']) + '\n\n'
         entries = data['achievements']['entries']; trans = data[f'achievements-{lang}']['entries']
         for tier, labels in [('Simple', ('Easy', '简单')), ('Intermediate', ('Intermediate', '中等')), ('Hard', ('Hard', '困难')), ('Extreme', ('Extreme', '极难'))]:
@@ -154,7 +154,7 @@ def main():
                 difficulty = tr(e['minimumDifficulty']) if e['minimumDifficulty'] else ('不限' if ix else 'Any')
                 body += f'**{"分值 / 最低难度 / 最少 AI 对手" if ix else "Points / minimum difficulty / minimum AI opponents"}**: {e["points"]} / {difficulty} / {e["minimumOpponents"]}\n\n'
                 body += f'*{html.escape(text["honor"])}*\n\n'
-        page('achievements/', '成就' if ix else 'Achievements', '1293 V3：40 项本机成就，共 600 分，含条件、难度和排查入口。' if ix else '1293 V3: 40 local achievements, 600 points, with requirements, difficulty and troubleshooting.', body)
+        page('achievements/', '成就' if ix else 'Achievements', '40 项本机成就，共 600 分，含条件、难度和排查入口。' if ix else '40 local achievements, 600 points, with requirements, difficulty and troubleshooting.', body)
     for i in range(1, 41): outputs[f'public/achievements/N{i:02}.svg'] = (args.snapshot / f'icons/N{i:02}.svg').read_bytes()
     # Owned-path inventory includes generated category/entity pages and icons, never manual articles.
     inventory = ROOT / 'data/generated-files.json'

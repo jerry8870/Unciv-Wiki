@@ -64,7 +64,7 @@ Make religion useful in core cities first, checking majority religion and follow
 
 Before buying a [Missionary](/database/units/missionary/), identify the target benefit, safe route and value of its spreads. The purchasing city's religious state affects the religion carried by the unit. Check city and unit information instead of assuming every unit you buy carries the religion you founded.
 
-In this version, a Missionary can enter foreign territory without open borders but loses religious strength when it ends a turn there without the required access. Plan its path and target instead of leaving it wandering or waiting. Other religious units have different abilities; do not apply the Missionary's restrictions to all of them.
+In this ruleset, a Missionary can enter foreign territory without open borders but loses religious strength when it ends a turn there without the required access. Plan its path and target instead of leaving it wandering or waiting. Other religious units have different abilities; do not apply the Missionary's restrictions to all of them.
 
 ## Use Inquisitors and Prophets deliberately
 

@@ -33,7 +33,7 @@ This is a learning route for **Gods & Kings**. The build order below is a sugges
 
 Choose the built-in Gods & Kings ruleset, an Ancient-era start and a generated map. Try a small map and a lower difficulty while learning. Keep the first game free of mods so the [database](/database/) matches what you see. Read each civilization's ability before choosing; [Rome](/database/civilizations/rome/) offers an example of an ability linked to city development.
 
-On iPhone or iPad, follow the [iOS installation guide](/ios/). Check the build actually offered in TestFlight. Achievement eligibility is stricter than an ordinary learning game: [read the requirements](/achievements/) before starting if medals are your goal.
+On iPhone or iPad, follow the [iOS installation guide](/ios/). Check installation availability in TestFlight. Achievement eligibility is stricter than an ordinary learning game: [read the requirements](/achievements/) before starting if medals are your goal.
 
 ## 2. Found the capital and inspect its tiles
 

@@ -19,8 +19,6 @@ export const onRequest = defineRouteMiddleware(async (context) => {
   if (!data.indexable) route.head.push({ tag: 'meta', attrs: { name: 'robots', content: 'noindex, follow' } });
   route.head = route.head.filter((tag) => !(tag.tag === 'link' && tag.attrs?.rel === 'alternate' && (!data.indexable || excluded.has(new URL(String(tag.attrs.href), config.site).pathname))));
   if (route.lastUpdated) route.head.push({ tag: 'meta', attrs: { name: 'wiki:lastmod', content: route.lastUpdated.toISOString().slice(0, 10) } });
-  if (data.gameVersion) route.head.push({ tag: 'meta', attrs: { name: 'wiki:game-version', content: data.gameVersion } });
-  if (data.appBuild) route.head.push({ tag: 'meta', attrs: { name: 'wiki:app-build', content: String(data.appBuild) } });
   const zh = route.locale === 'zh';
   const path = context.url.pathname;
   const home = localUrl('', zh);
