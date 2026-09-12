@@ -1,29 +1,42 @@
 ---
-title: Siam
-description: Siam — leader, unique ability and start bias in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Civilizations","item":"https://jerry8870.github.io/Unciv-Wiki/database/civilizations/"},{"@type":"ListItem","position":4,"name":"Siam","item":"https://jerry8870.github.io/Unciv-Wiki/database/civilizations/siam/"}]}'
+{
+  "title": "Siam",
+  "description": "Siam: base values, rules and related civilizations in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Siam
 
-**Leader**: Ramkhamhaeng
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/nation/siam.png" alt="Siam" width="80" height="80" loading="lazy" decoding="async" /></span>
 
-**Unique Ability**: Father Governs Children
+[Icon sources and credits](/Unciv-Wiki/credits/)
 
-## Unique Abilities
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
-- `[+50]% [Food] from City-States`
-- `[+50]% [Culture] from City-States`
-- `[+50]% [Faith] from City-States`
-- `Military Units gifted from City-States start with [+10] XP`
+| Attribute | Value |
+| --- | --- |
+| Leader | Ramkhamhaeng |
+| Unique ability | Father Governs Children |
+| Preferred victory | Diplomatic |
 
-## Start Bias
+## Rules and effects
+
+- [+50]% [Food] from City-States
+- [+50]% [Culture] from City-States
+- [+50]% [Faith] from City-States
+- Military Units gifted from City-States start with [+10] XP
+
+## Starting bias
 
 - Avoid [Forest]
 
-**Preferred Victory**: Diplomatic
+## Unlocks and related entries
 
+- [Naresuan&#x27;s Elephant](/Unciv-Wiki/database/units/naresuan-s-elephant/)
+- [Wat](/Unciv-Wiki/database/buildings/wat/)
 

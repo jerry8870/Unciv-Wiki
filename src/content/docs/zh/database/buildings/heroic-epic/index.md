@@ -1,26 +1,35 @@
 ---
-title: 英雄史诗
-description: 英雄史诗——造价、效果与科技需求。
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/zh/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/"},{"@type":"ListItem","position":3,"name":"建筑","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/buildings/"},{"@type":"ListItem","position":4,"name":"英雄史诗","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/buildings/heroic-epic/"}]}'
+{
+  "title": "英雄史诗",
+  "description": "英雄史诗：4.21.20（1293）建筑基础属性、规则和关联条目。",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# 英雄史诗
 
-## 属性
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/building/heroic-epic.png" alt="英雄史诗" width="80" height="80" loading="lazy" decoding="async" /></span>
 
-| 属性 | 数值 |
+[图标来源与署名](/Unciv-Wiki/zh/credits/)
+
+数值为 **Gods & Kings 规则集基础数值**，不等于每局最终价格。速度、难度、城市数量及规则效果等可能修正花费。 [花费说明](/Unciv-Wiki/zh/mechanics/).
+
+| 属性 | 值 |
 | --- | --- |
-| 造价 | 125 |
-| 所需科技 | 铁器 |
+| 类型 | 国家奇观 |
+| 基础花费 | 125 |
+| 所需科技 | [铁器](/Unciv-Wiki/zh/database/technologies/iron-working/) |
 | 文化 | 1 |
 
-## 效果
+采用源码显式数值（包括零值）。
 
-- 如果在所有军营城市已建造non-[Puppeted]可用
-- non-[Air]新训练的在这个城市中单位初始拥有强化士气晋升
+## 规则与效果
+
+- 如果在所有非傀儡城市已建造军营可用
+- 在这个城市中新训练的非空军单位初始拥有强化士气晋升
 - 每座我方城市使建造时花费增加30
-
 

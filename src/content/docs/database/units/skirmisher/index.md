@@ -1,27 +1,33 @@
 ---
-title: Skirmisher
-description: Skirmisher — stats, abilities and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Units","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/"},{"@type":"ListItem","position":4,"name":"Skirmisher","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/skirmisher/"}]}'
+{
+  "title": "Skirmisher",
+  "description": "Skirmisher: base values, rules and related units in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Skirmisher
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/unit/skirmisher.png" alt="Skirmisher" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
 | Type | Archery |
 | Movement | 2 |
 | Strength | 4 |
-| Ranged Strength | 7 |
-| Cost | 40 |
-| Required Tech | Archery |
-| Obsolete Tech | Machinery |
-| Upgrades To | Crossbowman |
-| Replaces | Archer |
-| Unique To | Barbarians |
-
+| Ranged strength | 7 |
+| Base cost | 40 |
+| Required technology | [Archery](/Unciv-Wiki/database/technologies/archery/) |
+| Obsolete technology | [Machinery](/Unciv-Wiki/database/technologies/machinery/) |
+| Upgrades to | [Crossbowman](/Unciv-Wiki/database/units/crossbowman/) |
+| Replaces | [Archer](/Unciv-Wiki/database/units/archer/) |
+| Unique to | Barbarians |
 

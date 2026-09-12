@@ -1,0 +1,29 @@
+{
+  "previousContentPages": 780,
+  "missingPreviousPages": [],
+  "newPages": 16,
+  "mechanicsAnchors": [
+    {
+      "route": "mechanics/",
+      "originalCostBodyPreserved": true,
+      "originalHeadingIds": [
+        "starlight__on-this-page",
+        "technology-a-column-supplies-the-default",
+        "buildings-and-wonders-use-the-appropriate-column-value",
+        "why-the-city-panel-can-show-another-price"
+      ],
+      "missingIds": []
+    },
+    {
+      "route": "zh/mechanics/",
+      "originalCostBodyPreserved": true,
+      "originalHeadingIds": [
+        "starlight__on-this-page",
+        "科技科技列提供默认花费",
+        "建筑与奇观选择对应的科技列价格",
+        "为什么城市界面显示不同价格"
+      ],
+      "missingIds": []
+    }
+  ]
+}

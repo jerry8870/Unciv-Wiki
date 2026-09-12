@@ -1,31 +1,37 @@
 ---
-title: 德意志雇佣兵
-description: 德意志雇佣兵——属性、能力与科技需求。
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/zh/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/"},{"@type":"ListItem","position":3,"name":"单位","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/units/"},{"@type":"ListItem","position":4,"name":"德意志雇佣兵","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/units/landsknecht/"}]}'
+{
+  "title": "德意志雇佣兵",
+  "description": "德意志雇佣兵：4.21.20（1293）单位基础属性、规则和关联条目。",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# 德意志雇佣兵
 
-## 属性
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/unit/landsknecht.png" alt="德意志雇佣兵" width="80" height="80" loading="lazy" decoding="async" /></span>
 
-| 属性 | 数值 |
+[图标来源与署名](/Unciv-Wiki/zh/credits/)
+
+数值为 **Gods & Kings 规则集基础数值**，不等于每局最终价格。速度、难度、城市数量及规则效果等可能修正花费。 [花费说明](/Unciv-Wiki/zh/mechanics/).
+
+| 属性 | 值 |
 | --- | --- |
-| 类型 | Sword |
+| 类型 | 近程 |
 | 移动力 | 2 |
 | 战斗力 | 16 |
-| 造价 | 45 |
-| 所需科技 | 文官制度 |
-| 淘汰科技 | 冶金学 |
-| 升级为 | 枪骑兵 |
-| 替代 | 长枪兵 |
-| 专属文明 | 德意志 |
+| 基础花费 | 45 |
+| 所需科技 | [文官制度](/Unciv-Wiki/zh/database/technologies/civil-service/) |
+| 淘汰科技 | [冶金学](/Unciv-Wiki/zh/database/technologies/metallurgy/) |
+| 升级为 | [枪骑兵](/Unciv-Wiki/zh/database/units/lancer/) |
+| 替代 | [长枪兵](/Unciv-Wiki/zh/database/units/pikeman/) |
+| 专属文明 | [德意志](/Unciv-Wiki/zh/database/civilizations/germany/) |
 
-## 能力
+## 规则与效果
 
 - 对战骑乘单位战斗力+50%
 - 购买后无需等待一回合而可立即行动
-
 

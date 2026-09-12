@@ -1,0 +1,46 @@
+{
+  "result": "PASS",
+  "method": "Actual CUA browser interaction with local Astro preview; representative pages, not a full manual review of 780 pages.",
+  "checks": [
+    {
+      "viewport": "1280x720 default",
+      "page": "zh/strategies/",
+      "observed": "One H1, no page overflow, all eight guide routes visible in hub and sidebar; final hub has no literal Markdown bold markers."
+    },
+    {
+      "viewport": "390x844",
+      "page": "zh/strategies/",
+      "observed": "Page width 390; both table containers and content width 356; clicked science link successfully."
+    },
+    {
+      "viewport": "390x844",
+      "page": "zh/strategies/science-victory/",
+      "observed": "Page width 390; expanded mobile TOC and clicked spaceship-parts section; target heading and 3/1/1/1 parts table visible."
+    },
+    {
+      "viewport": "390x844",
+      "page": "zh/strategies/science-victory/ search",
+      "observed": "Query 文化胜利 returned 22 results; clicked first culture-guide result and reached zh/strategies/culture-victory/."
+    },
+    {
+      "viewport": "390x844",
+      "page": "zh/strategies/culture-victory/",
+      "observed": "Opened mobile menu, selected English, reached strategies/culture-victory/ with lang=en; width remained 390."
+    },
+    {
+      "viewport": "768x1024",
+      "page": "zh/database/buildings/university/",
+      "observed": "Page width 768; table displayed 科研加成 +33% and 专家槽位 科学家 × 2."
+    },
+    {
+      "viewport": "1280x720 default",
+      "page": "zh/",
+      "observed": "10 cards; hub, opening and science guide links visible. Clicked hub and retained final preview."
+    }
+  ],
+  "scopeNotes": [
+    "Chinese terminology changes were additionally checked against all current entity-link titles in source; all 18 built strategy pages were checked for leftover Markdown markers.",
+    "No played-game, iOS runtime or external search-engine indexing verification.",
+    "Viewport override reset. Initial browser inventory timeout recovered with the existing in-app browser. A label-selector mismatch was resolved using the observed combobox role."
+  ]
+}

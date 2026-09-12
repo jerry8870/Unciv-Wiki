@@ -1,28 +1,40 @@
 ---
-title: Inca
-description: Inca — leader, unique ability and start bias in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Civilizations","item":"https://jerry8870.github.io/Unciv-Wiki/database/civilizations/"},{"@type":"ListItem","position":4,"name":"Inca","item":"https://jerry8870.github.io/Unciv-Wiki/database/civilizations/inca/"}]}'
+{
+  "title": "Inca",
+  "description": "Inca: base values, rules and related civilizations in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Inca
 
-**Leader**: Pachacuti
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/nation/inca.png" alt="Inca" width="80" height="80" loading="lazy" decoding="async" /></span>
 
-**Unique Ability**: Great Andean Road
+[Icon sources and credits](/Unciv-Wiki/credits/)
 
-## Unique Abilities
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
-- `Units ignore terrain costs when moving into any tile with Hills`
-- `[-50]% maintenance on road & railroads`
-- `No Maintenance costs for improvements in [Hill] tiles`
+| Attribute | Value |
+| --- | --- |
+| Leader | Pachacuti |
+| Unique ability | Great Andean Road |
+| Preferred victory | Cultural |
 
-## Start Bias
+## Rules and effects
+
+- Units ignore terrain costs when moving into any tile with Hills
+- [-50]% maintenance on road &amp; railroads
+- No Maintenance costs for improvements in [Hill] tiles
+
+## Starting bias
 
 - Hill
 
-**Preferred Victory**: Cultural
+## Unlocks and related entries
 
+- [Slinger](/Unciv-Wiki/database/units/slinger/)
 

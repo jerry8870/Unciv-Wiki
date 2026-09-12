@@ -1,27 +1,40 @@
 ---
-title: Sweden
-description: Sweden — leader, unique ability and start bias in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Civilizations","item":"https://jerry8870.github.io/Unciv-Wiki/database/civilizations/"},{"@type":"ListItem","position":4,"name":"Sweden","item":"https://jerry8870.github.io/Unciv-Wiki/database/civilizations/sweden/"}]}'
+{
+  "title": "Sweden",
+  "description": "Sweden: base values, rules and related civilizations in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Sweden
 
-**Leader**: Gustavus Adolphus
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/nation/sweden.png" alt="Sweden" width="80" height="80" loading="lazy" decoding="async" /></span>
 
-**Unique Ability**: Nobel Prize
+[Icon sources and credits](/Unciv-Wiki/credits/)
 
-## Unique Abilities
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
-- `Gain [90] Influence with a [Great Person] gift to a City-State`
-- `When declaring friendship, both parties gain a [10]% boost to great person generation`
+| Attribute | Value |
+| --- | --- |
+| Leader | Gustavus Adolphus |
+| Unique ability | Nobel Prize |
+| Preferred victory | Diplomatic |
 
-## Start Bias
+## Rules and effects
+
+- Gain [90] Influence with a [Great Person] gift to a City-State
+- When declaring friendship, both parties gain a [10]% boost to great person generation
+
+## Starting bias
 
 - Tundra
 
-**Preferred Victory**: Diplomatic
+## Unlocks and related entries
 
+- [Hakkapeliitta](/Unciv-Wiki/database/units/hakkapeliitta/)
+- [Carolean](/Unciv-Wiki/database/units/carolean/)
 

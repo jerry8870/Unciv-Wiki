@@ -1,0 +1,17 @@
+{
+  "previousContentRoutes": 754,
+  "currentContentRoutes": 764,
+  "removedRoutes": [],
+  "newRoutes": [
+    "about",
+    "credits",
+    "database",
+    "guides/achievement-troubleshooting",
+    "privacy",
+    "zh/about",
+    "zh/credits",
+    "zh/database",
+    "zh/guides/achievement-troubleshooting",
+    "zh/privacy"
+  ]
+}

@@ -1,33 +1,44 @@
 ---
-title: Cannon
-description: Cannon — stats, abilities and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Units","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/"},{"@type":"ListItem","position":4,"name":"Cannon","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/cannon/"}]}'
+{
+  "title": "Cannon",
+  "description": "Cannon: base values, rules and related units in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Cannon
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/unit/cannon.png" alt="Cannon" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
 | Type | Siege |
 | Movement | 2 |
 | Strength | 14 |
-| Ranged Strength | 20 |
-| Cost | 185 |
-| Required Tech | Chemistry |
-| Obsolete Tech | Dynamite |
-| Upgrades To | Artillery |
+| Ranged strength | 20 |
+| Base cost | 185 |
+| Required technology | [Chemistry](/Unciv-Wiki/database/technologies/chemistry/) |
+| Obsolete technology | [Dynamite](/Unciv-Wiki/database/technologies/dynamite/) |
+| Upgrades to | [Artillery](/Unciv-Wiki/database/units/artillery/) |
 
-## Abilities
+## Rules and effects
 
-- `[+200]% Strength <vs cities> <when attacking>`
-- `No defensive terrain bonus`
-- `Must set up to ranged attack`
-- `[-1] Sight`
-- `Never appears as a Barbarian unit`
+- [+200]% Strength &lt;vs cities&gt; &lt;when attacking&gt;
+- No defensive terrain bonus
+- Must set up to ranged attack
+- [-1] Sight
+- Never appears as a Barbarian unit
 
+## Unlocks and related entries
+
+- [Trebuchet](/Unciv-Wiki/database/units/trebuchet/)
+- [Hwach&#x27;a](/Unciv-Wiki/database/units/hwach-a/)
 

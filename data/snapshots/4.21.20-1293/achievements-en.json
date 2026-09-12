@@ -1,0 +1,326 @@
+{
+  "sourceSha256": "89d9bd6a7d79e9073b7068189cc47b2f4107fdac7e3654601c6fd94e6d54006a",
+  "language": "English",
+  "entries": {
+    "N01": {
+      "name": "First Taste of Victory",
+      "summary": "Win any official victory, including a Time victory.",
+      "honor": "Your civilization has earned a victory of its own.",
+      "indexClue": "Lead your civilization to victory",
+      "clue": "Let your civilization\ncelebrate its first victory.",
+      "condition": "Win any official victory, including a Time victory."
+    },
+    "N02": {
+      "name": "Pioneer",
+      "summary": "Found your second city after the capital yourself; conquered or gifted cities do not count.",
+      "honor": "New walls rise in the distance.",
+      "indexClue": "Found a new city far from home",
+      "clue": "Let a new city rise\nbeyond your capital.",
+      "condition": "Found your second city after the capital yourself; conquered or gifted cities do not count."
+    },
+    "N03": {
+      "name": "Seeds of Culture",
+      "summary": "Adopt your first social policy; opening a policy tree also counts.",
+      "honor": "A civilization's ideas begin with its first choice.",
+      "indexClue": "Make your first policy choice",
+      "clue": "The ideas of a civilization\nbegin with a choice.",
+      "condition": "Adopt your first social policy; opening a policy tree also counts."
+    },
+    "N04": {
+      "name": "Festival of Two Cities",
+      "summary": "During one uninterrupted Golden Age, build at least one World Wonder yourself in each of two different cities you own; the count resets if the Golden Age ends.",
+      "honor": "Two cities shared the splendor of a Golden Age.",
+      "indexClue": "Let a Golden Age illuminate two wonders",
+      "clue": "During the same Golden Age,\nleave a wonder in each of two cities.",
+      "condition": "Prince difficulty or higher; start with at least 3 AI opponents. During one uninterrupted Golden Age, build at least one World Wonder yourself in each of two different cities you own; the count resets if the Golden Age ends."
+    },
+    "N05": {
+      "name": "A First Wonder",
+      "summary": "Build your first World Wonder yourself; Great Engineer assistance is allowed, but National Wonders do not count.",
+      "honor": "You have left this age its first monument.",
+      "indexClue": "Build your first World Wonder",
+      "clue": "With your own hands,\nleave this age a World Wonder.",
+      "condition": "Build your first World Wonder yourself; Great Engineer assistance is allowed, but National Wonders do not count."
+    },
+    "N06": {
+      "name": "First Clash",
+      "summary": "Destroy an enemy military unit in combat; Barbarians count, but capturing civilians does not.",
+      "honor": "Your first clash has written a tale of courage.",
+      "indexClue": "Destroy an enemy in battle",
+      "clue": "Let a true clash of arms\nreveal your strength.",
+      "condition": "Destroy an enemy military unit in combat; Barbarians count, but capturing civilians does not."
+    },
+    "N07": {
+      "name": "Frontier Patrol",
+      "summary": "Use the same military unit to clear Barbarian encampments at 3 different locations. It must still be alive when the third clearance resolves; upgrading preserves its record.",
+      "honor": "Along the distant frontier, someone keeps watch.",
+      "indexClue": "Clear three camps with the same unit",
+      "clue": "After three Barbarian camps,\nbring the same unit home alive.",
+      "condition": "Prince difficulty or higher; start with at least 3 AI opponents. Use the same military unit to clear Barbarian encampments at 3 different locations. It must still be alive when the third clearance resolves; upgrading preserves its record."
+    },
+    "N08": {
+      "name": "Veteran Conqueror",
+      "summary": "Use a military unit with at least 3 combat-earned promotions to capture in battle a city founded by another major civilization. It must survive the capture; free promotions do not count.",
+      "honor": "A veteran's banner now flies over an enemy city.",
+      "indexClue": "Take a city with a veteran of three promotions",
+      "clue": "Let a veteran with three combat promotions\ntake an enemy city in person.",
+      "condition": "Prince difficulty or higher; start with at least 3 AI opponents. Use a military unit with at least 3 combat-earned promotions to capture in battle a city founded by another major civilization. It must survive the capture; free promotions do not count."
+    },
+    "N09": {
+      "name": "Working the Land",
+      "summary": "Have your own Worker build a new Farm, Mine or Pasture; repairing an existing improvement does not count.",
+      "honor": "The land begins to reward your labor.",
+      "indexClue": "Cultivate a piece of land yourself",
+      "clue": "Let your Worker\nchange this land for the first time.",
+      "condition": "Have your own Worker build a new Farm, Mine or Pasture; repairing an existing improvement does not count."
+    },
+    "N10": {
+      "name": "All Roads Connected",
+      "summary": "At turn end, at least 3 cities you founded besides the capital must simultaneously have game-recognized road or harbor connections to the capital; the capital does not count toward the 3.",
+      "honor": "Roads and sea routes weave your lands together.",
+      "indexClue": "Connect three founded cities to the capital",
+      "clue": "Let three cities you founded\njoin your capital in one network.",
+      "condition": "Prince difficulty or higher; start with at least 3 AI opponents. At turn end, at least 3 cities you founded besides the capital must simultaneously have game-recognized road or harbor connections to the capital; the capital does not count toward the 3."
+    },
+    "N11": {
+      "name": "A City of Learning",
+      "summary": "At turn end, a city you founded must have at least 15 population and both a Library and a University.",
+      "honor": "Knowledge and people gather in one city.",
+      "indexClue": "Give a city of fifteen a university",
+      "clue": "In a city of fifteen,\nlet a Library and University flourish together.",
+      "condition": "Prince difficulty or higher; start with at least 3 AI opponents. At turn end, a city you founded must have at least 15 population and both a Library and a University."
+    },
+    "N12": {
+      "name": "Trade Brings Gold",
+      "summary": "At turn end, hold at least 1,000 gold while at least 3 cities you founded each have both a Market and a Bank.",
+      "honor": "Wealth has firm foundations; prosperity is no accident.",
+      "indexClue": "Build three trading cities and save a thousand gold",
+      "clue": "Let three cities have Markets and Banks,\nwith a thousand gold in reserve.",
+      "condition": "Prince difficulty or higher; start with at least 3 AI opponents. At turn end, hold at least 1,000 gold while at least 3 cities you founded each have both a Market and a Bank."
+    },
+    "N13": {
+      "name": "City-State Round Table",
+      "summary": "At turn end, simultaneously be allied with city-states of at least 3 different types; eliminated city-states do not count.",
+      "honor": "Different city-states gather around the same table.",
+      "indexClue": "Ally with three types of city-state",
+      "clue": "Let three kinds of city-state\nchoose your alliance together.",
+      "condition": "Prince difficulty or higher; start with at least 3 AI opponents. At turn end, simultaneously be allied with city-states of at least 3 different types; eliminated city-states do not count."
+    },
+    "N14": {
+      "name": "Faith Takes Root",
+      "summary": "Found a full religion yourself and, at turn end, make it the majority religion in at least 3 cities you founded simultaneously; a Pantheon alone does not count.",
+      "honor": "Faith has taken root in your lands.",
+      "indexClue": "Establish your religion in three founded cities",
+      "clue": "Let the religion you founded\nbecome the majority in three cities you founded.",
+      "condition": "Prince difficulty or higher; start with at least 3 AI opponents. Religion must be enabled. Found a full religion yourself and, at turn end, make it the majority religion in at least 3 cities you founded simultaneously; a Pantheon alone does not count."
+    },
+    "N15": {
+      "name": "Treaties of Trade",
+      "summary": "In one game, complete a valid trade with each of 3 different major civilizations. Each trade must include a positive amount of gold, gold per turn, resources or Open Borders; embassy-only agreements do not count.",
+      "honor": "Three treaties have opened three borders.",
+      "indexClue": "Trade with three civilizations",
+      "clue": "In a single journey,\nexchange what you need with three civilizations.",
+      "condition": "Prince difficulty or higher; start with at least 3 AI opponents. In one game, complete a valid trade with each of 3 different major civilizations. Each trade must include a positive amount of gold, gold per turn, resources or Open Borders; embassy-only agreements do not count."
+    },
+    "N16": {
+      "name": "Wonders of Nature",
+      "summary": "Discover 3 different types of Natural Wonder through exploration in one game; each type counts only once.",
+      "honor": "Nature's marvels have become part of your story.",
+      "indexClue": "Discover three types of Natural Wonder",
+      "clue": "Journey beyond the horizon\nto find three wonders of nature.",
+      "condition": "Prince difficulty or higher; start with at least 3 AI opponents. Discover 3 different types of Natural Wonder through exploration in one game; each type counts only once."
+    },
+    "N17": {
+      "name": "A Precise Path to the Stars",
+      "summary": "Win a Scientific victory without ever owning more than 4 cities at once or capturing in battle a city founded by another major civilization during the entire game.",
+      "honor": "From limited lands, you reached the boundless stars.",
+      "indexClue": "Reach the stars with at most four cities",
+      "clue": "Take no cities in battle; own no more than four.\nLet science carry you to victory.",
+      "condition": "King difficulty or higher; start with at least 3 AI opponents. Win a Scientific victory without ever owning more than 4 cities at once or capturing in battle a city founded by another major civilization during the entire game."
+    },
+    "N18": {
+      "name": "A Four-City Masterpiece",
+      "summary": "Win a Cultural victory without ever owning more than 4 cities at once during the entire game; cities briefly owned and then abandoned still count toward the limit.",
+      "honor": "A handful of cities has written a civilization's masterpiece.",
+      "indexClue": "Win through culture with at most four cities",
+      "clue": "Keep your realm within four cities\nand let culture win the world.",
+      "condition": "King difficulty or higher; start with at least 3 AI opponents. Win a Cultural victory without ever owning more than 4 cities at once during the entire game; cities briefly owned and then abandoned still count toward the limit."
+    },
+    "N19": {
+      "name": "One City's Campaign",
+      "summary": "Win a Domination victory having founded only your capital throughout the entire game. Capturing other cities is allowed; founding and then abandoning another city is not.",
+      "honor": "One starting point led to the whole world.",
+      "indexClue": "Found only one city and conquer the world",
+      "clue": "Found just one city yourself,\nand set out from there to conquer.",
+      "condition": "King difficulty or higher; start with at least 3 AI opponents. Win a Domination victory having founded only your capital throughout the entire game. Capturing other cities is allowed; founding and then abandoning another city is not."
+    },
+    "N20": {
+      "name": "Diplomacy over Monuments",
+      "summary": "Win a Diplomatic victory while building no more than 2 different types of World Wonder yourself throughout the entire game; National Wonders do not count.",
+      "honor": "The world's trust outweighs towering stone.",
+      "indexClue": "Win through diplomacy with few wonders",
+      "clue": "Build no more than two kinds of World Wonder\nand win the world through diplomacy.",
+      "condition": "King difficulty or higher; start with at least 3 AI opponents. Win a Diplomatic victory while building no more than 2 different types of World Wonder yourself throughout the entire game; National Wonders do not count."
+    },
+    "N21": {
+      "name": "A Peaceful Metropolis",
+      "summary": "At turn end, a city you founded must have at least 25 population. Throughout the entire game, never own more than 3 cities at once or capture in battle a city founded by another major civilization.",
+      "honor": "Restraint in expansion can still light countless homes.",
+      "indexClue": "Grow a great city without conquest",
+      "clue": "Own no more than three cities; take none in battle.\nLet one city grow to twenty-five.",
+      "condition": "Prince difficulty or higher; start with at least 3 AI opponents. At turn end, a city you founded must have at least 25 population. Throughout the entire game, never own more than 3 cities at once or capture in battle a city founded by another major civilization."
+    },
+    "N22": {
+      "name": "The Path of Mastery",
+      "summary": "Fully adopt 2 social policy trees, having never owned more than 3 cities at once in the game up to that moment.",
+      "honor": "A compact realm carries mature institutions.",
+      "indexClue": "Complete two policy trees within three cities",
+      "clue": "Keep your realm within three cities\nand let two policy trees fully bloom.",
+      "condition": "Prince difficulty or higher; start with at least 3 AI opponents. Fully adopt 2 social policy trees, having never owned more than 3 cities at once in the game up to that moment."
+    },
+    "N23": {
+      "name": "A Golden Alliance",
+      "summary": "At turn end, hold at least 3,000 gold and simultaneously have at least 4 allied city-states that have not been eliminated.",
+      "honor": "Your treasury and treaties sustain your influence together.",
+      "indexClue": "Gather gold and four alliances",
+      "clue": "Keep three thousand gold in your treasury\nand four city-states at your side.",
+      "condition": "King difficulty or higher; start with at least 3 AI opponents. At turn end, hold at least 3,000 gold and simultaneously have at least 4 allied city-states that have not been eliminated."
+    },
+    "N24": {
+      "name": "One Faith, Three Nations",
+      "summary": "Found and enhance a religion yourself. At turn end, it must be the majority religion in the current capitals of at least 3 different other major civilizations.",
+      "honor": "Your creed has crossed the capitals of three nations.",
+      "indexClue": "Bring your faith to three foreign capitals",
+      "clue": "Enhance your own religion\nand let three foreign capitals embrace it.",
+      "condition": "King difficulty or higher; start with at least 3 AI opponents. Religion must be enabled. Found and enhance a religion yourself. At turn end, it must be the majority religion in the current capitals of at least 3 different other major civilizations."
+    },
+    "N25": {
+      "name": "Guardians of City-States",
+      "summary": "At turn end, simultaneously have at least 5 allied city-states that have not been eliminated, covering at least 3 city-state types.",
+      "honor": "Five city-states give the world a shared voice.",
+      "indexClue": "Stand together with five city-states",
+      "clue": "Across three kinds of city-state,\nlet five allies stand together.",
+      "condition": "King difficulty or higher; start with at least 3 AI opponents. At turn end, simultaneously have at least 5 allied city-states that have not been eliminated, covering at least 3 city-state types."
+    },
+    "N26": {
+      "name": "Pilgrimage of Wonders",
+      "summary": "Build 12 different types of World Wonder yourself across at least 3 new games meeting this achievement's difficulty and opponent requirements. Build at least one type in every counted game; reloading the same game does not add a game.",
+      "honor": "Across ages and journeys, you left twelve monuments.",
+      "indexClue": "Build twelve kinds of wonder across three journeys",
+      "clue": "Across at least three journeys,\nbuild twelve kinds of World Wonder yourself.",
+      "condition": "King difficulty or higher; start with at least 3 AI opponents. Build 12 different types of World Wonder yourself across at least 3 new games meeting this achievement's difficulty and opponent requirements. Build at least one type in every counted game; reloading the same game does not add a game."
+    },
+    "N27": {
+      "name": "Skyline of the Nile",
+      "summary": "As Egypt, build 5 different types of World Wonder yourself in the same city, which you must still own; wonders already present when you acquired the city do not count.",
+      "honor": "Beside the Nile, one city holds a magnificent skyline.",
+      "indexClue": "Build five kinds of wonder in one Egyptian city",
+      "clue": "Let one city of Egypt\nbuild five kinds of World Wonder.",
+      "condition": "King difficulty or higher; start with at least 3 AI opponents. As Egypt, build 5 different types of World Wonder yourself in the same city, which you must still own; wonders already present when you acquired the city do not count."
+    },
+    "N28": {
+      "name": "Rome's Living Network",
+      "summary": "As Rome, at turn end, at least 5 cities you founded must each have at least 10 population and a Monument, Granary, Library and Barracks simultaneously.",
+      "honor": "Rome's strength grows in every city.",
+      "indexClue": "Let five Roman cities flourish together",
+      "clue": "Let five Roman cities each have\nten population and four basic buildings.",
+      "condition": "King difficulty or higher; start with at least 3 AI opponents. As Rome, at turn end, at least 5 cities you founded must each have at least 10 population and a Monument, Granary, Library and Barracks simultaneously."
+    },
+    "N29": {
+      "name": "Four Cities in Harmony",
+      "summary": "At turn end, at least 4 cities you founded must each have at least 20 population, your civilization must have at least 10 Happiness, and you must never previously have captured in battle a city founded by another major civilization.",
+      "honor": "Four flourishing cities are joined by peace and order.",
+      "indexClue": "Let four great cities prosper in peace",
+      "clue": "Expand without taking cities in battle.\nLet four cities of twenty thrive in happiness.",
+      "condition": "King difficulty or higher; start with at least 3 AI opponents. At turn end, at least 4 cities you founded must each have at least 20 population, your civilization must have at least 10 Happiness, and you must never previously have captured in battle a city founded by another major civilization."
+    },
+    "N30": {
+      "name": "City of a Thousand Visions",
+      "summary": "Build 8 different types of World Wonder yourself in the same city, which you must still own; wonders already present when you acquired the city do not count.",
+      "honor": "One city holds an entire age's imagination.",
+      "indexClue": "Gather eight kinds of World Wonder in one city",
+      "clue": "Let the same city\nbuild eight kinds of World Wonder.",
+      "condition": "Emperor difficulty or higher; start with at least 4 AI opponents. Build 8 different types of World Wonder yourself in the same city, which you must still own; wonders already present when you acquired the city do not count."
+    },
+    "N31": {
+      "name": "Home from Battle",
+      "summary": "The same surviving military unit must earn at least 5 combat promotions and destroy at least 10 military units of major civilizations. Defensive kills count; Barbarians and free promotions do not. Upgrading preserves the record.",
+      "honor": "A unit returns, carrying memories of countless battles.",
+      "indexClue": "Bring a veteran of five promotions home alive",
+      "clue": "Five combat promotions, ten major-civilization kills.\nBring the same unit home alive.",
+      "condition": "King difficulty or higher; start with at least 3 AI opponents. The same surviving military unit must earn at least 5 combat promotions and destroy at least 10 military units of major civilizations. Defensive kills count; Barbarians and free promotions do not. Upgrading preserves the record."
+    },
+    "N32": {
+      "name": "Dawn over Three Cities",
+      "summary": "During the same turn of your own, capture 3 different cities in battle, all founded by other major civilizations. Repeated captures of the same city, trades and direct liberation do not count.",
+      "honor": "One dawn shines on three new banners.",
+      "indexClue": "Capture three enemy cities in one turn",
+      "clue": "In one turn,\ntake three different enemy cities.",
+      "condition": "King difficulty or higher; start with at least 3 AI opponents. During the same turn of your own, capture 3 different cities in battle, all founded by other major civilizations. Repeated captures of the same city, trades and direct liberation do not count."
+    },
+    "N33": {
+      "name": "Faith beyond Borders",
+      "summary": "Your founded religion must simultaneously be the majority religion in at least 15 cities, including at least 5 belonging to other major civilizations and spanning at least 3 different other major civilizations. Natural spread counts; checked at turn end.",
+      "honor": "Faith across borders has found a wide welcome.",
+      "indexClue": "Carry your faith across borders to fifteen cities",
+      "clue": "Let the religion you founded\ncross borders and become the majority in fifteen cities.",
+      "condition": "King difficulty or higher; start with at least 3 AI opponents. Religion must be enabled. Your founded religion must simultaneously be the majority religion in at least 15 cities, including at least 5 belonging to other major civilizations and spanning at least 3 different other major civilizations. Natural spread counts; checked at turn end."
+    },
+    "N34": {
+      "name": "Legend of the Repeating Crossbow",
+      "summary": "As China, a Cho-Ko-Nu with at least 4 combat-earned promotions must actively attack and kill 2 different military units of major civilizations during the same turn of your own, and survive to turn end; free promotions and Barbarians do not count.",
+      "honor": "A seasoned crossbow wrote a legend in one turn.",
+      "indexClue": "Let a veteran Cho-Ko-Nu score two kills in one turn",
+      "clue": "Let a Cho-Ko-Nu with four promotions\nkill two major-civilization foes in one turn and survive.",
+      "condition": "Emperor difficulty or higher; start with at least 4 AI opponents. As China, a Cho-Ko-Nu with at least 4 combat-earned promotions must actively attack and kill 2 different military units of major civilizations during the same turn of your own, and survive to turn end; free promotions and Barbarians do not count."
+    },
+    "N35": {
+      "name": "Persia's Long Day",
+      "summary": "As Persia, during one uninterrupted Golden Age, capture 4 different cities in battle whose founders include at least 2 other major civilizations. Extending the Golden Age counts; the count resets if it ends.",
+      "honor": "The long day of a Golden Age witnessed a campaign across nations.",
+      "indexClue": "Take four cities in Persia's long day",
+      "clue": "Let Persia's Golden Age witness\na four-city campaign across two civilizations.",
+      "condition": "Emperor difficulty or higher; start with at least 4 AI opponents. As Persia, during one uninterrupted Golden Age, capture 4 different cities in battle whose founders include at least 2 other major civilizations. Extending the Golden Age counts; the count resets if it ends."
+    },
+    "N36": {
+      "name": "A Small Nation's Triumph",
+      "summary": "Win a victory other than Time without ever owning more than 3 cities at once or capturing in battle a city founded by another major civilization during the entire game.",
+      "honor": "A small nation has room for a great victory.",
+      "indexClue": "Triumph with at most three cities",
+      "clue": "Own no more than three cities; take none in battle.\nWin a victory other than Time.",
+      "condition": "Emperor difficulty or higher; start with at least 4 AI opponents. Win a victory other than Time without ever owning more than 3 cities at once or capturing in battle a city founded by another major civilization during the entire game."
+    },
+    "N37": {
+      "name": "Victory against the Gods",
+      "summary": "Win a victory other than Time; Scientific, Cultural, Domination and Diplomatic victories all count.",
+      "honor": "From the hardest beginning, you found your way to victory.",
+      "indexClue": "Defeat your rivals on Deity",
+      "clue": "Begin on Deity difficulty\nand win a victory other than Time.",
+      "condition": "Deity difficulty or higher; start with at least 4 AI opponents. Win a victory other than Time; Scientific, Cultural, Domination and Diplomatic victories all count."
+    },
+    "N38": {
+      "name": "One City among the Stars",
+      "summary": "Enable One City Challenge and win a Scientific victory without ever owning more than 1 city at once during the entire game; even briefly acquiring a second city disqualifies the game.",
+      "honor": "One city sent its banner to the stars.",
+      "indexClue": "Reach the stars in One City Challenge",
+      "clue": "In One City Challenge,\nlet your only city win a Scientific victory.",
+      "condition": "Emperor difficulty or higher; start with at least 4 AI opponents. Enable One City Challenge and win a Scientific victory without ever owning more than 1 city at once during the entire game; even briefly acquiring a second city disqualifies the game."
+    },
+    "N39": {
+      "name": "Culture without Wonders",
+      "summary": "Win a Cultural victory without ever owning any World Wonder throughout the entire game, including wonders in conquered or acquired cities; National Wonders are unrestricted.",
+      "honor": "Even without World Wonders, your civilization is remembered.",
+      "indexClue": "Win through culture without owning World Wonders",
+      "clue": "Never own a single World Wonder.\nLet culture itself carry you to victory.",
+      "condition": "Emperor difficulty or higher; start with at least 4 AI opponents. Win a Cultural victory without ever owning any World Wonder throughout the entire game, including wonders in conquered or acquired cities; National Wonders are unrestricted."
+    },
+    "N40": {
+      "name": "The Complete Chronicle",
+      "summary": "Complete the other 39 achievements in this preview catalog.",
+      "honor": "Every road has left a chapter in your civilization.",
+      "indexClue": "Complete the other thirty-nine achievements",
+      "clue": "Travel the other thirty-nine roads\nand write the final page.",
+      "condition": "Complete the other 39 achievements in this preview catalog."
+    }
+  }
+}

@@ -1,27 +1,38 @@
 ---
-title: Bowman
-description: Bowman — stats, abilities and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Units","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/"},{"@type":"ListItem","position":4,"name":"Bowman","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/bowman/"}]}'
+{
+  "title": "Bowman",
+  "description": "Bowman: base values, rules and related units in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Bowman
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/unit/bowman.png" alt="Bowman" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
 | Type | Archery |
 | Movement | 2 |
 | Strength | 7 |
-| Ranged Strength | 9 |
-| Cost | 40 |
-| Required Tech | Archery |
-| Obsolete Tech | Construction |
-| Upgrades To | Composite Bowman |
-| Replaces | Archer |
-| Unique To | Babylon |
+| Ranged strength | 9 |
+| Base cost | 40 |
+| Required technology | [Archery](/Unciv-Wiki/database/technologies/archery/) |
+| Obsolete technology | [Construction](/Unciv-Wiki/database/technologies/construction/) |
+| Upgrades to | [Composite Bowman](/Unciv-Wiki/database/units/composite-bowman/) |
+| Replaces | [Archer](/Unciv-Wiki/database/units/archer/) |
+| Unique to | [Babylon](/Unciv-Wiki/database/civilizations/babylon/) |
 
+## Match and mechanics guides
+
+- [Babylon: early science](/Unciv-Wiki/strategies/babylon/)
+- [Terrain and promotions](/Unciv-Wiki/mechanics/combat-promotions/)
 

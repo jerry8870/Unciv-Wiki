@@ -1,0 +1,78 @@
+{
+  "date": "2026-09-12",
+  "method": "CUA browser navigation, DOM image/layout checks and screenshot inspection; no game runtime or real match screenshots.",
+  "checks": [
+    {
+      "route": "zh/strategies/korea/",
+      "viewport": [
+        1280,
+        900
+      ],
+      "theme": "light",
+      "figures": 2,
+      "imagesLoaded": 6,
+      "documentWidth": 1280,
+      "result": "Civilization icon and both original pixel units visible; three-column cards readable."
+    },
+    {
+      "route": "zh/strategies/korea/",
+      "viewport": [
+        390,
+        844
+      ],
+      "theme": "dark",
+      "documentWidth": 390,
+      "figureWidths": [
+        356,
+        356
+      ],
+      "figureScrollWidths": [
+        356,
+        356
+      ],
+      "result": "Cards stack with icon left and readable text right; no horizontal overflow."
+    },
+    {
+      "route": "zh/mechanics/resources-improvements/",
+      "viewport": [
+        390,
+        844
+      ],
+      "theme": "dark",
+      "documentWidth": 390,
+      "result": "Farm, Hill and Academy PNGs load; numeric captions readable, figure width356."
+    },
+    {
+      "route": "zh/mechanics/combat-promotions/",
+      "viewport": [
+        390,
+        844
+      ],
+      "theme": "dark",
+      "documentWidth": 390,
+      "boardWidth": 327,
+      "boardScrollWidth": 327,
+      "allBoardImagesLoaded": true,
+      "result": "Original terrain and unit layers render; role labels and river penalty note readable."
+    },
+    {
+      "route": "strategies/science-victory/",
+      "viewport": [
+        390,
+        844
+      ],
+      "theme": "dark",
+      "documentWidth": 390,
+      "figureWidth": 356,
+      "figureScrollWidth": 356,
+      "quantities": [
+        "× 3",
+        "× 1",
+        "× 1",
+        "× 1"
+      ],
+      "allPartImagesLoaded": true,
+      "result": "English two-column part cards retain quantities and assembly captions."
+    }
+  ]
+}

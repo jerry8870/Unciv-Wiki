@@ -1,24 +1,31 @@
 ---
-title: 大军事家
-description: 大军事家——属性、能力与科技需求。
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/zh/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/"},{"@type":"ListItem","position":3,"name":"单位","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/units/"},{"@type":"ListItem","position":4,"name":"大军事家","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/units/great-general/"}]}'
+{
+  "title": "大军事家",
+  "description": "大军事家：4.21.20（1293）单位基础属性、规则和关联条目。",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# 大军事家
 
-## 属性
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/unit/great-general.png" alt="大军事家" width="80" height="80" loading="lazy" decoding="async" /></span>
 
-| 属性 | 数值 |
+[图标来源与署名](/Unciv-Wiki/zh/credits/)
+
+数值为 **Gods & Kings 规则集基础数值**，不等于每局最终价格。速度、难度、城市数量及规则效果等可能修正花费。 [花费说明](/Unciv-Wiki/zh/mechanics/).
+
+| 属性 | 值 |
 | --- | --- |
-| 类型 | Civilian |
+| 类型 | 平民 |
 | 移动力 | 2 |
 
-## 能力
+## 规则与效果
 
-- 在+15格内军事 陆地单位2%战斗力
+- 在2格内军事 陆地单位+15%战斗力
 - 通过消耗此单位可立即建造军事要塞地块改良
 - 令陆地单位可通过战斗获得
 - 是一般类伟人的一部分
@@ -27,4 +34,7 @@ head:
 - 不可建造或训练
 - 不可捕获
 
+## 解锁与关联
+
+- [可汗](/Unciv-Wiki/zh/database/units/khan/)
 

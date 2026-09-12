@@ -1,28 +1,37 @@
 ---
-title: Colossus
-description: Colossus — cost, effects and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Buildings","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/"},{"@type":"ListItem","position":4,"name":"Colossus","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/colossus/"}]}'
+{
+  "title": "Colossus",
+  "description": "Colossus: base values, rules and related buildings in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Colossus
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/building/colossus.png" alt="Colossus" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
-| Cost | 185 |
-| Required Tech | Iron Working |
+| Type | World wonder |
+| Base cost | 185 |
+| Required technology | [Iron Working](/Unciv-Wiki/database/technologies/iron-working/) |
 | Gold | 5 |
 | Culture | 1 |
 
-## Effects
+Explicit source value (including zero).
 
-- `Must be next to [Coast]`
-- `[+1 Gold] from [Water] tiles [in this city]`
+## Rules and effects
 
-> 'Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.' - William Shakespeare, Julius Caesar
+- Must be next to [Coast]
+- [+1 Gold] from [Water] tiles [in this city]
 
+> &#x27;Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.&#x27; - William Shakespeare, Julius Caesar
 

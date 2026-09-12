@@ -1,32 +1,43 @@
 ---
-title: Fighter
-description: Fighter — stats, abilities and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Units","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/"},{"@type":"ListItem","position":4,"name":"Fighter","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/fighter/"}]}'
+{
+  "title": "Fighter",
+  "description": "Fighter: base values, rules and related units in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Fighter
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/unit/fighter.png" alt="Fighter" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
 | Type | Fighter |
 | Movement | 1 |
 | Strength | 45 |
-| Ranged Strength | 45 |
+| Ranged strength | 45 |
 | Range | 8 |
-| Cost | 375 |
-| Required Tech | Radar |
-| Upgrades To | Jet Fighter |
-| Required Resource | Oil |
+| Base cost | 375 |
+| Required technology | [Radar](/Unciv-Wiki/database/technologies/radar/) |
+| Upgrades to | [Jet Fighter](/Unciv-Wiki/database/units/jet-fighter/) |
+| Required resource | Oil |
 
-## Abilities
+## Rules and effects
 
-- `[100]% chance to intercept air attacks`
-- `[+150]% Strength <vs [Bomber] units>`
-- `[+150]% Strength <vs [Helicopter] units>`
+- [100]% chance to intercept air attacks
+- [+150]% Strength &lt;vs [Bomber] units&gt;
+- [+150]% Strength &lt;vs [Helicopter] units&gt;
 
+## Unlocks and related entries
+
+- [Triplane](/Unciv-Wiki/database/units/triplane/)
+- [Zero](/Unciv-Wiki/database/units/zero/)
 

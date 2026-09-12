@@ -1,0 +1,22 @@
+---
+import Default from '@astrojs/starlight/components/MarkdownContent.astro';
+import LanguageSelect from '@astrojs/starlight/components/LanguageSelect.astro';
+import ThemeSelect from '@astrojs/starlight/components/ThemeSelect.astro';
+import { localUrl } from '../site';
+const { entry, locale } = Astro.locals.starlightRoute;
+const zh = locale === 'zh';
+---
+{entry.data.template === 'splash' && <div class="mobile-splash-preferences"><ThemeSelect /><LanguageSelect /></div>}
+{entry.data.ruleset && <p class="version-note">{zh ? '规则集' : 'Ruleset'}: {entry.data.ruleset} · <a href={localUrl('about/', zh)}>{zh ? '来源与验证边界' : 'Sources and verification'}</a></p>}
+<Default><slot /></Default>
+<script>
+  document.querySelectorAll('.sl-markdown-content table').forEach((table) => {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'table-scroll';
+    wrapper.tabIndex = 0;
+    wrapper.setAttribute('role', 'region');
+    wrapper.setAttribute('aria-label', document.documentElement.lang.startsWith('zh') ? '数据表，可横向滚动' : 'Data table, scroll horizontally');
+    table.before(wrapper);
+    wrapper.append(table);
+  });
+</script>

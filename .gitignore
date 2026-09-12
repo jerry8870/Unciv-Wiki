@@ -16,3 +16,7 @@ pnpm-debug.log*
 # macOS
 .DS_Store
 .workbuddy/
+
+# Local Python cache
+__pycache__/
+*.pyc

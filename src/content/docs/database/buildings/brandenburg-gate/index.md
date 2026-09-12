@@ -1,26 +1,36 @@
 ---
-title: Brandenburg Gate
-description: Brandenburg Gate — cost, effects and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Buildings","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/"},{"@type":"ListItem","position":4,"name":"Brandenburg Gate","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/brandenburg-gate/"}]}'
+{
+  "title": "Brandenburg Gate",
+  "description": "Brandenburg Gate: base values, rules and related buildings in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Brandenburg Gate
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/building/brandenburg-gate.png" alt="Brandenburg Gate" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
-| Required Tech | Military Science |
+| Type | World wonder |
+| Base cost | 750 |
+| Required technology | [Military Science](/Unciv-Wiki/database/technologies/military-science/) |
 | Culture | 3 |
 
-## Effects
+Inherited from the required technology column.
 
-- `Free [Great General] appears`
-- `New [Military] units start with [15] XP [in this city]`
+## Rules and effects
 
-> 'Pale Death beats equally at the poor man's gate and at the palaces of kings.' - Horace
+- Free [Great General] appears
+- New [Military] units start with [15] XP [in this city]
 
+> &#x27;Pale Death beats equally at the poor man&#x27;s gate and at the palaces of kings.&#x27; - Horace
 

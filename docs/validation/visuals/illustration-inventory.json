@@ -1,0 +1,254 @@
+[
+  {
+    "path": "src/content/docs/zh/strategies/opening/index.md",
+    "figures": 2,
+    "images": 10,
+    "sha256": "12f6bff4c25ae0b484d6a09c9681762575b6470203a63ae08865da2d9eadaa17",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/strategies/opening/index.md",
+    "figures": 2,
+    "images": 10,
+    "sha256": "a677b99e70db9c8957bb047d491824068b009366f91919a5409bd3e3b654af62",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/zh/strategies/expansion-economy/index.md",
+    "figures": 2,
+    "images": 6,
+    "sha256": "9746a29e265c3406858fa221a978947447b14e724c58a7a04e5c1a11382bd21c",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/strategies/expansion-economy/index.md",
+    "figures": 2,
+    "images": 6,
+    "sha256": "e66a8eff70110bb03161bb02987c0e67be1ab18a1a3e2537898dbfbce588318f",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/zh/strategies/combat-siege/index.md",
+    "figures": 2,
+    "images": 8,
+    "sha256": "25810bf1033453d3e06855a7f6578a7b3c65968585f6cde6beb4e76b9bfd112f",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/strategies/combat-siege/index.md",
+    "figures": 2,
+    "images": 8,
+    "sha256": "7ca8a5fc4ecb56f6cda23d70c362abf52e6ad77e45c368766dc327e9975e9c11",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/zh/strategies/science-victory/index.md",
+    "figures": 2,
+    "images": 7,
+    "sha256": "c962dbf02c44f1818136865a07084f64c08d253612ff54fdbd272487b9539f66",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/strategies/science-victory/index.md",
+    "figures": 2,
+    "images": 7,
+    "sha256": "98efc898c1a9e70c96642c1da67cf129e13d1412e4c8b0d58f5ab1b175289e96",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/zh/strategies/culture-victory/index.md",
+    "figures": 1,
+    "images": 3,
+    "sha256": "71af1bc129f14aef3e07cd80ec277712dee7878e45c563d85fd43900c61de770",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/strategies/culture-victory/index.md",
+    "figures": 1,
+    "images": 3,
+    "sha256": "be43d7ad1961a58372039ac34a00cf57d440ad0c31ededd13cf0d86169e789bb",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/zh/strategies/domination-victory/index.md",
+    "figures": 1,
+    "images": 3,
+    "sha256": "279889ff815ed7a3c8a95f4eb6711f1e40d748c12588c6fdf03f6688085f8574",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/strategies/domination-victory/index.md",
+    "figures": 1,
+    "images": 3,
+    "sha256": "d25ed5bc5da52772caa70cefeab07bc70b9f9460ae0431411e20831411e50b48",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/zh/strategies/diplomatic-victory/index.md",
+    "figures": 1,
+    "images": 3,
+    "sha256": "f30e95aeaa6caa565d0b9383e09975a1edbd0b646b318936fe749b6fab272e4e",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/strategies/diplomatic-victory/index.md",
+    "figures": 1,
+    "images": 3,
+    "sha256": "d710cbd6b29525d2c9f870f925409c7c2a42bb55c7b242a32c4fd9360d56bdc4",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/zh/strategies/religion/index.md",
+    "figures": 1,
+    "images": 3,
+    "sha256": "89aa92ccae96280f8b56695978e2e1385e25fe7698953ba8cb1dd9be2241a554",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/strategies/religion/index.md",
+    "figures": 1,
+    "images": 3,
+    "sha256": "791e8ed0c3645af29bec99ee5b3be025f027488b54915bc94da2f475cf4a1a5b",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/zh/strategies/babylon/index.md",
+    "figures": 2,
+    "images": 6,
+    "sha256": "a178d4a42e9030535502c702a6f58cf664391b5cc21ac9be957578430de42ee9",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/strategies/babylon/index.md",
+    "figures": 2,
+    "images": 6,
+    "sha256": "8834267954af6ac5011d9dcc7f462099f9ce8fd52932afab54289686acd74a71",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/zh/strategies/korea/index.md",
+    "figures": 2,
+    "images": 6,
+    "sha256": "0f37a1fecd5de72bbb08482d0ec0c922b110b8df780a1580016e2debf3f7789b",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/strategies/korea/index.md",
+    "figures": 2,
+    "images": 6,
+    "sha256": "088bef43e523d500cdf2fc0cdc73b946cc17d64f4b06ae7cf7151e933ccca3ce",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/zh/strategies/rome/index.md",
+    "figures": 2,
+    "images": 8,
+    "sha256": "b4044fbe97356c1f0b0d1e22582f20240aad2a31c6c04a7f3d9ae6c3629058e7",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/strategies/rome/index.md",
+    "figures": 2,
+    "images": 8,
+    "sha256": "9545ab495900609f4e923efa7a72e3152c759b589e3f7bd3c2aa31ce095348cf",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/zh/strategies/greece/index.md",
+    "figures": 1,
+    "images": 3,
+    "sha256": "35404e771efbcf77f0f498b6104ce0a12ad1d655798075aa0b63130da1a2f0cc",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/strategies/greece/index.md",
+    "figures": 1,
+    "images": 3,
+    "sha256": "07ecead1e06996bd4771b5e6ca19b17144dfb3ed90c0985c1865ee434a8450c0",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/zh/mechanics/policies/index.md",
+    "figures": 2,
+    "images": 6,
+    "sha256": "dfa998fe9448d8bdfc81f63ceae4b714064f17601b12ea1f4df4f5840c38ee6e",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/mechanics/policies/index.md",
+    "figures": 2,
+    "images": 6,
+    "sha256": "b72e4c2e9ef8ffc22a7b7a5edaa6118a8c64e30acb0bf915d7b31db13eb9f000",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/zh/mechanics/resources-improvements/index.md",
+    "figures": 2,
+    "images": 6,
+    "sha256": "37f5133ae4c41f95e3c8c5d2716c165dbd0d525d406b262110d3b657af484274",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/mechanics/resources-improvements/index.md",
+    "figures": 2,
+    "images": 6,
+    "sha256": "8a7f473bc3c5e479608484ed2a68eccef6122e851920ee5a98179410402d3073",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/zh/mechanics/combat-promotions/index.md",
+    "figures": 2,
+    "images": 8,
+    "sha256": "b559a507308364c52c7f61821816652d82d4f0ac4d53a0b64d3fe593bfd2d64a",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/mechanics/combat-promotions/index.md",
+    "figures": 2,
+    "images": 8,
+    "sha256": "d1d79bb3a74fc53f7bf31b847182b79c167287de735637b9755eee3cf12c3ff8",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/zh/mechanics/religion-beliefs/index.md",
+    "figures": 1,
+    "images": 3,
+    "sha256": "f2e26f59ebbf95a1303aeb42dc6c60b3e4001db12210c94280049b65e0c3ed76",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/mechanics/religion-beliefs/index.md",
+    "figures": 1,
+    "images": 3,
+    "sha256": "51bea5f35c81d923704d23e5e0272b37d3fe1d7abbdf91232d1715b4927f97ed",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/zh/getting-started/index.md",
+    "figures": 2,
+    "images": 6,
+    "sha256": "78466b8854d384c5a4591584000594e2da698d3af1d2b95f29973222dfc364d6",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/getting-started/index.md",
+    "figures": 2,
+    "images": 6,
+    "sha256": "0041d2400dc3fb1bca568880386f1a6e50fc54f36f944cfa3bd2756ff33a74ca",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/zh/guides/achievement-troubleshooting/index.md",
+    "figures": 1,
+    "images": 3,
+    "sha256": "a573346b645e607dc52647a2ab25aa5d9efa8bac6f3794c6d763aa4b74a4a294",
+    "originalTextAndH2Preserved": true
+  },
+  {
+    "path": "src/content/docs/guides/achievement-troubleshooting/index.md",
+    "figures": 1,
+    "images": 3,
+    "sha256": "ed505ef46e9f80277aee458ec0069cf30aa3dc6963de534009778f380d6d1a6b",
+    "originalTextAndH2Preserved": true
+  }
+]

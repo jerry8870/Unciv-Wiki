@@ -1,0 +1,162 @@
+[
+  {
+    "path": "src/content/docs/strategies/babylon/index.md",
+    "title": "Babylon: turn the early Great Scientist into a lasting lead",
+    "language": "en",
+    "hanCharacters": 0,
+    "englishWords": 1006,
+    "teachingSituations": 2,
+    "h2Count": 8,
+    "sha256": "b5db6b46886f55d041a3152cde8bf5c2040de3cea609e89b92ebb72db99e355b"
+  },
+  {
+    "path": "src/content/docs/strategies/korea/index.md",
+    "title": "Korea: feed specialists and schedule capital science buildings",
+    "language": "en",
+    "hanCharacters": 0,
+    "englishWords": 929,
+    "teachingSituations": 2,
+    "h2Count": 7,
+    "sha256": "2c2746154a9dad0adf8fbb1e91080d553c19976cc66bd05f7d4932418754256e"
+  },
+  {
+    "path": "src/content/docs/strategies/rome/index.md",
+    "title": "Rome: coordinate capital construction and a limited military window",
+    "language": "en",
+    "hanCharacters": 0,
+    "englishWords": 974,
+    "teachingSituations": 2,
+    "h2Count": 8,
+    "sha256": "a0acec2c9bb6c55078a5ca4204995f263bb7503408e696f6f6688e59e38e3a77"
+  },
+  {
+    "path": "src/content/docs/strategies/greece/index.md",
+    "title": "Greece: keep the city-state network intact until the vote",
+    "language": "en",
+    "hanCharacters": 0,
+    "englishWords": 1013,
+    "teachingSituations": 2,
+    "h2Count": 8,
+    "sha256": "1277ae382422319816d796ac9a01ed6fdf8c2ddd019f2613268ae38199ddb277"
+  },
+  {
+    "path": "src/content/docs/mechanics/policies/index.md",
+    "title": "Policy planning: spend culture on the current bottleneck",
+    "language": "en",
+    "hanCharacters": 0,
+    "englishWords": 958,
+    "teachingSituations": 2,
+    "h2Count": 6,
+    "sha256": "0126ae9286911cb1775550ab92b010f29d5baad92ddb34def106ba0e958a0904"
+  },
+  {
+    "path": "src/content/docs/mechanics/resources-improvements/index.md",
+    "title": "Citizens, resources and improvements: connect, then work",
+    "language": "en",
+    "hanCharacters": 0,
+    "englishWords": 983,
+    "teachingSituations": 2,
+    "h2Count": 6,
+    "sha256": "d3eea85dab78ae09813ec65f8acecba86e0e800788a5a82da1e2876a033c9054"
+  },
+  {
+    "path": "src/content/docs/mechanics/combat-promotions/index.md",
+    "title": "Terrain, combat modifiers and promotions: read the preview first",
+    "language": "en",
+    "hanCharacters": 0,
+    "englishWords": 943,
+    "teachingSituations": 2,
+    "h2Count": 5,
+    "sha256": "e4162f5440a5a8cc3daace5cfa3d190d2c45140d7e593418ca64fe5b017a92cd"
+  },
+  {
+    "path": "src/content/docs/mechanics/religion-beliefs/index.md",
+    "title": "Belief effects and religious returns: count beneficiaries first",
+    "language": "en",
+    "hanCharacters": 0,
+    "englishWords": 1015,
+    "teachingSituations": 2,
+    "h2Count": 6,
+    "sha256": "cd9aab6280050c891526188d1a35d81cca071312247bcbee1f856470ad5153de"
+  },
+  {
+    "path": "src/content/docs/zh/strategies/babylon/index.md",
+    "title": "巴比伦：把早期大科学家变成持续优势",
+    "language": "zh",
+    "hanCharacters": 1905,
+    "englishWords": 2,
+    "teachingSituations": 2,
+    "h2Count": 8,
+    "sha256": "02c6d6629b3af60be1e15d235c9c902478ca6056f8e9b5efe263ae555e915407"
+  },
+  {
+    "path": "src/content/docs/zh/strategies/korea/index.md",
+    "title": "朝鲜：用食物支撑专家，用首都建设推动科研",
+    "language": "zh",
+    "hanCharacters": 1778,
+    "englishWords": 2,
+    "teachingSituations": 2,
+    "h2Count": 7,
+    "sha256": "0f6da9cb8f7449e54786bbc7eee2c94960063beb8b39d2a5ee79d1d5ff58e397"
+  },
+  {
+    "path": "src/content/docs/zh/strategies/rome/index.md",
+    "title": "罗马：首都带动扩张，军团抓住有限窗口",
+    "language": "zh",
+    "hanCharacters": 1843,
+    "englishWords": 2,
+    "teachingSituations": 2,
+    "h2Count": 8,
+    "sha256": "46d748ad2a4c774e046317c169aca3aa0823728bc11e38ba82363fdeaff16649"
+  },
+  {
+    "path": "src/content/docs/zh/strategies/greece/index.md",
+    "title": "希腊：把城邦关系维护到投票回合",
+    "language": "zh",
+    "hanCharacters": 1842,
+    "englishWords": 3,
+    "teachingSituations": 2,
+    "h2Count": 8,
+    "sha256": "9c64f438b4e9b2fa881e6cc6a55b433dd6d1aaf91d60a44f252a7c243ef639e1"
+  },
+  {
+    "path": "src/content/docs/zh/mechanics/policies/index.md",
+    "title": "政策选择与分支规划：把文化花在当前瓶颈上",
+    "language": "zh",
+    "hanCharacters": 1926,
+    "englishWords": 4,
+    "teachingSituations": 2,
+    "h2Count": 7,
+    "sha256": "b0946ff40c45280b8057ec5a90753d12d2248de45c46a0b32f9679060909ecbd"
+  },
+  {
+    "path": "src/content/docs/zh/mechanics/resources-improvements/index.md",
+    "title": "市民、资源与改良：先接入，再安排工作",
+    "language": "zh",
+    "hanCharacters": 1919,
+    "englishWords": 2,
+    "teachingSituations": 2,
+    "h2Count": 7,
+    "sha256": "072180dd2604289eeb90b12d675cc0fef9d9402fdcbced998ffc48212bcd28f2"
+  },
+  {
+    "path": "src/content/docs/zh/mechanics/combat-promotions/index.md",
+    "title": "地形、战斗修正与晋升：先读预览再出手",
+    "language": "zh",
+    "hanCharacters": 1729,
+    "englishWords": 22,
+    "teachingSituations": 2,
+    "h2Count": 6,
+    "sha256": "111890997c8c5be7c4f9e048c691cc35f746fc7e8e50c0553ce98689c5245d00"
+  },
+  {
+    "path": "src/content/docs/zh/mechanics/religion-beliefs/index.md",
+    "title": "信条效果与宗教收益：先数受益对象，再买传播",
+    "language": "zh",
+    "hanCharacters": 1993,
+    "englishWords": 2,
+    "teachingSituations": 2,
+    "h2Count": 7,
+    "sha256": "646f81f3d57e2a29e5e7df971eb113f4b94fbae8463d0343a18fc2d2175dd6cc"
+  }
+]

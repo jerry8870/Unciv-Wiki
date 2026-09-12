@@ -1,37 +1,47 @@
 ---
-title: Artillery
-description: Artillery — stats, abilities and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Units","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/"},{"@type":"ListItem","position":4,"name":"Artillery","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/artillery/"}]}'
+{
+  "title": "Artillery",
+  "description": "Artillery: base values, rules and related units in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Artillery
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/unit/artillery.png" alt="Artillery" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
 | Type | Siege |
 | Movement | 2 |
 | Strength | 21 |
-| Ranged Strength | 28 |
+| Ranged strength | 28 |
 | Range | 3 |
-| Cost | 320 |
-| Required Tech | Dynamite |
-| Upgrades To | Rocket Artillery |
+| Base cost | 320 |
+| Required technology | [Dynamite](/Unciv-Wiki/database/technologies/dynamite/) |
+| Upgrades to | [Rocket Artillery](/Unciv-Wiki/database/units/rocket-artillery/) |
 
-## Abilities
+## Rules and effects
 
-- `[+200]% Strength <vs cities> <when attacking>`
-- `No defensive terrain bonus`
-- `Must set up to ranged attack`
-- `[-1] Sight`
-- `Never appears as a Barbarian unit`
+- [+200]% Strength &lt;vs cities&gt; &lt;when attacking&gt;
+- No defensive terrain bonus
+- Must set up to ranged attack
+- [-1] Sight
+- Never appears as a Barbarian unit
 
 ## Promotions
 
 - Indirect Fire
 
+## Unlocks and related entries
+
+- [Cannon](/Unciv-Wiki/database/units/cannon/)
 

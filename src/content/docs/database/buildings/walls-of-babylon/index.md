@@ -1,26 +1,39 @@
 ---
-title: Walls of Babylon
-description: Walls of Babylon — cost, effects and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Buildings","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/"},{"@type":"ListItem","position":4,"name":"Walls of Babylon","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/walls-of-babylon/"}]}'
+{
+  "title": "Walls of Babylon",
+  "description": "Walls of Babylon: base values, rules and related buildings in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Walls of Babylon
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/building/walls-of-babylon.png" alt="Walls of Babylon" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
-| Cost | 65 |
-| Required Tech | Masonry |
-| Replaces | Walls |
-| Unique To | Babylon |
-| City Strength | 6 |
+| Type | Building |
+| Base cost | 65 |
+| Required technology | [Masonry](/Unciv-Wiki/database/technologies/masonry/) |
+| Replaces | [Walls](/Unciv-Wiki/database/buildings/walls/) |
+| Unique to | [Babylon](/Unciv-Wiki/database/civilizations/babylon/) |
+| City strength | 6 |
 
-## Effects
+Explicit source value (including zero).
 
-- `Destroyed when the city is captured`
+## Rules and effects
 
+- Destroyed when the city is captured
+
+## Match and mechanics guides
+
+- [Babylon: early science](/Unciv-Wiki/strategies/babylon/)
 

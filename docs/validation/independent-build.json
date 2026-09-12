@@ -1,0 +1,14 @@
+{
+  "workspace": "/var/folders/mx/l8rr8w3n6mv3xpx4pq8y07rw0000gn/T/unciv-wiki-independent-mcwuoznx",
+  "copiedDirectories": [
+    "src",
+    "public",
+    "scripts",
+    "data"
+  ],
+  "gameRepositoriesIncluded": false,
+  "privateCredentialsIncluded": false,
+  "install": "pnpm install --frozen-lockfile --offline",
+  "validation": "pnpm validate",
+  "result": "PASS"
+}

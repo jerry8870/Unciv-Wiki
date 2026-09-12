@@ -7,9 +7,15 @@
     "dev": "astro dev",
     "build": "astro build && node scripts/postbuild-sitemap.mjs",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "generate": "python3 scripts/generate.py",
+    "check:data": "python3 scripts/generate.py --check && python3 scripts/test_pipeline.py",
+    "check:analytics": "node scripts/test-analytics.mjs",
+    "check:site": "python3 scripts/check-site.py",
+    "validate": "pnpm check:data && pnpm check:analytics && pnpm build && pnpm check:site"
   },
   "dependencies": {
+    "@astrojs/markdown-remark": "^7.3.0",
     "@astrojs/starlight": "^0.42.0",
     "astro": "^7.3.2",
     "sharp": "^0.35.4"

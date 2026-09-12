@@ -1,0 +1,64 @@
+---
+{
+  "title": "Unciv 中文指南与数据库",
+  "description": "详细对局攻略、四种胜利路线、Gods & Kings 数据查询、1293 成就排查与 iOS 安装。",
+  "template": "splash",
+  "lastUpdated": "2026-09-12",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "hero": {
+    "title": "Unciv Wiki",
+    "tagline": "从第一座城市到属于你的文明。新手指南、规则数据与 iOS 社区移植版。",
+    "actions": [
+      {
+        "text": "开始第一局",
+        "link": "/zh/getting-started/",
+        "icon": "right-arrow"
+      },
+      {
+        "text": "浏览数据库",
+        "link": "/zh/database/",
+        "variant": "minimal"
+      },
+      {
+        "text": "加入 TestFlight 测试",
+        "link": "https://testflight.apple.com/join/XSgMMQjt",
+        "variant": "secondary",
+        "attrs": {
+          "id": "tf-home-zh"
+        }
+      }
+    ]
+  }
+}
+---
+
+
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { localUrl } from '../../../site';
+
+## 探索 Unciv
+
+<CardGrid>
+  <LinkCard title="新手上路" description="从建城、探索和科研开始。" href={localUrl("getting-started/", true)} />
+  <LinkCard title="数据百科" description="查看文明、单位、建筑与科技关联。" href={localUrl("database/", true)} />
+  <LinkCard title="花费机制" description="理解继承花费与对局修正。" href={localUrl("mechanics/", true)} />
+  <LinkCard title="成就目录" description="1293 V3：40 项本机成就、600 分。" href={localUrl("achievements/", true)} />
+  <LinkCard title="iOS 安装" description="设备要求、TestFlight 步骤与版本说明。" href={localUrl("ios/", true)} />
+  <LinkCard title="详细对局攻略" description="开局、经济、攻城、四种胜利和宗教。" href={localUrl("strategies/", true)} />
+</CardGrid>
+
+## 精选指南
+
+<CardGrid>
+  <LinkCard title="新手第一局指南" description="逐步建立可控的开局，不依赖固定最优顺序。" href={localUrl("getting-started/", true)} />
+  <LinkCard title="前 50 回合怎么打" description="按资源与威胁调整建造、科研和第二城。" href={localUrl("strategies/opening/", true)} />
+  <LinkCard title="科技胜利完整路线" description="从人口科研到六个部件在首都组装。" href={localUrl("strategies/science-victory/", true)} />
+  <LinkCard title="成就未解锁排查" description="从资格到 N08、N11、N32 的具体条件。" href={localUrl("guides/achievement-troubleshooting/", true)} />
+</CardGrid>
+
+内容基线为 **4.21.20（1293）**。TestFlight 当前开放情况及可安装构建以邀请页面为准；本站尚未确认 1293 已向测试者开放。

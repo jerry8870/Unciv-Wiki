@@ -1,25 +1,41 @@
 ---
-title: Atomic Theory
-description: Atomic Theory — era, cost and what it unlocks in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Technologies","item":"https://jerry8870.github.io/Unciv-Wiki/database/technologies/"},{"@type":"ListItem","position":4,"name":"Atomic Theory","item":"https://jerry8870.github.io/Unciv-Wiki/database/technologies/atomic-theory/"}]}'
+{
+  "title": "Atomic Theory",
+  "description": "Atomic Theory: base values, rules and related technologies in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Atomic Theory
 
-## Info
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/technology/atomic-theory.png" alt="Atomic Theory" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
+| Base cost | 5100 |
 | Era | Atomic era |
-| Prerequisites | Plastics, Electronics |
 
-## Effects
+Inherited from the required technology column.
 
-- `[+100]% weight to this choice for AI decisions`
+Prerequisites: [Plastics](/Unciv-Wiki/database/technologies/plastics/), [Electronics](/Unciv-Wiki/database/technologies/electronics/)
 
-> 'The unleashed power of the atom has changed everything save our modes of thinking, and we thus drift toward unparalleled catastrophes.' - Albert Einstein
+## Rules and effects
 
+- [+100]% weight to this choice for AI decisions
+
+## Unlocks and related entries
+
+- [Manhattan Project](/Unciv-Wiki/database/buildings/manhattan-project/)
+- [Ecology](/Unciv-Wiki/database/technologies/ecology/)
+- [Nuclear Fission](/Unciv-Wiki/database/technologies/nuclear-fission/)
+
+> &#x27;The unleashed power of the atom has changed everything save our modes of thinking, and we thus drift toward unparalleled catastrophes.&#x27; - Albert Einstein
 

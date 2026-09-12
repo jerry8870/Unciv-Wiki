@@ -1,32 +1,38 @@
 ---
-title: SS Booster
-description: SS Booster — stats, abilities and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Units","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/"},{"@type":"ListItem","position":4,"name":"SS Booster","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/ss-booster/"}]}'
+{
+  "title": "SS Booster",
+  "description": "SS Booster: base values, rules and related units in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# SS Booster
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/unit/ss-booster.png" alt="SS Booster" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
 | Type | Civilian |
 | Movement | 2 |
-| Cost | 750 |
-| Required Tech | Advanced Ballistics |
-| Required Resource | Aluminum |
+| Base cost | 750 |
+| Required technology | [Advanced Ballistics](/Unciv-Wiki/database/technologies/advanced-ballistics/) |
+| Required resource | Aluminum |
 
-## Abilities
+## Rules and effects
 
-- `Spaceship part`
-- `Cannot be purchased`
-- `Only available <if [Apollo Program] is constructed>`
-- `Uncapturable`
-- `Can be added to [The Spaceship] in the Capital`
-- `Limited to [3] per Civilization`
-- `Only available <when [Scientific] Victory is enabled>`
-
+- Spaceship part
+- Cannot be purchased
+- Only available &lt;if [Apollo Program] is constructed&gt;
+- Uncapturable
+- Can be added to [The Spaceship] in the Capital
+- Limited to [3] per Civilization
+- Only available &lt;when [Scientific] Victory is enabled&gt;
 

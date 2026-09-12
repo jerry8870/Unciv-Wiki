@@ -1,25 +1,35 @@
 ---
-title: Machine Gun
-description: Machine Gun — stats, abilities and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Units","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/"},{"@type":"ListItem","position":4,"name":"Machine Gun","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/machine-gun/"}]}'
+{
+  "title": "Machine Gun",
+  "description": "Machine Gun: base values, rules and related units in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Machine Gun
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/unit/machine-gun.png" alt="Machine Gun" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
 | Type | Ranged Gunpowder |
 | Movement | 2 |
 | Strength | 60 |
-| Ranged Strength | 60 |
+| Ranged strength | 60 |
 | Range | 1 |
-| Cost | 350 |
-| Required Tech | Ballistics |
-| Upgrades To | Mechanized Infantry |
+| Base cost | 350 |
+| Required technology | [Ballistics](/Unciv-Wiki/database/technologies/ballistics/) |
+| Upgrades to | [Mechanized Infantry](/Unciv-Wiki/database/units/mechanized-infantry/) |
 
+## Unlocks and related entries
+
+- [Gatling Gun](/Unciv-Wiki/database/units/gatling-gun/)
 

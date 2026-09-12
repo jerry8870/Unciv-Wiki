@@ -1,38 +1,44 @@
 ---
-title: Conquistador
-description: Conquistador — stats, abilities and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Units","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/"},{"@type":"ListItem","position":4,"name":"Conquistador","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/conquistador/"}]}'
+{
+  "title": "Conquistador",
+  "description": "Conquistador: base values, rules and related units in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Conquistador
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/unit/conquistador.png" alt="Conquistador" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
 | Type | Mounted |
 | Movement | 4 |
 | Strength | 20 |
-| Cost | 135 |
-| Required Tech | Chivalry |
-| Obsolete Tech | Military Science |
-| Upgrades To | Cavalry |
-| Required Resource | Horses |
-| Replaces | Knight |
-| Unique To | Spain |
+| Base cost | 135 |
+| Required technology | [Chivalry](/Unciv-Wiki/database/technologies/chivalry/) |
+| Obsolete technology | [Military Science](/Unciv-Wiki/database/technologies/military-science/) |
+| Upgrades to | [Cavalry](/Unciv-Wiki/database/units/cavalry/) |
+| Required resource | Horses |
+| Replaces | [Knight](/Unciv-Wiki/database/units/knight/) |
+| Unique to | [Spain](/Unciv-Wiki/database/civilizations/spain/) |
 
-## Abilities
+## Rules and effects
 
-- `Can move after attacking`
-- `No defensive terrain bonus`
-- `Founds a new city <on foreign continents>`
-- `[+2] Sight`
+- Can move after attacking
+- No defensive terrain bonus
+- Founds a new city &lt;on foreign continents&gt;
+- [+2] Sight
 
 ## Promotions
 
 - [Conquistador] ability
-
 

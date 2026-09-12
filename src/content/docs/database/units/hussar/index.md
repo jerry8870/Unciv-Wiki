@@ -1,38 +1,44 @@
 ---
-title: Hussar
-description: Hussar — stats, abilities and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Units","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/"},{"@type":"ListItem","position":4,"name":"Hussar","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/hussar/"}]}'
+{
+  "title": "Hussar",
+  "description": "Hussar: base values, rules and related units in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Hussar
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/unit/hussar.png" alt="Hussar" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
 | Type | Mounted |
 | Movement | 5 |
 | Strength | 34 |
-| Cost | 225 |
-| Required Tech | Military Science |
-| Obsolete Tech | Combustion |
-| Upgrades To | Landship |
-| Required Resource | Horses |
-| Replaces | Cavalry |
-| Unique To | Austria |
+| Base cost | 225 |
+| Required technology | [Military Science](/Unciv-Wiki/database/technologies/military-science/) |
+| Obsolete technology | [Combustion](/Unciv-Wiki/database/technologies/combustion/) |
+| Upgrades to | [Landship](/Unciv-Wiki/database/units/landship/) |
+| Required resource | Horses |
+| Replaces | [Cavalry](/Unciv-Wiki/database/units/cavalry/) |
+| Unique to | [Austria](/Unciv-Wiki/database/civilizations/austria/) |
 
-## Abilities
+## Rules and effects
 
-- `Can move after attacking`
-- `No defensive terrain bonus`
-- `[-33]% Strength <vs cities> <when attacking>`
-- `[+1] Sight`
+- Can move after attacking
+- No defensive terrain bonus
+- [-33]% Strength &lt;vs cities&gt; &lt;when attacking&gt;
+- [+1] Sight
 
 ## Promotions
 
 - [Hussar] ability
-
 

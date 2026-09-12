@@ -1,26 +1,39 @@
 ---
-title: Austria
-description: Austria — leader, unique ability and start bias in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Civilizations","item":"https://jerry8870.github.io/Unciv-Wiki/database/civilizations/"},{"@type":"ListItem","position":4,"name":"Austria","item":"https://jerry8870.github.io/Unciv-Wiki/database/civilizations/austria/"}]}'
+{
+  "title": "Austria",
+  "description": "Austria: base values, rules and related civilizations in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Austria
 
-**Leader**: Maria Theresa
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/nation/austria.png" alt="Austria" width="80" height="80" loading="lazy" decoding="async" /></span>
 
-**Unique Ability**: Diplomatic Marriage
+[Icon sources and credits](/Unciv-Wiki/credits/)
 
-## Unique Abilities
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
-- `Can spend Gold to annex or puppet a City-State that has been your Ally for [5] turns`
+| Attribute | Value |
+| --- | --- |
+| Leader | Maria Theresa |
+| Unique ability | Diplomatic Marriage |
+| Preferred victory | Diplomatic |
 
-## Start Bias
+## Rules and effects
+
+- Can spend Gold to annex or puppet a City-State that has been your Ally for [5] turns
+
+## Starting bias
 
 - Hill
 
-**Preferred Victory**: Diplomatic
+## Unlocks and related entries
 
+- [Hussar](/Unciv-Wiki/database/units/hussar/)
+- [Coffee House](/Unciv-Wiki/database/buildings/coffee-house/)
 

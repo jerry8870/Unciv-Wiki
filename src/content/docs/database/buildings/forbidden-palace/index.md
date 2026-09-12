@@ -1,25 +1,35 @@
 ---
-title: Forbidden Palace
-description: Forbidden Palace — cost, effects and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Buildings","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/"},{"@type":"ListItem","position":4,"name":"Forbidden Palace","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/forbidden-palace/"}]}'
+{
+  "title": "Forbidden Palace",
+  "description": "Forbidden Palace: base values, rules and related buildings in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Forbidden Palace
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/building/forbidden-palace.png" alt="Forbidden Palace" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
-| Required Tech | Banking |
+| Type | World wonder |
+| Base cost | 500 |
+| Required technology | [Banking](/Unciv-Wiki/database/technologies/banking/) |
 | Culture | 1 |
 
-## Effects
+Inherited from the required technology column.
 
-- `[-10]% Unhappiness from [Population] [in all non-occupied cities]`
+## Rules and effects
 
-> 'Most of us can, as we choose, make of this world either a palace or a prison' - John Lubbock
+- [-10]% Unhappiness from [Population] [in all non-occupied cities]
 
+> &#x27;Most of us can, as we choose, make of this world either a palace or a prison&#x27; - John Lubbock
 

@@ -1,0 +1,5107 @@
+{
+  "Nations": [
+    {
+      "name": "Spectator"
+    },
+    {
+      "name": "Babylon",
+      "leaderName": "Nebuchadnezzar II",
+      "startBias": [
+        "Avoid [Tundra]"
+      ],
+      "preferredVictoryType": "Scientific",
+      "personality": "Nebuchadnezzar II",
+      "uniqueName": "Ingenuity",
+      "uniques": [
+        "Free [Great Scientist] appears <upon discovering [Writing] technology>",
+        "[Great Scientist] is earned [50]% faster"
+      ]
+    },
+    {
+      "name": "Greece",
+      "leaderName": "Alexander",
+      "startBias": [
+        "Coast"
+      ],
+      "preferredVictoryType": "Diplomatic",
+      "personality": "Alexander",
+      "uniqueName": "Hellenic League",
+      "uniques": [
+        "[-50]% City-State Influence degradation",
+        "City-State Influence recovers at twice the normal rate",
+        "City-State territory always counts as friendly territory"
+      ]
+    },
+    {
+      "name": "China",
+      "leaderName": "Wu Zetian",
+      "preferredVictoryType": "Scientific",
+      "personality": "Wu Zetian",
+      "uniqueName": "Art of War",
+      "uniques": [
+        "Great General provides double combat bonus",
+        "[Great General] is earned [50]% faster",
+        "[Great Admiral] is earned [50]% faster"
+      ]
+    },
+    {
+      "name": "Egypt",
+      "leaderName": "Ramesses II",
+      "startBias": [
+        "Avoid [Jungle]",
+        "Avoid [Forest]"
+      ],
+      "preferredVictoryType": "Cultural",
+      "personality": "Ramesses II",
+      "uniqueName": "Monument Builders",
+      "uniques": [
+        "[+20]% Production when constructing [All] wonders [in all cities]"
+      ]
+    },
+    {
+      "name": "England",
+      "leaderName": "Elizabeth",
+      "startBias": [
+        "Coast"
+      ],
+      "preferredVictoryType": "Diplomatic",
+      "personality": "Elizabeth",
+      "uniqueName": "Sun Never Sets",
+      "uniques": [
+        "[+2] Movement <for [Water] units>",
+        "Gain an extra spy <upon entering the [Renaissance era]>"
+      ]
+    },
+    {
+      "name": "France",
+      "leaderName": "Napoleon",
+      "preferredVictoryType": "Cultural",
+      "personality": "Napoleon",
+      "uniqueName": "Ancien Régime",
+      "uniques": [
+        "[+2 Culture] [in all cities] <before discovering [Steam Power]>"
+      ]
+    },
+    {
+      "name": "Russia",
+      "leaderName": "Catherine",
+      "startBias": [
+        "Tundra"
+      ],
+      "preferredVictoryType": "Scientific",
+      "personality": "Catherine",
+      "uniqueName": "Siberian Riches",
+      "uniques": [
+        "[+1 Production] from every [Strategic resource]",
+        "[+100]% [Horses] resource production",
+        "[+100]% [Iron] resource production",
+        "[+100]% [Uranium] resource production"
+      ]
+    },
+    {
+      "name": "Rome",
+      "leaderName": "Augustus Caesar",
+      "startBias": [
+        "Avoid [Tundra]",
+        "Avoid [Desert]"
+      ],
+      "preferredVictoryType": "Scientific",
+      "personality": "Augustus Caesar",
+      "uniqueName": "The Glory of Rome",
+      "uniques": [
+        "[+25]% Production towards any buildings that already exist in the Capital"
+      ]
+    },
+    {
+      "name": "Arabia",
+      "leaderName": "Harun al-Rashid",
+      "startBias": [
+        "Desert"
+      ],
+      "preferredVictoryType": "Scientific",
+      "personality": "Harun al-Rashid",
+      "uniqueName": "Trade Caravans",
+      "uniques": [
+        "[+1 Gold] from each Trade Route",
+        "[+100]% [Oil] resource production"
+      ]
+    },
+    {
+      "name": "America",
+      "leaderName": "George Washington",
+      "preferredVictoryType": "Scientific",
+      "personality": "George Washington",
+      "uniqueName": "Manifest Destiny",
+      "uniques": [
+        "[+1] Sight <for [{Military} {Land}] units>",
+        "[-50]% Gold cost of acquiring tiles [in all cities]"
+      ]
+    },
+    {
+      "name": "Japan",
+      "leaderName": "Oda Nobunaga",
+      "startBias": [
+        "Coast"
+      ],
+      "preferredVictoryType": "Domination",
+      "personality": "Oda Nobunaga",
+      "uniqueName": "Bushido",
+      "uniques": [
+        "No damage penalty for wounded units <for [non-[Air]] units>"
+      ]
+    },
+    {
+      "name": "India",
+      "leaderName": "Gandhi",
+      "startBias": [
+        "Grassland"
+      ],
+      "preferredVictoryType": "Cultural",
+      "personality": "Gandhi",
+      "uniqueName": "Population Growth",
+      "uniques": [
+        "[+100]% unhappiness from the number of cities",
+        "[-50]% Unhappiness from [Population] [in all cities]"
+      ]
+    },
+    {
+      "name": "Germany",
+      "leaderName": "Otto von Bismarck",
+      "preferredVictoryType": "Scientific",
+      "personality": "Otto von Bismarck",
+      "uniqueName": "Furor Teutonicus",
+      "uniques": [
+        "When conquering an encampment, earn [25] Gold and recruit a Barbarian unit <with [67]% chance>",
+        "[-25]% maintenance costs <for [Land] units>"
+      ]
+    },
+    {
+      "name": "The Ottomans",
+      "leaderName": "Suleiman I",
+      "startBias": [
+        "Coast"
+      ],
+      "preferredVictoryType": "Domination",
+      "personality": "Suleiman I",
+      "uniqueName": "Barbary Corsairs",
+      "uniques": [
+        "[-66]% maintenance costs <for [Water] units>",
+        "When defeating a [{Barbarian} {Water}] unit, earn [25] Gold and recruit it <with [50]% chance>"
+      ]
+    },
+    {
+      "name": "Korea",
+      "leaderName": "Sejong",
+      "startBias": [
+        "Coast"
+      ],
+      "preferredVictoryType": "Scientific",
+      "personality": "Sejong",
+      "uniqueName": "Scholars of the Jade Hall",
+      "uniques": [
+        "[+2 Science] from every specialist [in all cities]",
+        "[+2 Science] from every [Great Improvement]",
+        "Receive a tech boost when scientific buildings/wonders are built in capital"
+      ]
+    },
+    {
+      "name": "Iroquois",
+      "leaderName": "Hiawatha",
+      "startBias": [
+        "Forest"
+      ],
+      "preferredVictoryType": "Scientific",
+      "personality": "Hiawatha",
+      "uniqueName": "The Great Warpath",
+      "uniques": [
+        "All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel."
+      ]
+    },
+    {
+      "name": "Persia",
+      "leaderName": "Darius I",
+      "preferredVictoryType": "Scientific",
+      "personality": "Darius I",
+      "uniqueName": "Achaemenid Legacy",
+      "uniques": [
+        "[+50]% Golden Age length",
+        "[+1] Movement <for [All] units> <during a Golden Age>",
+        "[+10]% Strength <for [All] units> <during a Golden Age>"
+      ]
+    },
+    {
+      "name": "Polynesia",
+      "leaderName": "Kamehameha I",
+      "startBias": [
+        "Coast"
+      ],
+      "preferredVictoryType": "Cultural",
+      "personality": "Kamehameha I",
+      "uniqueName": "Wayfinding",
+      "uniques": [
+        "Enables embarkation for land units <starting from the [Ancient era]> <Suppress warning [*contains a conditional on a unit movement unique*]>",
+        "Enables [All] units to enter ocean tiles <starting from the [Ancient era]>",
+        "[+1] Sight <for [Embarked] units>",
+        "[+10]% Strength <within [2] tiles of a [Moai]>"
+      ]
+    },
+    {
+      "name": "Siam",
+      "leaderName": "Ramkhamhaeng",
+      "startBias": [
+        "Avoid [Forest]"
+      ],
+      "preferredVictoryType": "Diplomatic",
+      "personality": "Ramkhamhaeng",
+      "uniqueName": "Father Governs Children",
+      "uniques": [
+        "[+50]% [Food] from City-States",
+        "[+50]% [Culture] from City-States",
+        "[+50]% [Faith] from City-States",
+        "Military Units gifted from City-States start with [+10] XP"
+      ]
+    },
+    {
+      "name": "Spain",
+      "leaderName": "Isabella",
+      "startBias": [
+        "Coast"
+      ],
+      "preferredVictoryType": "Domination",
+      "personality": "Isabella",
+      "uniqueName": "Seven Cities of Gold",
+      "uniques": [
+        "[+100 Gold] for discovering a Natural Wonder (bonus enhanced to [+500 Gold] if first to discover it)",
+        "[+1 Happiness] for every known Natural Wonder",
+        "[+100]% Yield from every [Natural Wonder]"
+      ]
+    },
+    {
+      "name": "Songhai",
+      "leaderName": "Askia",
+      "startBias": [
+        "Avoid [Tundra]"
+      ],
+      "preferredVictoryType": "Domination",
+      "personality": "Askia",
+      "uniqueName": "River Warlord",
+      "uniques": [
+        "Receive [+200]% Gold from Barbarian encampments and pillaging Cities",
+        "[+100]% Strength <when defending> <for [Embarked] units>",
+        "[{Military} {Land}] units gain the [Amphibious] promotion"
+      ]
+    },
+    {
+      "name": "Mongolia",
+      "leaderName": "Genghis Khan",
+      "startBias": [
+        "Plains"
+      ],
+      "preferredVictoryType": "Domination",
+      "personality": "Genghis Khan",
+      "uniqueName": "Mongol Terror",
+      "uniques": [
+        "[+30]% Strength <vs [City-States]>",
+        "[+1] Movement <for [Mounted] units>"
+      ]
+    },
+    {
+      "name": "Aztecs",
+      "leaderName": "Montezuma I",
+      "startBias": [
+        "Jungle"
+      ],
+      "preferredVictoryType": "Domination",
+      "personality": "Montezuma I",
+      "uniqueName": "Sacrificial Captives",
+      "uniques": [
+        "Earn [100]% of killed [Military] unit's [Strength] as [Culture]"
+      ]
+    },
+    {
+      "name": "Inca",
+      "leaderName": "Pachacuti",
+      "startBias": [
+        "Hill"
+      ],
+      "preferredVictoryType": "Cultural",
+      "personality": "Pachacuti",
+      "uniqueName": "Great Andean Road",
+      "uniques": [
+        "Units ignore terrain costs when moving into any tile with Hills",
+        "[-50]% maintenance on road & railroads",
+        "No Maintenance costs for improvements in [Hill] tiles"
+      ]
+    },
+    {
+      "name": "Denmark",
+      "leaderName": "Harald Bluetooth",
+      "startBias": [
+        "Coast"
+      ],
+      "preferredVictoryType": "Cultural",
+      "personality": "Harald Bluetooth",
+      "uniqueName": "Viking Fury",
+      "uniques": [
+        "[+1] Movement <for [Embarked] units>",
+        "[1] Movement point cost to disembark <for [All] units>",
+        "No movement cost to pillage <for [Melee] units>"
+      ]
+    },
+    {
+      "name": "The Huns",
+      "leaderName": "Attila the Hun",
+      "startBias": [
+        "Avoid [Jungle]",
+        "Avoid [Forest]"
+      ],
+      "preferredVictoryType": "Domination",
+      "personality": "Attila the Hun",
+      "uniqueName": "Scourge of God",
+      "uniques": [
+        "[+1 Production] from every [Pasture]",
+        "Cities are razed [2] times as fast",
+        "Starts with [Animal Husbandry]",
+        "\"Borrows\" city names from other civilizations in the game"
+      ]
+    },
+    {
+      "name": "The Netherlands",
+      "leaderName": "William of Orange",
+      "startBias": [
+        "Grassland"
+      ],
+      "preferredVictoryType": "Cultural",
+      "personality": "William of Orange",
+      "uniqueName": "Dutch East India Company",
+      "uniques": [
+        "Retain [50]% of the happiness from a luxury after the last copy has been traded away"
+      ]
+    },
+    {
+      "name": "Sweden",
+      "leaderName": "Gustavus Adolphus",
+      "startBias": [
+        "Tundra"
+      ],
+      "preferredVictoryType": "Diplomatic",
+      "personality": "Gustavus Adolphus",
+      "uniqueName": "Nobel Prize",
+      "uniques": [
+        "Gain [90] Influence with a [Great Person] gift to a City-State",
+        "When declaring friendship, both parties gain a [10]% boost to great person generation"
+      ]
+    },
+    {
+      "name": "Austria",
+      "leaderName": "Maria Theresa",
+      "startBias": [
+        "Hill"
+      ],
+      "preferredVictoryType": "Diplomatic",
+      "personality": "Maria Theresa",
+      "uniqueName": "Diplomatic Marriage",
+      "uniques": [
+        "Can spend Gold to annex or puppet a City-State that has been your Ally for [5] turns"
+      ]
+    },
+    {
+      "name": "Carthage",
+      "leaderName": "Dido",
+      "startBias": [
+        "Coast"
+      ],
+      "preferredVictoryType": "Domination",
+      "personality": "Dido",
+      "uniqueName": "Phoenician Heritage",
+      "uniques": [
+        "Gain a free [Harbor] [in all coastal cities]",
+        "Land units may cross [Mountain] tiles after the first [Great General] is earned",
+        "Comment [Units ending their turn on [Mountain] tiles take [50] damage]"
+      ]
+    },
+    {
+      "name": "Byzantium",
+      "leaderName": "Theodora",
+      "startBias": [
+        "Coast"
+      ],
+      "preferredVictoryType": "Cultural",
+      "personality": "Theodora",
+      "uniqueName": "Patriarchate of Constantinople",
+      "uniques": [
+        "May choose [1] additional belief(s) of any type when [founding] a religion"
+      ]
+    },
+    {
+      "name": "Celts",
+      "leaderName": "Boudicca",
+      "startBias": [
+        "Forest"
+      ],
+      "preferredVictoryType": "Domination",
+      "personality": "Boudicca",
+      "uniqueName": "Druidic Lore",
+      "uniques": [
+        "[+1 Faith] [in all cities] <with [1] to [2] neighboring [{unimproved} {Forest}] tiles>",
+        "[+2 Faith] [in all cities] <with [3] to [6] neighboring [{unimproved} {Forest}] tiles>"
+      ]
+    },
+    {
+      "name": "Ethiopia",
+      "leaderName": "Haile Selassie",
+      "startBias": [
+        "Jungle"
+      ],
+      "preferredVictoryType": "Cultural",
+      "personality": "Haile Selassie",
+      "uniqueName": "Spirit of Adwa",
+      "uniques": [
+        "[+20]% Strength <when fighting units from a Civilization with more Cities than you>"
+      ]
+    },
+    {
+      "name": "The Maya",
+      "leaderName": "Pacal",
+      "startBias": [
+        "Jungle"
+      ],
+      "preferredVictoryType": "Scientific",
+      "personality": "Pacal",
+      "uniqueName": "The Long Count",
+      "uniques": [
+        "Receive a free Great Person at the end of every [Maya Long Count calendar cycle] (every 394 years), after researching [Theology]. Each bonus person can only be chosen once.",
+        "Once The Long Count activates, the year on the world screen displays as the traditional Mayan Long Count."
+      ]
+    },
+    {
+      "name": "Brussels",
+      "cityStateType": "Cultured"
+    },
+    {
+      "name": "Bucharest",
+      "cityStateType": "Cultured"
+    },
+    {
+      "name": "Florence",
+      "cityStateType": "Cultured"
+    },
+    {
+      "name": "Kabul",
+      "cityStateType": "Cultured"
+    },
+    {
+      "name": "Kathmandu",
+      "cityStateType": "Cultured"
+    },
+    {
+      "name": "Kuala Lumpur",
+      "cityStateType": "Cultured"
+    },
+    {
+      "name": "Milan",
+      "cityStateType": "Cultured"
+    },
+    {
+      "name": "Monaco",
+      "cityStateType": "Cultured"
+    },
+    {
+      "name": "Prague",
+      "cityStateType": "Cultured"
+    },
+    {
+      "name": "Yerevan",
+      "cityStateType": "Cultured"
+    },
+    {
+      "name": "Cape Town",
+      "cityStateType": "Maritime"
+    },
+    {
+      "name": "Helsinki",
+      "cityStateType": "Maritime",
+      "uniques": [
+        "Will not be displayed in Civilopedia",
+        "Will not be chosen for new games",
+        "Excluded from map editor"
+      ]
+    },
+    {
+      "name": "Manila",
+      "cityStateType": "Maritime"
+    },
+    {
+      "name": "Mogadishu",
+      "cityStateType": "Maritime",
+      "uniques": [
+        "Will not be displayed in Civilopedia",
+        "Will not be chosen for new games",
+        "Excluded from map editor"
+      ]
+    },
+    {
+      "name": "Mombasa",
+      "cityStateType": "Maritime"
+    },
+    {
+      "name": "Quebec City",
+      "cityStateType": "Maritime"
+    },
+    {
+      "name": "Ragusa",
+      "cityStateType": "Maritime",
+      "startBias": [
+        "Coast"
+      ]
+    },
+    {
+      "name": "Rio de Janeiro",
+      "cityStateType": "Maritime",
+      "startBias": [
+        "Coast"
+      ]
+    },
+    {
+      "name": "Sydney",
+      "cityStateType": "Maritime"
+    },
+    {
+      "name": "Ur",
+      "cityStateType": "Maritime",
+      "startBias": [
+        "Coast"
+      ],
+      "uniques": [
+        "Will not be displayed in Civilopedia",
+        "Will not be chosen for new games",
+        "Excluded from map editor"
+      ]
+    },
+    {
+      "name": "Vancouver",
+      "cityStateType": "Maritime",
+      "uniques": [
+        "Will not be displayed in Civilopedia",
+        "Will not be chosen for new games",
+        "Excluded from map editor"
+      ]
+    },
+    {
+      "name": "Venice",
+      "cityStateType": "Maritime",
+      "startBias": [
+        "Coast"
+      ]
+    },
+    {
+      "name": "Antwerp",
+      "cityStateType": "Mercantile",
+      "startBias": [
+        "Coast"
+      ]
+    },
+    {
+      "name": "Cahokia",
+      "cityStateType": "Mercantile"
+    },
+    {
+      "name": "Colombo",
+      "cityStateType": "Mercantile"
+    },
+    {
+      "name": "Genoa",
+      "cityStateType": "Mercantile",
+      "startBias": [
+        "Coast"
+      ]
+    },
+    {
+      "name": "Hong Kong",
+      "cityStateType": "Mercantile"
+    },
+    {
+      "name": "Singapore",
+      "cityStateType": "Mercantile"
+    },
+    {
+      "name": "Tyre",
+      "cityStateType": "Mercantile",
+      "startBias": [
+        "Coast"
+      ]
+    },
+    {
+      "name": "Zanzibar",
+      "cityStateType": "Mercantile"
+    },
+    {
+      "name": "Zurich",
+      "cityStateType": "Mercantile"
+    },
+    {
+      "name": "Almaty",
+      "cityStateType": "Militaristic"
+    },
+    {
+      "name": "Belgrade",
+      "cityStateType": "Militaristic"
+    },
+    {
+      "name": "Budapest",
+      "cityStateType": "Militaristic"
+    },
+    {
+      "name": "Dublin",
+      "cityStateType": "Militaristic",
+      "uniques": [
+        "Will not be displayed in Civilopedia",
+        "Will not be chosen for new games",
+        "Excluded from map editor"
+      ]
+    },
+    {
+      "name": "Edinburgh",
+      "cityStateType": "Militaristic",
+      "uniques": [
+        "Will not be displayed in Civilopedia",
+        "Will not be chosen for new games",
+        "Excluded from map editor"
+      ]
+    },
+    {
+      "name": "Hanoi",
+      "cityStateType": "Militaristic"
+    },
+    {
+      "name": "M'Banza-Kongo",
+      "cityStateType": "Militaristic",
+      "uniques": [
+        "Will not be displayed in Civilopedia",
+        "Will not be chosen for new games",
+        "Excluded from map editor"
+      ]
+    },
+    {
+      "name": "Sidon",
+      "cityStateType": "Militaristic"
+    },
+    {
+      "name": "Valletta",
+      "cityStateType": "Militaristic",
+      "startBias": [
+        "Coast"
+      ]
+    },
+    {
+      "name": "Bratislava",
+      "cityStateType": "Religious"
+    },
+    {
+      "name": "Geneva",
+      "cityStateType": "Religious"
+    },
+    {
+      "name": "Jerusalem",
+      "cityStateType": "Religious"
+    },
+    {
+      "name": "La Venta",
+      "cityStateType": "Religious"
+    },
+    {
+      "name": "Lhasa",
+      "cityStateType": "Religious"
+    },
+    {
+      "name": "Vatican City",
+      "cityStateType": "Religious"
+    },
+    {
+      "name": "Wittenberg",
+      "cityStateType": "Religious"
+    },
+    {
+      "name": "Barbarians",
+      "uniques": [
+        "Can only heal by pillaging",
+        "Excluded from map editor",
+        "[Water] units gain the [Unable to pillage tiles] promotion"
+      ]
+    }
+  ],
+  "Units": [
+    {
+      "name": "Worker",
+      "unitType": "Civilian",
+      "movement": 2,
+      "requiredTech": "Agriculture",
+      "uniques": [
+        "Can build [Land] improvements on tiles",
+        "Automation is a primary action"
+      ],
+      "cost": 70
+    },
+    {
+      "name": "Settler",
+      "unitType": "Civilian",
+      "movement": 2,
+      "cost": 106,
+      "requiredTech": "Agriculture",
+      "uniques": [
+        "Founds a new city <by consuming this unit>",
+        "Excess Food converted to Production when under construction",
+        "Requires at least [2] population"
+      ]
+    },
+    {
+      "name": "Scout",
+      "unitType": "Scout",
+      "movement": 2,
+      "strength": 5,
+      "cost": 25,
+      "requiredTech": "Agriculture",
+      "obsoleteTech": "Scientific Theory",
+      "uniques": [
+        "May upgrade to [Archer] through ruins-like effects",
+        "Never appears as a Barbarian unit"
+      ],
+      "promotions": [
+        "Ignore terrain cost"
+      ]
+    },
+    {
+      "name": "Warrior",
+      "unitType": "Sword",
+      "movement": 2,
+      "strength": 8,
+      "cost": 40,
+      "requiredTech": "Agriculture",
+      "obsoleteTech": "Metal Casting",
+      "upgradesTo": "Swordsman",
+      "uniques": [
+        "May upgrade to [Spearman] through ruins-like effects"
+      ]
+    },
+    {
+      "name": "Maori Warrior",
+      "unitType": "Sword",
+      "uniqueTo": "Polynesia",
+      "replaces": "Warrior",
+      "movement": 2,
+      "strength": 8,
+      "cost": 40,
+      "requiredTech": "Agriculture",
+      "obsoleteTech": "Metal Casting",
+      "promotions": [
+        "Haka War Dance"
+      ],
+      "upgradesTo": "Swordsman"
+    },
+    {
+      "name": "Jaguar",
+      "unitType": "Sword",
+      "uniqueTo": "Aztecs",
+      "replaces": "Warrior",
+      "movement": 2,
+      "strength": 8,
+      "cost": 40,
+      "requiredTech": "Agriculture",
+      "obsoleteTech": "Metal Casting",
+      "promotions": [
+        "[Jaguar] ability",
+        "Woodsman"
+      ],
+      "upgradesTo": "Swordsman"
+    },
+    {
+      "name": "Brute",
+      "unitType": "Sword",
+      "uniqueTo": "Barbarians",
+      "replaces": "Warrior",
+      "movement": 2,
+      "strength": 8,
+      "cost": 20,
+      "obsoleteTech": "Metal Casting",
+      "upgradesTo": "Swordsman"
+    },
+    {
+      "name": "Archer",
+      "unitType": "Archery",
+      "movement": 2,
+      "strength": 5,
+      "rangedStrength": 7,
+      "cost": 40,
+      "requiredTech": "Archery",
+      "obsoleteTech": "Construction",
+      "upgradesTo": "Composite Bowman"
+    },
+    {
+      "name": "Bowman",
+      "unitType": "Archery",
+      "movement": 2,
+      "strength": 7,
+      "rangedStrength": 9,
+      "cost": 40,
+      "requiredTech": "Archery",
+      "obsoleteTech": "Construction",
+      "replaces": "Archer",
+      "uniqueTo": "Babylon",
+      "upgradesTo": "Composite Bowman"
+    },
+    {
+      "name": "Slinger",
+      "unitType": "Archery",
+      "uniqueTo": "Inca",
+      "replaces": "Archer",
+      "movement": 2,
+      "strength": 4,
+      "rangedStrength": 7,
+      "cost": 40,
+      "requiredTech": "Archery",
+      "obsoleteTech": "Construction",
+      "upgradesTo": "Composite Bowman",
+      "promotions": [
+        "Slinger Withdraw"
+      ]
+    },
+    {
+      "name": "Atlatlist",
+      "unitType": "Archery",
+      "movement": 2,
+      "strength": 5,
+      "rangedStrength": 7,
+      "cost": 36,
+      "requiredTech": "Agriculture",
+      "obsoleteTech": "Construction",
+      "replaces": "Archer",
+      "uniqueTo": "The Maya",
+      "upgradesTo": "Composite Bowman"
+    },
+    {
+      "name": "Skirmisher",
+      "unitType": "Archery",
+      "uniqueTo": "Barbarians",
+      "replaces": "Archer",
+      "movement": 2,
+      "strength": 4,
+      "rangedStrength": 7,
+      "cost": 40,
+      "requiredTech": "Archery",
+      "obsoleteTech": "Machinery",
+      "upgradesTo": "Crossbowman"
+    },
+    {
+      "name": "Work Boats",
+      "unitType": "Civilian Water",
+      "movement": 4,
+      "cost": 30,
+      "requiredTech": "Sailing",
+      "uniques": [
+        "Cannot enter ocean tiles <before discovering [Astronomy]>",
+        "May create improvements on water resources",
+        "Uncapturable",
+        "Automation is a primary action"
+      ]
+    },
+    {
+      "name": "Trireme",
+      "unitType": "Melee Water",
+      "movement": 4,
+      "strength": 10,
+      "cost": 45,
+      "requiredTech": "Sailing",
+      "uniques": [
+        "Cannot enter ocean tiles",
+        "Never appears as a Barbarian unit"
+      ],
+      "upgradesTo": "Caravel",
+      "obsoleteTech": "Astronomy"
+    },
+    {
+      "name": "Quinquereme",
+      "unitType": "Melee Water",
+      "uniqueTo": "Carthage",
+      "replaces": "Trireme",
+      "movement": 4,
+      "strength": 13,
+      "cost": 45,
+      "requiredTech": "Sailing",
+      "uniques": [
+        "Cannot enter ocean tiles"
+      ],
+      "upgradesTo": "Caravel",
+      "obsoleteTech": "Astronomy"
+    },
+    {
+      "name": "Dromon",
+      "unitType": "Ranged Water",
+      "uniqueTo": "Byzantium",
+      "replaces": "Trireme",
+      "movement": 4,
+      "strength": 8,
+      "rangedStrength": 10,
+      "cost": 56,
+      "requiredTech": "Sailing",
+      "uniques": [
+        "Cannot enter ocean tiles",
+        "[+50]% Strength <vs [Water] units>"
+      ],
+      "upgradesTo": "Galleass",
+      "obsoleteTech": "Astronomy"
+    },
+    {
+      "name": "Galley",
+      "unitType": "Melee Water",
+      "uniqueTo": "Barbarians",
+      "movement": 3,
+      "strength": 7,
+      "cost": 40,
+      "uniques": [
+        "Cannot enter ocean tiles"
+      ],
+      "upgradesTo": "Trireme",
+      "obsoleteTech": "Astronomy"
+    },
+    {
+      "name": "Chariot Archer",
+      "unitType": "Archery",
+      "movement": 4,
+      "strength": 6,
+      "rangedStrength": 10,
+      "cost": 56,
+      "requiredTech": "The Wheel",
+      "requiredResource": "Horses",
+      "upgradesTo": "Knight",
+      "obsoleteTech": "Chivalry",
+      "uniques": [
+        "No defensive terrain bonus",
+        "Rough terrain penalty",
+        "Never appears as a Barbarian unit"
+      ]
+    },
+    {
+      "name": "War Chariot",
+      "unitType": "Archery",
+      "uniqueTo": "Egypt",
+      "replaces": "Chariot Archer",
+      "movement": 5,
+      "strength": 6,
+      "rangedStrength": 10,
+      "cost": 56,
+      "requiredTech": "The Wheel",
+      "upgradesTo": "Knight",
+      "obsoleteTech": "Chivalry",
+      "uniques": [
+        "No defensive terrain bonus",
+        "Rough terrain penalty"
+      ]
+    },
+    {
+      "name": "Horse Archer",
+      "unitType": "Archery",
+      "uniqueTo": "The Huns",
+      "replaces": "Chariot Archer",
+      "movement": 4,
+      "strength": 7,
+      "rangedStrength": 10,
+      "cost": 56,
+      "requiredTech": "The Wheel",
+      "upgradesTo": "Knight",
+      "obsoleteTech": "Chivalry",
+      "uniques": [
+        "No defensive terrain bonus"
+      ],
+      "promotions": [
+        "Accuracy I"
+      ]
+    },
+    {
+      "name": "War Elephant",
+      "unitType": "Archery",
+      "uniqueTo": "India",
+      "replaces": "Chariot Archer",
+      "movement": 3,
+      "strength": 9,
+      "rangedStrength": 11,
+      "cost": 70,
+      "requiredTech": "The Wheel",
+      "upgradesTo": "Knight",
+      "obsoleteTech": "Chivalry",
+      "uniques": [
+        "No defensive terrain bonus"
+      ]
+    },
+    {
+      "name": "Spearman",
+      "unitType": "Sword",
+      "movement": 2,
+      "strength": 11,
+      "cost": 56,
+      "requiredTech": "Bronze Working",
+      "obsoleteTech": "Civil Service",
+      "upgradesTo": "Pikeman",
+      "uniques": [
+        "[+50]% Strength <vs [Mounted] units>"
+      ]
+    },
+    {
+      "name": "Hoplite",
+      "unitType": "Sword",
+      "replaces": "Spearman",
+      "uniqueTo": "Greece",
+      "movement": 2,
+      "strength": 13,
+      "cost": 56,
+      "requiredTech": "Bronze Working",
+      "obsoleteTech": "Civil Service",
+      "upgradesTo": "Pikeman",
+      "uniques": [
+        "[+50]% Strength <vs [Mounted] units>"
+      ]
+    },
+    {
+      "name": "Persian Immortal",
+      "unitType": "Sword",
+      "replaces": "Spearman",
+      "uniqueTo": "Persia",
+      "movement": 2,
+      "strength": 12,
+      "cost": 56,
+      "requiredTech": "Bronze Working",
+      "obsoleteTech": "Civil Service",
+      "upgradesTo": "Pikeman",
+      "uniques": [
+        "[+50]% Strength <vs [Mounted] units>"
+      ],
+      "promotions": [
+        "[Persian Immortal] ability"
+      ]
+    },
+    {
+      "name": "Battering Ram",
+      "unitType": "Sword",
+      "replaces": "Spearman",
+      "uniqueTo": "The Huns",
+      "movement": 2,
+      "strength": 10,
+      "cost": 75,
+      "requiredTech": "Bronze Working",
+      "obsoleteTech": "Physics",
+      "upgradesTo": "Trebuchet",
+      "uniques": [
+        "[+300]% Strength <vs cities> <when attacking>",
+        "No defensive terrain bonus",
+        "[-33]% Strength <when defending>",
+        "[-1] Sight",
+        "Can only attack [City] units"
+      ],
+      "promotions": [
+        "Cover I"
+      ]
+    },
+    {
+      "name": "Pictish Warrior",
+      "unitType": "Sword",
+      "replaces": "Spearman",
+      "uniqueTo": "Celts",
+      "movement": 2,
+      "strength": 11,
+      "cost": 56,
+      "requiredTech": "Bronze Working",
+      "obsoleteTech": "Civil Service",
+      "upgradesTo": "Pikeman",
+      "uniques": [
+        "Earn [50]% of killed [Military] unit's [Strength] as [Faith]"
+      ],
+      "promotions": [
+        "Pictish Courage"
+      ]
+    },
+    {
+      "name": "Marauder",
+      "unitType": "Sword",
+      "replaces": "Spearman",
+      "uniqueTo": "Barbarians",
+      "movement": 2,
+      "strength": 10,
+      "cost": 56,
+      "requiredTech": "Bronze Working",
+      "obsoleteTech": "Civil Service",
+      "upgradesTo": "Pikeman",
+      "uniques": [
+        "[+50]% Strength <vs [Mounted] units>"
+      ]
+    },
+    {
+      "name": "Horseman",
+      "unitType": "Mounted",
+      "movement": 4,
+      "strength": 12,
+      "cost": 75,
+      "requiredTech": "Horseback Riding",
+      "requiredResource": "Horses",
+      "upgradesTo": "Knight",
+      "obsoleteTech": "Chivalry",
+      "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        "[-33]% Strength <vs cities> <when attacking>"
+      ]
+    },
+    {
+      "name": "Companion Cavalry",
+      "unitType": "Mounted",
+      "uniqueTo": "Greece",
+      "replaces": "Horseman",
+      "movement": 5,
+      "strength": 14,
+      "cost": 75,
+      "requiredTech": "Horseback Riding",
+      "upgradesTo": "Knight",
+      "obsoleteTech": "Chivalry",
+      "promotions": [
+        "Great Generals I"
+      ],
+      "requiredResource": "Horses",
+      "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        "[-33]% Strength <vs cities> <when attacking>"
+      ]
+    },
+    {
+      "name": "African Forest Elephant",
+      "unitType": "Mounted",
+      "uniqueTo": "Carthage",
+      "replaces": "Horseman",
+      "movement": 3,
+      "strength": 14,
+      "cost": 100,
+      "requiredTech": "Horseback Riding",
+      "upgradesTo": "Knight",
+      "obsoleteTech": "Chivalry",
+      "promotions": [
+        "Great Generals II"
+      ],
+      "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        "[-33]% Strength <vs cities> <when attacking>",
+        "[-10]% Strength for enemy [Military] units in adjacent [All] tiles"
+      ]
+    },
+    {
+      "name": "Cataphract",
+      "unitType": "Mounted",
+      "uniqueTo": "Byzantium",
+      "replaces": "Horseman",
+      "movement": 3,
+      "strength": 15,
+      "cost": 75,
+      "requiredTech": "Horseback Riding",
+      "upgradesTo": "Knight",
+      "obsoleteTech": "Chivalry",
+      "requiredResource": "Horses",
+      "uniques": [
+        "Can move after attacking",
+        "[-25]% Strength <vs cities> <when attacking>"
+      ]
+    },
+    {
+      "name": "Catapult",
+      "unitType": "Siege",
+      "movement": 2,
+      "strength": 7,
+      "rangedStrength": 8,
+      "cost": 75,
+      "requiredTech": "Mathematics",
+      "obsoleteTech": "Physics",
+      "upgradesTo": "Trebuchet",
+      "uniques": [
+        "[+200]% Strength <vs cities> <when attacking>",
+        "No defensive terrain bonus",
+        "Must set up to ranged attack",
+        "[-1] Sight",
+        "Never appears as a Barbarian unit"
+      ]
+    },
+    {
+      "name": "Ballista",
+      "unitType": "Siege",
+      "replaces": "Catapult",
+      "uniqueTo": "Rome",
+      "movement": 2,
+      "strength": 8,
+      "rangedStrength": 10,
+      "cost": 75,
+      "requiredTech": "Mathematics",
+      "obsoleteTech": "Physics",
+      "upgradesTo": "Trebuchet",
+      "uniques": [
+        "[+200]% Strength <vs cities> <when attacking>",
+        "No defensive terrain bonus",
+        "Must set up to ranged attack",
+        "[-1] Sight"
+      ]
+    },
+    {
+      "name": "Composite Bowman",
+      "unitType": "Archery",
+      "movement": 2,
+      "strength": 7,
+      "rangedStrength": 11,
+      "cost": 75,
+      "requiredTech": "Construction",
+      "obsoleteTech": "Machinery",
+      "upgradesTo": "Crossbowman"
+    },
+    {
+      "name": "Swordsman",
+      "unitType": "Sword",
+      "movement": 2,
+      "strength": 14,
+      "cost": 75,
+      "requiredTech": "Iron Working",
+      "upgradesTo": "Longswordsman",
+      "obsoleteTech": "Steel",
+      "requiredResource": "Iron"
+    },
+    {
+      "name": "Legion",
+      "unitType": "Sword",
+      "uniqueTo": "Rome",
+      "replaces": "Swordsman",
+      "movement": 2,
+      "strength": 17,
+      "cost": 75,
+      "requiredTech": "Iron Working",
+      "upgradesTo": "Longswordsman",
+      "obsoleteTech": "Gunpowder",
+      "requiredResource": "Iron",
+      "uniques": [
+        "Can build [Road] improvements on tiles",
+        "Can build [Fort] improvements on tiles"
+      ]
+    },
+    {
+      "name": "Mohawk Warrior",
+      "unitType": "Sword",
+      "uniqueTo": "Iroquois",
+      "replaces": "Swordsman",
+      "movement": 2,
+      "strength": 14,
+      "cost": 75,
+      "requiredTech": "Iron Working",
+      "upgradesTo": "Longswordsman",
+      "obsoleteTech": "Gunpowder",
+      "promotions": [
+        "[Mohawk Warrior] ability"
+      ]
+    },
+    {
+      "name": "Pikeman",
+      "unitType": "Sword",
+      "movement": 2,
+      "strength": 16,
+      "cost": 90,
+      "requiredTech": "Civil Service",
+      "uniques": [
+        "[+50]% Strength <vs [Mounted] units>"
+      ],
+      "upgradesTo": "Lancer",
+      "obsoleteTech": "Metallurgy"
+    },
+    {
+      "name": "Landsknecht",
+      "unitType": "Sword",
+      "replaces": "Pikeman",
+      "uniqueTo": "Germany",
+      "movement": 2,
+      "strength": 16,
+      "cost": 45,
+      "requiredTech": "Civil Service",
+      "uniques": [
+        "[+50]% Strength <vs [Mounted] units>",
+        "Can move immediately once bought"
+      ],
+      "upgradesTo": "Lancer",
+      "obsoleteTech": "Metallurgy"
+    },
+    {
+      "name": "Galleass",
+      "unitType": "Ranged Water",
+      "movement": 3,
+      "strength": 16,
+      "rangedStrength": 17,
+      "cost": 100,
+      "requiredTech": "Compass",
+      "obsoleteTech": "Navigation",
+      "upgradesTo": "Frigate",
+      "uniques": [
+        "Cannot enter ocean tiles"
+      ]
+    },
+    {
+      "name": "Knight",
+      "unitType": "Mounted",
+      "movement": 4,
+      "strength": 20,
+      "cost": 120,
+      "requiredTech": "Chivalry",
+      "obsoleteTech": "Military Science",
+      "upgradesTo": "Cavalry",
+      "requiredResource": "Horses",
+      "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        "[-33]% Strength <vs cities> <when attacking>",
+        "Never appears as a Barbarian unit"
+      ]
+    },
+    {
+      "name": "Camel Archer",
+      "unitType": "Archery",
+      "replaces": "Knight",
+      "uniqueTo": "Arabia",
+      "movement": 4,
+      "strength": 17,
+      "rangedStrength": 21,
+      "cost": 120,
+      "requiredTech": "Chivalry",
+      "requiredResource": "Horses",
+      "upgradesTo": "Cavalry",
+      "obsoleteTech": "Military Science",
+      "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus"
+      ]
+    },
+    {
+      "name": "Conquistador",
+      "unitType": "Mounted",
+      "replaces": "Knight",
+      "uniqueTo": "Spain",
+      "movement": 4,
+      "strength": 20,
+      "cost": 135,
+      "requiredTech": "Chivalry",
+      "requiredResource": "Horses",
+      "upgradesTo": "Cavalry",
+      "obsoleteTech": "Military Science",
+      "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        "Founds a new city <on foreign continents>",
+        "[+2] Sight"
+      ],
+      "promotions": [
+        "[Conquistador] ability"
+      ]
+    },
+    {
+      "name": "Naresuan's Elephant",
+      "unitType": "Mounted",
+      "replaces": "Knight",
+      "uniqueTo": "Siam",
+      "movement": 3,
+      "strength": 25,
+      "cost": 120,
+      "requiredTech": "Chivalry",
+      "obsoleteTech": "Military Science",
+      "upgradesTo": "Cavalry",
+      "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        "[+50]% Strength <vs [Mounted] units>",
+        "[-33]% Strength <vs cities> <when attacking>"
+      ]
+    },
+    {
+      "name": "Mandekalu Cavalry",
+      "unitType": "Mounted",
+      "replaces": "Knight",
+      "uniqueTo": "Songhai",
+      "movement": 4,
+      "strength": 20,
+      "cost": 110,
+      "requiredTech": "Chivalry",
+      "requiredResource": "Horses",
+      "upgradesTo": "Cavalry",
+      "obsoleteTech": "Military Science",
+      "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus"
+      ]
+    },
+    {
+      "name": "Keshik",
+      "unitType": "Archery",
+      "replaces": "Knight",
+      "uniqueTo": "Mongolia",
+      "range": 2,
+      "movement": 5,
+      "strength": 15,
+      "rangedStrength": 16,
+      "cost": 120,
+      "requiredTech": "Chivalry",
+      "requiredResource": "Horses",
+      "upgradesTo": "Cavalry",
+      "obsoleteTech": "Military Science",
+      "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus"
+      ],
+      "promotions": [
+        "Great Generals I",
+        "Quick Study"
+      ]
+    },
+    {
+      "name": "Crossbowman",
+      "unitType": "Archery",
+      "movement": 2,
+      "strength": 13,
+      "rangedStrength": 18,
+      "cost": 120,
+      "requiredTech": "Machinery",
+      "upgradesTo": "Gatling Gun",
+      "obsoleteTech": "Industrialization"
+    },
+    {
+      "name": "Chu-Ko-Nu",
+      "unitType": "Archery",
+      "uniqueTo": "China",
+      "movement": 2,
+      "strength": 13,
+      "rangedStrength": 14,
+      "replaces": "Crossbowman",
+      "cost": 120,
+      "requiredTech": "Machinery",
+      "upgradesTo": "Gatling Gun",
+      "obsoleteTech": "Industrialization",
+      "promotions": [
+        "[Chu-Ko-Nu] ability"
+      ]
+    },
+    {
+      "name": "Longbowman",
+      "unitType": "Archery",
+      "range": 2,
+      "movement": 2,
+      "strength": 13,
+      "rangedStrength": 18,
+      "replaces": "Crossbowman",
+      "uniqueTo": "England",
+      "cost": 120,
+      "requiredTech": "Machinery",
+      "upgradesTo": "Gatling Gun",
+      "obsoleteTech": "Industrialization",
+      "promotions": [
+        "Extended Range"
+      ]
+    },
+    {
+      "name": "Trebuchet",
+      "unitType": "Siege",
+      "movement": 2,
+      "strength": 12,
+      "rangedStrength": 14,
+      "cost": 120,
+      "requiredTech": "Physics",
+      "obsoleteTech": "Chemistry",
+      "upgradesTo": "Cannon",
+      "uniques": [
+        "[+200]% Strength <vs cities> <when attacking>",
+        "No defensive terrain bonus",
+        "Must set up to ranged attack",
+        "[-1] Sight",
+        "Never appears as a Barbarian unit"
+      ]
+    },
+    {
+      "name": "Hwach'a",
+      "unitType": "Siege",
+      "replaces": "Trebuchet",
+      "uniqueTo": "Korea",
+      "movement": 2,
+      "strength": 11,
+      "rangedStrength": 26,
+      "cost": 120,
+      "requiredTech": "Physics",
+      "obsoleteTech": "Chemistry",
+      "upgradesTo": "Cannon",
+      "uniques": [
+        "No defensive terrain bonus",
+        "Must set up to ranged attack"
+      ]
+    },
+    {
+      "name": "Longswordsman",
+      "unitType": "Sword",
+      "movement": 2,
+      "strength": 21,
+      "cost": 120,
+      "requiredTech": "Steel",
+      "upgradesTo": "Musketman",
+      "obsoleteTech": "Gunpowder",
+      "requiredResource": "Iron"
+    },
+    {
+      "name": "Samurai",
+      "unitType": "Sword",
+      "replaces": "Longswordsman",
+      "uniqueTo": "Japan",
+      "movement": 2,
+      "strength": 21,
+      "cost": 120,
+      "requiredTech": "Steel",
+      "upgradesTo": "Musketman",
+      "obsoleteTech": "Gunpowder",
+      "requiredResource": "Iron",
+      "promotions": [
+        "Shock I",
+        "Great Generals II"
+      ],
+      "uniques": [
+        "Can instantly construct a [Fishing Boats] improvement"
+      ]
+    },
+    {
+      "name": "Berserker",
+      "unitType": "Sword",
+      "replaces": "Longswordsman",
+      "uniqueTo": "Denmark",
+      "movement": 3,
+      "strength": 21,
+      "cost": 120,
+      "requiredTech": "Metal Casting",
+      "upgradesTo": "Musketman",
+      "obsoleteTech": "Metallurgy",
+      "requiredResource": "Iron",
+      "promotions": [
+        "Amphibious"
+      ]
+    },
+    {
+      "name": "Caravel",
+      "unitType": "Melee Water",
+      "movement": 4,
+      "strength": 20,
+      "cost": 120,
+      "requiredTech": "Astronomy",
+      "upgradesTo": "Ironclad",
+      "obsoleteTech": "Combustion",
+      "uniques": [
+        "[+1] Sight",
+        "Withdraws before melee combat <with [80]% chance>"
+      ]
+    },
+    {
+      "name": "Turtle Ship",
+      "unitType": "Melee Water",
+      "replaces": "Caravel",
+      "uniqueTo": "Korea",
+      "movement": 4,
+      "strength": 36,
+      "cost": 120,
+      "requiredTech": "Astronomy",
+      "upgradesTo": "Ironclad",
+      "obsoleteTech": "Combustion",
+      "uniques": [
+        "Cannot enter ocean tiles"
+      ]
+    },
+    {
+      "name": "Musketman",
+      "unitType": "Gunpowder",
+      "movement": 2,
+      "strength": 24,
+      "cost": 150,
+      "requiredTech": "Gunpowder",
+      "upgradesTo": "Rifleman",
+      "obsoleteTech": "Rifling"
+    },
+    {
+      "name": "Musketeer",
+      "unitType": "Gunpowder",
+      "replaces": "Musketman",
+      "uniqueTo": "France",
+      "movement": 2,
+      "strength": 28,
+      "cost": 150,
+      "requiredTech": "Gunpowder",
+      "upgradesTo": "Rifleman",
+      "obsoleteTech": "Rifling"
+    },
+    {
+      "name": "Janissary",
+      "unitType": "Gunpowder",
+      "replaces": "Musketman",
+      "uniqueTo": "The Ottomans",
+      "movement": 2,
+      "strength": 24,
+      "cost": 150,
+      "requiredTech": "Gunpowder",
+      "upgradesTo": "Rifleman",
+      "obsoleteTech": "Rifling",
+      "promotions": [
+        "[Janissary] ability"
+      ]
+    },
+    {
+      "name": "Minuteman",
+      "unitType": "Gunpowder",
+      "replaces": "Musketman",
+      "uniqueTo": "America",
+      "movement": 2,
+      "strength": 24,
+      "cost": 150,
+      "requiredTech": "Gunpowder",
+      "upgradesTo": "Rifleman",
+      "obsoleteTech": "Rifling",
+      "uniques": [
+        "Ignores terrain cost"
+      ],
+      "promotions": [
+        "Drill I"
+      ]
+    },
+    {
+      "name": "Tercio",
+      "unitType": "Gunpowder",
+      "replaces": "Musketman",
+      "uniqueTo": "Spain",
+      "movement": 2,
+      "strength": 26,
+      "cost": 160,
+      "requiredTech": "Gunpowder",
+      "upgradesTo": "Rifleman",
+      "obsoleteTech": "Rifling",
+      "uniques": [
+        "[+50]% Strength <vs [Mounted] units>"
+      ]
+    },
+    {
+      "name": "Privateer",
+      "unitType": "Melee Water",
+      "movement": 5,
+      "strength": 25,
+      "cost": 150,
+      "requiredTech": "Navigation",
+      "upgradesTo": "Destroyer",
+      "promotions": [
+        "Coastal Raider I",
+        "[Privateer] ability"
+      ]
+    },
+    {
+      "name": "Sea Beggar",
+      "unitType": "Melee Water",
+      "replaces": "Privateer",
+      "uniqueTo": "The Netherlands",
+      "movement": 5,
+      "strength": 25,
+      "cost": 150,
+      "requiredTech": "Navigation",
+      "upgradesTo": "Destroyer",
+      "promotions": [
+        "Coastal Raider I",
+        "Coastal Raider II",
+        "Supply",
+        "[Privateer] ability"
+      ]
+    },
+    {
+      "name": "Frigate",
+      "unitType": "Ranged Water",
+      "movement": 5,
+      "strength": 25,
+      "rangedStrength": 28,
+      "cost": 185,
+      "requiredResource": "Iron",
+      "requiredTech": "Navigation",
+      "obsoleteTech": "Electronics",
+      "upgradesTo": "Battleship"
+    },
+    {
+      "name": "Ship of the Line",
+      "unitType": "Ranged Water",
+      "replaces": "Frigate",
+      "uniqueTo": "England",
+      "movement": 5,
+      "strength": 30,
+      "rangedStrength": 35,
+      "cost": 185,
+      "requiredResource": "Iron",
+      "uniques": [
+        "[+1] Sight"
+      ],
+      "requiredTech": "Navigation",
+      "obsoleteTech": "Electronics",
+      "upgradesTo": "Battleship"
+    },
+    {
+      "name": "Lancer",
+      "unitType": "Mounted",
+      "movement": 4,
+      "strength": 25,
+      "cost": 185,
+      "requiredTech": "Metallurgy",
+      "requiredResource": "Horses",
+      "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        "[-33]% Strength <vs cities> <when attacking>",
+        "Never appears as a Barbarian unit"
+      ],
+      "promotions": [
+        "Formation I"
+      ],
+      "upgradesTo": "Anti-Tank Gun",
+      "obsoleteTech": "Combined Arms"
+    },
+    {
+      "name": "Sipahi",
+      "unitType": "Mounted",
+      "replaces": "Lancer",
+      "uniqueTo": "The Ottomans",
+      "movement": 5,
+      "strength": 25,
+      "cost": 185,
+      "requiredTech": "Metallurgy",
+      "requiredResource": "Horses",
+      "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        "[-33]% Strength <vs cities> <when attacking>",
+        "[+1] Sight"
+      ],
+      "promotions": [
+        "[Sipahi] ability",
+        "Formation I"
+      ],
+      "upgradesTo": "Anti-Tank Gun",
+      "obsoleteTech": "Combined Arms"
+    },
+    {
+      "name": "Hakkapeliitta",
+      "unitType": "Mounted",
+      "replaces": "Lancer",
+      "uniqueTo": "Sweden",
+      "movement": 4,
+      "strength": 25,
+      "cost": 185,
+      "requiredTech": "Metallurgy",
+      "requiredResource": "Horses",
+      "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        "[-33]% Strength <vs cities> <when attacking>"
+      ],
+      "promotions": [
+        "[Hakkapeliitta] ability",
+        "Formation I"
+      ],
+      "upgradesTo": "Anti-Tank Gun",
+      "obsoleteTech": "Combined Arms"
+    },
+    {
+      "name": "Cannon",
+      "unitType": "Siege",
+      "movement": 2,
+      "strength": 14,
+      "rangedStrength": 20,
+      "cost": 185,
+      "requiredTech": "Chemistry",
+      "upgradesTo": "Artillery",
+      "obsoleteTech": "Dynamite",
+      "uniques": [
+        "[+200]% Strength <vs cities> <when attacking>",
+        "No defensive terrain bonus",
+        "Must set up to ranged attack",
+        "[-1] Sight",
+        "Never appears as a Barbarian unit"
+      ]
+    },
+    {
+      "name": "Gatling Gun",
+      "unitType": "Ranged Gunpowder",
+      "range": 1,
+      "movement": 2,
+      "strength": 30,
+      "rangedStrength": 30,
+      "cost": 225,
+      "requiredTech": "Industrialization",
+      "upgradesTo": "Machine Gun",
+      "obsoleteTech": "Ballistics"
+    },
+    {
+      "name": "Rifleman",
+      "unitType": "Gunpowder",
+      "movement": 2,
+      "strength": 34,
+      "cost": 225,
+      "requiredTech": "Rifling",
+      "obsoleteTech": "Replaceable Parts",
+      "upgradesTo": "Great War Infantry"
+    },
+    {
+      "name": "Norwegian Ski Infantry",
+      "unitType": "Gunpowder",
+      "replaces": "Rifleman",
+      "uniqueTo": "Denmark",
+      "movement": 2,
+      "strength": 34,
+      "cost": 225,
+      "requiredTech": "Rifling",
+      "obsoleteTech": "Replaceable Parts",
+      "upgradesTo": "Great War Infantry",
+      "promotions": [
+        "[Norwegian Ski Infantry] ability"
+      ]
+    },
+    {
+      "name": "Carolean",
+      "unitType": "Gunpowder",
+      "replaces": "Rifleman",
+      "uniqueTo": "Sweden",
+      "movement": 2,
+      "strength": 34,
+      "cost": 225,
+      "requiredTech": "Rifling",
+      "obsoleteTech": "Replaceable Parts",
+      "upgradesTo": "Great War Infantry",
+      "promotions": [
+        "March"
+      ]
+    },
+    {
+      "name": "Mehal Sefari",
+      "unitType": "Gunpowder",
+      "replaces": "Rifleman",
+      "uniqueTo": "Ethiopia",
+      "movement": 2,
+      "strength": 34,
+      "cost": 200,
+      "requiredTech": "Rifling",
+      "obsoleteTech": "Replaceable Parts",
+      "upgradesTo": "Great War Infantry",
+      "promotions": [
+        "Drill I",
+        "Home Sweet Home"
+      ]
+    },
+    {
+      "name": "Cavalry",
+      "unitType": "Mounted",
+      "movement": 4,
+      "strength": 34,
+      "cost": 225,
+      "requiredTech": "Military Science",
+      "obsoleteTech": "Combustion",
+      "requiredResource": "Horses",
+      "upgradesTo": "Landship",
+      "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        "[-33]% Strength <vs cities> <when attacking>",
+        "Never appears as a Barbarian unit"
+      ]
+    },
+    {
+      "name": "Cossack",
+      "unitType": "Mounted",
+      "replaces": "Cavalry",
+      "uniqueTo": "Russia",
+      "movement": 4,
+      "strength": 34,
+      "cost": 225,
+      "requiredTech": "Military Science",
+      "obsoleteTech": "Combustion",
+      "requiredResource": "Horses",
+      "upgradesTo": "Landship",
+      "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        "[-33]% Strength <vs cities> <when attacking>"
+      ],
+      "promotions": [
+        "[Cossack] ability"
+      ]
+    },
+    {
+      "name": "Hussar",
+      "unitType": "Mounted",
+      "replaces": "Cavalry",
+      "uniqueTo": "Austria",
+      "movement": 5,
+      "strength": 34,
+      "cost": 225,
+      "requiredTech": "Military Science",
+      "obsoleteTech": "Combustion",
+      "requiredResource": "Horses",
+      "upgradesTo": "Landship",
+      "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        "[-33]% Strength <vs cities> <when attacking>",
+        "[+1] Sight"
+      ],
+      "promotions": [
+        "[Hussar] ability"
+      ]
+    },
+    {
+      "name": "Ironclad",
+      "unitType": "Melee Water",
+      "movement": 3,
+      "strength": 45,
+      "cost": 250,
+      "requiredTech": "Steam Power",
+      "requiredResource": "Coal",
+      "upgradesTo": "Destroyer",
+      "obsoleteTech": "Combustion",
+      "uniques": [
+        "[+33]% Strength <vs cities>",
+        "Double movement in [Coast]",
+        "Never appears as a Barbarian unit"
+      ]
+    },
+    {
+      "name": "Artillery",
+      "unitType": "Siege",
+      "movement": 2,
+      "strength": 21,
+      "rangedStrength": 28,
+      "range": 3,
+      "cost": 320,
+      "requiredTech": "Dynamite",
+      "upgradesTo": "Rocket Artillery",
+      "uniques": [
+        "[+200]% Strength <vs cities> <when attacking>",
+        "No defensive terrain bonus",
+        "Must set up to ranged attack",
+        "[-1] Sight",
+        "Never appears as a Barbarian unit"
+      ],
+      "promotions": [
+        "Indirect Fire"
+      ]
+    },
+    {
+      "name": "Submarine",
+      "unitType": "Submarine",
+      "movement": 5,
+      "strength": 35,
+      "rangedStrength": 60,
+      "cost": 325,
+      "requiredTech": "Refrigeration",
+      "upgradesTo": "Nuclear Submarine",
+      "uniques": [
+        "[+75]% Strength <when attacking>",
+        "Can only attack [Water] tiles",
+        "Never appears as a Barbarian unit"
+      ]
+    },
+    {
+      "name": "Great War Infantry",
+      "unitType": "Gunpowder",
+      "movement": 2,
+      "strength": 50,
+      "cost": 320,
+      "requiredTech": "Replaceable Parts",
+      "upgradesTo": "Infantry",
+      "obsoleteTech": "Plastics"
+    },
+    {
+      "name": "Foreign Legion",
+      "unitType": "Gunpowder",
+      "replaces": "Great War Infantry",
+      "uniqueTo": "France",
+      "movement": 2,
+      "strength": 50,
+      "cost": 320,
+      "requiredTech": "Replaceable Parts",
+      "upgradesTo": "Infantry",
+      "obsoleteTech": "Plastics",
+      "uniques": [
+        "[+20]% Strength <when fighting in [Foreign Land] tiles>"
+      ]
+    },
+    {
+      "name": "Triplane",
+      "unitType": "Fighter",
+      "movement": 1,
+      "strength": 35,
+      "rangedStrength": 35,
+      "range": 5,
+      "cost": 325,
+      "requiredTech": "Flight",
+      "requiredResource": "Oil",
+      "upgradesTo": "Fighter",
+      "obsoleteTech": "Radar",
+      "uniques": [
+        "[50]% chance to intercept air attacks",
+        "[+150]% Strength <vs [Bomber] units>",
+        "[+150]% Strength <vs [Helicopter] units>"
+      ]
+    },
+    {
+      "name": "Great War Bomber",
+      "unitType": "Bomber",
+      "movement": 1,
+      "strength": 50,
+      "rangedStrength": 50,
+      "range": 6,
+      "cost": 325,
+      "requiredTech": "Flight",
+      "requiredResource": "Oil",
+      "upgradesTo": "Bomber",
+      "obsoleteTech": "Radar"
+    },
+    {
+      "name": "Infantry",
+      "unitType": "Gunpowder",
+      "movement": 2,
+      "strength": 70,
+      "cost": 375,
+      "requiredTech": "Plastics",
+      "upgradesTo": "Mechanized Infantry",
+      "obsoleteTech": "Mobile Tactics"
+    },
+    {
+      "name": "Carrier",
+      "unitType": "Aircraft Carrier",
+      "movement": 5,
+      "strength": 40,
+      "cost": 375,
+      "requiredTech": "Electronics",
+      "uniques": [
+        "Cannot attack",
+        "Can carry [2] [Aircraft] units"
+      ]
+    },
+    {
+      "name": "Battleship",
+      "unitType": "Ranged Water",
+      "movement": 5,
+      "strength": 55,
+      "rangedStrength": 55,
+      "range": 3,
+      "cost": 375,
+      "requiredResource": "Oil",
+      "requiredTech": "Electronics",
+      "uniques": [
+        "Never appears as a Barbarian unit"
+      ],
+      "promotions": [
+        "Indirect Fire"
+      ]
+    },
+    {
+      "name": "Machine Gun",
+      "unitType": "Ranged Gunpowder",
+      "range": 1,
+      "movement": 2,
+      "strength": 60,
+      "rangedStrength": 60,
+      "cost": 350,
+      "requiredTech": "Ballistics",
+      "upgradesTo": "Mechanized Infantry"
+    },
+    {
+      "name": "Anti-Aircraft Gun",
+      "unitType": "Gunpowder",
+      "movement": 2,
+      "strength": 50,
+      "cost": 375,
+      "requiredTech": "Ballistics",
+      "upgradesTo": "Mobile SAM",
+      "obsoleteTech": "Rocketry",
+      "uniques": [
+        "[100]% chance to intercept air attacks",
+        "[+150]% Strength <vs [Air] units>",
+        "[+150]% Strength <vs [Helicopter] units>",
+        "Never appears as a Barbarian unit"
+      ]
+    },
+    {
+      "name": "Landship",
+      "unitType": "Armored",
+      "movement": 4,
+      "strength": 60,
+      "cost": 350,
+      "requiredTech": "Combustion",
+      "requiredResource": "Oil",
+      "upgradesTo": "Tank",
+      "obsoleteTech": "Combined Arms",
+      "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        "Never appears as a Barbarian unit"
+      ]
+    },
+    {
+      "name": "Destroyer",
+      "unitType": "Melee Water",
+      "movement": 6,
+      "strength": 55,
+      "cost": 375,
+      "requiredTech": "Combustion",
+      "uniques": [
+        "Can see invisible [Submarine] units",
+        "[40]% chance to intercept air attacks",
+        "Withdraws before melee combat <with [80]% chance>",
+        "[+100]% Strength <vs [Submarine] units>"
+      ]
+    },
+    {
+      "name": "Marine",
+      "unitType": "Gunpowder",
+      "movement": 2,
+      "strength": 65,
+      "cost": 400,
+      "requiredTech": "Pharmaceuticals",
+      "promotions": [
+        "Amphibious"
+      ],
+      "uniques": [
+        "[+1] Sight <when [Embarked]>",
+        "[+100]% Strength <when defending> <when [Embarked]>"
+      ]
+    },
+    {
+      "name": "Fighter",
+      "unitType": "Fighter",
+      "movement": 1,
+      "strength": 45,
+      "rangedStrength": 45,
+      "range": 8,
+      "cost": 375,
+      "requiredTech": "Radar",
+      "requiredResource": "Oil",
+      "upgradesTo": "Jet Fighter",
+      "uniques": [
+        "[100]% chance to intercept air attacks",
+        "[+150]% Strength <vs [Bomber] units>",
+        "[+150]% Strength <vs [Helicopter] units>"
+      ]
+    },
+    {
+      "name": "Zero",
+      "unitType": "Fighter",
+      "replaces": "Fighter",
+      "uniqueTo": "Japan",
+      "movement": 1,
+      "strength": 45,
+      "rangedStrength": 45,
+      "range": 8,
+      "cost": 375,
+      "requiredTech": "Radar",
+      "upgradesTo": "Jet Fighter",
+      "uniques": [
+        "[100]% chance to intercept air attacks",
+        "[+150]% Strength <vs [Bomber] units>",
+        "[+150]% Strength <vs [Helicopter] units>"
+      ],
+      "promotions": [
+        "[Zero] ability"
+      ]
+    },
+    {
+      "name": "Bomber",
+      "unitType": "Bomber",
+      "movement": 1,
+      "strength": 65,
+      "rangedStrength": 65,
+      "range": 10,
+      "cost": 375,
+      "requiredTech": "Radar",
+      "requiredResource": "Oil",
+      "upgradesTo": "Stealth Bomber"
+    },
+    {
+      "name": "B17",
+      "unitType": "Bomber",
+      "replaces": "Bomber",
+      "uniqueTo": "America",
+      "movement": 1,
+      "strength": 70,
+      "rangedStrength": 70,
+      "range": 10,
+      "cost": 375,
+      "requiredTech": "Radar",
+      "requiredResource": "Oil",
+      "promotions": [
+        "Evasion",
+        "Siege I"
+      ],
+      "upgradesTo": "Stealth Bomber"
+    },
+    {
+      "name": "Paratrooper",
+      "unitType": "Gunpowder",
+      "movement": 2,
+      "strength": 65,
+      "cost": 375,
+      "requiredTech": "Radar",
+      "uniques": [
+        "May Paradrop to [Land] tiles up to [5] tiles away <in [{Friendly} {Land}] tiles>",
+        "Never appears as a Barbarian unit"
+      ]
+    },
+    {
+      "name": "Tank",
+      "unitType": "Armored",
+      "movement": 5,
+      "strength": 70,
+      "cost": 375,
+      "requiredTech": "Combined Arms",
+      "requiredResource": "Oil",
+      "upgradesTo": "Modern Armor",
+      "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        "Never appears as a Barbarian unit"
+      ]
+    },
+    {
+      "name": "Panzer",
+      "unitType": "Armored",
+      "uniqueTo": "Germany",
+      "replaces": "Tank",
+      "movement": 6,
+      "strength": 80,
+      "cost": 375,
+      "requiredTech": "Combined Arms",
+      "requiredResource": "Oil",
+      "upgradesTo": "Modern Armor",
+      "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus"
+      ]
+    },
+    {
+      "name": "Anti-Tank Gun",
+      "unitType": "Gunpowder",
+      "movement": 2,
+      "strength": 50,
+      "cost": 300,
+      "requiredTech": "Combined Arms",
+      "upgradesTo": "Helicopter Gunship",
+      "uniques": [
+        "[+100]% Strength <vs [Armored] units>",
+        "Never appears as a Barbarian unit"
+      ]
+    },
+    {
+      "name": "Atomic Bomb",
+      "unitType": "Atomic Bomber",
+      "movement": 1,
+      "strength": 150,
+      "rangedStrength": 150,
+      "range": 10,
+      "cost": 600,
+      "requiredTech": "Nuclear Fission",
+      "requiredResource": "Uranium",
+      "promotions": [
+        "Evasion"
+      ],
+      "uniques": [
+        "Nuclear weapon of Strength [1]",
+        "Only available <if [Manhattan Project] is constructed>",
+        "Self-destructs when attacking",
+        "Blast radius [2]"
+      ]
+    },
+    {
+      "name": "Rocket Artillery",
+      "unitType": "Siege",
+      "movement": 2,
+      "strength": 45,
+      "rangedStrength": 60,
+      "range": 3,
+      "cost": 425,
+      "requiredTech": "Rocketry",
+      "requiredResource": "Aluminum",
+      "uniques": [
+        "[+200]% Strength <vs cities> <when attacking>",
+        "No defensive terrain bonus",
+        "[-1] Sight",
+        "Never appears as a Barbarian unit"
+      ],
+      "promotions": [
+        "Indirect Fire"
+      ]
+    },
+    {
+      "name": "Mobile SAM",
+      "unitType": "Gunpowder",
+      "movement": 3,
+      "strength": 65,
+      "cost": 425,
+      "requiredTech": "Rocketry",
+      "uniques": [
+        "[100]% chance to intercept air attacks",
+        "[+150]% Strength <vs [Air] units>",
+        "[+150]% Strength <vs [Helicopter] units>",
+        "Never appears as a Barbarian unit"
+      ]
+    },
+    {
+      "name": "Guided Missile",
+      "unitType": "Missile",
+      "movement": 1,
+      "strength": 60,
+      "rangedStrength": 60,
+      "range": 8,
+      "cost": 150,
+      "requiredTech": "Advanced Ballistics",
+      "uniques": [
+        "[-100]% maintenance costs"
+      ]
+    },
+    {
+      "name": "Nuclear Missile",
+      "unitType": "Missile",
+      "movement": 1,
+      "strength": 300,
+      "rangedStrength": 300,
+      "range": 12,
+      "cost": 1000,
+      "requiredTech": "Advanced Ballistics",
+      "uniques": [
+        "Nuclear weapon of Strength [2]",
+        "Only available <if [Manhattan Project] is constructed>",
+        "Blast radius [2]",
+        "Consumes [2] [Uranium]"
+      ]
+    },
+    {
+      "name": "Helicopter Gunship",
+      "unitType": "Helicopter",
+      "movement": 6,
+      "strength": 60,
+      "cost": 425,
+      "requiredTech": "Computers",
+      "requiredResource": "Aluminum",
+      "uniques": [
+        "[+100]% Strength <vs [Armored] units>",
+        "No defensive terrain bonus",
+        "Can move after attacking",
+        "All tiles cost 1 movement",
+        "Ignores Zone of Control",
+        "Unable to capture cities",
+        "Never appears as a Barbarian unit"
+      ]
+    },
+    {
+      "name": "Nuclear Submarine",
+      "unitType": "Submarine",
+      "movement": 6,
+      "strength": 50,
+      "range": 3,
+      "rangedStrength": 85,
+      "cost": 425,
+      "requiredTech": "Telecommunications",
+      "uniques": [
+        "[+75]% Strength <when attacking>",
+        "Can only attack [Water] tiles",
+        "[+1] Sight",
+        "Can carry [2] [Missile] units",
+        "Never appears as a Barbarian unit"
+      ]
+    },
+    {
+      "name": "Mechanized Infantry",
+      "unitType": "Gunpowder",
+      "movement": 3,
+      "strength": 90,
+      "cost": 375,
+      "requiredTech": "Mobile Tactics",
+      "uniques": [
+        "Never appears as a Barbarian unit"
+      ]
+    },
+    {
+      "name": "Missile Cruiser",
+      "unitType": "Ranged Water",
+      "movement": 7,
+      "strength": 80,
+      "rangedStrength": 100,
+      "range": 3,
+      "cost": 425,
+      "requiredTech": "Robotics",
+      "uniques": [
+        "[100]% chance to intercept air attacks",
+        "Can see invisible [Submarine] units",
+        "Can carry [3] [Missile] units",
+        "[+100]% Strength <vs [Submarine] units>",
+        "Never appears as a Barbarian unit"
+      ],
+      "promotions": [
+        "Indirect Fire"
+      ]
+    },
+    {
+      "name": "Modern Armor",
+      "unitType": "Armored",
+      "movement": 5,
+      "strength": 100,
+      "cost": 425,
+      "requiredTech": "Lasers",
+      "requiredResource": "Aluminum",
+      "upgradesTo": "Giant Death Robot",
+      "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        "Never appears as a Barbarian unit"
+      ]
+    },
+    {
+      "name": "Jet Fighter",
+      "unitType": "Fighter",
+      "movement": 1,
+      "strength": 75,
+      "rangedStrength": 75,
+      "range": 10,
+      "cost": 425,
+      "requiredTech": "Lasers",
+      "requiredResource": "Aluminum",
+      "uniques": [
+        "[100]% chance to intercept air attacks",
+        "[+150]% Strength <vs [Bomber] units>",
+        "[+150]% Strength <vs [Helicopter] units>"
+      ]
+    },
+    {
+      "name": "Giant Death Robot",
+      "unitType": "Armored",
+      "movement": 5,
+      "strength": 150,
+      "cost": 425,
+      "requiredTech": "Nuclear Fusion",
+      "requiredResource": "Uranium",
+      "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        "Never appears as a Barbarian unit"
+      ]
+    },
+    {
+      "name": "Stealth Bomber",
+      "unitType": "Bomber",
+      "movement": 2,
+      "strength": 85,
+      "rangedStrength": 85,
+      "range": 20,
+      "cost": 425,
+      "requiredTech": "Stealth",
+      "requiredResource": "Aluminum",
+      "uniques": [
+        "Damage taken from interception reduced by [100]%",
+        "Cannot be carried by [Carrier] units",
+        "[+4] Sight",
+        "Can see over obstacles"
+      ],
+      "promotions": [
+        "Evasion"
+      ]
+    },
+    {
+      "name": "Great Artist",
+      "unitType": "Civilian",
+      "uniques": [
+        "Empire enters a [8]-turn Golden Age <by consuming this unit>",
+        "Can instantly construct a [Landmark] improvement <by consuming this unit>",
+        "Is part of Great Person group [Great Person]",
+        "[This Unit] gets a name from the [Artist] group",
+        "Great Person - [Culture]",
+        "Unbuildable",
+        "Uncapturable"
+      ],
+      "movement": 2
+    },
+    {
+      "name": "Great Scientist",
+      "unitType": "Civilian",
+      "uniques": [
+        "Can hurry technology research",
+        "Can instantly construct a [Academy] improvement <by consuming this unit>",
+        "Is part of Great Person group [Great Person]",
+        "[This Unit] gets a name from the [Scientist] group",
+        "Great Person - [Science]",
+        "Unbuildable",
+        "Uncapturable"
+      ],
+      "movement": 2
+    },
+    {
+      "name": "Great Merchant",
+      "unitType": "Civilian",
+      "uniques": [
+        "Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence",
+        "Can instantly construct a [Customs house] improvement <by consuming this unit>",
+        "Is part of Great Person group [Great Person]",
+        "[This Unit] gets a name from the [Merchant] group",
+        "Great Person - [Gold]",
+        "Unbuildable",
+        "Uncapturable"
+      ],
+      "movement": 2
+    },
+    {
+      "name": "Great Engineer",
+      "unitType": "Civilian",
+      "uniques": [
+        "Can speed up construction of a building",
+        "Can instantly construct a [Manufactory] improvement <by consuming this unit>",
+        "Is part of Great Person group [Great Person]",
+        "[This Unit] gets a name from the [Engineer] group",
+        "Great Person - [Production]",
+        "Unbuildable",
+        "Uncapturable"
+      ],
+      "movement": 2
+    },
+    {
+      "name": "Great Prophet",
+      "unitType": "Civilian",
+      "uniques": [
+        "Can instantly construct a [Holy site] improvement <by consuming this unit> <if it hasn't used other actions yet>",
+        "Can Spread Religion <for [2] movement> <[4] times> <after which this unit is consumed>",
+        "Removes other religions when spreading religion",
+        "May found a religion <by consuming this unit> <if it hasn't used other actions yet>",
+        "May enhance a religion <by consuming this unit>  <if it hasn't used other actions yet>",
+        "Is part of Great Person group [Prophet]",
+        "[This Unit] gets a name from the [Prophet] group",
+        "May enter foreign tiles without open borders",
+        "[-1] Sight",
+        "Great Person - [Faith]",
+        "Unbuildable",
+        "Religious Unit",
+        "Only available <when religion is enabled>",
+        "Takes your religion over the one in their birth city"
+      ],
+      "movement": 2
+    },
+    {
+      "name": "Great General",
+      "unitType": "Civilian",
+      "uniques": [
+        "[+15]% Strength bonus for [{Military} {Land}] units within [2] tiles",
+        "Can instantly construct a [Citadel] improvement <by consuming this unit>",
+        "Can be earned through combat <for [Land] units>",
+        "Is part of Great Person group [General]",
+        "[This Unit] gets a name from the [General] group",
+        "Great Person - [War]",
+        "Unbuildable",
+        "Uncapturable"
+      ],
+      "movement": 2
+    },
+    {
+      "name": "Khan",
+      "unitType": "Civilian",
+      "uniqueTo": "Mongolia",
+      "replaces": "Great General",
+      "uniques": [
+        "[+15]% Strength bonus for [Military] units within [2] tiles",
+        "All adjacent units heal [+15] HP when healing",
+        "[+15] HP when healing",
+        "Can instantly construct a [Citadel] improvement <by consuming this unit>",
+        "Can be earned through combat <for [Land] units>",
+        "Is part of Great Person group [General]",
+        "[This Unit] gets a name from the [Khan] group",
+        "Great Person - [War]",
+        "Unbuildable",
+        "Uncapturable"
+      ],
+      "movement": 5
+    },
+    {
+      "name": "Great Admiral",
+      "unitType": "Civilian Water",
+      "uniques": [
+        "May Paradrop to [{your} {Coastal} {City center}] tiles up to [25] tiles away <in [City center] tiles>",
+        "[+15]% Strength bonus for [{Military} {Water}] units within [2] tiles",
+        "Can be earned through combat <for [Water] units>",
+        "Is part of Great Person group [Admiral]",
+        "[This Unit] gets a name from the [Admiral] group",
+        "Great Person - [War]",
+        "Unbuildable",
+        "Uncapturable"
+      ],
+      "movement": 4
+    },
+    {
+      "name": "Missionary",
+      "unitType": "Civilian",
+      "uniques": [
+        "Can Spread Religion <for [4] movement> <[2] times> <after which this unit is consumed>",
+        "May enter foreign tiles without open borders, but loses [250] religious strength each turn it ends there",
+        "Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+        "[-1] Sight",
+        "Unbuildable",
+        "Religious Unit",
+        "Only available <when religion is enabled>"
+      ],
+      "movement": 4
+    },
+    {
+      "name": "Inquisitor",
+      "unitType": "Civilian",
+      "uniques": [
+        "Prevents spreading of religion to the city it is next to",
+        "Can remove other religions from cities <in [Friendly] tiles> <once> <after which this unit is consumed>",
+        "Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+        "[+1] Sight",
+        "Only available <when religion is enabled>",
+        "Unbuildable",
+        "Religious Unit"
+      ],
+      "movement": 3
+    },
+    {
+      "name": "SS Booster",
+      "unitType": "Civilian",
+      "movement": 2,
+      "cost": 750,
+      "requiredTech": "Advanced Ballistics",
+      "requiredResource": "Aluminum",
+      "uniques": [
+        "Spaceship part",
+        "Cannot be purchased",
+        "Only available <if [Apollo Program] is constructed>",
+        "Uncapturable",
+        "Can be added to [The Spaceship] in the Capital",
+        "Limited to [3] per Civilization",
+        "Only available <when [Scientific] Victory is enabled>"
+      ]
+    },
+    {
+      "name": "SS Cockpit",
+      "unitType": "Civilian",
+      "movement": 2,
+      "cost": 750,
+      "requiredTech": "Satellites",
+      "requiredResource": "Aluminum",
+      "uniques": [
+        "Spaceship part",
+        "Cannot be purchased",
+        "Only available <if [Apollo Program] is constructed>",
+        "Uncapturable",
+        "Can be added to [The Spaceship] in the Capital",
+        "Limited to [1] per Civilization",
+        "Only available <when [Scientific] Victory is enabled>"
+      ]
+    },
+    {
+      "name": "SS Engine",
+      "unitType": "Civilian",
+      "movement": 2,
+      "cost": 750,
+      "requiredTech": "Particle Physics",
+      "requiredResource": "Aluminum",
+      "uniques": [
+        "Spaceship part",
+        "Cannot be purchased",
+        "Only available <if [Apollo Program] is constructed>",
+        "Uncapturable",
+        "Can be added to [The Spaceship] in the Capital",
+        "Limited to [1] per Civilization",
+        "Only available <when [Scientific] Victory is enabled>"
+      ]
+    },
+    {
+      "name": "SS Stasis Chamber",
+      "unitType": "Civilian",
+      "movement": 2,
+      "cost": 750,
+      "requiredTech": "Nanotechnology",
+      "requiredResource": "Aluminum",
+      "uniques": [
+        "Spaceship part",
+        "Cannot be purchased",
+        "Only available <if [Apollo Program] is constructed>",
+        "Uncapturable",
+        "Can be added to [The Spaceship] in the Capital",
+        "Limited to [1] per Civilization",
+        "Only available <when [Scientific] Victory is enabled>"
+      ]
+    }
+  ],
+  "Buildings": [
+    {
+      "name": "Palace",
+      "isNationalWonder": true,
+      "production": 3,
+      "science": 3,
+      "gold": 3,
+      "culture": 1,
+      "cityStrength": 2.5,
+      "cost": 0,
+      "uniques": [
+        "Indicates the capital city"
+      ]
+    },
+    {
+      "name": "Monument",
+      "culture": 2,
+      "cost": 40,
+      "maintenance": 1,
+      "uniques": [
+        "Destroyed when the city is captured"
+      ]
+    },
+    {
+      "name": "Stele",
+      "replaces": "Monument",
+      "uniqueTo": "Ethiopia",
+      "culture": 2,
+      "faith": 2,
+      "cost": 40,
+      "maintenance": 1,
+      "uniques": [
+        "Destroyed when the city is captured"
+      ]
+    },
+    {
+      "name": "Granary",
+      "food": 2,
+      "maintenance": 1,
+      "uniques": [
+        "[+1 Food] from [Deer] tiles [in this city]",
+        "[+1 Food] from [Bananas] tiles [in this city]",
+        "[+1 Food] from [Wheat] tiles [in this city]"
+      ],
+      "requiredTech": "Pottery"
+    },
+    {
+      "name": "Shrine",
+      "faith": 1,
+      "cost": 40,
+      "maintenance": 1,
+      "requiredTech": "Pottery",
+      "uniques": [
+        "Only available <when religion is enabled>"
+      ]
+    },
+    {
+      "name": "Pyramid",
+      "replaces": "Shrine",
+      "uniqueTo": "The Maya",
+      "faith": 2,
+      "science": 2,
+      "cost": 40,
+      "maintenance": 1,
+      "requiredTech": "Pottery",
+      "uniques": [
+        "Only available <when religion is enabled>"
+      ]
+    },
+    {
+      "name": "Temple of Artemis",
+      "culture": 1,
+      "isWonder": true,
+      "uniques": [
+        "[+10]% [Food] [in all cities]",
+        "[+15]% Production when constructing [Archery] units [in this city]",
+        "[+15]% Production when constructing [Ranged Gunpowder] units [in this city]"
+      ],
+      "requiredTech": "Archery",
+      "quote": "'It is not so much for its beauty that the forest makes a claim upon men's hearts, as for that subtle something, that quality of air, that emanation from old trees, that so wonderfully changes and renews a weary spirit.' - Robert Louis Stevenson"
+    },
+    {
+      "name": "Stone Works",
+      "happiness": 1,
+      "production": 1,
+      "maintenance": 1,
+      "uniques": [
+        "Must not be on [Plains]",
+        "[+1 Production] from [Stone] tiles [in this city]",
+        "[+1 Production] from [Marble] tiles [in this city]"
+      ],
+      "requiredTech": "Calendar"
+    },
+    {
+      "name": "Stonehenge",
+      "faith": 5,
+      "isWonder": true,
+      "requiredTech": "Calendar",
+      "quote": "'Time crumbles things; everything grows old and is forgotten under the power of time' - Aristotle"
+    },
+    {
+      "name": "Library",
+      "maintenance": 1,
+      "uniques": [
+        "[+1 Science] per [2] population [in this city]"
+      ],
+      "requiredTech": "Writing"
+    },
+    {
+      "name": "Paper Maker",
+      "replaces": "Library",
+      "uniqueTo": "China",
+      "gold": 2,
+      "uniques": [
+        "[+1 Science] per [2] population [in this city]"
+      ],
+      "requiredTech": "Writing"
+    },
+    {
+      "name": "The Great Library",
+      "science": 3,
+      "culture": 1,
+      "isWonder": true,
+      "requiredTech": "Writing",
+      "uniques": [
+        "Free Technology",
+        "Gain a free [Library] [in this city]"
+      ],
+      "quote": "'Libraries are as the shrine where all the relics of the ancient saints, full of true virtue, and all that without delusion or imposture are preserved and reposed.' - Sir Francis Bacon"
+    },
+    {
+      "name": "Circus",
+      "happiness": 2,
+      "requiredTech": "Trapping"
+    },
+    {
+      "name": "Water Mill",
+      "maintenance": 2,
+      "food": 2,
+      "production": 1,
+      "uniques": [
+        "Must be on [River]"
+      ],
+      "requiredTech": "The Wheel"
+    },
+    {
+      "name": "Floating Gardens",
+      "replaces": "Water Mill",
+      "uniqueTo": "Aztecs",
+      "food": 2,
+      "production": 1,
+      "uniques": [
+        "[+2 Food] from [Lakes] tiles [in this city]",
+        "Must be next to [Fresh water]"
+      ],
+      "maintenance": 1,
+      "percentStatBonus": {
+        "food": 15
+      },
+      "requiredTech": "The Wheel"
+    },
+    {
+      "name": "Walls",
+      "cityStrength": 5,
+      "requiredTech": "Masonry",
+      "uniques": [
+        "Destroyed when the city is captured"
+      ]
+    },
+    {
+      "name": "Walls of Babylon",
+      "replaces": "Walls",
+      "cost": 65,
+      "uniqueTo": "Babylon",
+      "cityStrength": 6,
+      "requiredTech": "Masonry",
+      "uniques": [
+        "Destroyed when the city is captured"
+      ]
+    },
+    {
+      "name": "The Pyramids",
+      "culture": 1,
+      "isWonder": true,
+      "uniques": [
+        "Can build [all] improvements at a [+25]% rate",
+        "[2] free [Worker] units appear"
+      ],
+      "requiredTech": "Masonry",
+      "quote": "'O, let not the pains of death which come upon thee enter into my body. I am the god Tem, and I am the foremost part of the sky, and the power which protecteth me is that which is with all the gods forever.' - The Book of the Dead, translated by Sir Ernest Alfred Wallis Budge"
+    },
+    {
+      "name": "Mausoleum of Halicarnassus",
+      "culture": 1,
+      "isWonder": true,
+      "uniques": [
+        "Gain [100] [Gold] <upon expending a [Great Person] unit> <(modified by game speed)>",
+        "[+2 Gold] from [Marble] tiles [in this city]",
+        "[+2 Gold] from [Stone] tiles [in this city]"
+      ],
+      "requiredTech": "Masonry",
+      "quote": "'The whole earth is the tomb of heroic men and their story is not given only on stone over their clay but abides everywhere without visible symbol woven into the stuff of other men's lives.' - Pericles"
+    },
+    {
+      "name": "Barracks",
+      "maintenance": 1,
+      "uniques": [
+        "New [Military] units start with [15] XP [in this city]",
+        "Destroyed when the city is captured"
+      ],
+      "requiredTech": "Bronze Working"
+    },
+    {
+      "name": "Krepost",
+      "replaces": "Barracks",
+      "uniqueTo": "Russia",
+      "maintenance": 1,
+      "uniques": [
+        "[-25]% Culture cost of natural border growth [in this city]",
+        "[-25]% Gold cost of acquiring tiles [in this city]",
+        "New [Military] units start with [15] XP [in this city]",
+        "Destroyed when the city is captured"
+      ],
+      "requiredTech": "Bronze Working"
+    },
+    {
+      "name": "Statue of Zeus",
+      "culture": 1,
+      "isWonder": true,
+      "uniques": [
+        "[+15]% Strength <for [All] units> <vs cities> <when attacking>"
+      ],
+      "requiredTech": "Bronze Working",
+      "quote": "'He spoke, the son of Kronos, and nodded his head with the dark brows, and the immortally anointed hair of the great god swept from his divine head, and all Olympos was shaken' - The Iliad"
+    },
+    {
+      "name": "Lighthouse",
+      "cost": 75,
+      "maintenance": 1,
+      "uniques": [
+        "Must be next to [Coast]",
+        "[+1 Food] from [Ocean] tiles [in this city]",
+        "[+1 Food] from [Coast] tiles [in this city]",
+        "[+1 Food] from [Fish] tiles [in this city]"
+      ],
+      "requiredTech": "Optics"
+    },
+    {
+      "name": "The Great Lighthouse",
+      "cost": 185,
+      "culture": 1,
+      "isWonder": true,
+      "uniques": [
+        "Must be next to [Coast]",
+        "[+1] Movement <for [{Military} {Water}] units>",
+        "[+1] Sight <for [{Military} {Water}] units>",
+        "Gain a free [Lighthouse] [in this city]"
+      ],
+      "requiredTech": "Optics",
+      "quote": "'They that go down to the sea in ships, that do business in great waters; these see the works of the Lord, and his wonders in the deep.' - The Bible, Psalms 107:23-24"
+    },
+    {
+      "name": "Stable",
+      "maintenance": 1,
+      "uniques": [
+        "[+15]% Production when constructing [Mounted] units [in this city]",
+        "[+1 Production] from [Cattle] tiles [in this city]",
+        "[+1 Production] from [Horses] tiles [in this city]",
+        "[+1 Production] from [Sheep] tiles [in this city]"
+      ],
+      "requiredTech": "Horseback Riding"
+    },
+    {
+      "name": "Circus Maximus",
+      "cost": 125,
+      "happiness": 5,
+      "culture": 1,
+      "isNationalWonder": true,
+      "uniques": [
+        "Only available <if [Colosseum] is constructed in all [non-[Puppeted]] cities>",
+        "Cost increases by [30] per owned city"
+      ],
+      "requiredTech": "Horseback Riding"
+    },
+    {
+      "name": "Courthouse",
+      "maintenance": 4,
+      "uniques": [
+        "Removes extra unhappiness from annexed cities",
+        "Can only be built <in [Annexed] cities>"
+      ],
+      "requiredTech": "Mathematics"
+    },
+    {
+      "name": "Hanging Gardens",
+      "food": 6,
+      "culture": 1,
+      "isWonder": true,
+      "requiredTech": "Mathematics",
+      "uniques": [
+        "Gain a free [Garden] [in this city]"
+      ],
+      "quote": "'I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.' - F. Frankfort Moore"
+    },
+    {
+      "name": "Colosseum",
+      "maintenance": 1,
+      "happiness": 2,
+      "requiredTech": "Construction"
+    },
+    {
+      "name": "Terracotta Army",
+      "culture": 6,
+      "isWonder": true,
+      "requiredTech": "Construction",
+      "quote": "'Regard your soldiers as your children, and they will follow you into the deepest valleys; look on them as your own beloved sons, and they will stand by you even unto death.' - Sun Tzu"
+    },
+    {
+      "name": "Temple",
+      "faith": 2,
+      "requiredBuilding": "Shrine",
+      "maintenance": 2,
+      "requiredTech": "Philosophy",
+      "uniques": [
+        "Only available <when religion is enabled>",
+        "Destroyed when the city is captured"
+      ]
+    },
+    {
+      "name": "Burial Tomb",
+      "replaces": "Temple",
+      "uniqueTo": "Egypt",
+      "maintenance": 0,
+      "uniques": [
+        "[+100]% Gold given to enemy if city is captured <in this city>"
+      ],
+      "faith": 2,
+      "happiness": 2,
+      "requiredBuilding": "Shrine",
+      "requiredTech": "Philosophy"
+    },
+    {
+      "name": "Mud Pyramid Mosque",
+      "replaces": "Temple",
+      "uniqueTo": "Songhai",
+      "maintenance": 0,
+      "culture": 2,
+      "faith": 2,
+      "requiredBuilding": "Shrine",
+      "requiredTech": "Philosophy"
+    },
+    {
+      "name": "National College",
+      "cost": 125,
+      "science": 3,
+      "culture": 1,
+      "isNationalWonder": true,
+      "percentStatBonus": {
+        "science": 50
+      },
+      "uniques": [
+        "Only available <if [Library] is constructed in all [non-[Puppeted]] cities>",
+        "Cost increases by [30] per owned city"
+      ],
+      "requiredTech": "Philosophy"
+    },
+    {
+      "name": "The Oracle",
+      "culture": 3,
+      "isWonder": true,
+      "uniques": [
+        "Free Social Policy"
+      ],
+      "requiredTech": "Philosophy",
+      "quote": "'The ancient Oracle said that I was the wisest of all the Greeks. It is because I alone, of all the Greeks, know that I know nothing' - Socrates"
+    },
+    {
+      "name": "Amphitheater",
+      "culture": 3,
+      "specialistSlots": {
+        "Artist": 1
+      },
+      "requiredBuilding": "Monument",
+      "maintenance": 2,
+      "uniques": [
+        "Destroyed when the city is captured"
+      ],
+      "requiredTech": "Drama and Poetry"
+    },
+    {
+      "name": "National Epic",
+      "cost": 125,
+      "culture": 1,
+      "isNationalWonder": true,
+      "uniques": [
+        "Only available <if [Monument] is constructed in all [non-[Puppeted]] cities>",
+        "[+25]% Great Person generation [in this city]",
+        "Cost increases by [30] per owned city"
+      ],
+      "requiredTech": "Drama and Poetry"
+    },
+    {
+      "name": "Market",
+      "gold": 2,
+      "specialistSlots": {
+        "Merchant": 1
+      },
+      "percentStatBonus": {
+        "gold": 25
+      },
+      "requiredTech": "Currency"
+    },
+    {
+      "name": "Bazaar",
+      "replaces": "Market",
+      "uniqueTo": "Arabia",
+      "gold": 2,
+      "specialistSlots": {
+        "Merchant": 1
+      },
+      "percentStatBonus": {
+        "gold": 25
+      },
+      "uniques": [
+        "Provides 1 extra copy of each improved luxury resource near this City",
+        "[+2 Gold] from [Oil] tiles [in this city]",
+        "[+2 Gold] from [Oasis] tiles [in this city]"
+      ],
+      "requiredTech": "Currency"
+    },
+    {
+      "name": "Mint",
+      "maintenance": 0,
+      "uniques": [
+        "[+2 Gold] from [Gold Ore] tiles [in this city]",
+        "[+2 Gold] from [Silver] tiles [in this city]"
+      ],
+      "requiredTech": "Currency"
+    },
+    {
+      "name": "Petra",
+      "culture": 1,
+      "isWonder": true,
+      "uniques": [
+        "Must be next to [Desert]",
+        "[+1 Food, +1 Production, +1 Gold] from [Desert] tiles without [Flood plains] [in this city]",
+        "Gain a free [Amphitheater] [in this city]",
+        "[+6 Culture] [in this city] <after discovering [Archaeology]>"
+      ],
+      "requiredTech": "Currency",
+      "quote": "'...who drinks the water I shall give him, says the Lord, will have a spring inside him welling up for eternal life. Let them bring me to your holy mountain in the place where you dwell. Across the desert and through the mountain to the Canyon of the Crescent Moon...' - Indiana Jones"
+    },
+    {
+      "name": "Aqueduct",
+      "maintenance": 1,
+      "uniques": [
+        "[40]% Food is carried over after population increases [in this city]"
+      ],
+      "requiredTech": "Engineering"
+    },
+    {
+      "name": "Great Wall",
+      "culture": 3,
+      "isWonder": true,
+      "uniques": [
+        "Enemy [Land] units must spend [1] extra movement points when inside your territory <before discovering [Dynamite]> <Suppress warning [*contains a conditional on a unit movement unique*]>",
+        "Gain a free [Walls] [in this city]"
+      ],
+      "requiredTech": "Engineering",
+      "quote": "'The art of war teaches us to rely not on the likelihood of the enemy's not attacking, but rather on the fact that we have made our position unassailable.' - Sun Tzu"
+    },
+    {
+      "name": "Heroic Epic",
+      "cost": 125,
+      "culture": 1,
+      "isNationalWonder": true,
+      "uniques": [
+        "Only available <if [Barracks] is constructed in all [non-[Puppeted]] cities>",
+        "All newly-trained [non-[Air]] units [in this city] receive the [Morale] promotion",
+        "Cost increases by [30] per owned city"
+      ],
+      "requiredTech": "Iron Working"
+    },
+    {
+      "name": "Colossus",
+      "cost": 185,
+      "culture": 1,
+      "gold": 5,
+      "isWonder": true,
+      "uniques": [
+        "Must be next to [Coast]",
+        "[+1 Gold] from [Water] tiles [in this city]"
+      ],
+      "requiredTech": "Iron Working",
+      "quote": "'Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.' - William Shakespeare, Julius Caesar"
+    },
+    {
+      "name": "Garden",
+      "uniques": [
+        "[+25]% Great Person generation [in this city]",
+        "Must be next to [Fresh water]"
+      ],
+      "maintenance": 1,
+      "requiredTech": "Theology"
+    },
+    {
+      "name": "Hagia Sophia",
+      "faith": 3,
+      "isWonder": true,
+      "uniques": [
+        "Gain a free [Temple] [in this city]",
+        "Free [Great Prophet] appears",
+        "Only available <when religion is enabled>"
+      ],
+      "requiredTech": "Theology",
+      "quote": "'For it soars to a height to match the sky, and as if surging up from among the other buildings it stands on high and looks down upon the remainder of the city, adorning it, because it is a part of it, but glorying in its own beauty' - Procopius, De Aedificis"
+    },
+    {
+      "name": "Great Mosque of Djenne",
+      "culture": 1,
+      "faith": 3,
+      "isWonder": true,
+      "uniques": [
+        "Gain a free [Mosque] [in this city]",
+        "Only available <when religion is enabled>",
+        "All newly-trained [Missionary] units [in this city] receive the [Devout] promotion",
+        "All newly-trained [Great Prophet] units [in this city] receive the [Devout] promotion"
+      ],
+      "requiredTech": "Theology",
+      "quote": "'With the magnificence of eternity before us, let time, with all its fluctuations, dwindle into its own littleness.' - Thomas Chalmers"
+    },
+    {
+      "name": "Grand Temple",
+      "cost": 125,
+      "culture": 1,
+      "faith": 8,
+      "uniques": [
+        "Only available <if [Temple] is constructed in all [non-[Puppeted]] cities>",
+        "Cost increases by [30] per owned city",
+        "[+100]% Natural religion spread [in this city]",
+        "Only available <when religion is enabled>",
+        "Can only be built <in [Holy] cities>"
+      ],
+      "requiredTech": "Theology",
+      "isNationalWonder": true
+    },
+    {
+      "name": "Chichen Itza",
+      "culture": 1,
+      "happiness": 4,
+      "isWonder": true,
+      "uniques": [
+        "[+50]% Golden Age length"
+      ],
+      "requiredTech": "Civil Service",
+      "quote": "'The katun is established at Chichen Itza. The settlement of the Itza shall take place there. The quetzal shall come, the green bird shall come. Ah Kantenal shall come. It is the word of God. The Itza shall come.' - The Books of Chilam Balam"
+    },
+    {
+      "name": "National Treasury",
+      "cost": 125,
+      "gold": 8,
+      "culture": 1,
+      "isNationalWonder": true,
+      "uniques": [
+        "Only available <if [Market] is constructed in all [non-[Puppeted]] cities>",
+        "Cost increases by [30] per owned city"
+      ],
+      "requiredTech": "Guilds"
+    },
+    {
+      "name": "Machu Picchu",
+      "gold": 5,
+      "faith": 2,
+      "isWonder": true,
+      "uniques": [
+        "[+25]% [Gold] from Trade Routes",
+        "Must have an owned [{non-[Natural Wonder]} {Mountain}] within [2] tiles"
+      ],
+      "requiredTech": "Guilds",
+      "quote": "'Few romances can ever surpass that of the granite citadel on top of the beetling precipices of Machu Picchu, the crown of Inca Land.' - Hiram Bingham"
+    },
+    {
+      "name": "Workshop",
+      "maintenance": 2,
+      "production": 2,
+      "specialistSlots": {
+        "Engineer": 1
+      },
+      "percentStatBonus": {
+        "production": 10
+      },
+      "requiredTech": "Metal Casting"
+    },
+    {
+      "name": "Longhouse",
+      "replaces": "Workshop",
+      "uniqueTo": "Iroquois",
+      "cost": 100,
+      "maintenance": 2,
+      "production": 2,
+      "specialistSlots": {
+        "Engineer": 1
+      },
+      "uniques": [
+        "[+1 Production] from [Forest] tiles [in this city]"
+      ],
+      "requiredTech": "Metal Casting"
+    },
+    {
+      "name": "Forge",
+      "maintenance": 1,
+      "requiredTech": "Metal Casting",
+      "uniques": [
+        "[+15]% Production when constructing [Land] units [in this city]",
+        "[+1 Production] from [Iron] tiles [in this city]"
+      ]
+    },
+    {
+      "name": "Harbor",
+      "cost": 120,
+      "maintenance": 3,
+      "uniques": [
+        "[+1 Production] from [Water resource] tiles [in this city]",
+        "Connects trade routes over water",
+        "Must be next to [Coast]"
+      ],
+      "requiredTech": "Compass"
+    },
+    {
+      "name": "University",
+      "maintenance": 2,
+      "percentStatBonus": {
+        "science": 33
+      },
+      "specialistSlots": {
+        "Scientist": 2
+      },
+      "requiredBuilding": "Library",
+      "uniques": [
+        "[+2 Science] from [Jungle] tiles [in this city]"
+      ],
+      "requiredTech": "Education"
+    },
+    {
+      "name": "Wat",
+      "replaces": "University",
+      "uniqueTo": "Siam",
+      "maintenance": 2,
+      "percentStatBonus": {
+        "science": 33
+      },
+      "specialistSlots": {
+        "Scientist": 2
+      },
+      "culture": 3,
+      "requiredBuilding": "Library",
+      "uniques": [
+        "[+2 Science] from [Jungle] tiles [in this city]"
+      ],
+      "requiredTech": "Education"
+    },
+    {
+      "name": "Oxford University",
+      "cost": 125,
+      "science": 3,
+      "culture": 1,
+      "isNationalWonder": true,
+      "uniques": [
+        "Only available <if [University] is constructed in all [non-[Puppeted]] cities>",
+        "Free Technology",
+        "Cost increases by [30] per owned city"
+      ],
+      "requiredTech": "Education"
+    },
+    {
+      "name": "Angkor Wat",
+      "culture": 1,
+      "isWonder": true,
+      "uniques": [
+        "[-25]% Culture cost of natural border growth [in all cities]",
+        "[-25]% Gold cost of acquiring tiles [in all cities]"
+      ],
+      "requiredTech": "Education",
+      "quote": "'The temple is like no other building in the world. It has towers and decoration and all the refinements which the human genius can conceive of.' - Antonio da Magdalena"
+    },
+    {
+      "name": "Castle",
+      "cityStrength": 7,
+      "requiredBuilding": "Walls",
+      "requiredTech": "Chivalry",
+      "uniques": [
+        "Destroyed when the city is captured"
+      ]
+    },
+    {
+      "name": "Mughal Fort",
+      "cost": 150,
+      "replaces": "Castle",
+      "uniqueTo": "India",
+      "cityStrength": 7,
+      "culture": 2,
+      "requiredBuilding": "Walls",
+      "uniques": [
+        "[+1 Gold] [in this city] <after discovering [Flight]>",
+        "Destroyed when the city is captured"
+      ],
+      "requiredTech": "Chivalry"
+    },
+    {
+      "name": "Alhambra",
+      "culture": 1,
+      "isWonder": true,
+      "percentStatBonus": {
+        "culture": 20
+      },
+      "uniques": [
+        "All newly-trained [relevant] units [in this city] receive the [Drill I] promotion",
+        "Gain a free [Castle] [in this city]"
+      ],
+      "requiredTech": "Chivalry",
+      "quote": "'Justice is an unassailable fortress, built on the brow of a mountain which cannot be overthrown by the violence of torrents, nor demolished by the force of armies.' - Joseph Addison"
+    },
+    {
+      "name": "Ironworks",
+      "cost": 125,
+      "production": 8,
+      "culture": 1,
+      "isNationalWonder": true,
+      "uniques": [
+        "Only available <if [Workshop] is constructed in all [non-[Puppeted]] cities>",
+        "Cost increases by [30] per owned city"
+      ],
+      "requiredTech": "Machinery"
+    },
+    {
+      "name": "Notre Dame",
+      "faith": 4,
+      "happiness": 10,
+      "isWonder": true,
+      "requiredTech": "Physics",
+      "quote": "'Architecture has recorded the great ideas of the human race. Not only every religious symbol, but every human thought has its page in that vast book.' - Victor Hugo"
+    },
+    {
+      "name": "Armory",
+      "maintenance": 1,
+      "requiredBuilding": "Barracks",
+      "uniques": [
+        "New [Military] units start with [15] XP [in this city]",
+        "Destroyed when the city is captured"
+      ],
+      "requiredTech": "Steel"
+    },
+    {
+      "name": "Observatory",
+      "maintenance": 0,
+      "percentStatBonus": {
+        "science": 50
+      },
+      "requiredBuilding": "Library",
+      "uniques": [
+        "Must be next to [Mountain]"
+      ],
+      "requiredTech": "Astronomy"
+    },
+    {
+      "name": "Opera House",
+      "culture": 4,
+      "specialistSlots": {
+        "Artist": 1
+      },
+      "requiredBuilding": "Amphitheater",
+      "maintenance": 2,
+      "requiredTech": "Acoustics",
+      "uniques": [
+        "Destroyed when the city is captured"
+      ]
+    },
+    {
+      "name": "Ceilidh Hall",
+      "replaces": "Opera House",
+      "uniqueTo": "Celts",
+      "culture": 4,
+      "happiness": 3,
+      "specialistSlots": {
+        "Artist": 1
+      },
+      "requiredBuilding": "Amphitheater",
+      "maintenance": 2,
+      "requiredTech": "Acoustics",
+      "uniques": [
+        "Destroyed when the city is captured"
+      ]
+    },
+    {
+      "name": "Sistine Chapel",
+      "culture": 1,
+      "isWonder": true,
+      "uniques": [
+        "[+25]% [Culture] [in all cities]"
+      ],
+      "requiredTech": "Acoustics",
+      "quote": "'I live and love in God's peculiar light.' - Michelangelo Buonarroti"
+    },
+    {
+      "name": "Bank",
+      "gold": 2,
+      "specialistSlots": {
+        "Merchant": 1
+      },
+      "percentStatBonus": {
+        "gold": 25
+      },
+      "requiredBuilding": "Market",
+      "requiredTech": "Banking"
+    },
+    {
+      "name": "Satrap's Court",
+      "replaces": "Bank",
+      "uniqueTo": "Persia",
+      "gold": 2,
+      "specialistSlots": {
+        "Merchant": 1
+      },
+      "happiness": 2,
+      "percentStatBonus": {
+        "gold": 25
+      },
+      "requiredBuilding": "Market",
+      "requiredTech": "Banking"
+    },
+    {
+      "name": "Constabulary",
+      "cost": 160,
+      "maintenance": 1,
+      "uniques": [
+        "Only available <when espionage is enabled>",
+        "[-25]% enemy spy effectiveness [in this city]"
+      ],
+      "requiredTech": "Banking"
+    },
+    {
+      "name": "Forbidden Palace",
+      "culture": 1,
+      "isWonder": true,
+      "uniques": [
+        "[-10]% Unhappiness from [Population] [in all non-occupied cities]"
+      ],
+      "requiredTech": "Banking",
+      "quote": "'Most of us can, as we choose, make of this world either a palace or a prison' - John Lubbock"
+    },
+    {
+      "name": "Theatre",
+      "happiness": 3,
+      "maintenance": 2,
+      "requiredBuilding": "Colosseum",
+      "requiredTech": "Printing Press"
+    },
+    {
+      "name": "Leaning Tower of Pisa",
+      "culture": 1,
+      "isWonder": true,
+      "uniques": [
+        "[+25]% Great Person generation [in all cities]",
+        "Free Great Person"
+      ],
+      "requiredTech": "Printing Press",
+      "quote": "'Don't clap too hard - it's a very old building.' - John Osbourne"
+    },
+    {
+      "name": "Himeji Castle",
+      "culture": 3,
+      "isWonder": true,
+      "uniques": [
+        "[+15]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>",
+        "Gain a free [Castle] [in this city]"
+      ],
+      "requiredTech": "Gunpowder",
+      "quote": "'Bushido is realized in the presence of death. This means choosing death whenever there is a choice between life and death. There is no other reasoning.' - Yamamoto Tsunetomo"
+    },
+    {
+      "name": "Seaport",
+      "maintenance": 2,
+      "requiredBuilding": "Harbor",
+      "uniques": [
+        "[+1 Production, +1 Gold] from [Water resource] tiles [in this city]",
+        "Must be next to [Coast]",
+        "[+15]% Production when constructing [Water] units [in this city]"
+      ],
+      "requiredTech": "Navigation"
+    },
+    {
+      "name": "Hermitage",
+      "cost": 125,
+      "percentStatBonus": {
+        "culture": 50
+      },
+      "culture": 5,
+      "isNationalWonder": true,
+      "uniques": [
+        "Only available <if [Opera House] is constructed in all [non-[Puppeted]] cities>",
+        "Cost increases by [30] per owned city"
+      ],
+      "requiredTech": "Architecture"
+    },
+    {
+      "name": "Taj Mahal",
+      "culture": 1,
+      "happiness": 4,
+      "isWonder": true,
+      "uniques": [
+        "Empire enters golden age"
+      ],
+      "requiredTech": "Architecture",
+      "quote": "'The Taj Mahal rises above the banks of the river like a solitary tear suspended on the cheek of time.' - Rabindranath Tagore"
+    },
+    {
+      "name": "Porcelain Tower",
+      "culture": 1,
+      "isWonder": true,
+      "uniques": [
+        "Free [Great Scientist] appears",
+        "Science gained from research agreements [+50]%"
+      ],
+      "requiredTech": "Architecture",
+      "quote": "'Things always seem fairer when we look back at them, and it is out of that inaccessible tower of the past that Longing leans and beckons.' - James Russell Lowell"
+    },
+    {
+      "name": "Windmill",
+      "production": 2,
+      "specialistSlots": {
+        "Engineer": 1
+      },
+      "maintenance": 2,
+      "uniques": [
+        "Must not be on [Hill]",
+        "[+10]% Production when constructing [All] buildings [in this city]"
+      ],
+      "requiredTech": "Economics"
+    },
+    {
+      "name": "Coffee House",
+      "replaces": "Windmill",
+      "uniqueTo": "Austria",
+      "production": 2,
+      "percentStatBonus": {
+        "production": 5
+      },
+      "specialistSlots": {
+        "Engineer": 1
+      },
+      "maintenance": 2,
+      "uniques": [
+        "[+25]% Great Person generation [in this city]"
+      ],
+      "requiredTech": "Economics"
+    },
+    {
+      "name": "Arsenal",
+      "cost": 300,
+      "cityStrength": 9,
+      "requiredBuilding": "Castle",
+      "requiredTech": "Metallurgy",
+      "uniques": [
+        "Destroyed when the city is captured"
+      ]
+    },
+    {
+      "name": "Kremlin",
+      "culture": 3,
+      "cityStrength": 12,
+      "isWonder": true,
+      "uniques": [
+        "[+25]% City Strength from defensive buildings"
+      ],
+      "requiredTech": "Metallurgy",
+      "quote": "'The Kremlin is constantly changing the rules of the game to suit its purposes. We are not playing chess, we're playing roulette.' - Garry Kasparov"
+    },
+    {
+      "name": "Museum",
+      "culture": 5,
+      "specialistSlots": {
+        "Artist": 2
+      },
+      "requiredBuilding": "Opera House",
+      "maintenance": 3,
+      "requiredTech": "Archaeology",
+      "uniques": [
+        "Destroyed when the city is captured"
+      ]
+    },
+    {
+      "name": "The Louvre",
+      "culture": 4,
+      "isWonder": true,
+      "uniques": [
+        "[2] free [Great Artist] units appear"
+      ],
+      "requiredTech": "Archaeology",
+      "quote": "'Every genuine work of art has as much reason for being as the earth and the sun' - Ralph Waldo Emerson"
+    },
+    {
+      "name": "Public School",
+      "science": 3,
+      "specialistSlots": {
+        "Scientist": 1
+      },
+      "requiredBuilding": "University",
+      "maintenance": 3,
+      "uniques": [
+        "[+1 Science] per [2] population [in this city]"
+      ],
+      "requiredTech": "Scientific Theory"
+    },
+    {
+      "name": "Factory",
+      "cost": 360,
+      "production": 4,
+      "percentStatBonus": {
+        "production": 10
+      },
+      "specialistSlots": {
+        "Engineer": 2
+      },
+      "requiredBuilding": "Workshop",
+      "maintenance": 3,
+      "requiredResource": "Coal",
+      "requiredTech": "Industrialization"
+    },
+    {
+      "name": "Big Ben",
+      "culture": 1,
+      "gold": 4,
+      "isWonder": true,
+      "uniques": [
+        "[Gold] cost of purchasing items in cities [-15]%"
+      ],
+      "requiredTech": "Industrialization",
+      "quote": "'To achieve great things, two things are needed: a plan, and not quite enough time.' - Leonard Bernstein"
+    },
+    {
+      "name": "Military Academy",
+      "maintenance": 1,
+      "requiredBuilding": "Armory",
+      "uniques": [
+        "New [Military] units start with [15] XP [in this city]",
+        "Destroyed when the city is captured"
+      ],
+      "requiredTech": "Military Science"
+    },
+    {
+      "name": "Brandenburg Gate",
+      "culture": 3,
+      "isWonder": true,
+      "uniques": [
+        "Free [Great General] appears",
+        "New [Military] units start with [15] XP [in this city]"
+      ],
+      "requiredTech": "Military Science",
+      "quote": "'Pale Death beats equally at the poor man's gate and at the palaces of kings.' - Horace"
+    },
+    {
+      "name": "Hospital",
+      "food": 5,
+      "requiredBuilding": "Aqueduct",
+      "maintenance": 2,
+      "requiredTech": "Biology"
+    },
+    {
+      "name": "Stock Exchange",
+      "gold": 3,
+      "percentStatBonus": {
+        "gold": 33
+      },
+      "specialistSlots": {
+        "Merchant": 2
+      },
+      "requiredBuilding": "Bank",
+      "requiredTech": "Electricity"
+    },
+    {
+      "name": "Hydro Plant",
+      "requiredResource": "Aluminum",
+      "maintenance": 3,
+      "uniques": [
+        "Must be on [River]",
+        "[+1 Production] from [River] tiles [in this city]"
+      ],
+      "requiredTech": "Electricity"
+    },
+    {
+      "name": "Police Station",
+      "cost": 300,
+      "maintenance": 1,
+      "uniques": [
+        "Only available <when espionage is enabled>",
+        "[-25]% enemy spy effectiveness [in this city]"
+      ],
+      "requiredBuilding": "Constabulary",
+      "requiredTech": "Electricity"
+    },
+    {
+      "name": "Stadium",
+      "happiness": 4,
+      "requiredBuilding": "Theatre",
+      "maintenance": 2,
+      "requiredTech": "Refrigeration"
+    },
+    {
+      "name": "Broadcast Tower",
+      "culture": 3,
+      "percentStatBonus": {
+        "culture": 33
+      },
+      "requiredBuilding": "Museum",
+      "maintenance": 3,
+      "requiredTech": "Radio",
+      "uniques": [
+        "Destroyed when the city is captured"
+      ]
+    },
+    {
+      "name": "Eiffel Tower",
+      "culture": 1,
+      "happiness": 5,
+      "isWonder": true,
+      "uniques": [
+        "[+1 Happiness] per [2] social policies adopted"
+      ],
+      "requiredTech": "Radio",
+      "quote": "'We live only to discover beauty, all else is a form of waiting' - Kahlil Gibran"
+    },
+    {
+      "name": "National Intelligence Agency",
+      "cost": 120,
+      "culture": 1,
+      "isNationalWonder": true,
+      "uniques": [
+        "Only available <when espionage is enabled>",
+        "New spies start with [1] level(s)",
+        "Promotes all spies [1] time(s)",
+        "Gain an extra spy",
+        "[-15]% enemy spy effectiveness [in this city]",
+        "Only available <if [Police Station] is constructed in all [non-[Puppeted]] cities>",
+        "Cost increases by [30] per owned city"
+      ],
+      "requiredTech": "Radio"
+    },
+    {
+      "name": "Military Base",
+      "cityStrength": 12,
+      "requiredBuilding": "Arsenal",
+      "requiredTech": "Replaceable Parts",
+      "uniques": [
+        "Destroyed when the city is captured"
+      ]
+    },
+    {
+      "name": "Statue of Liberty",
+      "culture": 1,
+      "isWonder": true,
+      "uniques": [
+        "[+1 Production] from every specialist [in all cities]"
+      ],
+      "requiredTech": "Replaceable Parts",
+      "quote": "'Give me your tired, your poor, your huddled masses yearning to breathe free, the wretched refuse of your teeming shore. Send these, the homeless, tempest-tossed to me, I lift my lamp beside the golden door!' - Emma Lazarus"
+    },
+    {
+      "name": "Neuschwanstein",
+      "happiness": 2,
+      "culture": 4,
+      "gold": 6,
+      "isWonder": true,
+      "uniques": [
+        "[+1 Happiness, +2 Culture, +3 Gold] from every [Castle]",
+        "Must have an owned [{non-[Natural Wonder]} {Mountain}] within [2] tiles"
+      ],
+      "requiredTech": "Railroads",
+      "quote": "'...the location is one of the most beautiful to be found, holy and unapproachable, a worthy temple for the divine friend who has brought salvation and true blessing to the world.' - King Ludwig II of Bavaria"
+    },
+    {
+      "name": "Research Lab",
+      "science": 4,
+      "percentStatBonus": {
+        "science": 50
+      },
+      "specialistSlots": {
+        "Scientist": 1
+      },
+      "requiredBuilding": "Public School",
+      "maintenance": 3,
+      "requiredTech": "Plastics"
+    },
+    {
+      "name": "Cristo Redentor",
+      "culture": 5,
+      "isWonder": true,
+      "uniques": [
+        "[-10]% Culture cost of adopting new Policies"
+      ],
+      "requiredTech": "Plastics",
+      "quote": "'Come to me, all who labor and are heavy burdened, and I will give you rest.' - New Testament, Matthew 11:28"
+    },
+    {
+      "name": "Medical Lab",
+      "requiredBuilding": "Hospital",
+      "maintenance": 3,
+      "requiredTech": "Pharmaceuticals",
+      "uniques": [
+        "[25]% Food is carried over after population increases [in this city]"
+      ]
+    },
+    {
+      "name": "Manhattan Project",
+      "cost": 750,
+      "isNationalWonder": true,
+      "uniques": [
+        "Enables nuclear weapon",
+        "Triggers a global alert upon completion",
+        "Cannot be hurried"
+      ],
+      "requiredTech": "Atomic Theory"
+    },
+    {
+      "name": "Pentagon",
+      "isWonder": true,
+      "culture": 3,
+      "uniques": [
+        "[-33]% Gold cost of upgrading <for [Military] units>"
+      ],
+      "requiredTech": "Combined Arms",
+      "quote": "'In preparing for battle I have always found that plans are useless, but planning is indispensable.' - Dwight D. Eisenhower"
+    },
+    {
+      "name": "Solar Plant",
+      "production": 5,
+      "percentStatBonus": {
+        "production": 15
+      },
+      "requiredBuilding": "Factory",
+      "maintenance": 3,
+      "requiredTech": "Ecology",
+      "uniques": [
+        "Must be next to [Desert]",
+        "Only available <in cities without a [Nuclear Plant]>"
+      ]
+    },
+    {
+      "name": "Recycling Center",
+      "maintenance": 3,
+      "requiredTech": "Ecology",
+      "uniques": [
+        "Provides [2] [Aluminum]",
+        "Limited to [5] per Civilization"
+      ]
+    },
+    {
+      "name": "Sydney Opera House",
+      "isWonder": true,
+      "percentStatBonus": {
+        "culture": 50
+      },
+      "uniques": [
+        "Free Social Policy",
+        "Must be next to [Coast]"
+      ],
+      "requiredTech": "Ecology",
+      "quote": "'Those who lose dreaming are lost.' - Australian Aboriginal saying"
+    },
+    {
+      "name": "Nuclear Plant",
+      "production": 5,
+      "percentStatBonus": {
+        "production": 15
+      },
+      "requiredBuilding": "Factory",
+      "maintenance": 3,
+      "requiredResource": "Uranium",
+      "requiredTech": "Nuclear Fission",
+      "uniques": [
+        "Only available <in cities without a [Solar Plant]>"
+      ]
+    },
+    {
+      "name": "Apollo Program",
+      "cost": 750,
+      "isNationalWonder": true,
+      "uniques": [
+        "Enables construction of Spaceship parts",
+        "Triggers a global alert upon completion",
+        "Only available <when [Scientific] Victory is enabled>",
+        "Cannot be hurried"
+      ],
+      "requiredTech": "Rocketry"
+    },
+    {
+      "name": "Great Firewall",
+      "isWonder": true,
+      "uniques": [
+        "Only available <when espionage is enabled>",
+        "[-99]% enemy spy effectiveness [in this city]",
+        "[-25]% enemy spy effectiveness [in all cities]"
+      ],
+      "requiredTech": "Computers",
+      "quote": "'Distrust and caution are the parents of security.' - Benjamin Franklin"
+    },
+    {
+      "name": "CN Tower",
+      "isWonder": true,
+      "uniques": [
+        "[+1] population [in all cities]",
+        "[+1 Happiness] [in all cities]",
+        "Gain a free [Broadcast Tower] [in all cities]"
+      ],
+      "requiredTech": "Telecommunications",
+      "quote": "'Nothing travels faster than light with the possible exception of bad news, which obeys its own special rules.' - Douglas Adams"
+    },
+    {
+      "name": "Bomb Shelter",
+      "cost": 300,
+      "maintenance": 1,
+      "requiredTech": "Telecommunications",
+      "uniques": [
+        "Population loss from nuclear attacks [-75]% [in this city]",
+        "Damage to garrison from nuclear attacks [-75]% [in this city]",
+        "Only available <when nuclear weapons are enabled> <hidden from users>"
+      ]
+    },
+    {
+      "name": "Hubble Space Telescope",
+      "isWonder": true,
+      "uniques": [
+        "[2] free [Great Scientist] units appear",
+        "[+25]% Production when constructing [Spaceship part] units [in this city]",
+        "Gain a free [Spaceship Factory] [in this city]"
+      ],
+      "requiredTech": "Satellites",
+      "quote": "'The wonder is, not that the field of stars is so vast, but that man has measured it.' - Anatole France"
+    },
+    {
+      "name": "Spaceship Factory",
+      "production": 3,
+      "maintenance": 3,
+      "requiredResource": "Aluminum",
+      "cost": 360,
+      "requiredBuilding": "Factory",
+      "uniques": [
+        "[+50]% Production when constructing [Spaceship part] units [in this city]"
+      ],
+      "requiredTech": "Robotics"
+    },
+    {
+      "name": "United Nations",
+      "isWonder": true,
+      "culture": 1,
+      "requiredTech": "Globalization",
+      "uniques": [
+        "Triggers voting for the Diplomatic Victory",
+        "Only available <when [Diplomatic] Victory is enabled>",
+        "Triggers a global alert upon completion"
+      ],
+      "quote": "'More than ever before in human history, we share a common destiny. We can master it only if we face it together. And that is why we have the United Nations.' - Kofi Annan"
+    },
+    {
+      "name": "Utopia Project",
+      "cost": 1500,
+      "isNationalWonder": true,
+      "uniques": [
+        "Unavailable <when number of [Completed Policy branches] is less than [5]>",
+        "Triggers a global alert upon build start",
+        "Triggers a Cultural Victory upon completion",
+        "Only available <when [Cultural] Victory is enabled>",
+        "Cannot be hurried"
+      ]
+    },
+    {
+      "name": "Cathedral",
+      "cost": 0,
+      "faith": 1,
+      "culture": 3,
+      "happiness": 1,
+      "specialistSlots": {
+        "Artist": 1
+      },
+      "uniques": [
+        "Unbuildable",
+        "Only available <when religion is enabled>"
+      ]
+    },
+    {
+      "name": "Monastery",
+      "cost": 0,
+      "culture": 2,
+      "faith": 2,
+      "uniques": [
+        "[+1 Culture, +1 Faith] from [Wine] tiles [in this city]",
+        "[+1 Culture, +1 Faith] from [Incense] tiles [in this city]",
+        "Unbuildable",
+        "Only available <when religion is enabled>",
+        "Destroyed when the city is captured"
+      ]
+    },
+    {
+      "name": "Mosque",
+      "cost": 0,
+      "culture": 2,
+      "faith": 3,
+      "happiness": 1,
+      "uniques": [
+        "Unbuildable",
+        "Only available <when religion is enabled>"
+      ]
+    },
+    {
+      "name": "Pagoda",
+      "cost": 0,
+      "culture": 2,
+      "faith": 2,
+      "happiness": 2,
+      "uniques": [
+        "Unbuildable",
+        "Only available <when religion is enabled>"
+      ]
+    }
+  ],
+  "Techs": [
+    {
+      "columnNumber": 0,
+      "era": "Ancient era",
+      "techCost": 20,
+      "buildingCost": 40,
+      "wonderCost": 185,
+      "techs": [
+        {
+          "name": "Agriculture",
+          "quote": "'Where tillage begins, other arts follow. The farmers therefore are the founders of human civilization.' - Daniel Webster",
+          "uniques": [
+            "Starting tech"
+          ]
+        }
+      ]
+    },
+    {
+      "columnNumber": 1,
+      "era": "Ancient era",
+      "techCost": 35,
+      "buildingCost": 60,
+      "wonderCost": 185,
+      "techs": [
+        {
+          "name": "Pottery",
+          "prerequisites": [
+            "Agriculture"
+          ],
+          "uniques": [
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'Shall the clay say to him that fashioneth it, what makest thou?' - Bible Isaiah 45:9"
+        },
+        {
+          "name": "Animal Husbandry",
+          "prerequisites": [
+            "Agriculture"
+          ],
+          "quote": "'Thou shalt not muzzle the ox when he treadeth out the corn.' - Bible Deuteronomy 25:4"
+        },
+        {
+          "name": "Archery",
+          "prerequisites": [
+            "Agriculture"
+          ],
+          "uniques": [
+            "[-50]% weight to this choice for AI decisions"
+          ],
+          "quote": "'The haft of the arrow has been feathered with one of the eagle's own plumes, we often give our enemies the means of our own destruction' - Aesop"
+        },
+        {
+          "name": "Mining",
+          "prerequisites": [
+            "Agriculture"
+          ],
+          "uniques": [
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'The meek shall inherit the Earth, but not its mineral rights.' - J. Paul Getty"
+        }
+      ]
+    },
+    {
+      "columnNumber": 2,
+      "era": "Ancient era",
+      "techCost": 55,
+      "buildingCost": 75,
+      "wonderCost": 185,
+      "techs": [
+        {
+          "name": "Sailing",
+          "prerequisites": [
+            "Pottery"
+          ],
+          "uniques": [
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'He who commands the sea has command of everything.' - Themistocles"
+        },
+        {
+          "name": "Calendar",
+          "prerequisites": [
+            "Pottery"
+          ],
+          "uniques": [
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'So teach us to number our days, so that we may apply our hearts unto wisdom.' - Bible Psalms 90:12"
+        },
+        {
+          "name": "Writing",
+          "prerequisites": [
+            "Pottery"
+          ],
+          "uniques": [
+            "Enables establishment of embassies <Civilopedia link [Tutorials/Embassies]>"
+          ],
+          "quote": "'He who destroys a good book kills reason itself.' - John Milton"
+        },
+        {
+          "name": "Trapping",
+          "prerequisites": [
+            "Animal Husbandry"
+          ],
+          "uniques": [
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'Even brute beasts and wandering birds do not fall into the same traps or nets twice.' - Saint Jerome"
+        },
+        {
+          "name": "The Wheel",
+          "prerequisites": [
+            "Animal Husbandry",
+            "Archery"
+          ],
+          "uniques": [
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'Wisdom and virtue are like the two wheels of a cart.' - Japanese proverb"
+        },
+        {
+          "name": "Masonry",
+          "prerequisites": [
+            "Mining"
+          ],
+          "quote": "'How happy are those whose walls already rise!' - Virgil"
+        },
+        {
+          "name": "Bronze Working",
+          "prerequisites": [
+            "Mining"
+          ],
+          "uniques": [
+            "[+50]% weight to this choice for AI decisions"
+          ],
+          "quote": "'Here Hector entered, with a spear eleven cubits long in his hand; the bronze point gleamed in front of him, and was fastened to the shaft of the spear by a ring of gold.' - Homer"
+        }
+      ]
+    },
+    {
+      "columnNumber": 3,
+      "era": "Classical era",
+      "techCost": 105,
+      "buildingCost": 100,
+      "wonderCost": 250,
+      "techs": [
+        {
+          "name": "Optics",
+          "cost": 85,
+          "prerequisites": [
+            "Sailing"
+          ],
+          "uniques": [
+            "Enables embarkation for land units"
+          ],
+          "quote": "'He made an instrument to know if the moon shine at full or no.' - Samuel Butler"
+        },
+        {
+          "name": "Horseback Riding",
+          "prerequisites": [
+            "Trapping",
+            "The Wheel"
+          ],
+          "uniques": [
+            "[+50]% weight to this choice for AI decisions"
+          ],
+          "quote": "'A Horse! A Horse! My kingdom for a horse!' - Shakespeare (Richard III)"
+        },
+        {
+          "name": "Mathematics",
+          "prerequisites": [
+            "The Wheel"
+          ],
+          "quote": "'Mathematics is the gate and key to the sciences.' - Roger Bacon"
+        },
+        {
+          "name": "Construction",
+          "prerequisites": [
+            "Masonry",
+            "The Wheel"
+          ],
+          "uniques": [
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'Three things are to be looked to in a building: that it stands on the right spot; that it be securely founded; that it be successfully executed.' - Johann Wolfgang von Goethe"
+        }
+      ]
+    },
+    {
+      "columnNumber": 4,
+      "era": "Classical era",
+      "techCost": 175,
+      "buildingCost": 100,
+      "wonderCost": 250,
+      "techs": [
+        {
+          "name": "Philosophy",
+          "prerequisites": [
+            "Writing",
+            "Calendar"
+          ],
+          "quote": "'There is only one good, knowledge, and one evil, ignorance.' - Socrates"
+        },
+        {
+          "name": "Drama and Poetry",
+          "prerequisites": [
+            "Writing"
+          ],
+          "quote": "'What is drama but life with the dull bits cut out.' - Alfred Hitchcock"
+        },
+        {
+          "name": "Currency",
+          "prerequisites": [
+            "Mathematics"
+          ],
+          "uniques": [
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'Better is bread with a happy heart than wealth with vexation.' - Amenemope"
+        },
+        {
+          "name": "Engineering",
+          "prerequisites": [
+            "Mathematics",
+            "Construction"
+          ],
+          "uniques": [
+            "Roads connect tiles across rivers",
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'Instrumental or mechanical science is the noblest and, above all others, the most useful.' - Leonardo da Vinci"
+        },
+        {
+          "name": "Iron Working",
+          "prerequisites": [
+            "Bronze Working"
+          ],
+          "uniques": [
+            "[-50]% weight to this choice for AI decisions"
+          ],
+          "quote": "'Do not wait to strike til the iron is hot, but make it hot by striking.' - William Butler Yeats"
+        }
+      ]
+    },
+    {
+      "columnNumber": 5,
+      "era": "Medieval era",
+      "techCost": 275,
+      "buildingCost": 120,
+      "wonderCost": 300,
+      "techs": [
+        {
+          "name": "Theology",
+          "prerequisites": [
+            "Philosophy",
+            "Drama and Poetry"
+          ],
+          "quote": "'Three things are necessary for the salvation of man: to know what he ought to believe; to know what he ought to desire; and to know what he ought to do' - St. Thomas Aquinas"
+        },
+        {
+          "name": "Civil Service",
+          "prerequisites": [
+            "Currency",
+            "Horseback Riding",
+            "Drama and Poetry"
+          ],
+          "uniques": [
+            "Enables Open Borders agreements <Civilopedia link [Tutorials/Open Borders]>",
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'The only thing that saves us from the bureaucracy is its inefficiency' - Eugene McCarthy"
+        },
+        {
+          "name": "Guilds",
+          "prerequisites": [
+            "Currency"
+          ],
+          "uniques": [
+            "Enables conversion of city production to [Gold]"
+          ],
+          "quote": "'The merchants and the traders have come; their profits are pre-ordained...' - Sri Guru Granth Sahib"
+        },
+        {
+          "name": "Metal Casting",
+          "prerequisites": [
+            "Engineering",
+            "Iron Working"
+          ],
+          "uniques": [
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'When pieces of bronze or gold or iron break, the metal-smith welds them together again in the fire, and the bond is established.' - Sri Guru Granth Sahib"
+        }
+      ]
+    },
+    {
+      "columnNumber": 6,
+      "era": "Medieval era",
+      "techCost": 485,
+      "buildingCost": 160,
+      "wonderCost": 400,
+      "techs": [
+        {
+          "name": "Compass",
+          "cost": 375,
+          "prerequisites": [
+            "Optics",
+            "Theology"
+          ],
+          "uniques": [
+            "[-50]% weight to this choice for AI decisions"
+          ],
+          "quote": "'I find the great thing in this world is not so much where we stand, as in what direction we are moving.' - Oliver Wendell Holmes"
+        },
+        {
+          "name": "Education",
+          "prerequisites": [
+            "Theology",
+            "Civil Service"
+          ],
+          "uniques": [
+            "Enables conversion of city production to [Science]",
+            "Enables Research agreements <Civilopedia link [Tutorials/Research Agreements]>",
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'Education is the best provision for old age.' - Aristotle"
+        },
+        {
+          "name": "Chivalry",
+          "prerequisites": [
+            "Civil Service",
+            "Guilds"
+          ],
+          "uniques": [
+            "Enables Defensive Pacts <Civilopedia link [Tutorials/Defensive Pacts]>"
+          ],
+          "quote": "'Whoso pulleth out this sword of this stone and anvil, is rightwise king born of all England.' - Malory"
+        },
+        {
+          "name": "Machinery",
+          "prerequisites": [
+            "Guilds",
+            "Engineering"
+          ],
+          "uniques": [
+            "Improves movement speed on roads"
+          ],
+          "quote": "'The press is the best instrument for enlightening the mind of man, and improving him as a rational, moral and social being.' - Thomas Jefferson"
+        },
+        {
+          "name": "Physics",
+          "prerequisites": [
+            "Metal Casting"
+          ],
+          "quote": "'Measure what is measurable, and make measurable what is not so.' - Galileo Galilei"
+        },
+        {
+          "name": "Steel",
+          "prerequisites": [
+            "Metal Casting"
+          ],
+          "uniques": [
+            "[-50]% weight to this choice for AI decisions"
+          ],
+          "quote": "'John Henry said to his Captain, / 'A man ain't nothin' but a man, / And before I'll let your steam drill beat me down, / I'll die with the hammer in my hand.'' - Anonymous: The Ballad of John Henry, the Steel-Drivin' Man"
+        }
+      ]
+    },
+    {
+      "columnNumber": 7,
+      "era": "Renaissance era",
+      "techCost": 780,
+      "buildingCost": 200,
+      "wonderCost": 500,
+      "techs": [
+        {
+          "name": "Astronomy",
+          "uniques": [
+            "[+1] Movement <for [Embarked] units>",
+            "Enables [Embarked] units to enter ocean tiles",
+            "[+50]% weight to this choice for AI decisions"
+          ],
+          "prerequisites": [
+            "Compass",
+            "Education"
+          ],
+          "quote": "'Joyfully to the breeze royal Odysseus spread his sail, and with his rudder skillfully he steered.' - Homer"
+        },
+        {
+          "name": "Acoustics",
+          "prerequisites": [
+            "Education"
+          ],
+          "uniques": [
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'Their rising all at once was as the sound of thunder heard remote' - Milton"
+        },
+        {
+          "name": "Banking",
+          "prerequisites": [
+            "Chivalry",
+            "Education"
+          ],
+          "uniques": [
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'Happiness: a good bank account, a good cook and a good digestion' - Jean Jacques Rousseau"
+        },
+        {
+          "name": "Printing Press",
+          "prerequisites": [
+            "Machinery",
+            "Physics",
+            "Chivalry"
+          ],
+          "uniques": [
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'It is a newspaper's duty to print the news and raise hell.' - The Chicago Times"
+        },
+        {
+          "name": "Gunpowder",
+          "prerequisites": [
+            "Physics",
+            "Steel"
+          ],
+          "uniques": [
+            "[-50]% weight to this choice for AI decisions"
+          ],
+          "quote": "'The day when two army corps can annihilate each other in one second, all civilized nations, it is to be hoped, will recoil from war and discharge their troops.' - Alfred Nobel"
+        }
+      ]
+    },
+    {
+      "columnNumber": 8,
+      "era": "Renaissance era",
+      "techCost": 1150,
+      "buildingCost": 250,
+      "wonderCost": 625,
+      "techs": [
+        {
+          "name": "Navigation",
+          "prerequisites": [
+            "Astronomy"
+          ],
+          "quote": "'The winds and the waves are always on the side of the ablest navigators.' - Edward Gibbon"
+        },
+        {
+          "name": "Architecture",
+          "prerequisites": [
+            "Acoustics",
+            "Banking"
+          ],
+          "quote": "'Architecture begins where engineering ends.' - Walter Gropius"
+        },
+        {
+          "name": "Economics",
+          "prerequisites": [
+            "Banking",
+            "Printing Press"
+          ],
+          "uniques": [
+            "[+50]% weight to this choice for AI decisions"
+          ],
+          "quote": "'Compound interest is the most powerful force in the universe.' - Albert Einstein"
+        },
+        {
+          "name": "Metallurgy",
+          "prerequisites": [
+            "Printing Press",
+            "Gunpowder"
+          ],
+          "uniques": [
+            "[-50]% weight to this choice for AI decisions"
+          ],
+          "quote": "'There never was a good knife made of bad steel.' - Benjamin Franklin"
+        },
+        {
+          "name": "Chemistry",
+          "prerequisites": [
+            "Gunpowder"
+          ],
+          "uniques": [
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'Wherever we look, the work of the chemist has raised the level of our civilization and has increased the productive capacity of the nation.' - Calvin Coolidge"
+        }
+      ]
+    },
+    {
+      "columnNumber": 9,
+      "era": "Industrial era",
+      "techCost": 1600,
+      "buildingCost": 300,
+      "wonderCost": 750,
+      "techs": [
+        {
+          "name": "Archaeology",
+          "prerequisites": [
+            "Navigation",
+            "Architecture"
+          ],
+          "uniques": [
+            "[+50]% weight to this choice for AI decisions"
+          ],
+          "quote": "'Those who cannot remember the past are condemned to repeat it.' - George Santayana"
+        },
+        {
+          "name": "Scientific Theory",
+          "prerequisites": [
+            "Architecture",
+            "Economics"
+          ],
+          "uniques": [
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'Every great advance in science has issued from a new audacity of imagination.' - John Dewey"
+        },
+        {
+          "name": "Industrialization",
+          "prerequisites": [
+            "Economics"
+          ],
+          "uniques": [
+            "[+50]% weight to this choice for AI decisions"
+          ],
+          "quote": "'Industrialization based on machinery, already referred to as a characteristic of our age, is but one aspect of the revolution that is being wrought by technology.' - Emily Greene Balch"
+        },
+        {
+          "name": "Rifling",
+          "prerequisites": [
+            "Economics",
+            "Metallurgy"
+          ],
+          "uniques": [
+            "[-50]% weight to this choice for AI decisions"
+          ],
+          "quote": "'It is well that war is so terrible, or we should grow too fond of it.' - Robert E. Lee"
+        },
+        {
+          "name": "Military Science",
+          "prerequisites": [
+            "Metallurgy",
+            "Chemistry"
+          ],
+          "quote": "'Wars may be fought with weapons, but they are won by men. It is the spirit of the men who follow and of the man who leads that gains the victory.' - George S. Patton"
+        },
+        {
+          "name": "Fertilizer",
+          "prerequisites": [
+            "Chemistry"
+          ],
+          "uniques": [
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'The nation that destroys its soil destroys itself.' - Franklin Delano Roosevelt"
+        }
+      ]
+    },
+    {
+      "columnNumber": 10,
+      "era": "Industrial era",
+      "techCost": 2350,
+      "buildingCost": 360,
+      "wonderCost": 900,
+      "techs": [
+        {
+          "name": "Biology",
+          "prerequisites": [
+            "Archaeology",
+            "Scientific Theory"
+          ],
+          "uniques": [
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'If the brain were so simple we could understand it, we would be so simple we couldn't.' - Lyall Watson"
+        },
+        {
+          "name": "Electricity",
+          "prerequisites": [
+            "Scientific Theory"
+          ],
+          "uniques": [
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'Is it a fact - or have I dreamt it - that, by means of electricity, the world of matter has become a great nerve, vibrating thousands of miles in a breathless point of time?' - Nathaniel Hawthorne"
+        },
+        {
+          "name": "Steam Power",
+          "uniques": [
+            "[+1] Movement <for [Embarked] units>"
+          ],
+          "prerequisites": [
+            "Industrialization",
+            "Scientific Theory",
+            "Rifling"
+          ],
+          "quote": "'The nations of the West hope that by means of steam communication all the world will become as one family.' - Townsend Harris"
+        },
+        {
+          "name": "Dynamite",
+          "prerequisites": [
+            "Fertilizer",
+            "Military Science"
+          ],
+          "quote": "'As soon as men decide that all means are permitted to fight an evil, then their good becomes indistinguishable from the evil that they set out to destroy.' - Christopher Dawson"
+        }
+      ]
+    },
+    {
+      "columnNumber": 11,
+      "era": "Modern era",
+      "techCost": 3100,
+      "buildingCost": 500,
+      "wonderCost": 1060,
+      "techs": [
+        {
+          "name": "Refrigeration",
+          "prerequisites": [
+            "Biology",
+            "Electricity"
+          ],
+          "uniques": [
+            "[-75]% weight to this choice for AI decisions"
+          ],
+          "quote": "'And homeless near a thousand homes I stood, and near a thousand tables pined and wanted food.' - William Wordsworth"
+        },
+        {
+          "name": "Radio",
+          "prerequisites": [
+            "Electricity"
+          ],
+          "uniques": [
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'The whole country was tied together by radio. We all experienced the same heroes and comedians and singers. They were giants.' - Woody Allen"
+        },
+        {
+          "name": "Replaceable Parts",
+          "prerequisites": [
+            "Electricity",
+            "Steam Power"
+          ],
+          "uniques": [
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
+        },
+        {
+          "name": "Flight",
+          "prerequisites": [
+            "Steam Power"
+          ],
+          "quote": "'Aeronautics was neither an industry nor a science. It was a miracle.' - Igor Sikorsky"
+        },
+        {
+          "name": "Railroads",
+          "prerequisites": [
+            "Steam Power",
+            "Dynamite"
+          ],
+          "uniques": [
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'The introduction of so powerful an agent as steam to a carriage on wheels will make a great change in the situation of man.' - Thomas Jefferson"
+        }
+      ]
+    },
+    {
+      "columnNumber": 12,
+      "era": "Modern era",
+      "techCost": 4100,
+      "buildingCost": 500,
+      "wonderCost": 1250,
+      "techs": [
+        {
+          "name": "Plastics",
+          "prerequisites": [
+            "Radio",
+            "Replaceable Parts"
+          ],
+          "uniques": [
+            "[+200]% weight to this choice for AI decisions"
+          ],
+          "quote": "'Ben, I want to say one word to you, just one word: plastics.' - Buck Henry and Calder Willingham, The Graduate"
+        },
+        {
+          "name": "Electronics",
+          "prerequisites": [
+            "Replaceable Parts",
+            "Flight"
+          ],
+          "quote": "'There's a basic principle about consumer electronics: it gets more powerful all the time and it gets cheaper all the time.' - Trip Hawkins"
+        },
+        {
+          "name": "Ballistics",
+          "prerequisites": [
+            "Flight"
+          ],
+          "quote": "'Men, like bullets, go farthest when they are smoothest.' - Jean Paul"
+        },
+        {
+          "name": "Combustion",
+          "prerequisites": [
+            "Railroads"
+          ],
+          "uniques": [
+            "[-50]% weight to this choice for AI decisions"
+          ],
+          "quote": "'Any man who can drive safely while kissing a pretty girl is simply not giving the kiss the attention it deserves.' - Albert Einstein"
+        }
+      ]
+    },
+    {
+      "columnNumber": 13,
+      "era": "Atomic era",
+      "techCost": 5100,
+      "buildingCost": 500,
+      "wonderCost": 1250,
+      "techs": [
+        {
+          "name": "Pharmaceuticals",
+          "prerequisites": [
+            "Plastics",
+            "Refrigeration"
+          ],
+          "quote": "'In nothing do men more nearly approach the gods than in giving health to men.' - Cicero"
+        },
+        {
+          "name": "Atomic Theory",
+          "prerequisites": [
+            "Plastics",
+            "Electronics"
+          ],
+          "uniques": [
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'The unleashed power of the atom has changed everything save our modes of thinking, and we thus drift toward unparalleled catastrophes.' - Albert Einstein"
+        },
+        {
+          "name": "Radar",
+          "prerequisites": [
+            "Ballistics",
+            "Electronics"
+          ],
+          "uniques": [
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
+        },
+        {
+          "name": "Combined Arms",
+          "prerequisites": [
+            "Ballistics",
+            "Combustion"
+          ],
+          "quote": "'The root of the evil is not the construction of new, more dreadful weapons. It is the spirit of conquest.' - Ludwig von Mises"
+        }
+      ]
+    },
+    {
+      "columnNumber": 14,
+      "era": "Atomic era",
+      "techCost": 6400,
+      "buildingCost": 500,
+      "wonderCost": 1250,
+      "techs": [
+        {
+          "name": "Ecology",
+          "prerequisites": [
+            "Atomic Theory",
+            "Pharmaceuticals"
+          ],
+          "quote": "'Only within the moment of time represented by the present century has one species, man, acquired significant power to alter the nature of his world.' - Rachel Carson"
+        },
+        {
+          "name": "Nuclear Fission",
+          "prerequisites": [
+            "Atomic Theory",
+            "Radar"
+          ],
+          "quote": "'I am become Death, the destroyer of worlds.' - J. Robert Oppenheimer"
+        },
+        {
+          "name": "Rocketry",
+          "prerequisites": [
+            "Radar"
+          ],
+          "uniques": [
+            "[+100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'A good rule for rocket experimenters to follow is this: always assume that it will explode.' - Astronautics Magazine, 1937"
+        },
+        {
+          "name": "Computers",
+          "prerequisites": [
+            "Combined Arms",
+            "Radar"
+          ],
+          "quote": "'Computers are like Old Testament gods: lots of rules and no mercy.' - Joseph Campbell"
+        }
+      ]
+    },
+    {
+      "columnNumber": 15,
+      "era": "Information era",
+      "techCost": 7700,
+      "buildingCost": 750,
+      "wonderCost": 1250,
+      "techs": [
+        {
+          "name": "Telecommunications",
+          "prerequisites": [
+            "Ecology"
+          ],
+          "quote": "'The more we elaborate our means of communication, the less we communicate.' - J.B. Priestly"
+        },
+        {
+          "name": "Mobile Tactics",
+          "prerequisites": [
+            "Ecology",
+            "Nuclear Fission"
+          ],
+          "quote": "'All men can see these tactics whereby I conquer, but what none can see is the strategy out of which victory is evolved.' - Sun Tzu"
+        },
+        {
+          "name": "Advanced Ballistics",
+          "prerequisites": [
+            "Nuclear Fission",
+            "Rocketry"
+          ],
+          "quote": "'Our scientific power has outrun our spiritual power, we have guided missiles and misguided men.' – Martin Luther King Jr."
+        },
+        {
+          "name": "Satellites",
+          "prerequisites": [
+            "Rocketry"
+          ],
+          "uniques": [
+            "Reveals the entire map",
+            "[+200]% weight to this choice for AI decisions"
+          ],
+          "quote": "'Now, somehow, in some new way, the sky seemed almost alien.' - Lyndon B. Johnson"
+        },
+        {
+          "name": "Robotics",
+          "prerequisites": [
+            "Rocketry",
+            "Computers"
+          ],
+          "quote": "'1. A robot may not injure a human being or, through inaction, allow a human being to come to harm. 2. A robot must obey any orders given to it by human beings, except when such orders would conflict with the First Law. 3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.' - Isaac Asimov"
+        },
+        {
+          "name": "Lasers",
+          "prerequisites": [
+            "Computers"
+          ],
+          "uniques": [
+            "[-100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'The night is far spent, the day is at hand: let us therefore cast off the works of darkness, and let us put on the armor of light.' - The Holy Bible: Romans, 13:12"
+        }
+      ]
+    },
+    {
+      "columnNumber": 16,
+      "era": "Information era",
+      "techCost": 8800,
+      "buildingCost": 750,
+      "wonderCost": 1250,
+      "techs": [
+        {
+          "name": "Globalization",
+          "prerequisites": [
+            "Telecommunications"
+          ],
+          "uniques": [
+            "[-100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'The new electronic interdependence recreates the world in the image of a global village.' - Marshall McLuhan"
+        },
+        {
+          "name": "Particle Physics",
+          "prerequisites": [
+            "Telecommunications",
+            "Mobile Tactics",
+            "Advanced Ballistics"
+          ],
+          "quote": "'Every particle of matter is attracted by or gravitates to every other particle of matter with a force inversely proportional to the squares of their distances.' - Isaac Newton"
+        },
+        {
+          "name": "Nuclear Fusion",
+          "prerequisites": [
+            "Advanced Ballistics",
+            "Satellites",
+            "Robotics"
+          ],
+          "uniques": [
+            "[-100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'The release of atomic energy has not created a new problem. It has readily made more urgent the necessity of solving an existing one.' - Albert Einstein"
+        },
+        {
+          "name": "Nanotechnology",
+          "prerequisites": [
+            "Robotics"
+          ],
+          "quote": "'The impact of nanotechnology is expected to exceed the impact that the electronics revolution has had on our lives.' - Richard Schwartz"
+        },
+        {
+          "name": "Stealth",
+          "prerequisites": [
+            "Robotics",
+            "Lasers"
+          ],
+          "uniques": [
+            "[-100]% weight to this choice for AI decisions"
+          ],
+          "quote": "'Be extremely subtle, even to the point of formlessness, be extremely mysterious, even to the point of soundlessness. Thereby you can be the director of the opponent's fate.' - Sun Tzu"
+        }
+      ]
+    },
+    {
+      "columnNumber": 17,
+      "era": "Future era",
+      "techCost": 9500,
+      "buildingCost": 750,
+      "wonderCost": 1250,
+      "techs": [
+        {
+          "name": "Future Tech",
+          "prerequisites": [
+            "Globalization",
+            "Particle Physics",
+            "Nuclear Fusion",
+            "Nanotechnology",
+            "Stealth"
+          ],
+          "uniques": [
+            "Can be continually researched"
+          ],
+          "quote": "'I think we agree, the past is over.' - George W. Bush"
+        }
+      ]
+    }
+  ]
+}

@@ -1,976 +1,183 @@
 #!/usr/bin/env python3
-"""Unciv Wiki 数据管道。
-
-从本地 Unciv4iOS 源码提取 Gods & Kings 规则集数据 + 成就数据，
-复刻 Unciv 的翻译引擎（tr() / getPlaceholderText / getPlaceholderParameters），
-JOIN 简体中文翻译，输出中英双语 Starlight 文档页面。
-
-用法:
-    python3 scripts/generate.py
-"""
+"""Validate all snapshot inputs, render in staging, then publish owned files only."""
+import argparse
+import html
 import json
 import re
-import shutil
-import sys
+import tempfile
 from pathlib import Path
+from wiki_data import ROOT, CONFIG, SNAPSHOT, load_snapshot, required_techs, slug
 
-# ---------------------------------------------------------------------------
-# 路径
-# ---------------------------------------------------------------------------
-BLOG_ROOT = Path(__file__).resolve().parent.parent
-SOURCE = Path("/Users/ai/code/Unciv4iOS-Private/public/Unciv4iOS/android/assets/jsons")
-GK = SOURCE / "Civ V - Gods & Kings"
-TRANSLATIONS = SOURCE / "translations"
-ACHIEVEMENTS = Path("/Users/ai/code/Unciv4iOS-Private/assets/achievements")
-
-OUT_DOCS = BLOG_ROOT / "src" / "content" / "docs"
-OUT_EN_DB = OUT_DOCS / "database"
-OUT_ZH_DB = OUT_DOCS / "zh" / "database"
-OUT_ACH = OUT_DOCS / "achievements"
-OUT_ZH_ACH = OUT_DOCS / "zh" / "achievements"
-OUT_PUBLIC = BLOG_ROOT / "public"
-
-GAME_VERSION = "4.21.19"
-
-
-# ---------------------------------------------------------------------------
-# 容错 JSON 解析（剥离 // 与 /* */ 注释）
-# ---------------------------------------------------------------------------
-def strip_comments(text: str) -> str:
-    text = re.sub(r"/\*.*?\*/", "", text, flags=re.S)
-    text = re.sub(r"//[^\n]*", "", text)
-    return text
-
-
-def load_json(path: Path):
-    return json.loads(strip_comments(path.read_text(encoding="utf-8")))
-
-
-# ---------------------------------------------------------------------------
-# 翻译引擎（复刻 Unciv 的 Translations / tr()）
-# ---------------------------------------------------------------------------
-POINTY_RE = re.compile(r"<([^>]*)>")
-SQUARE_RE = re.compile(r"\[([^\]]*)\]")
-
-
-def remove_conditionals(s: str) -> str:
-    if "<" not in s:
-        return s
-    return POINTY_RE.sub("", s).replace("  ", " ").strip()
-
-
-def get_placeholder_params(s: str) -> list[str]:
-    s2 = remove_conditionals(s)
-    params: list[str] = []
-    depth = 0
-    start = -1
-    for i, c in enumerate(s2):
-        if c == "[":
-            if depth == 0:
-                start = i + 1
-            depth += 1
-        elif c == "]" and depth > 0:
-            depth -= 1
-            if depth == 0:
-                params.append(s2[start:i])
-    return params
-
-
-def get_placeholder_text(s: str) -> str:
-    out = remove_conditionals(s)
-    for p in get_placeholder_params(s):
-        out = out.replace(f"[{p}]", "[]", 1)
-    return out
-
-
-def load_props(path: Path) -> dict[str, str]:
-    """读取 .properties，返回 {key: value}。跳过注释与空值。"""
-    d: dict[str, str] = {}
-    for line in path.read_text(encoding="utf-8").splitlines():
-        line = line.rstrip("\n")
-        if not line or line.startswith("#") or " = " not in line:
-            continue
-        k, v = line.split(" = ", 1)
-        if v.strip() == "":
-            continue
-        # Unciv 把 \n 还原为换行
-        d[k.replace("\\n", "\n")] = v.replace("\\n", "\n")
-    return d
-
-
-class Translator:
-    """复刻 Unciv 翻译查找：key 若含 [ 且不含 <，则做 getPlaceholderText。"""
-
-    def __init__(self, zh_path: Path):
-        raw = load_props(zh_path)
-        self.table: dict[str, str] = {}
-        for k, v in raw.items():
-            if "[" in k and "<" not in k:
-                self.table[get_placeholder_text(k)] = v
-            else:
-                self.table[k] = v
-
-    def translate(self, text: str) -> str:
-        """翻译一段文本（含占位符回填）。找不到则回退英文原文。"""
-        if not text:
-            return text
-        # 1) 无括号：直接查表
-        if "[" not in text and "<" not in text:
-            return self.table.get(text, text)
-
-        # 2) 含条件 <...>：分别翻译基础部分与各条件，再按中文规则拼接
-        #    中文 ConditionalsPlacement = "before"：条件在前，基础在后
-        if "<" in text:
-            base = remove_conditionals(text)
-            conds = POINTY_RE.findall(text)
-            base_tr = self._translate_plain(base)
-            cond_trs = [self._translate_plain(c) for c in conds]
-            # 中文：条件在前
-            parts = cond_trs + [base_tr]
-            return "".join(parts)
-
-        # 3) 含 [ 不含 <：占位符翻译
-        return self._translate_plain(text)
-
-    def _translate_plain(self, text: str) -> str:
-        """翻译不含 <条件> 的文本，处理 [占位符] 回填。"""
-        if not text:
-            return text
-        if "[" not in text:
-            return self.table.get(text, text)
-
-        params = get_placeholder_params(text)
-        key = get_placeholder_text(text)
-        if key in self.table:
-            template = self.table[key]
-        else:
-            # 回退：直接用原文（去掉条件后的）
-            return text
-
-        # 回填：template 里的 [xxx] 依次替换为 params 的翻译
-        # 但中文 template 用的是类型名占位符（如 [mapUnitFilter]），需按顺序回填
-        # Unciv 的做法：template 的占位符按 originalEntry 的参数顺序替换
-        # 这里简化：把 template 里的每个 [typeParam] 按顺序替换为对应 params 的翻译
-        tpl_params = get_placeholder_params(template)
-        if len(tpl_params) == len(params):
-            result = template
-            for tpl_p, p in zip(tpl_params, params):
-                # 翻译参数本身（参数可能是规则对象名，需要翻译）
-                p_tr = self.table.get(p, p)
-                # 处理参数内嵌套的 {Military} {Water} 这类
-                p_tr = self._expand_filters(p_tr)
-                result = result.replace(f"[{tpl_p}]", p_tr, 1)
-            return result
-        return template
-
-    def _expand_filters(self, p: str) -> str:
-        """展开 {A} {B} 过滤器为可读形式（如 {Military} {Water} -> 军事 海上）。"""
-        def repl(m):
-            inner = m.group(1)
-            parts = [self.table.get(x, x) for x in inner.split()]
-            return " ".join(parts)
-        return re.sub(r"\{([^}]*)\}", repl, p)
-
-
-zh_translator = Translator(TRANSLATIONS / "Simplified_Chinese.properties")
-
-
-def tr(text: str) -> str:
-    return zh_translator.translate(text)
-
-
-# ---------------------------------------------------------------------------
-# 数据提取
-# ---------------------------------------------------------------------------
-def extract_nations():
-    data = load_json(GK / "Nations.json")
-    majors, city_states = [], []
-    for n in data:
-        if n.get("cityStateType"):
-            city_states.append(n)
-        elif n.get("leaderName"):
-            majors.append(n)
-        # Spectator / Barbarians 跳过
-    return majors, city_states
-
-
-def extract_units():
-    return load_json(GK / "Units.json")
-
-
-def extract_buildings():
-    return load_json(GK / "Buildings.json")
-
-
-def extract_techs():
-    data = load_json(GK / "Techs.json")
-    techs = []
-    for era in data:
-        for t in era.get("techs", []):
-            t["era"] = era.get("era", "")
-            techs.append(t)
-    return techs
-
-
-# ---------------------------------------------------------------------------
-# 格式化辅助
-# ---------------------------------------------------------------------------
-def md_escape(s: str) -> str:
-    return s.replace("|", "\\|").replace("\n", " ")
-
-
-def uniques_list(uniques) -> str:
-    """把 uniques 列表转成 Markdown 列表（英文原文，忠实呈现游戏规则语法）。"""
-    if not uniques:
-        return ""
-    # 用反引号包裹，避免 <...> 被当作 HTML、[...] 被当作链接语法
-    return "\n".join(f"- `{u}`" for u in uniques)
-
-
-# ---------------------------------------------------------------------------
-# 结构化数据 (JSON-LD) 辅助
-# ---------------------------------------------------------------------------
-SITE = "https://jerry8870.github.io"
-BASE = "/Unciv-Wiki/"
-
-CAT_LABELS = {
-    "civilizations": {"en": "Civilizations", "zh": "文明"},
-    "units": {"en": "Units", "zh": "单位"},
-    "buildings": {"en": "Buildings", "zh": "建筑"},
-    "technologies": {"en": "Technologies", "zh": "科技"},
+LABELS = {'civilizations': ('Civilizations', '文明'), 'units': ('Units', '单位'),
+          'buildings': ('Buildings', '建筑'), 'technologies': ('Technologies', '科技')}
+GUIDES = {
+    'strategies/babylon': ('Babylon: early science', '巴比伦：早期科研'),
+    'strategies/korea': ('Korea: specialists and the capital', '朝鲜：专家与首都建设'),
+    'strategies/rome': ('Rome: construction and war', '罗马：建设与战争'),
+    'strategies/greece': ('Greece: city-state networks', '希腊：城邦网络'),
+    'mechanics/policies': ('Policy planning', '政策规划'),
+    'mechanics/resources-improvements': ('Citizens, resources and improvements', '市民、资源与改良'),
+    'mechanics/combat-promotions': ('Terrain and promotions', '地形与晋升'),
+    'mechanics/religion-beliefs': ('Belief effects and returns', '信条效果与收益'),
 }
+RELATED_GUIDES = {
+    ('buildings', 'University'): ['mechanics/policies', 'mechanics/resources-improvements', 'strategies/babylon', 'strategies/korea'],
+    ('buildings', 'Library'): ['strategies/rome', 'strategies/babylon', 'strategies/korea'],
+    ('buildings', 'National College'): ['strategies/babylon', 'strategies/korea', 'strategies/rome'],
+    ('buildings', 'Temple'): ['mechanics/religion-beliefs'],
+    ('buildings', 'Shrine'): ['mechanics/religion-beliefs', 'mechanics/policies'],
+    ('buildings', 'Pagoda'): ['mechanics/religion-beliefs'],
+    ('buildings', 'Courthouse'): ['strategies/rome'],
+    ('units', 'Great Scientist'): ['strategies/babylon', 'strategies/korea', 'mechanics/resources-improvements'],
+    ('units', 'Worker'): ['mechanics/resources-improvements'],
+    ('units', 'Trebuchet'): ['mechanics/combat-promotions', 'strategies/korea'],
+    ('units', 'Catapult'): ['mechanics/combat-promotions', 'strategies/rome'],
+    ('technologies', 'Writing'): ['strategies/babylon', 'strategies/korea'],
+    ('technologies', 'Education'): ['strategies/babylon', 'strategies/korea', 'mechanics/resources-improvements'],
+    ('technologies', 'Iron Working'): ['strategies/rome', 'mechanics/resources-improvements'],
+    ('technologies', 'Mathematics'): ['strategies/rome'],
+}
+FIELDS = {'leaderName': ('Leader', '领袖'), 'uniqueName': ('Unique ability', '独特能力'),
+ 'preferredVictoryType': ('Preferred victory', '偏好胜利'), 'unitType': ('Type', '类型'),
+ 'movement': ('Movement', '移动力'), 'strength': ('Strength', '战斗力'), 'rangedStrength': ('Ranged strength', '远程战斗力'),
+ 'range': ('Range', '射程'), 'cost': ('Base cost', '基础花费'), 'maintenance': ('Maintenance', '维护费'),
+ 'requiredTech': ('Required technology', '所需科技'), 'obsoleteTech': ('Obsolete technology', '淘汰科技'),
+ 'upgradesTo': ('Upgrades to', '升级为'), 'requiredResource': ('Required resource', '所需资源'),
+ 'requiredBuilding': ('Required building', '所需建筑'), 'replaces': ('Replaces', '替代'), 'uniqueTo': ('Unique to', '专属文明'),
+ 'production': ('Production', '生产力'), 'food': ('Food', '食物'), 'gold': ('Gold', '金币'),
+ 'science': ('Science', '科研'), 'culture': ('Culture', '文化'), 'faith': ('Faith', '信仰'),
+ 'happiness': ('Happiness', '快乐'), 'cityStrength': ('City strength', '城市防御'), 'era': ('Era', '时代')}
 
-
-def abs_url(rel: str, lang: str = "en") -> str:
-    """构建带语言前缀的绝对 URL。rel 不含前导斜杠。"""
-    prefix = "zh/" if lang == "zh" else ""
-    return SITE + BASE + prefix + rel
-
-
-def _ld_script(ld: dict) -> dict:
-    return {
-        "tag": "script",
-        "attrs": {"type": "application/ld+json"},
-        "content": json.dumps(ld, ensure_ascii=False, separators=(",", ":")),
-    }
-
-
-def breadcrumb_ld(crumbs) -> dict:
-    return {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {"@type": "ListItem", "position": i + 1, "name": n, "item": u}
-            for i, (n, u) in enumerate(crumbs)
-        ],
-    }
-
-
-def itemlist_ld(name: str, items) -> dict:
-    """items: list of (name, url)"""
-    return {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "name": name,
-        "itemListElement": [
-            {"@type": "ListItem", "position": i + 1, "name": n, "url": u}
-            for i, (n, u) in enumerate(items)
-        ],
-    }
-
-
-def db_crumbs(category: str, lang: str = "en", entity_name=None, entity_slug=None):
-    crumbs = [
-        ("Home", abs_url("", lang)),
-        ("Database", abs_url("database/", lang)),
-        (CAT_LABELS[category][lang], abs_url(f"database/{category}/", lang)),
-    ]
-    if entity_name and entity_slug:
-        crumbs.append((entity_name, abs_url(f"database/{category}/{entity_slug}/", lang)))
-    return crumbs
-
-
-def ach_crumbs(lang: str = "en"):
-    label = "Achievements" if lang == "en" else "成就"
-    return [("Home", abs_url("", lang)), (label, abs_url("achievements/", lang))]
-
-
-# ---------------------------------------------------------------------------
-# 页面生成
-# ---------------------------------------------------------------------------
-def write_page(path: Path, frontmatter: dict, body: str):
-    fm_lines = ["---"]
-    for k, v in frontmatter.items():
-        if k == "head":
-            fm_lines.append("head:")
-            for entry in v:
-                fm_lines.append(f"  - tag: {entry['tag']}")
-                if entry.get("attrs"):
-                    fm_lines.append("    attrs:")
-                    for ak, av in entry["attrs"].items():
-                        fm_lines.append(f"      {ak}: {av}")
-                if "content" in entry:
-                    # 单引号标量：YAML 内仅 ' 需转义为 ''
-                    c = entry["content"].replace("'", "''")
-                    fm_lines.append(f"    content: '{c}'")
-            continue
-        if isinstance(v, str):
-            # 冒号需转义，避免 YAML 解析错误
-            v = v.replace(": ", "：")
-            fm_lines.append(f"{k}: {v}")
-        elif isinstance(v, list):
-            fm_lines.append(f"{k}:")
-            for item in v:
-                fm_lines.append(f"  - {item}")
-        elif isinstance(v, bool):
-            fm_lines.append(f"{k}: {'true' if v else 'false'}")
-        elif v is None:
-            continue
-        else:
-            fm_lines.append(f"{k}: {v}")
-    fm_lines.append("---")
-    fm_lines.append("")
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text("\n".join(fm_lines) + body + "\n", encoding="utf-8")
-
-
-def slugify(name: str) -> str:
-    s = re.sub(r"[^a-zA-Z0-9]+", "-", name).strip("-").lower()
-    return s
-
-
-def gen_nations():
-    majors, city_states = extract_nations()
-    # 英文聚合页
-    rows = []
-    for n in majors:
-        name = n["name"]
-        leader = n.get("leaderName", "")
-        unique = n.get("uniqueName", "")
-        victory = n.get("preferredVictoryType", "")
-        rows.append(
-            f"| [{name}](./{slugify(name)}/) | {leader} | {unique} | {victory} |"
-        )
-    table = "\n".join(
-        [
-            "| Civilization | Leader | Unique Ability | Preferred Victory |",
-            "| --- | --- | --- | --- |",
-            *rows,
-        ]
-    )
-    body = f"""# Civilizations
-
-{table}
-
-## City-States
-
-"""
-    cs_rows = []
-    for cs in city_states:
-        name = cs["name"]
-        cstype = cs.get("cityStateType", "")
-        personality = cs.get("personality", "")
-        cs_rows.append(f"| {name} | {tr(cstype)} | {tr(personality)} |")
-    cs_table = "\n".join(
-        [
-            "| City-State | Type | Personality |",
-            "| --- | --- | --- |",
-            *cs_rows,
-        ]
-    )
-    body += cs_table + "\n"
-    civ_items = [(n["name"], abs_url(f"database/civilizations/{slugify(n['name'])}/", "en")) for n in majors]
-    civ_head = [
-        _ld_script(breadcrumb_ld(db_crumbs("civilizations", "en"))),
-        _ld_script(itemlist_ld("Civilizations", civ_items)),
-    ]
-    write_page(
-        OUT_EN_DB / "civilizations" / "index.md",
-        {"title": "Civilizations", "description": "All civilizations and city-states in Unciv.", "head": civ_head},
-        body,
-    )
-    # 中文聚合页
-    zh_rows = []
-    for n in majors:
-        name = tr(n["name"])
-        leader = tr(n.get("leaderName", ""))
-        unique = tr(n.get("uniqueName", ""))
-        victory = tr(n.get("preferredVictoryType", ""))
-        zh_rows.append(
-            f"| [{name}](./{slugify(n['name'])}/) | {leader} | {unique} | {victory} |"
-        )
-    zh_table = "\n".join(
-        [
-            "| 文明 | 领袖 | 独特能力 | 偏好胜利 |",
-            "| --- | --- | --- | --- |",
-            *zh_rows,
-        ]
-    )
-    zh_body = f"""# 文明
-
-{zh_table}
-
-## 城邦
-
-"""
-    zh_cs_rows = []
-    for cs in city_states:
-        name = tr(cs["name"])
-        cstype = tr(cs.get("cityStateType", ""))
-        personality = tr(cs.get("personality", ""))
-        zh_cs_rows.append(f"| {name} | {cstype} | {personality} |")
-    zh_cs_table = "\n".join(
-        [
-            "| 城邦 | 类型 | 性格 |",
-            "| --- | --- | --- |",
-            *zh_cs_rows,
-        ]
-    )
-    zh_body += zh_cs_table + "\n"
-    zh_civ_items = [(tr(n["name"]), abs_url(f"database/civilizations/{slugify(n['name'])}/", "zh")) for n in majors]
-    zh_civ_head = [
-        _ld_script(breadcrumb_ld(db_crumbs("civilizations", "zh"))),
-        _ld_script(itemlist_ld("文明", zh_civ_items)),
-    ]
-    write_page(
-        OUT_ZH_DB / "civilizations" / "index.md",
-        {"title": "文明", "description": "Unciv 的全部文明与城邦。", "head": zh_civ_head},
-        zh_body,
-    )
-    # 实体独立页（主要文明，全量）
-    for n in majors:
-        gen_nation_page(n)
-
-
-def gen_nation_page(n):
-    name = n["name"]
-    slug = slugify(name)
-    leader = n.get("leaderName", "")
-    # 英文
-    fm = {"title": name, "description": f"{name} — leader, unique ability and start bias in Unciv.",
-          "head": [_ld_script(breadcrumb_ld(db_crumbs("civilizations", "en", name, slug)))]}
-    body = f"""# {name}
-
-**Leader**: {leader}
-
-**Unique Ability**: {n.get('uniqueName', '')}
-
-"""
-    if n.get("uniques"):
-        body += "## Unique Abilities\n\n" + uniques_list(n["uniques"]) + "\n\n"
-    if n.get("startBias"):
-        body += "## Start Bias\n\n" + "\n".join(f"- {b}" for b in n["startBias"]) + "\n\n"
-    if n.get("preferredVictoryType"):
-        body += f"**Preferred Victory**: {n['preferredVictoryType']}\n\n"
-    write_page(OUT_EN_DB / "civilizations" / slug / "index.md", fm, body)
-    # 中文
-    zh_name = tr(name)
-    zh_fm = {"title": zh_name, "description": f"{zh_name}——领袖、独特能力与开局倾向。",
-             "head": [_ld_script(breadcrumb_ld(db_crumbs("civilizations", "zh", zh_name, slug)))]}
-    zh_body = f"""# {zh_name}
-
-**领袖**：{tr(leader)}
-
-**独特能力**：{tr(n.get('uniqueName', ''))}
-
-"""
-    if n.get("uniques"):
-        zh_body += "## 独特能力\n\n"
-        for u in n["uniques"]:
-            zh_body += f"- {tr(u)}\n"
-        zh_body += "\n"
-    if n.get("startBias"):
-        zh_body += "## 开局倾向\n\n" + "\n".join(f"- {tr(b)}" for b in n["startBias"]) + "\n\n"
-    write_page(OUT_ZH_DB / "civilizations" / slug / "index.md", zh_fm, zh_body)
-
-
-def gen_units():
-    units = extract_units()
-    # 英文聚合
-    rows = []
-    for u in units:
-        name = u["name"]
-        utype = u.get("unitType", "")
-        cost = u.get("cost", "")
-        tech = u.get("requiredTech", "")
-        rows.append(
-            f"| [{name}](./{slugify(name)}/) | {tr(utype)} | {cost} | [{tech}](../technologies/{slugify(tech)}/) |"
-        )
-    table = "\n".join(
-        [
-            "| Unit | Type | Cost | Required Tech |",
-            "| --- | --- | --- | --- |",
-            *rows,
-        ]
-    )
-    body = f"# Units\n\n{table}\n"
-    unit_items = [(u["name"], abs_url(f"database/units/{slugify(u['name'])}/", "en")) for u in units]
-    unit_head = [
-        _ld_script(breadcrumb_ld(db_crumbs("units", "en"))),
-        _ld_script(itemlist_ld("Units", unit_items)),
-    ]
-    write_page(
-        OUT_EN_DB / "units" / "index.md",
-        {"title": "Units", "description": "All units in Unciv — type, cost and required technology.", "head": unit_head},
-        body,
-    )
-    # 中文聚合
-    zh_rows = []
-    for u in units:
-        name = tr(u["name"])
-        utype = tr(u.get("unitType", ""))
-        cost = u.get("cost", "")
-        tech = tr(u.get("requiredTech", ""))
-        zh_rows.append(
-            f"| [{name}](./{slugify(u['name'])}/) | {utype} | {cost} | [{tech}](../technologies/{slugify(u.get('requiredTech',''))}/) |"
-        )
-    zh_table = "\n".join(
-        [
-            "| 单位 | 类型 | 造价 | 所需科技 |",
-            "| --- | --- | --- | --- |",
-            *zh_rows,
-        ]
-    )
-    zh_body = f"# 单位\n\n{zh_table}\n"
-    zh_unit_items = [(tr(u["name"]), abs_url(f"database/units/{slugify(u['name'])}/", "zh")) for u in units]
-    zh_unit_head = [
-        _ld_script(breadcrumb_ld(db_crumbs("units", "zh"))),
-        _ld_script(itemlist_ld("单位", zh_unit_items)),
-    ]
-    write_page(
-        OUT_ZH_DB / "units" / "index.md",
-        {"title": "单位", "description": "Unciv 的全部单位——类型、造价与所需科技。", "head": zh_unit_head},
-        zh_body,
-    )
-    # 实体独立页（全量）
-    for u in units:
-        gen_unit_page(u)
-
-
-def gen_unit_page(u):
-    name = u["name"]
-    slug = slugify(name)
-    # 英文
-    fm = {"title": name, "description": f"{name} — stats, abilities and tech requirements in Unciv.",
-          "head": [_ld_script(breadcrumb_ld(db_crumbs("units", "en", name, slug)))]}
-    body = f"# {name}\n\n"
-    stat_rows = []
-    label_map = {
-        "unitType": "Type",
-        "movement": "Movement",
-        "strength": "Strength",
-        "rangedStrength": "Ranged Strength",
-        "range": "Range",
-        "cost": "Cost",
-        "requiredTech": "Required Tech",
-        "obsoleteTech": "Obsolete Tech",
-        "upgradesTo": "Upgrades To",
-        "requiredResource": "Required Resource",
-        "replaces": "Replaces",
-        "uniqueTo": "Unique To",
-    }
-    for key, label in label_map.items():
-        if key in u and u[key] not in (None, "", []):
-            stat_rows.append(f"| {label} | {u[key]} |")
-    if stat_rows:
-        body += "## Stats\n\n" + "\n".join(
-            ["| Attribute | Value |", "| --- | --- |", *stat_rows]
-        ) + "\n\n"
-    if u.get("uniques"):
-        body += "## Abilities\n\n" + uniques_list(u["uniques"]) + "\n\n"
-    if u.get("promotions"):
-        body += "## Promotions\n\n" + "\n".join(f"- {p}" for p in u["promotions"]) + "\n\n"
-    if u.get("civilopediaText"):
-        text = u["civilopediaText"][0].get("text", "") if u["civilopediaText"] else ""
-        if text:
-            body += f"## Civilopedia\n\n{text}\n\n"
-    write_page(OUT_EN_DB / "units" / slug / "index.md", fm, body)
-    # 中文
-    zh_name = tr(name)
-    zh_fm = {"title": zh_name, "description": f"{zh_name}——属性、能力与科技需求。",
-             "head": [_ld_script(breadcrumb_ld(db_crumbs("units", "zh", zh_name, slug)))]}
-    zh_body = f"# {zh_name}\n\n"
-    zh_label_map = {
-        "unitType": "类型",
-        "movement": "移动力",
-        "strength": "战斗力",
-        "rangedStrength": "远程战斗力",
-        "range": "射程",
-        "cost": "造价",
-        "requiredTech": "所需科技",
-        "obsoleteTech": "淘汰科技",
-        "upgradesTo": "升级为",
-        "requiredResource": "所需资源",
-        "replaces": "替代",
-        "uniqueTo": "专属文明",
-    }
-    zh_stat_rows = []
-    for key, label in zh_label_map.items():
-        if key in u and u[key] not in (None, "", []):
-            val = u[key]
-            if key in ("requiredTech", "obsoleteTech", "upgradesTo", "replaces", "uniqueTo"):
-                val = tr(val)
-            zh_stat_rows.append(f"| {label} | {val} |")
-    if zh_stat_rows:
-        zh_body += "## 属性\n\n" + "\n".join(
-            ["| 属性 | 数值 |", "| --- | --- |", *zh_stat_rows]
-        ) + "\n\n"
-    if u.get("uniques"):
-        zh_body += "## 能力\n\n"
-        for x in u["uniques"]:
-            zh_body += f"- {tr(x)}\n"
-        zh_body += "\n"
-    if u.get("promotions"):
-        zh_body += "## 晋升\n\n" + "\n".join(f"- {tr(p)}" for p in u["promotions"]) + "\n\n"
-    write_page(OUT_ZH_DB / "units" / slug / "index.md", zh_fm, zh_body)
-
-
-def gen_buildings():
-    buildings = extract_buildings()
-    # 英文聚合
-    rows = []
-    for b in buildings:
-        name = b["name"]
-        cost = b.get("cost", "")
-        tech = b.get("requiredTech", "")
-        kind = "Wonder" if b.get("isWonder") else ("National Wonder" if b.get("isNationalWonder") else "")
-        rows.append(
-            f"| [{name}](./{slugify(name)}/) | {kind} | {cost} | {tech or '—'} |"
-        )
-    table = "\n".join(
-        [
-            "| Building | Type | Cost | Required Tech |",
-            "| --- | --- | --- | --- |",
-            *rows,
-        ]
-    )
-    body = f"# Buildings\n\n{table}\n"
-    bld_items = [(b["name"], abs_url(f"database/buildings/{slugify(b['name'])}/", "en")) for b in buildings]
-    bld_head = [
-        _ld_script(breadcrumb_ld(db_crumbs("buildings", "en"))),
-        _ld_script(itemlist_ld("Buildings", bld_items)),
-    ]
-    write_page(
-        OUT_EN_DB / "buildings" / "index.md",
-        {"title": "Buildings", "description": "All buildings, wonders and national wonders in Unciv.", "head": bld_head},
-        body,
-    )
-    # 中文聚合
-    zh_rows = []
-    for b in buildings:
-        name = tr(b["name"])
-        cost = b.get("cost", "")
-        tech = tr(b.get("requiredTech", "")) if b.get("requiredTech") else ""
-        kind = "奇观" if b.get("isWonder") else ("国家奇观" if b.get("isNationalWonder") else "")
-        zh_rows.append(
-            f"| [{name}](./{slugify(b['name'])}/) | {kind} | {cost} | {tech or '—'} |"
-        )
-    zh_table = "\n".join(
-        [
-            "| 建筑 | 类型 | 造价 | 所需科技 |",
-            "| --- | --- | --- | --- |",
-            *zh_rows,
-        ]
-    )
-    zh_body = f"# 建筑\n\n{zh_table}\n"
-    zh_bld_items = [(tr(b["name"]), abs_url(f"database/buildings/{slugify(b['name'])}/", "zh")) for b in buildings]
-    zh_bld_head = [
-        _ld_script(breadcrumb_ld(db_crumbs("buildings", "zh"))),
-        _ld_script(itemlist_ld("建筑", zh_bld_items)),
-    ]
-    write_page(
-        OUT_ZH_DB / "buildings" / "index.md",
-        {"title": "建筑", "description": "Unciv 的全部建筑、奇观与国家奇观。", "head": zh_bld_head},
-        zh_body,
-    )
-    # 实体独立页（全量）
-    for b in buildings:
-        gen_building_page(b)
-
-
-def gen_building_page(b):
-    name = b["name"]
-    slug = slugify(name)
-    # 英文
-    fm = {"title": name, "description": f"{name} — cost, effects and tech requirements in Unciv.",
-          "head": [_ld_script(breadcrumb_ld(db_crumbs("buildings", "en", name, slug)))]}
-    body = f"# {name}\n\n"
-    stat_rows = []
-    label_map = {
-        "cost": "Cost",
-        "maintenance": "Maintenance",
-        "requiredTech": "Required Tech",
-        "requiredBuilding": "Required Building",
-        "requiredResource": "Required Resource",
-        "replaces": "Replaces",
-        "uniqueTo": "Unique To",
-        "production": "Production",
-        "food": "Food",
-        "gold": "Gold",
-        "science": "Science",
-        "culture": "Culture",
-        "faith": "Faith",
-        "happiness": "Happiness",
-        "cityStrength": "City Strength",
-    }
-    for key, label in label_map.items():
-        if key in b and b[key] not in (None, "", []):
-            stat_rows.append(f"| {label} | {b[key]} |")
-    if stat_rows:
-        body += "## Stats\n\n" + "\n".join(
-            ["| Attribute | Value |", "| --- | --- |", *stat_rows]
-        ) + "\n\n"
-    if b.get("uniques"):
-        body += "## Effects\n\n" + uniques_list(b["uniques"]) + "\n\n"
-    if b.get("quote"):
-        body += f"> {b['quote']}\n\n"
-    write_page(OUT_EN_DB / "buildings" / slug / "index.md", fm, body)
-    # 中文
-    zh_name = tr(name)
-    zh_fm = {"title": zh_name, "description": f"{zh_name}——造价、效果与科技需求。",
-             "head": [_ld_script(breadcrumb_ld(db_crumbs("buildings", "zh", zh_name, slug)))]}
-    zh_body = f"# {zh_name}\n\n"
-    zh_label_map = {
-        "cost": "造价",
-        "maintenance": "维护费",
-        "requiredTech": "所需科技",
-        "requiredBuilding": "所需建筑",
-        "requiredResource": "所需资源",
-        "replaces": "替代",
-        "uniqueTo": "专属文明",
-        "production": "产能",
-        "food": "食物",
-        "gold": "金币",
-        "science": "科研",
-        "culture": "文化",
-        "faith": "信仰",
-        "happiness": "快乐",
-        "cityStrength": "城市防御",
-    }
-    zh_stat_rows = []
-    for key, label in zh_label_map.items():
-        if key in b and b[key] not in (None, "", []):
-            val = b[key]
-            if key in ("requiredTech", "requiredBuilding", "replaces", "uniqueTo"):
-                val = tr(val)
-            zh_stat_rows.append(f"| {label} | {val} |")
-    if zh_stat_rows:
-        zh_body += "## 属性\n\n" + "\n".join(
-            ["| 属性 | 数值 |", "| --- | --- |", *zh_stat_rows]
-        ) + "\n\n"
-    if b.get("uniques"):
-        zh_body += "## 效果\n\n"
-        for x in b["uniques"]:
-            zh_body += f"- {tr(x)}\n"
-        zh_body += "\n"
-    write_page(OUT_ZH_DB / "buildings" / slug / "index.md", zh_fm, zh_body)
-
-
-def gen_techs():
-    techs = extract_techs()
-    # 英文聚合
-    rows = []
-    for t in techs:
-        name = t["name"]
-        era = t.get("era", "")
-        cost = t.get("cost", "")
-        prereqs = ", ".join(t.get("prerequisites", []))
-        rows.append(
-            f"| [{name}](./{slugify(name)}/) | {tr(era)} | {cost} | {prereqs or '—'} |"
-        )
-    table = "\n".join(
-        [
-            "| Technology | Era | Cost | Prerequisites |",
-            "| --- | --- | --- | --- |",
-            *rows,
-        ]
-    )
-    body = f"# Technologies\n\n{table}\n"
-    tech_items = [(t["name"], abs_url(f"database/technologies/{slugify(t['name'])}/", "en")) for t in techs]
-    tech_head = [
-        _ld_script(breadcrumb_ld(db_crumbs("technologies", "en"))),
-        _ld_script(itemlist_ld("Technologies", tech_items)),
-    ]
-    write_page(
-        OUT_EN_DB / "technologies" / "index.md",
-        {"title": "Technologies", "description": "All technologies in Unciv — era, cost and prerequisites.", "head": tech_head},
-        body,
-    )
-    # 中文聚合
-    zh_rows = []
-    for t in techs:
-        name = tr(t["name"])
-        era = tr(t.get("era", ""))
-        cost = t.get("cost", "")
-        prereqs = "、".join(tr(p) for p in t.get("prerequisites", []))
-        zh_rows.append(
-            f"| [{name}](./{slugify(t['name'])}/) | {era} | {cost} | {prereqs or '—'} |"
-        )
-    zh_table = "\n".join(
-        [
-            "| 科技 | 时代 | 花费 | 前置科技 |",
-            "| --- | --- | --- | --- |",
-            *zh_rows,
-        ]
-    )
-    zh_body = f"# 科技\n\n{zh_table}\n"
-    zh_tech_items = [(tr(t["name"]), abs_url(f"database/technologies/{slugify(t['name'])}/", "zh")) for t in techs]
-    zh_tech_head = [
-        _ld_script(breadcrumb_ld(db_crumbs("technologies", "zh"))),
-        _ld_script(itemlist_ld("科技", zh_tech_items)),
-    ]
-    write_page(
-        OUT_ZH_DB / "technologies" / "index.md",
-        {"title": "科技", "description": "Unciv 的全部科技——时代、花费与前置科技。", "head": zh_tech_head},
-        zh_body,
-    )
-    # 实体独立页（全量）
-    for t in techs:
-        gen_tech_page(t)
-
-
-def gen_tech_page(t):
-    name = t["name"]
-    slug = slugify(name)
-    # 英文
-    fm = {"title": name, "description": f"{name} — era, cost and what it unlocks in Unciv.",
-          "head": [_ld_script(breadcrumb_ld(db_crumbs("technologies", "en", name, slug)))]}
-    body = f"# {name}\n\n"
-    stat_rows = []
-    label_map = {
-        "era": "Era",
-        "cost": "Cost",
-        "prerequisites": "Prerequisites",
-    }
-    for key, label in label_map.items():
-        if key in t and t[key] not in (None, "", []):
-            val = t[key]
-            if key == "prerequisites":
-                val = ", ".join(val)
-            stat_rows.append(f"| {label} | {val} |")
-    if stat_rows:
-        body += "## Info\n\n" + "\n".join(
-            ["| Attribute | Value |", "| --- | --- |", *stat_rows]
-        ) + "\n\n"
-    if t.get("uniques"):
-        body += "## Effects\n\n" + uniques_list(t["uniques"]) + "\n\n"
-    if t.get("quote"):
-        body += f"> {t['quote']}\n\n"
-    write_page(OUT_EN_DB / "technologies" / slug / "index.md", fm, body)
-    # 中文
-    zh_name = tr(name)
-    zh_fm = {"title": zh_name, "description": f"{zh_name}——时代、花费与解锁内容。",
-             "head": [_ld_script(breadcrumb_ld(db_crumbs("technologies", "zh", zh_name, slug)))]}
-    zh_body = f"# {zh_name}\n\n"
-    zh_label_map = {"era": "时代", "cost": "花费", "prerequisites": "前置科技"}
-    zh_stat_rows = []
-    for key, label in zh_label_map.items():
-        if key in t and t[key] not in (None, "", []):
-            val = t[key]
-            if key == "prerequisites":
-                val = "、".join(tr(p) for p in val)
-            elif key == "era":
-                val = tr(val)
-            zh_stat_rows.append(f"| {label} | {val} |")
-    if zh_stat_rows:
-        zh_body += "## 信息\n\n" + "\n".join(
-            ["| 属性 | 数值 |", "| --- | --- |", *zh_stat_rows]
-        ) + "\n\n"
-    if t.get("uniques"):
-        zh_body += "## 效果\n\n"
-        for x in t["uniques"]:
-            zh_body += f"- {tr(x)}\n"
-        zh_body += "\n"
-    write_page(OUT_ZH_DB / "technologies" / slug / "index.md", zh_fm, zh_body)
-
-
-# ---------------------------------------------------------------------------
-# 成就
-# ---------------------------------------------------------------------------
-def gen_achievements():
-    en = json.loads((ACHIEVEMENTS / "copy.json").read_text(encoding="utf-8"))
-    zh = json.loads((ACHIEVEMENTS / "preview-v3-zh.json").read_text(encoding="utf-8"))
-    en_entries = {e["id"]: e for e in en["entries"]}
-    zh_entries = {e["id"]: e for e in zh["entries"]}
-
-    # 图标复制到 public
-    icon_src = ACHIEVEMENTS / "ui"
-    icon_dst = OUT_PUBLIC / "achievements"
-    icon_dst.mkdir(parents=True, exist_ok=True)
-    for i in range(1, 41):
-        sid = f"N{i:02d}"
-        src = icon_src / f"{sid}.svg"
-        if src.exists():
-            shutil.copy2(src, icon_dst / f"{sid}.svg")
-
-    # 英文列表页
-    body = "# Achievements\n\n"
-    body += "There are **40 achievements** on the iOS port (600 points total). Each is tracked across qualifying new games.\n\n"
-    tier_order = ["Simple", "Intermediate", "Hard", "Extreme"]
-    for tier in tier_order:
-        tier_entries = [e for e in en_entries.values() if e["tier"] == tier]
-        if not tier_entries:
-            continue
-        body += f"## {tier}\n\n"
-        for e in sorted(tier_entries, key=lambda x: x["id"]):
-            body += f'<span id="{e["id"]}"></span>\n\n### {e["id"]} — {e["name"]}\n\n'
-            body += f"<img src=\"/Unciv-Wiki/achievements/{e['id']}.svg\" alt=\"{e['name']}\" width=\"64\" height=\"64\" />\n\n"
-            body += f"**Condition**: {e['condition']}\n\n"
-            body += f"**Points**: {e['points']}\n\n"
-            if e.get("honor"):
-                body += f"*{e['honor']}*\n\n"
-    ach_items = [(e["name"], abs_url("achievements/") + "#" + e["id"]) for e in sorted(en_entries.values(), key=lambda x: x["id"])]
-    ach_head = [
-        _ld_script(breadcrumb_ld(ach_crumbs("en"))),
-        _ld_script(itemlist_ld("iOS Achievements", ach_items)),
-    ]
-    write_page(
-        OUT_ACH / "index.md",
-        {"title": "Achievements", "description": "All 40 iOS achievements with conditions, points and icons.", "head": ach_head},
-        body,
-    )
-    # 中文列表页
-    zh_body = "# 成就\n\n"
-    zh_body += "iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对局中累计。\n\n"
-    tier_zh = {"Simple": "简单", "Intermediate": "中等", "Hard": "困难", "Extreme": "极难"}
-    for tier in tier_order:
-        tier_entries = [e for e in zh_entries.values() if e["tier"] == tier]
-        if not tier_entries:
-            continue
-        zh_body += f"## {tier_zh[tier]}\n\n"
-        for e in sorted(tier_entries, key=lambda x: x["id"]):
-            zh_body += f'<span id="{e["id"]}"></span>\n\n### {e["id"]} — {e["name"]}\n\n'
-            zh_body += f"<img src=\"/Unciv-Wiki/achievements/{e['id']}.svg\" alt=\"{e['name']}\" width=\"64\" height=\"64\" />\n\n"
-            zh_body += f"**达成条件**：{e['condition']}\n\n"
-            zh_body += f"**分值**：{e['points']}\n\n"
-            if e.get("honor"):
-                zh_body += f"*{e['honor']}*\n\n"
-    zh_ach_items = [(e["name"], abs_url("achievements/", "zh") + "#" + e["id"]) for e in sorted(zh_entries.values(), key=lambda x: x["id"])]
-    zh_ach_head = [
-        _ld_script(breadcrumb_ld(ach_crumbs("zh"))),
-        _ld_script(itemlist_ld("iOS 成就", zh_ach_items)),
-    ]
-    write_page(
-        OUT_ZH_ACH / "index.md",
-        {"title": "成就", "description": "iOS 版全部 40 项成就，含达成条件、分值与图标。", "head": zh_ach_head},
-        zh_body,
-    )
-
+def table(headers, rows):
+    return '\n'.join(['| ' + ' | '.join(headers) + ' |', '| ' + ' | '.join(['---'] * len(headers)) + ' |'] + ['| ' + ' | '.join(str(v).replace('|', '\\|').replace('\n', ' ') for v in row) + ' |' for row in rows]) + '\n\n'
 
 def main():
-    print("== Unciv Wiki 数据管道 ==")
-    print("生成文明…")
-    gen_nations()
-    print("生成单位…")
-    gen_units()
-    print("生成建筑…")
-    gen_buildings()
-    print("生成科技…")
-    gen_techs()
-    print("生成成就…")
-    gen_achievements()
-    print("完成 ✅")
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--check', action='store_true')
+    parser.add_argument('--snapshot', type=Path, default=SNAPSHOT)
+    args = parser.parse_args()
+    manifest, data, groups = load_snapshot(args.snapshot)
+    icons = json.loads((ROOT / 'data/guide-assets.json').read_text())['databaseIcons']
+    fragments = {lang: (ROOT / f'src/content/fragments/achievements-{lang}.md').read_text() for lang in ['en', 'zh']}
+    outputs = {}
+    for lang in ['en', 'zh']:
+        ix = int(lang == 'zh'); prefix = 'zh/' if ix else ''
+        def tr(value):
+            text = data['zh'].get(str(value), str(value)) if ix else str(value)
+            return re.sub(r'<Civilopedia link \[[^]]+\]>', '', text).strip()
+        def url(path): return CONFIG['base'] + prefix + path
+        def icon(category, name, detail=False):
+            source = CONFIG['base'] + icons[category][name].removeprefix('public/')
+            size = 80 if detail else 32
+            return f'<span class="database-icon-frame"><img class="database-icon" src="{source}" alt="{html.escape(tr(name), quote=True)}" width="{size}" height="{size}" loading="lazy" decoding="async" /></span>'
+        credit_link = f'[{"图标来源与署名" if ix else "Icon sources and credits"}]({url("credits/")})'
+        def link(category, name):
+            if name and name not in {i['name'] for i in groups[category]}: return html.escape(tr(name))
+            return f'[{html.escape(tr(name))}]({url("database/" + category + "/" + slug(name) + "/")})' if name else '—'
+        def page(path, title, description, body):
+            fm = {'title': title, 'description': description, 'gameVersion': manifest['gameVersion'],
+                  'appBuild': manifest['appBuild'], 'ruleset': manifest['ruleset'],
+                  'sources': ['snapshot:' + CONFIG['snapshot']], 'lastUpdated': manifest['contentUpdated']}
+            outputs['src/content/docs/' + prefix + path + 'index.md'] = ('---\n' + json.dumps(fm, ensure_ascii=False, indent=2) + '\n---\n\n' + body).encode()
+        note = ('数值为 **Gods & Kings 规则集基础数值**，不等于每局最终价格。速度、难度、城市数量及规则效果等可能修正花费。' if ix else '**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs.')
+        note += f' [{"花费说明" if ix else "How costs work"}]({url("mechanics/")}).\n\n'
+        for category, items in groups.items():
+            title = LABELS[category][ix]
+            rows = []
+            for item in items:
+                name = item['name']; kind = ''
+                if category == 'civilizations':
+                    rows.append([icon(category, name) + ' ' + link(category, name), tr(item.get('leaderName', '—')), tr(item.get('uniqueName', '—')), tr(item.get('preferredVictoryType', '—'))])
+                else:
+                    if category == 'units': kind = tr(item.get('unitType', '—'))
+                    if category == 'buildings': kind = ('世界奇观' if ix else 'World wonder') if item.get('isWonder') else ('国家奇观' if ix else 'National wonder') if item.get('isNationalWonder') else ('建筑' if ix else 'Building')
+                    if category == 'technologies': kind = tr(item['era'])
+                    cost = item.get('cost', '—')
+                    if cost is None: cost = '—'
+                    if 'Unbuildable' in item.get('uniques', []): cost = f'{cost} ({"不可直接建造" if ix else "not directly buildable"})'
+                    rows.append([icon(category, name) + ' ' + link(category, name), kind, cost, ', '.join(link('technologies', n) for n in (item.get('prerequisites', []) if category == 'technologies' else required_techs(item))) or '—'])
+                stats = []
+                for field, labels in FIELDS.items():
+                    if field not in item or item[field] in (None, '', []): continue
+                    value = item[field]
+                    target = {'requiredTech': 'technologies', 'obsoleteTech': 'technologies', 'upgradesTo': 'units', 'requiredBuilding': 'buildings', 'replaces': category, 'uniqueTo': 'civilizations'}.get(field)
+                    stats.append([labels[ix], link(target, value) if target else html.escape(tr(value))])
+                if category == 'buildings':
+                    stats.insert(0, ['类型' if ix else 'Type', kind])
+                    for stat, value in item.get('percentStatBonus', {}).items():
+                        stats.append([FIELDS[stat][ix] + ('加成' if ix else ' bonus'), f'{value:+g}%'])
+                    if item.get('specialistSlots'):
+                        stats.append(['专家槽位' if ix else 'Specialist slots',
+                                      ', '.join(f'{html.escape(tr(name))} × {count}' for name, count in item['specialistSlots'].items())])
+                body = icon(category, name, detail=True) + '\n\n' + credit_link + '\n\n' + note + table(('属性', '值') if ix else ('Attribute', 'Value'), stats)
+                if item.get('costOrigin'):
+                    origins = {'explicit': ('Explicit source value (including zero).', '采用源码显式数值（包括零值）。'), 'inherited': ('Inherited from the required technology column.', '继承所需科技列的默认花费。'), 'unbuildable': ('Not directly buildable; no production cost inherited.', '不可直接建造；不继承生产花费。'), 'unspecified': ('No base cost resolved; this is not a free building.', '无法确定基础造价，不表示免费建筑。')}
+                    body += origins[item['costOrigin']][ix] + '\n\n'
+                if item.get('prerequisites'): body += ('前置科技：' if ix else 'Prerequisites: ') + ', '.join(link('technologies', n) for n in item['prerequisites']) + '\n\n'
+                for field, titles in [('uniques', ('Rules and effects', '规则与效果')), ('promotions', ('Promotions', '晋升')), ('startBias', ('Starting bias', '开局倾向'))]:
+                    if item.get(field): body += f'## {titles[ix]}\n\n' + '\n'.join('- ' + html.escape(tr(u)) for u in item[field] if '<hidden from Civilopedia>' not in u) + '\n\n'
+                related = []
+                if category == 'technologies':
+                    for cat in ['units', 'buildings']:
+                        related += [link(cat, v['name']) for v in groups[cat] if name in required_techs(v)]
+                    related += [link('technologies', v['name']) for v in groups['technologies'] if name in v.get('prerequisites', [])]
+                elif category == 'civilizations':
+                    for cat in ['units', 'buildings']: related += [link(cat, v['name']) for v in groups[cat] if v.get('uniqueTo') == name]
+                else:
+                    related += [link(category, v['name']) for v in items if v.get('replaces') == name or v.get('upgradesTo') == name]
+                if related: body += ('## 解锁与关联\n\n' if ix else '## Unlocks and related entries\n\n') + '\n'.join('- ' + v for v in related) + '\n\n'
+                guides = list(RELATED_GUIDES.get((category, name), []))
+                civilization = name if category == 'civilizations' else item.get('uniqueTo', '')
+                civ_guide = 'strategies/' + slug(civilization)
+                if civ_guide in GUIDES: guides.insert(0, civ_guide)
+                if category == 'units' and civ_guide in GUIDES: guides.append('mechanics/combat-promotions')
+                if guides:
+                    body += ('## 对局与机制攻略\n\n' if ix else '## Match and mechanics guides\n\n')
+                    body += '\n'.join(f'- [{GUIDES[g][ix]}]({url(g + "/")})' for g in dict.fromkeys(guides)) + '\n\n'
+                if item.get('quote'): body += '> ' + html.escape(tr(item['quote'])) + '\n\n'
+                desc = f'{tr(name)}：4.21.20（1293）{title}基础属性、规则和关联条目。' if ix else f'{name}: base values, rules and related {title.lower()} in Unciv 4.21.20 (1293).'
+                page(f'database/{category}/{slug(name)}/', tr(name), desc, body)
+            headers = (['文明', '领袖', '独特能力', '偏好胜利'] if ix else ['Civilization', 'Leader', 'Unique ability', 'Preferred victory']) if category == 'civilizations' else (['名称', '类型 / 时代', '基础花费', '所需 / 前置科技'] if ix else ['Name', 'Type / era', 'Base cost', 'Required / prerequisite technology'])
+            body = note + table(headers, rows) + credit_link + '\n\n'
+            if category == 'civilizations':
+                body += ('## 城邦\n\n' if ix else '## City-states\n\n') + table(['城邦', '类型', '性格'] if ix else ['City-state', 'Type', 'Personality'], [[tr(n['name']), tr(n.get('cityStateType', '—')), tr(n.get('personality', '—'))] for n in data['rules']['Nations'] if n.get('cityStateType')])
+            page('database/' + category + '/', title, f'4.21.20 (1293) · {title} · Gods & Kings', body)
+        body = fragments[lang].replace('{{BASE}}', CONFIG['base']) + '\n\n'
+        entries = data['achievements']['entries']; trans = data[f'achievements-{lang}']['entries']
+        for tier, labels in [('Simple', ('Easy', '简单')), ('Intermediate', ('Intermediate', '中等')), ('Hard', ('Hard', '困难')), ('Extreme', ('Extreme', '极难'))]:
+            body += f'## {labels[ix]}\n\n'
+            for e in entries:
+                if e['tier'] != tier: continue
+                text = trans[e['id']]; aid = e['id']; name = html.escape(text['name'])
+                body += f'<span id="{aid}"></span>\n\n### {aid} — {name}\n\n<img src="{CONFIG["base"]}achievements/{aid}.svg" alt="{name}" width="64" height="64" loading="lazy" />\n\n'
+                body += f'**{"达成条件" if ix else "Condition"}**: {html.escape(text["condition"])}\n\n'
+                difficulty = tr(e['minimumDifficulty']) if e['minimumDifficulty'] else ('不限' if ix else 'Any')
+                body += f'**{"分值 / 最低难度 / 最少 AI 对手" if ix else "Points / minimum difficulty / minimum AI opponents"}**: {e["points"]} / {difficulty} / {e["minimumOpponents"]}\n\n'
+                body += f'*{html.escape(text["honor"])}*\n\n'
+        page('achievements/', '成就' if ix else 'Achievements', '1293 V3：40 项本机成就，共 600 分，含条件、难度和排查入口。' if ix else '1293 V3: 40 local achievements, 600 points, with requirements, difficulty and troubleshooting.', body)
+    for i in range(1, 41): outputs[f'public/achievements/N{i:02}.svg'] = (args.snapshot / f'icons/N{i:02}.svg').read_bytes()
+    # Owned-path inventory includes generated category/entity pages and icons, never manual articles.
+    inventory = ROOT / 'data/generated-files.json'
+    old = set(json.loads(inventory.read_text())) if inventory.exists() else set()
+    def owned(name):
+        return bool(__import__('re').fullmatch(r'(src/content/docs/(zh/)?(database/(civilizations|units|buildings|technologies)/([a-z0-9-]+/)?index.md|achievements/index.md)|public/achievements/N\d{2}.svg)', name))
+    assert all(owned(name) for name in old | set(outputs)), 'Invalid generated-file ownership'
+    differences = [name for name, content in outputs.items() if not (ROOT / name).exists() or (ROOT / name).read_bytes() != content] + sorted(old - set(outputs))
+    inventory_content = (json.dumps(sorted(outputs), indent=2) + '\n').encode()
+    if not inventory.exists() or inventory.read_bytes() != inventory_content: differences.append('data/generated-files.json')
+    if args.check:
+        if differences: raise SystemExit('Generated files differ: ' + ', '.join(differences[:10]))
+        print(f'Validated snapshot and {len(outputs)} generated files; reproducible.'); return
+    # All validation and rendering has succeeded before any public output is changed.
+    with tempfile.TemporaryDirectory(prefix='unciv-wiki-') as temp:
+        stage = Path(temp)
+        for name, content in outputs.items():
+            dest = stage / name; dest.parent.mkdir(parents=True, exist_ok=True); dest.write_bytes(content)
+        for name in outputs:
+            dest = ROOT / name; dest.parent.mkdir(parents=True, exist_ok=True)
+            if name in differences: dest.write_bytes((stage / name).read_bytes())
+        for name in old - set(outputs): (ROOT / name).unlink(missing_ok=True)
+        inventory.write_bytes(inventory_content)
+    print(f'Generated {len(outputs)} owned files; {len(differences)} changed.')
 
-
-if __name__ == "__main__":
-    main()
+if __name__ == '__main__': main()

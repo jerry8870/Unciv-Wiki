@@ -1,23 +1,34 @@
 ---
-title: Factory
-description: Factory — cost, effects and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Buildings","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/"},{"@type":"ListItem","position":4,"name":"Factory","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/factory/"}]}'
+{
+  "title": "Factory",
+  "description": "Factory: base values, rules and related buildings in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Factory
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/building/factory.png" alt="Factory" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
-| Cost | 360 |
+| Type | Building |
+| Base cost | 360 |
 | Maintenance | 3 |
-| Required Tech | Industrialization |
-| Required Building | Workshop |
-| Required Resource | Coal |
+| Required technology | [Industrialization](/Unciv-Wiki/database/technologies/industrialization/) |
+| Required resource | Coal |
+| Required building | [Workshop](/Unciv-Wiki/database/buildings/workshop/) |
 | Production | 4 |
+| Production bonus | +10% |
+| Specialist slots | Engineer × 2 |
 
+Explicit source value (including zero).
 

@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-12",
+  "browser": "Codex in-app browser",
+  "scope": "Local static preview, representative pages; not a real iOS device test",
+  "checks": [
+    {
+      "case": "Desktop home",
+      "viewport": "1440x1000",
+      "result": "PASS",
+      "evidence": "8 rendered cards, 1 H1, page width 1440; TestFlight ID and target present; zero GA loader elements."
+    },
+    {
+      "case": "Mobile home",
+      "viewport": "390x844",
+      "result": "PASS",
+      "evidence": "Cards 358px wide, page width 390; theme and language selectors visible after correction."
+    },
+    {
+      "case": "Mobile navigation and data table",
+      "viewport": "390x844",
+      "result": "PASS",
+      "evidence": "Chinese menu labels; unfinished sections absent; table region clientWidth 356 / scrollWidth 426; keyboard ArrowRight moved scrollLeft to 29.5; page width 390."
+    },
+    {
+      "case": "Tablet detail and language/theme",
+      "viewport": "768x1024",
+      "result": "PASS",
+      "evidence": "Library table width 734, page width 768; dark theme persisted; language selection navigated from zh/database/buildings/library/ to database/buildings/library/."
+    },
+    {
+      "case": "English search",
+      "viewport": "768x1024",
+      "result": "PASS",
+      "evidence": "Writing query returned 12 results; clicking result opened Writing with base cost 55 and unlock links. Search for prepared returned Pentagon by stemming, not unpublished section pages."
+    },
+    {
+      "case": "Chinese search",
+      "viewport": "390x844",
+      "result": "PASS",
+      "evidence": "图书馆 query returned 13 results with Chinese controls and result-count text; corrected text and matching zh targets visible."
+    },
+    {
+      "case": "Achievement navigation",
+      "viewport": "768x1024",
+      "result": "PASS",
+      "evidence": "TOC expanded and selected N08; direct legacy #N08 link positioned the N08 condition and icon visibly. All 40 stable anchors also checked in both rendered locales."
+    },
+    {
+      "case": "Unconfigured / rejected analytics",
+      "result": "PASS",
+      "evidence": "No GA loader element before consent or after rejecting and navigating to iOS page. Stable tf-ios-en link remained usable."
+    },
+    {
+      "case": "TestFlight external destination",
+      "result": "LIMITED",
+      "evidence": "All site TestFlight hrefs and stable IDs checked. Browser navigation to Apple timed out. Earlier HTTP read obtained the Unciv4iOS invitation title; tester build availability is not established."
+    },
+    {
+      "case": "Configured GA4 acceptance/revocation",
+      "result": "MOCK-TESTED",
+      "evidence": "Automated mocked window/document tests cover configured opt-in, one loader, revoke, cookie expiry, disabled GA flag, reload and unavailable storage. No real GA property or live event assertion."
+    }
+  ]
+}

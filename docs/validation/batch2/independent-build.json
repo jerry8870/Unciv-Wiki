@@ -1,0 +1,14 @@
+{
+  "directory": "/var/folders/mx/l8rr8w3n6mv3xpx4pq8y07rw0000gn/T/unciv-batch2-independent-lytcs9dw",
+  "inputs": "Only src, public, scripts, data and five package/config files; no game repository, environment files, credentials or node_modules copied.",
+  "commands": [
+    "pnpm install --offline --frozen-lockfile",
+    "pnpm validate"
+  ],
+  "status": "passed",
+  "exitCode": 0,
+  "contentPages": 796,
+  "indexablePages": 794,
+  "errors": [],
+  "allBuildInputsMatch": true
+}

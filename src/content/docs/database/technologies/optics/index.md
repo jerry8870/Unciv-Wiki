@@ -1,26 +1,41 @@
 ---
-title: Optics
-description: Optics — era, cost and what it unlocks in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Technologies","item":"https://jerry8870.github.io/Unciv-Wiki/database/technologies/"},{"@type":"ListItem","position":4,"name":"Optics","item":"https://jerry8870.github.io/Unciv-Wiki/database/technologies/optics/"}]}'
+{
+  "title": "Optics",
+  "description": "Optics: base values, rules and related technologies in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Optics
 
-## Info
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/technology/optics.png" alt="Optics" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
+| Base cost | 85 |
 | Era | Classical era |
-| Cost | 85 |
-| Prerequisites | Sailing |
 
-## Effects
+Explicit source value (including zero).
 
-- `Enables embarkation for land units`
+Prerequisites: [Sailing](/Unciv-Wiki/database/technologies/sailing/)
 
-> 'He made an instrument to know if the moon shine at full or no.' - Samuel Butler
+## Rules and effects
 
+- Enables embarkation for land units
+
+## Unlocks and related entries
+
+- [Lighthouse](/Unciv-Wiki/database/buildings/lighthouse/)
+- [The Great Lighthouse](/Unciv-Wiki/database/buildings/the-great-lighthouse/)
+- [Compass](/Unciv-Wiki/database/technologies/compass/)
+
+> &#x27;He made an instrument to know if the moon shine at full or no.&#x27; - Samuel Butler
 

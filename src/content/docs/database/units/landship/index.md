@@ -1,31 +1,43 @@
 ---
-title: Landship
-description: Landship — stats, abilities and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Units","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/"},{"@type":"ListItem","position":4,"name":"Landship","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/landship/"}]}'
+{
+  "title": "Landship",
+  "description": "Landship: base values, rules and related units in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Landship
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/unit/landship.png" alt="Landship" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
 | Type | Armored |
 | Movement | 4 |
 | Strength | 60 |
-| Cost | 350 |
-| Required Tech | Combustion |
-| Obsolete Tech | Combined Arms |
-| Upgrades To | Tank |
-| Required Resource | Oil |
+| Base cost | 350 |
+| Required technology | [Combustion](/Unciv-Wiki/database/technologies/combustion/) |
+| Obsolete technology | [Combined Arms](/Unciv-Wiki/database/technologies/combined-arms/) |
+| Upgrades to | [Tank](/Unciv-Wiki/database/units/tank/) |
+| Required resource | Oil |
 
-## Abilities
+## Rules and effects
 
-- `Can move after attacking`
-- `No defensive terrain bonus`
-- `Never appears as a Barbarian unit`
+- Can move after attacking
+- No defensive terrain bonus
+- Never appears as a Barbarian unit
 
+## Unlocks and related entries
+
+- [Cavalry](/Unciv-Wiki/database/units/cavalry/)
+- [Cossack](/Unciv-Wiki/database/units/cossack/)
+- [Hussar](/Unciv-Wiki/database/units/hussar/)
 

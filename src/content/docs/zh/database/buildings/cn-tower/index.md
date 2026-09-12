@@ -1,24 +1,36 @@
 ---
-title: 加拿大国家电视塔
-description: 加拿大国家电视塔——造价、效果与科技需求。
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/zh/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/"},{"@type":"ListItem","position":3,"name":"建筑","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/buildings/"},{"@type":"ListItem","position":4,"name":"加拿大国家电视塔","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/buildings/cn-tower/"}]}'
+{
+  "title": "加拿大国家电视塔",
+  "description": "加拿大国家电视塔：4.21.20（1293）建筑基础属性、规则和关联条目。",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# 加拿大国家电视塔
 
-## 属性
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/building/cn-tower.png" alt="加拿大国家电视塔" width="80" height="80" loading="lazy" decoding="async" /></span>
 
-| 属性 | 数值 |
+[图标来源与署名](/Unciv-Wiki/zh/credits/)
+
+数值为 **Gods & Kings 规则集基础数值**，不等于每局最终价格。速度、难度、城市数量及规则效果等可能修正花费。 [花费说明](/Unciv-Wiki/zh/mechanics/).
+
+| 属性 | 值 |
 | --- | --- |
-| 所需科技 | 远程通信 |
+| 类型 | 世界奇观 |
+| 基础花费 | 1250 |
+| 所需科技 | [远程通信](/Unciv-Wiki/zh/database/technologies/telecommunications/) |
 
-## 效果
+继承所需科技列的默认花费。
 
-- +1每座城市人口
-- +1 Happiness每座城市
-- 广播塔获得一座免费的每座城市
+## 规则与效果
 
+- 每座城市+1人口
+- 每座城市+1 快乐
+- 每座城市获得一座免费的广播塔
+
+> “除了坏消息之外，没有什么比光速更快的了，坏消息遵循自己的特殊规则。” —— 道格拉斯 · 亚当斯
 

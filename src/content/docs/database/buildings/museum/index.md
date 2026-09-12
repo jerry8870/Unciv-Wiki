@@ -1,25 +1,36 @@
 ---
-title: Museum
-description: Museum — cost, effects and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Buildings","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/"},{"@type":"ListItem","position":4,"name":"Museum","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/museum/"}]}'
+{
+  "title": "Museum",
+  "description": "Museum: base values, rules and related buildings in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Museum
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/building/museum.png" alt="Museum" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
+| Type | Building |
+| Base cost | 300 |
 | Maintenance | 3 |
-| Required Tech | Archaeology |
-| Required Building | Opera House |
+| Required technology | [Archaeology](/Unciv-Wiki/database/technologies/archaeology/) |
+| Required building | [Opera House](/Unciv-Wiki/database/buildings/opera-house/) |
 | Culture | 5 |
+| Specialist slots | Artist × 2 |
 
-## Effects
+Inherited from the required technology column.
 
-- `Destroyed when the city is captured`
+## Rules and effects
 
+- Destroyed when the city is captured
 

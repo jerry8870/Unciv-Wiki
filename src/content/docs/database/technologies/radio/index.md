@@ -1,25 +1,42 @@
 ---
-title: Radio
-description: Radio — era, cost and what it unlocks in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Technologies","item":"https://jerry8870.github.io/Unciv-Wiki/database/technologies/"},{"@type":"ListItem","position":4,"name":"Radio","item":"https://jerry8870.github.io/Unciv-Wiki/database/technologies/radio/"}]}'
+{
+  "title": "Radio",
+  "description": "Radio: base values, rules and related technologies in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Radio
 
-## Info
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/technology/radio.png" alt="Radio" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
+| Base cost | 3100 |
 | Era | Modern era |
-| Prerequisites | Electricity |
 
-## Effects
+Inherited from the required technology column.
 
-- `[+100]% weight to this choice for AI decisions`
+Prerequisites: [Electricity](/Unciv-Wiki/database/technologies/electricity/)
 
-> 'The whole country was tied together by radio. We all experienced the same heroes and comedians and singers. They were giants.' - Woody Allen
+## Rules and effects
 
+- [+100]% weight to this choice for AI decisions
+
+## Unlocks and related entries
+
+- [Broadcast Tower](/Unciv-Wiki/database/buildings/broadcast-tower/)
+- [Eiffel Tower](/Unciv-Wiki/database/buildings/eiffel-tower/)
+- [National Intelligence Agency](/Unciv-Wiki/database/buildings/national-intelligence-agency/)
+- [Plastics](/Unciv-Wiki/database/technologies/plastics/)
+
+> &#x27;The whole country was tied together by radio. We all experienced the same heroes and comedians and singers. They were giants.&#x27; - Woody Allen
 

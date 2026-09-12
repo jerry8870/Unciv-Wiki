@@ -1,27 +1,40 @@
 ---
-title: The Maya
-description: The Maya — leader, unique ability and start bias in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Civilizations","item":"https://jerry8870.github.io/Unciv-Wiki/database/civilizations/"},{"@type":"ListItem","position":4,"name":"The Maya","item":"https://jerry8870.github.io/Unciv-Wiki/database/civilizations/the-maya/"}]}'
+{
+  "title": "The Maya",
+  "description": "The Maya: base values, rules and related civilizations in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# The Maya
 
-**Leader**: Pacal
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/nation/the-maya.png" alt="The Maya" width="80" height="80" loading="lazy" decoding="async" /></span>
 
-**Unique Ability**: The Long Count
+[Icon sources and credits](/Unciv-Wiki/credits/)
 
-## Unique Abilities
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
-- `Receive a free Great Person at the end of every [Maya Long Count calendar cycle] (every 394 years), after researching [Theology]. Each bonus person can only be chosen once.`
-- `Once The Long Count activates, the year on the world screen displays as the traditional Mayan Long Count.`
+| Attribute | Value |
+| --- | --- |
+| Leader | Pacal |
+| Unique ability | The Long Count |
+| Preferred victory | Scientific |
 
-## Start Bias
+## Rules and effects
+
+- Receive a free Great Person at the end of every [Maya Long Count calendar cycle] (every 394 years), after researching [Theology]. Each bonus person can only be chosen once.
+- Once The Long Count activates, the year on the world screen displays as the traditional Mayan Long Count.
+
+## Starting bias
 
 - Jungle
 
-**Preferred Victory**: Scientific
+## Unlocks and related entries
 
+- [Atlatlist](/Unciv-Wiki/database/units/atlatlist/)
+- [Pyramid](/Unciv-Wiki/database/buildings/pyramid/)
 

@@ -1,26 +1,36 @@
 ---
-title: Chichen Itza
-description: Chichen Itza — cost, effects and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Buildings","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/"},{"@type":"ListItem","position":4,"name":"Chichen Itza","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/chichen-itza/"}]}'
+{
+  "title": "Chichen Itza",
+  "description": "Chichen Itza: base values, rules and related buildings in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Chichen Itza
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/building/chichen-itza.png" alt="Chichen Itza" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
-| Required Tech | Civil Service |
+| Type | World wonder |
+| Base cost | 300 |
+| Required technology | [Civil Service](/Unciv-Wiki/database/technologies/civil-service/) |
 | Culture | 1 |
 | Happiness | 4 |
 
-## Effects
+Inherited from the required technology column.
 
-- `[+50]% Golden Age length`
+## Rules and effects
 
-> 'The katun is established at Chichen Itza. The settlement of the Itza shall take place there. The quetzal shall come, the green bird shall come. Ah Kantenal shall come. It is the word of God. The Itza shall come.' - The Books of Chilam Balam
+- [+50]% Golden Age length
 
+> &#x27;The katun is established at Chichen Itza. The settlement of the Itza shall take place there. The quetzal shall come, the green bird shall come. Ah Kantenal shall come. It is the word of God. The Itza shall come.&#x27; - The Books of Chilam Balam
 

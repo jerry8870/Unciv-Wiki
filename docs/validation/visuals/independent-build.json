@@ -1,0 +1,11 @@
+{
+  "directory": "/var/folders/mx/l8rr8w3n6mv3xpx4pq8y07rw0000gn/T/unciv-visuals-independent-pcwdmj7v",
+  "status": "passed",
+  "commands": [
+    "pnpm install --offline --frozen-lockfile",
+    "pnpm validate"
+  ],
+  "copied": "Site files only; no source game repository, environment files, credentials or node_modules.",
+  "exitCode": 0,
+  "allInputsMatch": true
+}

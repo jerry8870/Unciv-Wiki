@@ -1,29 +1,39 @@
 ---
-title: Mobile SAM
-description: Mobile SAM — stats, abilities and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Units","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/"},{"@type":"ListItem","position":4,"name":"Mobile SAM","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/mobile-sam/"}]}'
+{
+  "title": "Mobile SAM",
+  "description": "Mobile SAM: base values, rules and related units in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Mobile SAM
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/unit/mobile-sam.png" alt="Mobile SAM" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
 | Type | Gunpowder |
 | Movement | 3 |
 | Strength | 65 |
-| Cost | 425 |
-| Required Tech | Rocketry |
+| Base cost | 425 |
+| Required technology | [Rocketry](/Unciv-Wiki/database/technologies/rocketry/) |
 
-## Abilities
+## Rules and effects
 
-- `[100]% chance to intercept air attacks`
-- `[+150]% Strength <vs [Air] units>`
-- `[+150]% Strength <vs [Helicopter] units>`
-- `Never appears as a Barbarian unit`
+- [100]% chance to intercept air attacks
+- [+150]% Strength &lt;vs [Air] units&gt;
+- [+150]% Strength &lt;vs [Helicopter] units&gt;
+- Never appears as a Barbarian unit
 
+## Unlocks and related entries
+
+- [Anti-Aircraft Gun](/Unciv-Wiki/database/units/anti-aircraft-gun/)
 

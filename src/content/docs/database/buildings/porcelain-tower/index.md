@@ -1,26 +1,36 @@
 ---
-title: Porcelain Tower
-description: Porcelain Tower — cost, effects and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Buildings","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/"},{"@type":"ListItem","position":4,"name":"Porcelain Tower","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/porcelain-tower/"}]}'
+{
+  "title": "Porcelain Tower",
+  "description": "Porcelain Tower: base values, rules and related buildings in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Porcelain Tower
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/building/porcelain-tower.png" alt="Porcelain Tower" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
-| Required Tech | Architecture |
+| Type | World wonder |
+| Base cost | 625 |
+| Required technology | [Architecture](/Unciv-Wiki/database/technologies/architecture/) |
 | Culture | 1 |
 
-## Effects
+Inherited from the required technology column.
 
-- `Free [Great Scientist] appears`
-- `Science gained from research agreements [+50]%`
+## Rules and effects
 
-> 'Things always seem fairer when we look back at them, and it is out of that inaccessible tower of the past that Longing leans and beckons.' - James Russell Lowell
+- Free [Great Scientist] appears
+- Science gained from research agreements [+50]%
 
+> &#x27;Things always seem fairer when we look back at them, and it is out of that inaccessible tower of the past that Longing leans and beckons.&#x27; - James Russell Lowell
 

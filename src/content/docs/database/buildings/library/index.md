@@ -1,23 +1,43 @@
 ---
-title: Library
-description: Library — cost, effects and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Buildings","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/"},{"@type":"ListItem","position":4,"name":"Library","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/library/"}]}'
+{
+  "title": "Library",
+  "description": "Library: base values, rules and related buildings in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Library
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/building/library.png" alt="Library" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
+| Type | Building |
+| Base cost | 75 |
 | Maintenance | 1 |
-| Required Tech | Writing |
+| Required technology | [Writing](/Unciv-Wiki/database/technologies/writing/) |
 
-## Effects
+Inherited from the required technology column.
 
-- `[+1 Science] per [2] population [in this city]`
+## Rules and effects
 
+- [+1 Science] per [2] population [in this city]
+
+## Unlocks and related entries
+
+- [Paper Maker](/Unciv-Wiki/database/buildings/paper-maker/)
+
+## Match and mechanics guides
+
+- [Rome: construction and war](/Unciv-Wiki/strategies/rome/)
+- [Babylon: early science](/Unciv-Wiki/strategies/babylon/)
+- [Korea: specialists and the capital](/Unciv-Wiki/strategies/korea/)
 

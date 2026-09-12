@@ -1,25 +1,37 @@
 ---
-title: 摩索拉斯王陵墓
-description: 摩索拉斯王陵墓——造价、效果与科技需求。
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/zh/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/"},{"@type":"ListItem","position":3,"name":"建筑","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/buildings/"},{"@type":"ListItem","position":4,"name":"摩索拉斯王陵墓","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/buildings/mausoleum-of-halicarnassus/"}]}'
+{
+  "title": "摩索拉斯王陵墓",
+  "description": "摩索拉斯王陵墓：4.21.20（1293）建筑基础属性、规则和关联条目。",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# 摩索拉斯王陵墓
 
-## 属性
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/building/mausoleum-of-halicarnassus.png" alt="摩索拉斯王陵墓" width="80" height="80" loading="lazy" decoding="async" /></span>
 
-| 属性 | 数值 |
+[图标来源与署名](/Unciv-Wiki/zh/credits/)
+
+数值为 **Gods & Kings 规则集基础数值**，不等于每局最终价格。速度、难度、城市数量及规则效果等可能修正花费。 [花费说明](/Unciv-Wiki/zh/mechanics/).
+
+| 属性 | 值 |
 | --- | --- |
-| 所需科技 | 石工术 |
+| 类型 | 世界奇观 |
+| 基础花费 | 185 |
+| 所需科技 | [石工术](/Unciv-Wiki/zh/database/technologies/masonry/) |
 | 文化 | 1 |
 
-## 效果
+继承所需科技列的默认花费。
+
+## 规则与效果
 
 - 一旦消耗伟人单位(受游戏速度影响)获得100金钱
-- +2 Gold的大理石地块在这个城市中
-- +2 Gold的花岗石地块在这个城市中
+- 在这个城市中的大理石地块+2 金钱
+- 在这个城市中的花岗石地块+2 金钱
 
+> “英雄人物是以整个大地作为自己的陵墓的，他们的英名不仅在凿刻在有形的石碑上，也在千万世人的心中留下了无形的印记。” —— 伯里克利
 

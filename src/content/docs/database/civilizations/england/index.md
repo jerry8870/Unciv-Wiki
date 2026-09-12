@@ -1,27 +1,40 @@
 ---
-title: England
-description: England — leader, unique ability and start bias in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Civilizations","item":"https://jerry8870.github.io/Unciv-Wiki/database/civilizations/"},{"@type":"ListItem","position":4,"name":"England","item":"https://jerry8870.github.io/Unciv-Wiki/database/civilizations/england/"}]}'
+{
+  "title": "England",
+  "description": "England: base values, rules and related civilizations in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# England
 
-**Leader**: Elizabeth
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/nation/england.png" alt="England" width="80" height="80" loading="lazy" decoding="async" /></span>
 
-**Unique Ability**: Sun Never Sets
+[Icon sources and credits](/Unciv-Wiki/credits/)
 
-## Unique Abilities
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
-- `[+2] Movement <for [Water] units>`
-- `Gain an extra spy <upon entering the [Renaissance era]>`
+| Attribute | Value |
+| --- | --- |
+| Leader | Elizabeth |
+| Unique ability | Sun Never Sets |
+| Preferred victory | Diplomatic |
 
-## Start Bias
+## Rules and effects
+
+- [+2] Movement &lt;for [Water] units&gt;
+- Gain an extra spy &lt;upon entering the [Renaissance era]&gt;
+
+## Starting bias
 
 - Coast
 
-**Preferred Victory**: Diplomatic
+## Unlocks and related entries
 
+- [Longbowman](/Unciv-Wiki/database/units/longbowman/)
+- [Ship of the Line](/Unciv-Wiki/database/units/ship-of-the-line/)
 

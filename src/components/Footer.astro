@@ -1,0 +1,27 @@
+---
+import Default from '@astrojs/starlight/components/Footer.astro';
+import { config, localUrl } from '../site';
+const zh = Astro.locals.starlightRoute.locale === 'zh';
+const measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID || '';
+---
+<Default />
+<nav class="wiki-links" aria-label={zh ? '网站信息' : 'Site information'}>
+  <a href={localUrl('about/', zh)}>{zh ? '关于' : 'About'}</a>
+  <a href={localUrl('credits/', zh)}>{zh ? '致谢' : 'Credits'}</a>
+  <a href={localUrl('privacy/', zh)}>{zh ? '隐私与统计' : 'Privacy and analytics'}</a>
+  <a href={localUrl('ios/', zh)}>{zh ? 'iOS 测试版' : 'iOS beta'}</a>
+</nav>
+<section class="analytics-choice" id="analytics-preferences" aria-label={zh ? '统计偏好' : 'Analytics preferences'} data-measurement-id={measurementId} data-locale={zh ? 'zh' : 'en'} data-base={config.base}>
+  <p data-status aria-live="polite">{zh ? '分析统计默认关闭。' : 'Analytics is off by default.'}</p>
+  <div class="analytics-actions">
+    <button type="button" data-accept hidden>{zh ? '同意分析统计' : 'Accept analytics'}</button>
+    <button type="button" data-reject>{zh ? '拒绝分析统计' : 'Reject analytics'}</button>
+    <button type="button" data-revoke hidden>{zh ? '撤回同意' : 'Withdraw consent'}</button>
+  </div>
+  <noscript>{zh ? 'JavaScript 未启用，分析统计不会加载。' : 'Without JavaScript, analytics does not load.'}</noscript>
+</section>
+<script>
+  import { setupAnalytics } from '../analytics.js';
+  const panel = document.querySelector('#analytics-preferences');
+  if (panel) setupAnalytics(panel);
+</script>

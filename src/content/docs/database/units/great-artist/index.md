@@ -1,29 +1,35 @@
 ---
-title: Great Artist
-description: Great Artist — stats, abilities and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Units","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/"},{"@type":"ListItem","position":4,"name":"Great Artist","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/great-artist/"}]}'
+{
+  "title": "Great Artist",
+  "description": "Great Artist: base values, rules and related units in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Great Artist
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/unit/great-artist.png" alt="Great Artist" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
 | Type | Civilian |
 | Movement | 2 |
 
-## Abilities
+## Rules and effects
 
-- `Empire enters a [8]-turn Golden Age <by consuming this unit>`
-- `Can instantly construct a [Landmark] improvement <by consuming this unit>`
-- `Is part of Great Person group [Great Person]`
-- `[This Unit] gets a name from the [Artist] group`
-- `Great Person - [Culture]`
-- `Unbuildable`
-- `Uncapturable`
-
+- Empire enters a [8]-turn Golden Age &lt;by consuming this unit&gt;
+- Can instantly construct a [Landmark] improvement &lt;by consuming this unit&gt;
+- Is part of Great Person group [Great Person]
+- [This Unit] gets a name from the [Artist] group
+- Great Person - [Culture]
+- Unbuildable
+- Uncapturable
 

@@ -1,26 +1,45 @@
 ---
-title: 希腊
-description: 希腊——领袖、独特能力与开局倾向。
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/zh/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/"},{"@type":"ListItem","position":3,"name":"文明","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/civilizations/"},{"@type":"ListItem","position":4,"name":"希腊","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/civilizations/greece/"}]}'
+{
+  "title": "希腊",
+  "description": "希腊：4.21.20（1293）文明基础属性、规则和关联条目。",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# 希腊
 
-**领袖**：亚历山大
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/nation/greece.png" alt="希腊" width="80" height="80" loading="lazy" decoding="async" /></span>
 
-**独特能力**：万邦来朝
+[图标来源与署名](/Unciv-Wiki/zh/credits/)
 
-## 独特能力
+数值为 **Gods & Kings 规则集基础数值**，不等于每局最终价格。速度、难度、城市数量及规则效果等可能修正花费。 [花费说明](/Unciv-Wiki/zh/mechanics/).
 
-- 对城邦影响减少成度增加-50% 
-- 对城邦的影响力恢复速度是正常水平的两倍
+| 属性 | 值 |
+| --- | --- |
+| 领袖 | 亚历山大 |
+| 独特能力 | 万邦来朝 |
+| 偏好胜利 | 外交 |
+
+## 规则与效果
+
+- 城邦影响力衰减速率降低 50%
+- 城邦影响力低于均衡点时，向均衡点恢复的速率为正常值的两倍
 - 城邦领土始终视为友好领土
 
 ## 开局倾向
 
 - 海滨
 
+## 解锁与关联
+
+- [希腊重步兵](/Unciv-Wiki/zh/database/units/hoplite/)
+- [马其顿禁卫骑兵](/Unciv-Wiki/zh/database/units/companion-cavalry/)
+
+## 对局与机制攻略
+
+- [希腊：城邦网络](/Unciv-Wiki/zh/strategies/greece/)
 

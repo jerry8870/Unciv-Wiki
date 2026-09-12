@@ -1,25 +1,32 @@
 ---
-title: 海军陆战队
-description: 海军陆战队——属性、能力与科技需求。
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/zh/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/"},{"@type":"ListItem","position":3,"name":"单位","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/units/"},{"@type":"ListItem","position":4,"name":"海军陆战队","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/units/marine/"}]}'
+{
+  "title": "海军陆战队",
+  "description": "海军陆战队：4.21.20（1293）单位基础属性、规则和关联条目。",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# 海军陆战队
 
-## 属性
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/unit/marine.png" alt="海军陆战队" width="80" height="80" loading="lazy" decoding="async" /></span>
 
-| 属性 | 数值 |
+[图标来源与署名](/Unciv-Wiki/zh/credits/)
+
+数值为 **Gods & Kings 规则集基础数值**，不等于每局最终价格。速度、难度、城市数量及规则效果等可能修正花费。 [花费说明](/Unciv-Wiki/zh/mechanics/).
+
+| 属性 | 值 |
 | --- | --- |
-| 类型 | Gunpowder |
+| 类型 | 火药 |
 | 移动力 | 2 |
 | 战斗力 | 65 |
-| 造价 | 400 |
-| 所需科技 | 制药学 |
+| 基础花费 | 400 |
+| 所需科技 | [制药学](/Unciv-Wiki/zh/database/technologies/pharmaceuticals/) |
 
-## 能力
+## 规则与效果
 
 - 当处于船运状态视野+1
 - 防御时当处于船运状态战斗力+100%
@@ -27,5 +34,4 @@ head:
 ## 晋升
 
 - 两栖能力
-
 

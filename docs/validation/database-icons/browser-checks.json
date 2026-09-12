@@ -1,0 +1,39 @@
+{
+  "checks": [
+    {
+      "page": "zh/database/units/",
+      "viewportWidth": 797,
+      "icons": 127,
+      "result": "First five icons loaded; list visually checked."
+    },
+    {
+      "page": "zh/database/technologies/",
+      "viewportWidth": 390,
+      "icons": 80,
+      "pageScrollWidth": 390,
+      "tableWidth": 356,
+      "tableScrollWidth": 506,
+      "result": "First four icons loaded, 32px; horizontal scroll contained inside table."
+    },
+    {
+      "page": "zh/database/buildings/university/",
+      "viewportWidth": 390,
+      "detailIconWidth": 80,
+      "result": "Original dark icon displayed white by CSS; screenshot visually checked."
+    },
+    {
+      "page": "database/civilizations/",
+      "viewportWidth": 1280,
+      "icons": 34,
+      "theme": "dark",
+      "result": "First five icons loaded; white silhouettes readable on dark green discs."
+    },
+    {
+      "page": "zh/database/buildings/",
+      "icons": 124,
+      "result": "First four icons loaded."
+    }
+  ],
+  "cleanup": "Theme restored to auto; viewport override reset; building listing retained as deliverable.",
+  "boundary": "Browser screenshots inspected but not saved. Whole-catalogue file/path/hash and bilingual coverage checked by pnpm validate."
+}

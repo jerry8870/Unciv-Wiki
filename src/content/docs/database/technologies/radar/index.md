@@ -1,25 +1,46 @@
 ---
-title: Radar
-description: Radar — era, cost and what it unlocks in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Technologies","item":"https://jerry8870.github.io/Unciv-Wiki/database/technologies/"},{"@type":"ListItem","position":4,"name":"Radar","item":"https://jerry8870.github.io/Unciv-Wiki/database/technologies/radar/"}]}'
+{
+  "title": "Radar",
+  "description": "Radar: base values, rules and related technologies in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Radar
 
-## Info
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/technology/radar.png" alt="Radar" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
+| Base cost | 5100 |
 | Era | Atomic era |
-| Prerequisites | Ballistics, Electronics |
 
-## Effects
+Inherited from the required technology column.
 
-- `[+100]% weight to this choice for AI decisions`
+Prerequisites: [Ballistics](/Unciv-Wiki/database/technologies/ballistics/), [Electronics](/Unciv-Wiki/database/technologies/electronics/)
 
-> 'Vision is the art of seeing things invisible.' - Jonathan Swift
+## Rules and effects
 
+- [+100]% weight to this choice for AI decisions
+
+## Unlocks and related entries
+
+- [Fighter](/Unciv-Wiki/database/units/fighter/)
+- [Zero](/Unciv-Wiki/database/units/zero/)
+- [Bomber](/Unciv-Wiki/database/units/bomber/)
+- [B17](/Unciv-Wiki/database/units/b17/)
+- [Paratrooper](/Unciv-Wiki/database/units/paratrooper/)
+- [Nuclear Fission](/Unciv-Wiki/database/technologies/nuclear-fission/)
+- [Rocketry](/Unciv-Wiki/database/technologies/rocketry/)
+- [Computers](/Unciv-Wiki/database/technologies/computers/)
+
+> &#x27;Vision is the art of seeing things invisible.&#x27; - Jonathan Swift
 

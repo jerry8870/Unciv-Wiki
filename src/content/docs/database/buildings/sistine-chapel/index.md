@@ -1,25 +1,35 @@
 ---
-title: Sistine Chapel
-description: Sistine Chapel — cost, effects and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Buildings","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/"},{"@type":"ListItem","position":4,"name":"Sistine Chapel","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/sistine-chapel/"}]}'
+{
+  "title": "Sistine Chapel",
+  "description": "Sistine Chapel: base values, rules and related buildings in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Sistine Chapel
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/building/sistine-chapel.png" alt="Sistine Chapel" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
-| Required Tech | Acoustics |
+| Type | World wonder |
+| Base cost | 500 |
+| Required technology | [Acoustics](/Unciv-Wiki/database/technologies/acoustics/) |
 | Culture | 1 |
 
-## Effects
+Inherited from the required technology column.
 
-- `[+25]% [Culture] [in all cities]`
+## Rules and effects
 
-> 'I live and love in God's peculiar light.' - Michelangelo Buonarroti
+- [+25]% [Culture] [in all cities]
 
+> &#x27;I live and love in God&#x27;s peculiar light.&#x27; - Michelangelo Buonarroti
 

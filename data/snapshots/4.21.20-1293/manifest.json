@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "contentUpdated": "2026-09-12",
+  "sourceCommits": {
+    "public": "5fa2f57457755c403ea82cc21fec9e617feaf2d0",
+    "achievements": "153417ef69baab04ac1013ea496b7ed62e505d4c"
+  },
+  "sources": {
+    "android/assets/jsons/Civ V - Gods & Kings/Nations.json": {
+      "commit": "5fa2f57457755c403ea82cc21fec9e617feaf2d0",
+      "sha256": "5f1e7f2b19bb070b30c2981da2780ac4e8bccaaa8fab83de9ac43648b5d24010"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/Units.json": {
+      "commit": "5fa2f57457755c403ea82cc21fec9e617feaf2d0",
+      "sha256": "f2786a1da6d444789f7c4d1c391294f94e4a59f2024524ccd3b8f1477d4b0ce0"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/Buildings.json": {
+      "commit": "5fa2f57457755c403ea82cc21fec9e617feaf2d0",
+      "sha256": "2e01b25ba19292cf4d42e364031e541f7e4c8dd725ad1a903ec7abfd64b7bc6d"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/Techs.json": {
+      "commit": "5fa2f57457755c403ea82cc21fec9e617feaf2d0",
+      "sha256": "415cbf1c42de6396238330e4e185276e66879d28e8abdc9bee1ce03788aaa987"
+    },
+    "android/assets/jsons/translations/Simplified_Chinese.properties": {
+      "commit": "5fa2f57457755c403ea82cc21fec9e617feaf2d0",
+      "sha256": "0b6f23be94517fd41ec6b76826705d62f833020a9567827ee3f22d3455757666"
+    },
+    "assets/achievements/preview-v3-zh.json": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "89d9bd6a7d79e9073b7068189cc47b2f4107fdac7e3654601c6fd94e6d54006a"
+    },
+    "assets/achievements/translations-v3/English.json": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "41c471e6cb18a0afb4c61d2e77f35c2f21304b3c81e92fcdd853456b355612f0"
+    },
+    "assets/achievements/translations-v3/Simplified_Chinese.json": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "2a0da1ce537e87506d66973bdb71fd0b35e046d6701a665a119f8527466a8636"
+    },
+    "assets/achievements/ui/N01.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "4e9d127e34b07cbd8f8c8cb02107073d77ff360eda3bb10cc9e17557446f4b31"
+    },
+    "assets/achievements/ui/N02.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "cecef248bb4a38c70864ded084b91de5c56a893d1959b704909c2773c48ecbb5"
+    },
+    "assets/achievements/ui/N03.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "85c6c716de41ceefba79d8afd5459f53a00f49e6d9085824c40007d563ae3433"
+    },
+    "assets/achievements/ui/N04.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "4684c8ce2e8720e7148d7696e2a7936951eac2fe75f02a9f560b59142235111c"
+    },
+    "assets/achievements/ui/N05.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "8a23e89c3e3a12c299d2dd116d5b0ce3a9d22e52605fef74a76c0f30c4477351"
+    },
+    "assets/achievements/ui/N06.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "0bd406f83b64ad30c9eb6aa444f18b78f80900aa17c35649f53978c3fbe14935"
+    },
+    "assets/achievements/ui/N07.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "963704d28c16c885f9afca5f21a28e9149e4d764b0f4f8146f39908b8b4fc06e"
+    },
+    "assets/achievements/ui/N08.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "eb79a39ba94c5fe0ac0c0c11c32b16af64b615e9ca53f9496393c1bb28d861fe"
+    },
+    "assets/achievements/ui/N09.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "cc9f4079a41eae31f9f7decf9bdc9ef9fef0e92b51a7db9ec37423cf458050b2"
+    },
+    "assets/achievements/ui/N10.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "be44601b6f955d9cce87b1afe3b5f8f73153742385b49bda978aa1f11873e560"
+    },
+    "assets/achievements/ui/N11.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "8d86261b75f9c12d6287f07c71b1fd7a596ec3c9e18e37a50956bca0a65f149e"
+    },
+    "assets/achievements/ui/N12.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "7db623ba0f373f3cee5825fd2bc2ccba3b3bdec5098cf8eb0c241f4c312400f6"
+    },
+    "assets/achievements/ui/N13.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "b79dcfe23ea15d32251d32a15260c83917f69c94cdd04b62018fe72e5e8c484a"
+    },
+    "assets/achievements/ui/N14.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "d8214e8e2f2f36acbe4bbcb13b7eacd61bfea74242eaa232214ffc6ce6905130"
+    },
+    "assets/achievements/ui/N15.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "d1217606b824b982d21309201269d68f2de51fced40563e9ce2aee93ad222f25"
+    },
+    "assets/achievements/ui/N16.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "a0f74d8ff52ddb9ed7b0573849853470994eec3ab3ab2e4480d4802375effc5e"
+    },
+    "assets/achievements/ui/N17.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "c2f7af7023140ad1de3cb3deeb2e65cc75780ab73722d4b7af4a320896459bb2"
+    },
+    "assets/achievements/ui/N18.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "fe817fbeed63d169204db049306691a55ca55e514baa26a0b77eb07329553e71"
+    },
+    "assets/achievements/ui/N19.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "ff5dc609d767262d9054ba3f88780e274b23819230b386e99de127690e39a22f"
+    },
+    "assets/achievements/ui/N20.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "b4beafa8e8ce63e38208c5c7a58056937394af752a1473f49f58fbeca9f01b3a"
+    },
+    "assets/achievements/ui/N21.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "622b873d119c57ce3393df6268bf2d7e1c073525785e2c75f62d16a3eaa98d82"
+    },
+    "assets/achievements/ui/N22.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "2e5527e32e19697b81d71fa4210bd3cd799ca039a198f6bff9bdaae75b55edeb"
+    },
+    "assets/achievements/ui/N23.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "ca2e32899618f0714fce0d803d5d289acd34bbb78a44510369b75c925f7cbd82"
+    },
+    "assets/achievements/ui/N24.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "c633e891116615da1d692f48d0d0027c932d159f12a4ebfdda65f2fb27bf43fe"
+    },
+    "assets/achievements/ui/N25.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "d8645918e5ba5303c323719385b0aa2f37d8672f504ade4d19d8778680a12de0"
+    },
+    "assets/achievements/ui/N26.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "3fdd90df0ded79ed9fb4778e337c467ca458b2086c4d853aedb5ec06c521d2ff"
+    },
+    "assets/achievements/ui/N27.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "c2184cdb4f444a8807f2079532a92edae64b16cf0d3634db4c4b009c8a2c6ced"
+    },
+    "assets/achievements/ui/N28.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "1e4e2f079fe2d76be6ead0a367a43bc2bb88feacfdb5cabd69653b7315ae060f"
+    },
+    "assets/achievements/ui/N29.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "d59ffd0d7c35487f86bfbbc7837619e06c770775dfd582bd0f3ba2d275e31760"
+    },
+    "assets/achievements/ui/N30.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "510df510809ffa550922bc89e63b2d0286b8cbfa8a919b5730d56cf625be344b"
+    },
+    "assets/achievements/ui/N31.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "2ba58f432facd028ba624b7013d65230f80a2f440e5e1ccb9082abe391129361"
+    },
+    "assets/achievements/ui/N32.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "60b98b127e4716103a5cb2bae8494ff396e23a36cab7e057a012a89287362498"
+    },
+    "assets/achievements/ui/N33.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "0657cdff3947a3b898595f77357bd7403e4445532ae9833dd110d22028d26b7e"
+    },
+    "assets/achievements/ui/N34.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "c1c14e81b3151b8e6fabacc7ab1c38a225e17faffa21d66108e81e024e1b0dca"
+    },
+    "assets/achievements/ui/N35.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "0e5c222fa7e07732e337cf80c09a69dab95c102aaab1dc9486fdde4ba247eea1"
+    },
+    "assets/achievements/ui/N36.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "06a27abb368d9e4d7b3a74f558eb2f9b05c2ad4500a89cd481a1dc93c88c7f40"
+    },
+    "assets/achievements/ui/N37.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "86c4c5f994f6142406f4da378892d1436b5d9d4850b0dbdb0e8cfbc82e4c575f"
+    },
+    "assets/achievements/ui/N38.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "ce949fdf6cd96ca15d2dcaab9c1f5b933025a4707004212f562632046a3a4f71"
+    },
+    "assets/achievements/ui/N39.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "8359fcfc4573c182f93ddc8b65aefe909b669f06643f575c12b0033d3b537edb"
+    },
+    "assets/achievements/ui/N40.svg": {
+      "commit": "153417ef69baab04ac1013ea496b7ed62e505d4c",
+      "sha256": "a767ec5f22c4c450d68370b91a86d0339cbc404986580ce2c78c90adbd17e33a"
+    }
+  },
+  "files": {
+    "rules.json": "241def4a39e3506b7f27b93c226541cee0c9538a0f2c38c28edc15583bde858e",
+    "zh.json": "46f6a5adb793626237ebb5d38f4d6fe6c24006802310ba9b54c4f3f63e0400d2",
+    "achievements.json": "89d9bd6a7d79e9073b7068189cc47b2f4107fdac7e3654601c6fd94e6d54006a",
+    "achievements-en.json": "189d8c98a871d5c5ea2c222d6bb00589ee9c65a2e6be207a6fa2783b0c6a0ce2",
+    "achievements-zh.json": "0a55b6ebcbbe3233808e703457f6928a51160bb06512b76faf480162dac2c862",
+    "icons/N01.svg": "4e9d127e34b07cbd8f8c8cb02107073d77ff360eda3bb10cc9e17557446f4b31",
+    "icons/N02.svg": "cecef248bb4a38c70864ded084b91de5c56a893d1959b704909c2773c48ecbb5",
+    "icons/N03.svg": "85c6c716de41ceefba79d8afd5459f53a00f49e6d9085824c40007d563ae3433",
+    "icons/N04.svg": "4684c8ce2e8720e7148d7696e2a7936951eac2fe75f02a9f560b59142235111c",
+    "icons/N05.svg": "8a23e89c3e3a12c299d2dd116d5b0ce3a9d22e52605fef74a76c0f30c4477351",
+    "icons/N06.svg": "0bd406f83b64ad30c9eb6aa444f18b78f80900aa17c35649f53978c3fbe14935",
+    "icons/N07.svg": "963704d28c16c885f9afca5f21a28e9149e4d764b0f4f8146f39908b8b4fc06e",
+    "icons/N08.svg": "eb79a39ba94c5fe0ac0c0c11c32b16af64b615e9ca53f9496393c1bb28d861fe",
+    "icons/N09.svg": "cc9f4079a41eae31f9f7decf9bdc9ef9fef0e92b51a7db9ec37423cf458050b2",
+    "icons/N10.svg": "be44601b6f955d9cce87b1afe3b5f8f73153742385b49bda978aa1f11873e560",
+    "icons/N11.svg": "8d86261b75f9c12d6287f07c71b1fd7a596ec3c9e18e37a50956bca0a65f149e",
+    "icons/N12.svg": "7db623ba0f373f3cee5825fd2bc2ccba3b3bdec5098cf8eb0c241f4c312400f6",
+    "icons/N13.svg": "b79dcfe23ea15d32251d32a15260c83917f69c94cdd04b62018fe72e5e8c484a",
+    "icons/N14.svg": "d8214e8e2f2f36acbe4bbcb13b7eacd61bfea74242eaa232214ffc6ce6905130",
+    "icons/N15.svg": "d1217606b824b982d21309201269d68f2de51fced40563e9ce2aee93ad222f25",
+    "icons/N16.svg": "a0f74d8ff52ddb9ed7b0573849853470994eec3ab3ab2e4480d4802375effc5e",
+    "icons/N17.svg": "c2f7af7023140ad1de3cb3deeb2e65cc75780ab73722d4b7af4a320896459bb2",
+    "icons/N18.svg": "fe817fbeed63d169204db049306691a55ca55e514baa26a0b77eb07329553e71",
+    "icons/N19.svg": "ff5dc609d767262d9054ba3f88780e274b23819230b386e99de127690e39a22f",
+    "icons/N20.svg": "b4beafa8e8ce63e38208c5c7a58056937394af752a1473f49f58fbeca9f01b3a",
+    "icons/N21.svg": "622b873d119c57ce3393df6268bf2d7e1c073525785e2c75f62d16a3eaa98d82",
+    "icons/N22.svg": "2e5527e32e19697b81d71fa4210bd3cd799ca039a198f6bff9bdaae75b55edeb",
+    "icons/N23.svg": "ca2e32899618f0714fce0d803d5d289acd34bbb78a44510369b75c925f7cbd82",
+    "icons/N24.svg": "c633e891116615da1d692f48d0d0027c932d159f12a4ebfdda65f2fb27bf43fe",
+    "icons/N25.svg": "d8645918e5ba5303c323719385b0aa2f37d8672f504ade4d19d8778680a12de0",
+    "icons/N26.svg": "3fdd90df0ded79ed9fb4778e337c467ca458b2086c4d853aedb5ec06c521d2ff",
+    "icons/N27.svg": "c2184cdb4f444a8807f2079532a92edae64b16cf0d3634db4c4b009c8a2c6ced",
+    "icons/N28.svg": "1e4e2f079fe2d76be6ead0a367a43bc2bb88feacfdb5cabd69653b7315ae060f",
+    "icons/N29.svg": "d59ffd0d7c35487f86bfbbc7837619e06c770775dfd582bd0f3ba2d275e31760",
+    "icons/N30.svg": "510df510809ffa550922bc89e63b2d0286b8cbfa8a919b5730d56cf625be344b",
+    "icons/N31.svg": "2ba58f432facd028ba624b7013d65230f80a2f440e5e1ccb9082abe391129361",
+    "icons/N32.svg": "60b98b127e4716103a5cb2bae8494ff396e23a36cab7e057a012a89287362498",
+    "icons/N33.svg": "0657cdff3947a3b898595f77357bd7403e4445532ae9833dd110d22028d26b7e",
+    "icons/N34.svg": "c1c14e81b3151b8e6fabacc7ab1c38a225e17faffa21d66108e81e024e1b0dca",
+    "icons/N35.svg": "0e5c222fa7e07732e337cf80c09a69dab95c102aaab1dc9486fdde4ba247eea1",
+    "icons/N36.svg": "06a27abb368d9e4d7b3a74f558eb2f9b05c2ad4500a89cd481a1dc93c88c7f40",
+    "icons/N37.svg": "86c4c5f994f6142406f4da378892d1436b5d9d4850b0dbdb0e8cfbc82e4c575f",
+    "icons/N38.svg": "ce949fdf6cd96ca15d2dcaab9c1f5b933025a4707004212f562632046a3a4f71",
+    "icons/N39.svg": "8359fcfc4573c182f93ddc8b65aefe909b669f06643f575c12b0033d3b537edb",
+    "icons/N40.svg": "a767ec5f22c4c450d68370b91a86d0339cbc404986580ce2c78c90adbd17e33a"
+  }
+}

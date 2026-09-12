@@ -1,28 +1,41 @@
 ---
-title: Carthage
-description: Carthage — leader, unique ability and start bias in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Civilizations","item":"https://jerry8870.github.io/Unciv-Wiki/database/civilizations/"},{"@type":"ListItem","position":4,"name":"Carthage","item":"https://jerry8870.github.io/Unciv-Wiki/database/civilizations/carthage/"}]}'
+{
+  "title": "Carthage",
+  "description": "Carthage: base values, rules and related civilizations in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Carthage
 
-**Leader**: Dido
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/nation/carthage.png" alt="Carthage" width="80" height="80" loading="lazy" decoding="async" /></span>
 
-**Unique Ability**: Phoenician Heritage
+[Icon sources and credits](/Unciv-Wiki/credits/)
 
-## Unique Abilities
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
-- `Gain a free [Harbor] [in all coastal cities]`
-- `Land units may cross [Mountain] tiles after the first [Great General] is earned`
-- `Comment [Units ending their turn on [Mountain] tiles take [50] damage]`
+| Attribute | Value |
+| --- | --- |
+| Leader | Dido |
+| Unique ability | Phoenician Heritage |
+| Preferred victory | Domination |
 
-## Start Bias
+## Rules and effects
+
+- Gain a free [Harbor] [in all coastal cities]
+- Land units may cross [Mountain] tiles after the first [Great General] is earned
+- Comment [Units ending their turn on [Mountain] tiles take [50] damage]
+
+## Starting bias
 
 - Coast
 
-**Preferred Victory**: Domination
+## Unlocks and related entries
 
+- [Quinquereme](/Unciv-Wiki/database/units/quinquereme/)
+- [African Forest Elephant](/Unciv-Wiki/database/units/african-forest-elephant/)
 

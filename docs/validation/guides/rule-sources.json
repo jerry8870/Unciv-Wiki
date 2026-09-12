@@ -1,0 +1,121 @@
+{
+  "baseline": "4.21.20-1293",
+  "publicCommit": "5fa2f57457755c403ea82cc21fec9e617feaf2d0",
+  "verification": "Read-only pinned local source and rules review; no played-game, iOS runtime or win-rate verification. Source code is not copied into this evidence file.",
+  "publicFetch": "A direct GitHub pinned-file fetch returned 404; source assertions rely on the locally verified commit, not a claim of public URL availability.",
+  "sources": [
+    {
+      "path": "android/assets/jsons/Civ V - Gods & Kings/VictoryTypes.json",
+      "sha256": "259a700c2b3cdb54c47a1f6394f8253762be0fab5cc1a4861ca88e00cf6f3c5b"
+    },
+    {
+      "path": "android/assets/jsons/Civ V - Gods & Kings/Policies.json",
+      "sha256": "f724b15cca730295ad3c87f0ca8cedabee90aaae3262680595d6af8a47f57455"
+    },
+    {
+      "path": "android/assets/jsons/Civ V - Gods & Kings/Beliefs.json",
+      "sha256": "1041512886da13be3da4fa84422af47ab3aad36b549fb10e65f6e259f8837f34"
+    },
+    {
+      "path": "android/assets/jsons/Civ V - Gods & Kings/Buildings.json",
+      "sha256": "2e01b25ba19292cf4d42e364031e541f7e4c8dd725ad1a903ec7abfd64b7bc6d"
+    },
+    {
+      "path": "android/assets/jsons/Civ V - Gods & Kings/Units.json",
+      "sha256": "f2786a1da6d444789f7c4d1c391294f94e4a59f2024524ccd3b8f1477d4b0ce0"
+    },
+    {
+      "path": "android/assets/jsons/Civ V - Gods & Kings/TileImprovements.json",
+      "sha256": "ab7daa7c65ec5c7396d829ba5c3db68536198a088935fbf3ad2d4f9462be1242"
+    },
+    {
+      "path": "core/src/com/unciv/models/ruleset/Victory.kt",
+      "sha256": "a9ffe13867f307bcc2acbd9a59417807571a6556ea818fda25d3f6eebf7882f5"
+    },
+    {
+      "path": "core/src/com/unciv/logic/civilization/managers/VictoryManager.kt",
+      "sha256": "a167222d745504e42ce0ab429521cdd98dfad81fe4f791bc98b253816cbb94aa"
+    },
+    {
+      "path": "core/src/com/unciv/logic/civilization/managers/PolicyManager.kt",
+      "sha256": "df758d1a9f2aff7187b37aa95445323e5f38b1dfec6e387411e1cda363cf2f1a"
+    },
+    {
+      "path": "core/src/com/unciv/logic/city/CityStats.kt",
+      "sha256": "0957a8dc944b8a3c50d1618201ce41853a745a7108e5391e9e9cde6e02fed707"
+    },
+    {
+      "path": "core/src/com/unciv/logic/automation/civilization/NextTurnAutomation.kt",
+      "sha256": "06a65ada137e0aae119577811ca65d12b1f1486085b7f9fa34b45b5b821f5305"
+    },
+    {
+      "path": "core/src/com/unciv/logic/battle/Battle.kt",
+      "sha256": "f5473552bcc11fd0873ea1afe50e67a6e316b801f50e01beda335c36b7163ad4"
+    },
+    {
+      "path": "core/src/com/unciv/models/ruleset/Building.kt",
+      "sha256": "420a1adc68095d36943e5315dc57c4651ee68bafd2a11c59b22b7bf87f8ebdd4"
+    },
+    {
+      "path": "android/assets/jsons/translations/Simplified_Chinese.properties",
+      "sha256": "0b6f23be94517fd41ec6b76826705d62f833020a9567827ee3f22d3455757666"
+    }
+  ],
+  "reviewedFacts": [
+    {
+      "id": "R01",
+      "source": "VictoryTypes.json",
+      "finding": "Science: Apollo Program plus 3 SS Boosters, 1 Cockpit, 1 Engine, 1 Stasis Chamber added in the capital. Culture: 5 completed policy branches and Utopia. Diplomatic: global UN construction and a winning vote. Time exists; no default religious victory."
+    },
+    {
+      "id": "R02",
+      "source": "Victory.kt:100-111,150-153",
+      "finding": "Domination counts current original-major-capital ownership; includes the player own original capital. Victory screen handles exceptional missing-capital or never-settled cases."
+    },
+    {
+      "id": "R03",
+      "source": "Policies.json",
+      "finding": "Piety and Rationalism are mutually exclusive; Freedom, Autocracy and Order are mutually exclusive. Tradition/Piety/Patronage/Commerce/Freedom is a compatible example of five branches, not a claimed optimal order."
+    },
+    {
+      "id": "R04",
+      "source": "PolicyManager.kt:173-183",
+      "finding": "Policy cost includes adopted policy count, non-puppet cities, map-size modifier, policy effects, human difficulty and game speed."
+    },
+    {
+      "id": "R05",
+      "source": "Buildings.json",
+      "finding": "University science +33%, two Scientist slots; National College science +50%; Hermitage culture +50%; Research Lab science +50%. National College requires Libraries and Hermitage requires Opera Houses in non-puppet cities."
+    },
+    {
+      "id": "R06",
+      "source": "Units.json, Buildings.json, Building.kt:157-160",
+      "finding": "Spaceship part technology/resource/quantity and no-purchase rules verified. Apollo and Utopia Cannot be hurried; normal Gold purchase of national/world wonders is unavailable without a specific permission."
+    },
+    {
+      "id": "R07",
+      "source": "CityStats.kt:101-115; TileImprovements.json:109-113",
+      "finding": "Unmodified connection Gold = capital population * 0.15 + other population * 1.1 - 1. Ordinary road base maintenance 1 Gold per maintained tile. Example 6/4 population ->4.3; five added maintained tiles ->-0.7 before other effects."
+    },
+    {
+      "id": "R08",
+      "source": "VictoryManager.kt:31-87; NextTurnAutomation.kt:636-658",
+      "finding": "UN owner vote weight 2, ordinary vote weight 1; threshold depends on available voting civs and UN state; tied highest vote fails. AI majors consider opinions and may abstain; city-states choose ally."
+    },
+    {
+      "id": "R09",
+      "source": "Units.json, Battle.kt",
+      "finding": "Catapult needs setup and has no defensive terrain bonus; normal ranged bombardment does not capture. Great Artist can make Landmark or Golden Age; Great Scientist can create Academy or accelerate research."
+    },
+    {
+      "id": "R10",
+      "source": "Units.json, Beliefs.json",
+      "finding": "Prophet founding/enhancement require unused other actions; Missionary foreign-territory attrition, Inquisitor active-spread blocking/removal, Tithe and Pagodas conditions checked."
+    },
+    {
+      "id": "R11",
+      "source": "android/assets/jsons/translations/Simplified_Chinese.properties",
+      "finding": "Guide names normalized to pinned Chinese labels; all Chinese entity-link labels equal current database titles."
+    }
+  ]
+}

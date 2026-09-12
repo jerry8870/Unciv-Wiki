@@ -1,25 +1,49 @@
 ---
-title: Chivalry
-description: Chivalry — era, cost and what it unlocks in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Technologies","item":"https://jerry8870.github.io/Unciv-Wiki/database/technologies/"},{"@type":"ListItem","position":4,"name":"Chivalry","item":"https://jerry8870.github.io/Unciv-Wiki/database/technologies/chivalry/"}]}'
+{
+  "title": "Chivalry",
+  "description": "Chivalry: base values, rules and related technologies in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Chivalry
 
-## Info
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/technology/chivalry.png" alt="Chivalry" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
+| Base cost | 485 |
 | Era | Medieval era |
-| Prerequisites | Civil Service, Guilds |
 
-## Effects
+Inherited from the required technology column.
 
-- `Enables Defensive Pacts <Civilopedia link [Tutorials/Defensive Pacts]>`
+Prerequisites: [Civil Service](/Unciv-Wiki/database/technologies/civil-service/), [Guilds](/Unciv-Wiki/database/technologies/guilds/)
 
-> 'Whoso pulleth out this sword of this stone and anvil, is rightwise king born of all England.' - Malory
+## Rules and effects
 
+- Enables Defensive Pacts
+
+## Unlocks and related entries
+
+- [Knight](/Unciv-Wiki/database/units/knight/)
+- [Camel Archer](/Unciv-Wiki/database/units/camel-archer/)
+- [Conquistador](/Unciv-Wiki/database/units/conquistador/)
+- [Naresuan&#x27;s Elephant](/Unciv-Wiki/database/units/naresuan-s-elephant/)
+- [Mandekalu Cavalry](/Unciv-Wiki/database/units/mandekalu-cavalry/)
+- [Keshik](/Unciv-Wiki/database/units/keshik/)
+- [Castle](/Unciv-Wiki/database/buildings/castle/)
+- [Mughal Fort](/Unciv-Wiki/database/buildings/mughal-fort/)
+- [Alhambra](/Unciv-Wiki/database/buildings/alhambra/)
+- [Banking](/Unciv-Wiki/database/technologies/banking/)
+- [Printing Press](/Unciv-Wiki/database/technologies/printing-press/)
+
+> &#x27;Whoso pulleth out this sword of this stone and anvil, is rightwise king born of all England.&#x27; - Malory
 

@@ -1,27 +1,37 @@
 ---
-title: Mausoleum of Halicarnassus
-description: Mausoleum of Halicarnassus — cost, effects and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Buildings","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/"},{"@type":"ListItem","position":4,"name":"Mausoleum of Halicarnassus","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/mausoleum-of-halicarnassus/"}]}'
+{
+  "title": "Mausoleum of Halicarnassus",
+  "description": "Mausoleum of Halicarnassus: base values, rules and related buildings in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Mausoleum of Halicarnassus
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/building/mausoleum-of-halicarnassus.png" alt="Mausoleum of Halicarnassus" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
-| Required Tech | Masonry |
+| Type | World wonder |
+| Base cost | 185 |
+| Required technology | [Masonry](/Unciv-Wiki/database/technologies/masonry/) |
 | Culture | 1 |
 
-## Effects
+Inherited from the required technology column.
 
-- `Gain [100] [Gold] <upon expending a [Great Person] unit> <(modified by game speed)>`
-- `[+2 Gold] from [Marble] tiles [in this city]`
-- `[+2 Gold] from [Stone] tiles [in this city]`
+## Rules and effects
 
-> 'The whole earth is the tomb of heroic men and their story is not given only on stone over their clay but abides everywhere without visible symbol woven into the stuff of other men's lives.' - Pericles
+- Gain [100] [Gold] &lt;upon expending a [Great Person] unit&gt; &lt;(modified by game speed)&gt;
+- [+2 Gold] from [Marble] tiles [in this city]
+- [+2 Gold] from [Stone] tiles [in this city]
 
+> &#x27;The whole earth is the tomb of heroic men and their story is not given only on stone over their clay but abides everywhere without visible symbol woven into the stuff of other men&#x27;s lives.&#x27; - Pericles
 

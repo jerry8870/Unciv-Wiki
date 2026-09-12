@@ -1,21 +1,39 @@
 ---
-title: Advanced Ballistics
-description: Advanced Ballistics — era, cost and what it unlocks in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Technologies","item":"https://jerry8870.github.io/Unciv-Wiki/database/technologies/"},{"@type":"ListItem","position":4,"name":"Advanced Ballistics","item":"https://jerry8870.github.io/Unciv-Wiki/database/technologies/advanced-ballistics/"}]}'
+{
+  "title": "Advanced Ballistics",
+  "description": "Advanced Ballistics: base values, rules and related technologies in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Advanced Ballistics
 
-## Info
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/technology/advanced-ballistics.png" alt="Advanced Ballistics" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
+| Base cost | 7700 |
 | Era | Information era |
-| Prerequisites | Nuclear Fission, Rocketry |
 
-> 'Our scientific power has outrun our spiritual power, we have guided missiles and misguided men.' – Martin Luther King Jr.
+Inherited from the required technology column.
 
+Prerequisites: [Nuclear Fission](/Unciv-Wiki/database/technologies/nuclear-fission/), [Rocketry](/Unciv-Wiki/database/technologies/rocketry/)
+
+## Unlocks and related entries
+
+- [Guided Missile](/Unciv-Wiki/database/units/guided-missile/)
+- [Nuclear Missile](/Unciv-Wiki/database/units/nuclear-missile/)
+- [SS Booster](/Unciv-Wiki/database/units/ss-booster/)
+- [Particle Physics](/Unciv-Wiki/database/technologies/particle-physics/)
+- [Nuclear Fusion](/Unciv-Wiki/database/technologies/nuclear-fusion/)
+
+> &#x27;Our scientific power has outrun our spiritual power, we have guided missiles and misguided men.&#x27; – Martin Luther King Jr.
 

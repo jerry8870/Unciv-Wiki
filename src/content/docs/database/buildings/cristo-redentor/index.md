@@ -1,25 +1,35 @@
 ---
-title: Cristo Redentor
-description: Cristo Redentor — cost, effects and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Buildings","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/"},{"@type":"ListItem","position":4,"name":"Cristo Redentor","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/cristo-redentor/"}]}'
+{
+  "title": "Cristo Redentor",
+  "description": "Cristo Redentor: base values, rules and related buildings in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Cristo Redentor
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/building/cristo-redentor.png" alt="Cristo Redentor" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
-| Required Tech | Plastics |
+| Type | World wonder |
+| Base cost | 1250 |
+| Required technology | [Plastics](/Unciv-Wiki/database/technologies/plastics/) |
 | Culture | 5 |
 
-## Effects
+Inherited from the required technology column.
 
-- `[-10]% Culture cost of adopting new Policies`
+## Rules and effects
 
-> 'Come to me, all who labor and are heavy burdened, and I will give you rest.' - New Testament, Matthew 11:28
+- [-10]% Culture cost of adopting new Policies
 
+> &#x27;Come to me, all who labor and are heavy burdened, and I will give you rest.&#x27; - New Testament, Matthew 11:28
 

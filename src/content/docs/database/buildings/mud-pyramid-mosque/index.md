@@ -1,24 +1,34 @@
 ---
-title: Mud Pyramid Mosque
-description: Mud Pyramid Mosque — cost, effects and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Buildings","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/"},{"@type":"ListItem","position":4,"name":"Mud Pyramid Mosque","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/mud-pyramid-mosque/"}]}'
+{
+  "title": "Mud Pyramid Mosque",
+  "description": "Mud Pyramid Mosque: base values, rules and related buildings in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Mud Pyramid Mosque
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/building/mud-pyramid-mosque.png" alt="Mud Pyramid Mosque" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
+| Type | Building |
+| Base cost | 100 |
 | Maintenance | 0 |
-| Required Tech | Philosophy |
-| Required Building | Shrine |
-| Replaces | Temple |
-| Unique To | Songhai |
+| Required technology | [Philosophy](/Unciv-Wiki/database/technologies/philosophy/) |
+| Required building | [Shrine](/Unciv-Wiki/database/buildings/shrine/) |
+| Replaces | [Temple](/Unciv-Wiki/database/buildings/temple/) |
+| Unique to | [Songhai](/Unciv-Wiki/database/civilizations/songhai/) |
 | Culture | 2 |
 | Faith | 2 |
 
+Inherited from the required technology column.
 

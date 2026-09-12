@@ -1,25 +1,42 @@
 ---
-title: Industrialization
-description: Industrialization — era, cost and what it unlocks in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Technologies","item":"https://jerry8870.github.io/Unciv-Wiki/database/technologies/"},{"@type":"ListItem","position":4,"name":"Industrialization","item":"https://jerry8870.github.io/Unciv-Wiki/database/technologies/industrialization/"}]}'
+{
+  "title": "Industrialization",
+  "description": "Industrialization: base values, rules and related technologies in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Industrialization
 
-## Info
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/technology/industrialization.png" alt="Industrialization" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
+| Base cost | 1600 |
 | Era | Industrial era |
-| Prerequisites | Economics |
 
-## Effects
+Inherited from the required technology column.
 
-- `[+50]% weight to this choice for AI decisions`
+Prerequisites: [Economics](/Unciv-Wiki/database/technologies/economics/)
 
-> 'Industrialization based on machinery, already referred to as a characteristic of our age, is but one aspect of the revolution that is being wrought by technology.' - Emily Greene Balch
+## Rules and effects
 
+- [+50]% weight to this choice for AI decisions
+
+## Unlocks and related entries
+
+- [Gatling Gun](/Unciv-Wiki/database/units/gatling-gun/)
+- [Factory](/Unciv-Wiki/database/buildings/factory/)
+- [Big Ben](/Unciv-Wiki/database/buildings/big-ben/)
+- [Steam Power](/Unciv-Wiki/database/technologies/steam-power/)
+
+> &#x27;Industrialization based on machinery, already referred to as a characteristic of our age, is but one aspect of the revolution that is being wrought by technology.&#x27; - Emily Greene Balch
 

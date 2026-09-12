@@ -1,26 +1,36 @@
 ---
-title: Himeji Castle
-description: Himeji Castle — cost, effects and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Buildings","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/"},{"@type":"ListItem","position":4,"name":"Himeji Castle","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/himeji-castle/"}]}'
+{
+  "title": "Himeji Castle",
+  "description": "Himeji Castle: base values, rules and related buildings in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Himeji Castle
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/building/himeji-castle.png" alt="Himeji Castle" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
-| Required Tech | Gunpowder |
+| Type | World wonder |
+| Base cost | 500 |
+| Required technology | [Gunpowder](/Unciv-Wiki/database/technologies/gunpowder/) |
 | Culture | 3 |
 
-## Effects
+Inherited from the required technology column.
 
-- `[+15]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>`
-- `Gain a free [Castle] [in this city]`
+## Rules and effects
 
-> 'Bushido is realized in the presence of death. This means choosing death whenever there is a choice between life and death. There is no other reasoning.' - Yamamoto Tsunetomo
+- [+15]% Strength &lt;for [All] units&gt; &lt;when fighting in [Friendly Land] tiles&gt;
+- Gain a free [Castle] [in this city]
 
+> &#x27;Bushido is realized in the presence of death. This means choosing death whenever there is a choice between life and death. There is no other reasoning.&#x27; - Yamamoto Tsunetomo
 

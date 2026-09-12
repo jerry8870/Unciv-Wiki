@@ -1,28 +1,38 @@
 ---
-title: Petra
-description: Petra — cost, effects and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Buildings","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/"},{"@type":"ListItem","position":4,"name":"Petra","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/petra/"}]}'
+{
+  "title": "Petra",
+  "description": "Petra: base values, rules and related buildings in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Petra
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/building/petra.png" alt="Petra" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
-| Required Tech | Currency |
+| Type | World wonder |
+| Base cost | 250 |
+| Required technology | [Currency](/Unciv-Wiki/database/technologies/currency/) |
 | Culture | 1 |
 
-## Effects
+Inherited from the required technology column.
 
-- `Must be next to [Desert]`
-- `[+1 Food, +1 Production, +1 Gold] from [Desert] tiles without [Flood plains] [in this city]`
-- `Gain a free [Amphitheater] [in this city]`
-- `[+6 Culture] [in this city] <after discovering [Archaeology]>`
+## Rules and effects
 
-> '...who drinks the water I shall give him, says the Lord, will have a spring inside him welling up for eternal life. Let them bring me to your holy mountain in the place where you dwell. Across the desert and through the mountain to the Canyon of the Crescent Moon...' - Indiana Jones
+- Must be next to [Desert]
+- [+1 Food, +1 Production, +1 Gold] from [Desert] tiles without [Flood plains] [in this city]
+- Gain a free [Amphitheater] [in this city]
+- [+6 Culture] [in this city] &lt;after discovering [Archaeology]&gt;
 
+> &#x27;...who drinks the water I shall give him, says the Lord, will have a spring inside him welling up for eternal life. Let them bring me to your holy mountain in the place where you dwell. Across the desert and through the mountain to the Canyon of the Crescent Moon...&#x27; - Indiana Jones
 

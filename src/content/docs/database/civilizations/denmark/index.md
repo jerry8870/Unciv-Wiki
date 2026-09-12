@@ -1,28 +1,41 @@
 ---
-title: Denmark
-description: Denmark — leader, unique ability and start bias in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Civilizations","item":"https://jerry8870.github.io/Unciv-Wiki/database/civilizations/"},{"@type":"ListItem","position":4,"name":"Denmark","item":"https://jerry8870.github.io/Unciv-Wiki/database/civilizations/denmark/"}]}'
+{
+  "title": "Denmark",
+  "description": "Denmark: base values, rules and related civilizations in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Denmark
 
-**Leader**: Harald Bluetooth
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/nation/denmark.png" alt="Denmark" width="80" height="80" loading="lazy" decoding="async" /></span>
 
-**Unique Ability**: Viking Fury
+[Icon sources and credits](/Unciv-Wiki/credits/)
 
-## Unique Abilities
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
-- `[+1] Movement <for [Embarked] units>`
-- `[1] Movement point cost to disembark <for [All] units>`
-- `No movement cost to pillage <for [Melee] units>`
+| Attribute | Value |
+| --- | --- |
+| Leader | Harald Bluetooth |
+| Unique ability | Viking Fury |
+| Preferred victory | Cultural |
 
-## Start Bias
+## Rules and effects
+
+- [+1] Movement &lt;for [Embarked] units&gt;
+- [1] Movement point cost to disembark &lt;for [All] units&gt;
+- No movement cost to pillage &lt;for [Melee] units&gt;
+
+## Starting bias
 
 - Coast
 
-**Preferred Victory**: Cultural
+## Unlocks and related entries
 
+- [Berserker](/Unciv-Wiki/database/units/berserker/)
+- [Norwegian Ski Infantry](/Unciv-Wiki/database/units/norwegian-ski-infantry/)
 

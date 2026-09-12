@@ -1,0 +1,79 @@
+{
+  "date": "2026-09-12",
+  "baseURL": "http://127.0.0.1:4321/Unciv-Wiki/",
+  "method": "CUA browser interaction, DOM measurements and visual screenshot inspection; observations transcribed here, no screenshot files saved.",
+  "checks": [
+    {
+      "page": "zh/mechanics/combat-promotions/",
+      "viewport": [
+        390,
+        844
+      ],
+      "h1Count": 1,
+      "documentWidth": 390,
+      "tableContainerWidths": [
+        356,
+        356
+      ],
+      "tableScrollWidths": [
+        356,
+        356
+      ],
+      "literalMarkdownBold": false,
+      "visual": "Readable title, wrapped tables and condition/choice/cost/recheck sections; no page-wide overflow."
+    },
+    {
+      "action": "Open mobile table of contents and click the Legion river teaching situation",
+      "result": "Correct chapter hash and heading visible below sticky navigation",
+      "headingTop": 128.1875
+    },
+    {
+      "action": "Search 朝鲜",
+      "resultCount": 19,
+      "firstResult": "zh/strategies/korea/",
+      "result": "Clicked actual Pagefind result into new article."
+    },
+    {
+      "action": "Mobile menu, language English",
+      "from": "zh/strategies/korea/",
+      "to": "strategies/korea/",
+      "result": "Correct equivalent route and English article heading; page width390."
+    },
+    {
+      "page": "strategies/korea/",
+      "viewport": [
+        390,
+        844
+      ],
+      "documentWidth": 390,
+      "tableContainerWidth": 356,
+      "tableScrollWidth": 369,
+      "keyboardArrowRightScrollLeft": 13,
+      "accessibleRegion": "Data table, scroll horizontally",
+      "tabindex": 0,
+      "result": "Table scrolls independently while page width remains390."
+    },
+    {
+      "page": "zh/mechanics/",
+      "viewport": [
+        1280,
+        900
+      ],
+      "documentWidth": 1280,
+      "result": "Four mechanics links and corresponding sidebar group visible; original three cost headings remain in table of contents."
+    },
+    {
+      "action": "Mechanics hub -> civilization/victory hub -> Greece guide -> Greece database",
+      "result": "Four civilization links plus four mechanics links visible; guide links to database; database shows corrected decay/recovery rules and return link. Clicked database return link and confirmed the Greece guide title and route."
+    }
+  ],
+  "toolRecoveries": [
+    "AX summary described as button but Playwright needed observed summary ID; locator corrected.",
+    "Search route matched sidebar/body too; scoped to observed Pagefind result class.",
+    "decodeURIComponent unavailable in restricted evaluate; read observed heading directly.",
+    "Initial scrollLeft read preceded keyboard scroll animation; next read confirmed13."
+  ],
+  "scope": "Browser website checks only, no game runtime or online deployment.",
+  "finalPreview": "http://127.0.0.1:4321/Unciv-Wiki/zh/strategies/",
+  "viewportRestored": true
+}

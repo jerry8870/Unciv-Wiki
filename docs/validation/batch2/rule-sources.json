@@ -1,0 +1,293 @@
+{
+  "baseline": "4.21.20-1293",
+  "publicCommit": "5fa2f57457755c403ea82cc21fec9e617feaf2d0",
+  "verification": "Read-only pinned local source review. Teaching examples are constructed; no played-game, iOS runtime or win-rate verification. No source code copied into website.",
+  "sources": [
+    {
+      "path": "android/assets/jsons/Civ V - Gods & Kings/Nations.json",
+      "sha256": "5f1e7f2b19bb070b30c2981da2780ac4e8bccaaa8fab83de9ac43648b5d24010"
+    },
+    {
+      "path": "android/assets/jsons/Civ V - Gods & Kings/Units.json",
+      "sha256": "f2786a1da6d444789f7c4d1c391294f94e4a59f2024524ccd3b8f1477d4b0ce0"
+    },
+    {
+      "path": "android/assets/jsons/Civ V - Gods & Kings/Buildings.json",
+      "sha256": "2e01b25ba19292cf4d42e364031e541f7e4c8dd725ad1a903ec7abfd64b7bc6d"
+    },
+    {
+      "path": "android/assets/jsons/Civ V - Gods & Kings/Policies.json",
+      "sha256": "f724b15cca730295ad3c87f0ca8cedabee90aaae3262680595d6af8a47f57455"
+    },
+    {
+      "path": "android/assets/jsons/Civ V - Gods & Kings/Specialists.json",
+      "sha256": "741b8bfca3c42837bee68f5d5a9af6a82ed771049243b386884f82af5cfd5d61"
+    },
+    {
+      "path": "android/assets/jsons/Civ V - Gods & Kings/Beliefs.json",
+      "sha256": "1041512886da13be3da4fa84422af47ab3aad36b549fb10e65f6e259f8837f34"
+    },
+    {
+      "path": "android/assets/jsons/Civ V - Gods & Kings/TileResources.json",
+      "sha256": "44f379560eab1122906d806aa9d1dd4a43f9b8b31af0bdeca7cb9324cbec5dce"
+    },
+    {
+      "path": "android/assets/jsons/Civ V - Gods & Kings/TileImprovements.json",
+      "sha256": "ab7daa7c65ec5c7396d829ba5c3db68536198a088935fbf3ad2d4f9462be1242"
+    },
+    {
+      "path": "android/assets/jsons/Civ V - Gods & Kings/Terrains.json",
+      "sha256": "676b546845a072e615669a0fba7404d02c912b3dd0f45dd2a7822c1aadfef836"
+    },
+    {
+      "path": "android/assets/jsons/Civ V - Gods & Kings/UnitPromotions.json",
+      "sha256": "2c662d46106d095f05ab64f59b01d8aa91809c1b4fa3612f56cb4e0b5589a2f6"
+    },
+    {
+      "path": "android/assets/jsons/Civ V - Gods & Kings/UnitTypes.json",
+      "sha256": "765e74e9603145b9673cee7662175fbae20ec82caab9c50c37b070ce0bf4d7a9"
+    },
+    {
+      "path": "core/src/com/unciv/logic/city/CityConstructions.kt",
+      "sha256": "f47a8e0cdbd312119ff51c3ee888b0eaa312ac0619eba1c704b81691d6a9f399"
+    },
+    {
+      "path": "core/src/com/unciv/logic/city/CityStats.kt",
+      "sha256": "0957a8dc944b8a3c50d1618201ce41853a745a7108e5391e9e9cde6e02fed707"
+    },
+    {
+      "path": "core/src/com/unciv/logic/city/CityResources.kt",
+      "sha256": "28bf54614e6efbb506181bdf20ac485803c587335f1542b9ce54b80b534a676f"
+    },
+    {
+      "path": "core/src/com/unciv/logic/city/GreatPersonPointsBreakdown.kt",
+      "sha256": "8b35aa6eb68b9ec9c73453be61f32d6bcf7310789548c7aa64f17923697d9641"
+    },
+    {
+      "path": "core/src/com/unciv/logic/civilization/diplomacy/DiplomacyManager.kt",
+      "sha256": "21779d1929e72bdf0a082e5f6bb98a4acbff030ded2755159f1d17664cf838f2"
+    },
+    {
+      "path": "core/src/com/unciv/logic/civilization/diplomacy/DiplomacyTurnManager.kt",
+      "sha256": "351f98f0edfa4ba1635e9330fe61d51e11521b9c47d09440e65aaee631cd4ae8"
+    },
+    {
+      "path": "core/src/com/unciv/logic/civilization/managers/PolicyManager.kt",
+      "sha256": "df758d1a9f2aff7187b37aa95445323e5f38b1dfec6e387411e1cda363cf2f1a"
+    },
+    {
+      "path": "core/src/com/unciv/logic/battle/BattleDamage.kt",
+      "sha256": "5ea65dcf93459249a6bee748c2bd349ebe95dbe67f2da2bf494c7d08d3860da2"
+    },
+    {
+      "path": "core/src/com/unciv/logic/map/tile/Tile.kt",
+      "sha256": "c648176b6f22ec5be9157c98710c4e178cbb5d062665cd683c18fa06b0061fee"
+    },
+    {
+      "path": "core/src/com/unciv/logic/map/mapunit/UnitPromotions.kt",
+      "sha256": "3b81addd850331a8abf75d6a0e80e64c4f6f500a6b2b181225c8df506d8d1807"
+    },
+    {
+      "path": "core/src/com/unciv/logic/civilization/diplomacy/CityStateFunctions.kt",
+      "sha256": "6a4eedea4c678461bfce587c2278f787060df5ee75d2aa3babb7c296e5ee1608"
+    },
+    {
+      "path": "android/assets/jsons/translations/Simplified_Chinese.properties",
+      "sha256": "0b6f23be94517fd41ec6b76826705d62f833020a9567827ee3f22d3455757666"
+    },
+    {
+      "path": "core/src/com/unciv/logic/battle/BattleConstants.kt",
+      "sha256": "472b3b886cc04d2d74165f3571cd5b3a84de56123514142ff12171c4c5ee25cd"
+    },
+    {
+      "path": "core/src/com/unciv/logic/civilization/transients/CivInfoStatsForNextTurn.kt",
+      "sha256": "9ad469d548b0be79322766bc598b3203471dde793f17852f23e58b7bd8f24dc1"
+    },
+    {
+      "path": "core/src/com/unciv/models/ruleset/unique/Conditionals.kt",
+      "sha256": "417fad923671e76ad77057aa62c02dadf835960f2aac40f4052c9d983e2b1e67"
+    },
+    {
+      "path": "core/src/com/unciv/models/Religion.kt",
+      "sha256": "16139a55230789a52f570f207f81581a7347bf01e1bd6bc84fc05997595b2e8b"
+    },
+    {
+      "path": "core/src/com/unciv/logic/city/managers/CityReligionManager.kt",
+      "sha256": "e5c9202813de44c890d1f254efb5eccea6912997667b240d11ef2bebe2ddb769"
+    },
+    {
+      "path": "core/src/com/unciv/logic/map/mapunit/movement/MovementCost.kt",
+      "sha256": "e503c8944a28b4ec410d62f17b4ad34729438e6c72790b5b6a753332748bd30a"
+    },
+    {
+      "path": "core/src/com/unciv/logic/civilization/managers/VictoryManager.kt",
+      "sha256": "a167222d745504e42ce0ab429521cdd98dfad81fe4f791bc98b253816cbb94aa"
+    },
+    {
+      "path": "android/assets/jsons/Civ V - Gods & Kings/VictoryTypes.json",
+      "sha256": "259a700c2b3cdb54c47a1f6394f8253762be0fab5cc1a4861ca88e00cf6f3c5b"
+    }
+  ],
+  "reviewedFacts": [
+    {
+      "articles": [
+        "mechanics/policies"
+      ],
+      "sources": [
+        "Policies.json",
+        "PolicyManager.kt:canAdoptPolicy/adopt"
+      ],
+      "facts": [
+        "Tradition/Liberty Ancient, Piety Classical, Patronage Medieval, Rationalism Renaissance; final three Industrial",
+        "Collective Rule requires Republic; Representation/Meritocracy Citizenship; Landed Elite/Monarchy Legalism; Free Religion requires both Mandate Of Heaven and Reformation",
+        "Free Thought requires Secularism; Sovereignty Humanism; Scientific Revolution Free Thought",
+        "Piety and Rationalism exclude each other; Freedom/Order/Autocracy exclude each other",
+        "PolicyManager containsAll prerequisites; branch completion auto-adopted without another culture purchase",
+        "Tradition completed growth +15 and first four Aqueducts; Liberty free GP; Piety Faith cost -20 and Holy site +3 Gold/+3 Culture; Rationalism two free technologies",
+        "University 33 plus Free Thought 17 percentage points = 50; six Secularism specialists add 12 base Science"
+      ]
+    },
+    {
+      "articles": [
+        "mechanics/resources-improvements"
+      ],
+      "sources": [
+        "TileResources.json",
+        "TileImprovements.json",
+        "Terrains.json",
+        "Specialists.json",
+        "CityResources.kt:getResourcesFromTiles/getTileResourceAmount",
+        "Tile.kt:providesResources",
+        "CityStats.kt:calcFoodEaten/getStatsOfSpecialist"
+      ],
+      "facts": [
+        "Grassland 2 Food + Farm 1; Hill 2 Production + Mine 1 before other effects",
+        "Civil Service fresh-water Farm +1, Fertilizer non-fresh-water Farm +1",
+        "Scientist 3 Science/3 GP points; Engineer 2 Production, Artist 2 Culture, Merchant 3 Gold and each 3 corresponding points",
+        "Resource availability uses owned tiles not worked tiles; revealed and extraction tech, correct unpillaged improvement; city center and Great Improvement strategic-only exceptions",
+        "Normal population and specialists consume 2 Food each; reassignment does not add population",
+        "Academy 8, Scientific Theory +2, Atomic Theory +2; removes removable features; Road maintenance 1",
+        "Food example 22-16=6, remove two worked 3-Food tiles:16-16=0; one slot leaves3; Academy25*8=200"
+      ]
+    },
+    {
+      "articles": [
+        "mechanics/combat-promotions"
+      ],
+      "sources": [
+        "BattleConstants.kt",
+        "BattleDamage.kt:getTerrainAttackModifiers/getDefenceModifiers/modifiersToFinalBonus",
+        "Tile.kt:getDefensiveBonus",
+        "Terrains.json",
+        "MovementCost.kt",
+        "UnitPromotions.json",
+        "UnitPromotions.kt:isAvailable",
+        "Conditionals.kt:ConditionalFightingInTiles"
+      ],
+      "facts": [
+        "River melee penalty -20, valid road connection plus bridge tech or ability exempts; flanking10 per additional friendly adjacent melee",
+        "Ordinary open move1; Hill/Forest/Jungle move2/defense25; Marsh move3/defense-15; terrain features max defense, not sum; improvements separate",
+        "Promotions require eligible unit type and any listed prerequisite; policy prerequisite rule differs",
+        "Shock/Drill I-II-III fifteen per tier; Accuracy/Barrage attack-only fifteen; Cover33 per tier against ranged defense; Logistics extra attack and move-after; March paths II ranged or III sword",
+        "Target tile controls terrain condition; strength modifiers additive; illustrative17*.8=13.6,17*.9=15.3",
+        "Trebuchet14 with city200 yields42 under stated assumptions; Hwach’a26 lacks this bonus"
+      ]
+    },
+    {
+      "articles": [
+        "mechanics/religion-beliefs"
+      ],
+      "sources": [
+        "Beliefs.json",
+        "Religion.kt:addBeliefs",
+        "CityReligionManager.kt:getUniques/triggerReligionAdoption",
+        "CivInfoStatsForNextTurn.kt:getGlobalStatsFromUniques"
+      ],
+      "facts": [
+        "Founder+Enhancer in founder effects; Pantheon+Follower in local majority effects",
+        "Tithe global followers/4; Church Property2 per global majority city; InitiationRites100 first adoption speed-scaled; CeremonialBurial1 happiness per city",
+        "Asceticism3followers Shrine1happiness; ReligiousCenter5followers Temple2happiness; FeedWorld Shrine/Temple1Food each",
+        "Fertility10growth; Swords15growth at peace; Community1percent per follower capped15; WorldChurch foreignfollowers/5culture; Pagodas permission not freebuilding",
+        "HolyOrder Missionary/Inquisitor Faithcost -30; ItinerantPreachers range+3; Texts34 plus34 afterPrintingPress",
+        "40/4=10 versus3*2=6 or6*2=12; follower fraction uses global float ratio not per-city rounding; existingShrine1 plus newTemple1 totals2 but marginal1"
+      ]
+    },
+    {
+      "articles": [
+        "strategies/babylon"
+      ],
+      "sources": [
+        "Nations.json",
+        "Units.json",
+        "Buildings.json",
+        "TileImprovements.json",
+        "GreatPersonPointsBreakdown.kt:sum"
+      ],
+      "facts": [
+        "Free Scientist at Writing; Great Scientist points +50percent, not all Science",
+        "Bowman7/9 versusArcher5/7; WallsBabylon strength6/health100 versusWalls5/50",
+        "TwoScientists6basepoints*1.5=9, baseScience6 unchanged; Academy30*8=240,20*8=160 worked-turn gross yields only"
+      ]
+    },
+    {
+      "articles": [
+        "strategies/korea"
+      ],
+      "sources": [
+        "Nations.json",
+        "Units.json",
+        "Buildings.json",
+        "Specialists.json",
+        "CityStats.kt:getStatsOfSpecialist",
+        "CityConstructions.kt:applyKoreanUnique"
+      ],
+      "facts": [
+        "All staffed specialists +2Science, workedGreatImprovements+2Science; Scientist3+2=5 or +Secularism2=7; no Babylon pointbonus",
+        "Qualifying Science-related capital building/wonder:half median actual cost of currently researchable technologies,roundToInt; n even average middle two",
+        "Examplecosts100/200/300/500 median250 award125; not automaticfreeTechnology",
+        "Hwach’a11/26 siege setup and nodefensebonus, lacksTrebuchetcity200; TurtleShip36move4 cannotOcean",
+        "TwoScientists10baseScience/6basepoints versus one5/3, foodzero versus3 under statedconditions"
+      ]
+    },
+    {
+      "articles": [
+        "strategies/rome"
+      ],
+      "sources": [
+        "Nations.json",
+        "Units.json",
+        "CityConstructions.kt:isBuilt",
+        "CityStats.kt:PercentProductionBuildingsInCapital"
+      ],
+      "facts": [
+        "Capital builtBuildings.contains exactname; Building construction only; add25production not purchasecut or unitbonus",
+        "Legion17vsSword14 needsIron buildsRoad/Fort only;Ballista8/10vsCatapult7/8 retainscity200 andsetup/nodefense",
+        "Library75,8production->10 with25percent;ceil75/10=8 vsceil75/8=10 givennooverflow/modifiers"
+      ]
+    },
+    {
+      "articles": [
+        "strategies/greece"
+      ],
+      "sources": [
+        "Nations.json",
+        "Units.json",
+        "UnitPromotions.json",
+        "Policies.json",
+        "DiplomacyManager.kt:getCityStateInfluenceRestingPoint/getCityStateInfluenceDegrade/relationshipIgnoreAfraid",
+        "DiplomacyTurnManager.kt:nextTurnCityStateInfluence/getCityStateInfluenceRecovery",
+        "CityStateFunctions.kt:influenceGainedByGift",
+        "VictoryManager.kt",
+        "VictoryTypes.json"
+      ],
+      "facts": [
+        "Greece decay-50 and recoverytwice belowrestingonly; cap atresting; city-state territoryfriendly doesnotawardalliance",
+        "Friend30 ally60andactualally; defaultresting0 modifiedbyprotection/policies/religion; giftingdynamic andcompetitorsmatter",
+        "Baselineordinarydecay1->.5 Greece,20turn80->70 vs60;Greece+Patronage-25 additive->.25 absentotherconditions",
+        "Recovery-10->0 in5 at2perturn versusnormal1; no automaticfriendship",
+        "Hoplite13vsSpearman11 mountedbonus50; CompanionCavalry14move5vsHorse12move4,needsHorses,GGI,cityattack-33,nodefense,movesafterattack",
+        "Diplomaticvote majorweight2/citystate1 withdynamicthreshold; buildingUNisnotawin"
+      ]
+    }
+  ]
+}

@@ -1,28 +1,41 @@
 ---
-title: Songhai
-description: Songhai — leader, unique ability and start bias in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Civilizations","item":"https://jerry8870.github.io/Unciv-Wiki/database/civilizations/"},{"@type":"ListItem","position":4,"name":"Songhai","item":"https://jerry8870.github.io/Unciv-Wiki/database/civilizations/songhai/"}]}'
+{
+  "title": "Songhai",
+  "description": "Songhai: base values, rules and related civilizations in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Songhai
 
-**Leader**: Askia
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/nation/songhai.png" alt="Songhai" width="80" height="80" loading="lazy" decoding="async" /></span>
 
-**Unique Ability**: River Warlord
+[Icon sources and credits](/Unciv-Wiki/credits/)
 
-## Unique Abilities
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
-- `Receive [+200]% Gold from Barbarian encampments and pillaging Cities`
-- `[+100]% Strength <when defending> <for [Embarked] units>`
-- `[{Military} {Land}] units gain the [Amphibious] promotion`
+| Attribute | Value |
+| --- | --- |
+| Leader | Askia |
+| Unique ability | River Warlord |
+| Preferred victory | Domination |
 
-## Start Bias
+## Rules and effects
+
+- Receive [+200]% Gold from Barbarian encampments and pillaging Cities
+- [+100]% Strength &lt;when defending&gt; &lt;for [Embarked] units&gt;
+- [{Military} {Land}] units gain the [Amphibious] promotion
+
+## Starting bias
 
 - Avoid [Tundra]
 
-**Preferred Victory**: Domination
+## Unlocks and related entries
 
+- [Mandekalu Cavalry](/Unciv-Wiki/database/units/mandekalu-cavalry/)
+- [Mud Pyramid Mosque](/Unciv-Wiki/database/buildings/mud-pyramid-mosque/)
 

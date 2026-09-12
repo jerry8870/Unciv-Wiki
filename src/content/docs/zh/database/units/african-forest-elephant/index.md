@@ -1,37 +1,43 @@
 ---
-title: 非洲森林象
-description: 非洲森林象——属性、能力与科技需求。
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/zh/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/"},{"@type":"ListItem","position":3,"name":"单位","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/units/"},{"@type":"ListItem","position":4,"name":"非洲森林象","item":"https://jerry8870.github.io/Unciv-Wiki/zh/database/units/african-forest-elephant/"}]}'
+{
+  "title": "非洲森林象",
+  "description": "非洲森林象：4.21.20（1293）单位基础属性、规则和关联条目。",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# 非洲森林象
 
-## 属性
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/unit/african-forest-elephant.png" alt="非洲森林象" width="80" height="80" loading="lazy" decoding="async" /></span>
 
-| 属性 | 数值 |
+[图标来源与署名](/Unciv-Wiki/zh/credits/)
+
+数值为 **Gods & Kings 规则集基础数值**，不等于每局最终价格。速度、难度、城市数量及规则效果等可能修正花费。 [花费说明](/Unciv-Wiki/zh/mechanics/).
+
+| 属性 | 值 |
 | --- | --- |
-| 类型 | Mounted |
+| 类型 | 骑乘 |
 | 移动力 | 3 |
 | 战斗力 | 14 |
-| 造价 | 100 |
-| 所需科技 | 骑术 |
-| 淘汰科技 | 骑士制度 |
-| 升级为 | 骑士 |
-| 替代 | 骑手 |
-| 专属文明 | 迦太基 |
+| 基础花费 | 100 |
+| 所需科技 | [骑术](/Unciv-Wiki/zh/database/technologies/horseback-riding/) |
+| 淘汰科技 | [骑士制度](/Unciv-Wiki/zh/database/technologies/chivalry/) |
+| 升级为 | [骑士](/Unciv-Wiki/zh/database/units/knight/) |
+| 替代 | [骑手](/Unciv-Wiki/zh/database/units/horseman/) |
+| 专属文明 | [迦太基](/Unciv-Wiki/zh/database/civilizations/carthage/) |
 
-## 能力
+## 规则与效果
 
 - 攻击后可移动
 - 不受正面防御地形的影响
 - 对战城市攻击时战斗力-33%
-- 位于相邻的-10地块中的敌方军事单位所有%战斗力
+- 位于相邻的所有地块中的敌方军事单位-10%战斗力
 
 ## 晋升
 
 - 统帅II级
-
 

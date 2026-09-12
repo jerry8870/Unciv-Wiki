@@ -1,32 +1,30 @@
 #!/usr/bin/env node
-/**
- * 为每个 <url> 注入 hreflang="x-default" 备选链接（指向 en/root 版本），
- * 补全 Starlight 内置 sitemap 缺失的 x-default，满足 Google 多语言规范。
- *
- * 在 `astro build` 之后运行（见 package.json 的 build 脚本）。
- */
-import { readFileSync, writeFileSync } from 'node:fs';
+// The rendered index policy is authoritative for sitemap URLs, alternates and lastmod.
+import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
+import config from '../site.config.json' with { type: 'json' };
 
 const sitemapPath = resolve('dist/sitemap-0.xml');
 let xml = readFileSync(sitemapPath, 'utf8');
-
-const urlRe = /<url>([\s\S]*?)<\/url>/g;
-let count = 0;
-
-xml = xml.replace(urlRe, (full, inner) => {
-  const enMatch = inner.match(
-    /<xhtml:link rel="alternate" hreflang="en" href="([^"]+)"\s*\/>/
-  );
-  if (!enMatch) return full; // 无 en 备选则不处理
-  if (inner.includes('hreflang="x-default"')) return full; // 已有则跳过
-  const enHref = enMatch[1];
-  const xdefault = `<xhtml:link rel="alternate" hreflang="x-default" href="${enHref}" />`;
-  const pos = inner.indexOf(enMatch[0]) + enMatch[0].length;
-  const newInner = inner.slice(0, pos) + xdefault + inner.slice(pos);
-  count++;
-  return `<url>${newInner}</url>`;
+const records = [...xml.matchAll(/<url>([\s\S]*?)<\/url>/g)].map(([full, inner]) => {
+  const loc = inner.match(/<loc>(.*?)<\/loc>/)[1];
+  const path = new URL(loc).pathname.slice(config.base.length);
+  const file = resolve('dist', path, 'index.html');
+  if (!existsSync(file)) throw new Error('Missing sitemap page: ' + loc);
+  const html = readFileSync(file, 'utf8');
+  const excluded = /<meta\b[^>]*name="robots"[^>]*content="[^"]*noindex/.test(html);
+  const lastmod = html.match(/<meta\b[^>]*name="wiki:lastmod"[^>]*content="([^"]+)"/)?.[1];
+  if (!excluded && !lastmod) throw new Error('Missing content update date: ' + loc);
+  return { full, inner, loc, excluded, lastmod };
 });
-
+const allowed = new Set(records.filter((r) => !r.excluded).map((r) => r.loc));
+for (const record of records) {
+  if (record.excluded) { xml = xml.replace(record.full, ''); continue; }
+  let inner = record.inner.replace(/<lastmod>.*?<\/lastmod>/g, '').replace(/<xhtml:link\b[^>]*\/>/g, (link) => allowed.has(link.match(/href="([^"]+)"/)?.[1]) ? link : '');
+  const en = inner.match(/<xhtml:link[^>]*hreflang="en"[^>]*href="([^"]+)"/)?.[1];
+  if (en && !inner.includes('hreflang="x-default"')) inner += `<xhtml:link rel="alternate" hreflang="x-default" href="${en}"/>`;
+  inner += `<lastmod>${record.lastmod}</lastmod>`;
+  xml = xml.replace(record.full, `<url>${inner}</url>`);
+}
 writeFileSync(sitemapPath, xml);
-console.log(`[postbuild-sitemap] injected x-default into ${count} <url> entries`);
+console.log(`[sitemap] ${allowed.size} indexable URLs; ${records.length - allowed.size} excluded; stable content dates.`);

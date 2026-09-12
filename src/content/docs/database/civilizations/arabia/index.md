@@ -1,27 +1,40 @@
 ---
-title: Arabia
-description: Arabia — leader, unique ability and start bias in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Civilizations","item":"https://jerry8870.github.io/Unciv-Wiki/database/civilizations/"},{"@type":"ListItem","position":4,"name":"Arabia","item":"https://jerry8870.github.io/Unciv-Wiki/database/civilizations/arabia/"}]}'
+{
+  "title": "Arabia",
+  "description": "Arabia: base values, rules and related civilizations in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Arabia
 
-**Leader**: Harun al-Rashid
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/nation/arabia.png" alt="Arabia" width="80" height="80" loading="lazy" decoding="async" /></span>
 
-**Unique Ability**: Trade Caravans
+[Icon sources and credits](/Unciv-Wiki/credits/)
 
-## Unique Abilities
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
-- `[+1 Gold] from each Trade Route`
-- `[+100]% [Oil] resource production`
+| Attribute | Value |
+| --- | --- |
+| Leader | Harun al-Rashid |
+| Unique ability | Trade Caravans |
+| Preferred victory | Scientific |
 
-## Start Bias
+## Rules and effects
+
+- [+1 Gold] from each Trade Route
+- [+100]% [Oil] resource production
+
+## Starting bias
 
 - Desert
 
-**Preferred Victory**: Scientific
+## Unlocks and related entries
 
+- [Camel Archer](/Unciv-Wiki/database/units/camel-archer/)
+- [Bazaar](/Unciv-Wiki/database/buildings/bazaar/)
 

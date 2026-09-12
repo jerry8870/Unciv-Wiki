@@ -1,21 +1,36 @@
 ---
-title: Nanotechnology
-description: Nanotechnology — era, cost and what it unlocks in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Technologies","item":"https://jerry8870.github.io/Unciv-Wiki/database/technologies/"},{"@type":"ListItem","position":4,"name":"Nanotechnology","item":"https://jerry8870.github.io/Unciv-Wiki/database/technologies/nanotechnology/"}]}'
+{
+  "title": "Nanotechnology",
+  "description": "Nanotechnology: base values, rules and related technologies in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Nanotechnology
 
-## Info
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/technology/nanotechnology.png" alt="Nanotechnology" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
+| Base cost | 8800 |
 | Era | Information era |
-| Prerequisites | Robotics |
 
-> 'The impact of nanotechnology is expected to exceed the impact that the electronics revolution has had on our lives.' - Richard Schwartz
+Inherited from the required technology column.
 
+Prerequisites: [Robotics](/Unciv-Wiki/database/technologies/robotics/)
+
+## Unlocks and related entries
+
+- [SS Stasis Chamber](/Unciv-Wiki/database/units/ss-stasis-chamber/)
+- [Future Tech](/Unciv-Wiki/database/technologies/future-tech/)
+
+> &#x27;The impact of nanotechnology is expected to exceed the impact that the electronics revolution has had on our lives.&#x27; - Richard Schwartz
 

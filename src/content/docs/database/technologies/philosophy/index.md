@@ -1,21 +1,40 @@
 ---
-title: Philosophy
-description: Philosophy — era, cost and what it unlocks in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Technologies","item":"https://jerry8870.github.io/Unciv-Wiki/database/technologies/"},{"@type":"ListItem","position":4,"name":"Philosophy","item":"https://jerry8870.github.io/Unciv-Wiki/database/technologies/philosophy/"}]}'
+{
+  "title": "Philosophy",
+  "description": "Philosophy: base values, rules and related technologies in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Philosophy
 
-## Info
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/technology/philosophy.png" alt="Philosophy" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
+| Base cost | 175 |
 | Era | Classical era |
-| Prerequisites | Writing, Calendar |
 
-> 'There is only one good, knowledge, and one evil, ignorance.' - Socrates
+Inherited from the required technology column.
 
+Prerequisites: [Writing](/Unciv-Wiki/database/technologies/writing/), [Calendar](/Unciv-Wiki/database/technologies/calendar/)
+
+## Unlocks and related entries
+
+- [Temple](/Unciv-Wiki/database/buildings/temple/)
+- [Burial Tomb](/Unciv-Wiki/database/buildings/burial-tomb/)
+- [Mud Pyramid Mosque](/Unciv-Wiki/database/buildings/mud-pyramid-mosque/)
+- [National College](/Unciv-Wiki/database/buildings/national-college/)
+- [The Oracle](/Unciv-Wiki/database/buildings/the-oracle/)
+- [Theology](/Unciv-Wiki/database/technologies/theology/)
+
+> &#x27;There is only one good, knowledge, and one evil, ignorance.&#x27; - Socrates
 

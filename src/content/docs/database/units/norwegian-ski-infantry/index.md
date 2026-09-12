@@ -1,30 +1,36 @@
 ---
-title: Norwegian Ski Infantry
-description: Norwegian Ski Infantry — stats, abilities and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Units","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/"},{"@type":"ListItem","position":4,"name":"Norwegian Ski Infantry","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/norwegian-ski-infantry/"}]}'
+{
+  "title": "Norwegian Ski Infantry",
+  "description": "Norwegian Ski Infantry: base values, rules and related units in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Norwegian Ski Infantry
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/unit/norwegian-ski-infantry.png" alt="Norwegian Ski Infantry" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
 | Type | Gunpowder |
 | Movement | 2 |
 | Strength | 34 |
-| Cost | 225 |
-| Required Tech | Rifling |
-| Obsolete Tech | Replaceable Parts |
-| Upgrades To | Great War Infantry |
-| Replaces | Rifleman |
-| Unique To | Denmark |
+| Base cost | 225 |
+| Required technology | [Rifling](/Unciv-Wiki/database/technologies/rifling/) |
+| Obsolete technology | [Replaceable Parts](/Unciv-Wiki/database/technologies/replaceable-parts/) |
+| Upgrades to | [Great War Infantry](/Unciv-Wiki/database/units/great-war-infantry/) |
+| Replaces | [Rifleman](/Unciv-Wiki/database/units/rifleman/) |
+| Unique to | [Denmark](/Unciv-Wiki/database/civilizations/denmark/) |
 
 ## Promotions
 
 - [Norwegian Ski Infantry] ability
-
 

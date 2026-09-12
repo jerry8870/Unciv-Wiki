@@ -1,26 +1,35 @@
 ---
-title: Bomb Shelter
-description: Bomb Shelter — cost, effects and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Buildings","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/"},{"@type":"ListItem","position":4,"name":"Bomb Shelter","item":"https://jerry8870.github.io/Unciv-Wiki/database/buildings/bomb-shelter/"}]}'
+{
+  "title": "Bomb Shelter",
+  "description": "Bomb Shelter: base values, rules and related buildings in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Bomb Shelter
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/building/bomb-shelter.png" alt="Bomb Shelter" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
-| Cost | 300 |
+| Type | Building |
+| Base cost | 300 |
 | Maintenance | 1 |
-| Required Tech | Telecommunications |
+| Required technology | [Telecommunications](/Unciv-Wiki/database/technologies/telecommunications/) |
 
-## Effects
+Explicit source value (including zero).
 
-- `Population loss from nuclear attacks [-75]% [in this city]`
-- `Damage to garrison from nuclear attacks [-75]% [in this city]`
-- `Only available <when nuclear weapons are enabled> <hidden from users>`
+## Rules and effects
 
+- Population loss from nuclear attacks [-75]% [in this city]
+- Damage to garrison from nuclear attacks [-75]% [in this city]
+- Only available &lt;when nuclear weapons are enabled&gt; &lt;hidden from users&gt;
 

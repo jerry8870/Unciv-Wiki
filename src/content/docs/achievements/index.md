@@ -1,506 +1,519 @@
 ---
-title: Achievements
-description: All 40 iOS achievements with conditions, points and icons.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Achievements","item":"https://jerry8870.github.io/Unciv-Wiki/achievements/"}]}'
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"ItemList","name":"iOS Achievements","itemListElement":[{"@type":"ListItem","position":1,"name":"First Taste of Victory","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N01"},{"@type":"ListItem","position":2,"name":"Pioneer","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N02"},{"@type":"ListItem","position":3,"name":"Seeds of Culture","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N03"},{"@type":"ListItem","position":4,"name":"Golden Dawn","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N04"},{"@type":"ListItem","position":5,"name":"First Wonder","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N05"},{"@type":"ListItem","position":6,"name":"First Blood","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N06"},{"@type":"ListItem","position":7,"name":"Border Guardian","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N07"},{"@type":"ListItem","position":8,"name":"Triumphant Banner","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N08"},{"@type":"ListItem","position":9,"name":"Working the Land","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N09"},{"@type":"ListItem","position":10,"name":"Roads to Prosperity","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N10"},{"@type":"ListItem","position":11,"name":"A Thousand Lights","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N11"},{"@type":"ListItem","position":12,"name":"Growing Treasury","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N12"},{"@type":"ListItem","position":13,"name":"City-State Friend","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N13"},{"@type":"ListItem","position":14,"name":"First Faith","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N14"},{"@type":"ListItem","position":15,"name":"First Envoy","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N15"},{"@type":"ListItem","position":16,"name":"Nature''s Gift","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N16"},{"@type":"ListItem","position":17,"name":"Beyond the Stars","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N17"},{"@type":"ListItem","position":18,"name":"Light of Civilization","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N18"},{"@type":"ListItem","position":19,"name":"Conqueror","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N19"},{"@type":"ListItem","position":20,"name":"World''s Choice","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N20"},{"@type":"ListItem","position":21,"name":"Thriving Metropolis","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N21"},{"@type":"ListItem","position":22,"name":"Art of Governance","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N22"},{"@type":"ListItem","position":23,"name":"Wealth of a Nation","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N23"},{"@type":"ListItem","position":24,"name":"Faith Fulfilled","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N24"},{"@type":"ListItem","position":25,"name":"Circle of Allies","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N25"},{"@type":"ListItem","position":26,"name":"Wonder Collector","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N26"},{"@type":"ListItem","position":27,"name":"Egypt: Epic in Stone","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N27"},{"@type":"ListItem","position":28,"name":"Rome: Imperial Foundations","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N28"},{"@type":"ListItem","position":29,"name":"Four Flourishing Cities","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N29"},{"@type":"ListItem","position":30,"name":"Age of Wonders","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N30"},{"@type":"ListItem","position":31,"name":"Battle-Hardened","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N31"},{"@type":"ListItem","position":32,"name":"Twin-City Blitz","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N32"},{"@type":"ListItem","position":33,"name":"Faith Beyond Borders","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N33"},{"@type":"ListItem","position":34,"name":"China: Breaking the Line","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N34"},{"@type":"ListItem","position":35,"name":"Persia: Golden Offensive","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N35"},{"@type":"ListItem","position":36,"name":"Proof of an Emperor","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N36"},{"@type":"ListItem","position":37,"name":"Defying the Gods","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N37"},{"@type":"ListItem","position":38,"name":"One City, Many Stars","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N38"},{"@type":"ListItem","position":39,"name":"Uncrowned Summit","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N39"},{"@type":"ListItem","position":40,"name":"Book of Civilizations","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N40"}]}'
+{
+  "title": "Achievements",
+  "description": "1293 V3: 40 local achievements, 600 points, with requirements, difficulty and troubleshooting.",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Achievements
 
-There are **40 achievements** on the iOS port (600 points total). Each is tracked across qualifying new games.
+**4.21.20 (1293) · V3 · 40 achievements · 600 points.** These achievements are recorded on this device. They do not sync through Game Center or iCloud. Older achievement records are separate.
 
-## Simple
+## Eligible games and recording
+
+Start a **new single-player game with a built-in ruleset**, one human major civilization, a generated map and an Ancient-era start. Do not use mods, the map editor, god mode or debug tools. Imported old saves do not become eligible retroactively. V3 permits AI autoplay; it does not waive the other requirements.
+
+Easy achievements require at least one AI opponent at any difficulty. Intermediate ones require Prince or higher and at least three AI opponents; Hard ones require King or higher and at least three. Extreme achievements use their individual conditions below. These are starting-game requirements.
+
+City-cap limits count cities founded or captured historically, including cities later given away or razed. World wonders must be built by your civilization (a Great Engineer is allowed); national wonders do not count. Religion-specific conditions apply when religion is enabled.
+
+Checks run after relevant actions and at turn end. Victory or loss stops recording for that game. Reloading an older save does not remove achievements already recorded on this device.
+
+[Read the 1293 troubleshooting guide](/Unciv-Wiki/guides/achievement-troubleshooting/) for combat-earned promotions, unique buildings and same-turn city captures. This catalogue reflects the pinned source rules; it is not proof that every achievement has been reproduced in a live iOS match.
+
+<a id="tf-achievements-en" href="https://testflight.apple.com/join/XSgMMQjt">Open the Unciv4iOS TestFlight invitation</a> · [Installation and availability](/Unciv-Wiki/ios/)
+
+
+## Easy
 
 <span id="N01"></span>
 
 ### N01 — First Taste of Victory
 
-<img src="/Unciv-Wiki/achievements/N01.svg" alt="First Taste of Victory" width="64" height="64" />
+<img src="/Unciv-Wiki/achievements/N01.svg" alt="First Taste of Victory" width="64" height="64" loading="lazy" />
 
-**Condition**: Win any formal victory, including Time, on any difficulty.
+**Condition**: Win any official victory, including a Time victory.
 
-**Points**: 5
+**Points / minimum difficulty / minimum AI opponents**: 5 / Any / 1
 
-*Your civilization has found its first victory.*
+*Your civilization has earned a victory of its own.*
 
 <span id="N02"></span>
 
 ### N02 — Pioneer
 
-<img src="/Unciv-Wiki/achievements/N02.svg" alt="Pioneer" width="64" height="64" />
+<img src="/Unciv-Wiki/achievements/N02.svg" alt="Pioneer" width="64" height="64" loading="lazy" />
 
-**Condition**: Found your second city after founding your first capital.
+**Condition**: Found your second city after the capital yourself; conquered or gifted cities do not count.
 
-**Points**: 5
+**Points / minimum difficulty / minimum AI opponents**: 5 / Any / 1
 
-*Beyond the border, another banner rises.*
+*New walls rise in the distance.*
 
 <span id="N03"></span>
 
 ### N03 — Seeds of Culture
 
-<img src="/Unciv-Wiki/achievements/N03.svg" alt="Seeds of Culture" width="64" height="64" />
+<img src="/Unciv-Wiki/achievements/N03.svg" alt="Seeds of Culture" width="64" height="64" loading="lazy" />
 
-**Condition**: Adopt your first social policy. Opening a policy branch counts.
+**Condition**: Adopt your first social policy; opening a policy tree also counts.
 
-**Points**: 5
+**Points / minimum difficulty / minimum AI opponents**: 5 / Any / 1
 
-*A civilization's spirit begins with its first principle.*
-
-<span id="N04"></span>
-
-### N04 — Golden Dawn
-
-<img src="/Unciv-Wiki/achievements/N04.svg" alt="Golden Dawn" width="64" height="64" />
-
-**Condition**: Enter a Golden Age for the first time, through any normal game mechanism.
-
-**Points**: 5
-
-*Prosperity shines across your land for the first time.*
+*A civilization&#x27;s ideas begin with its first choice.*
 
 <span id="N05"></span>
 
-### N05 — First Wonder
+### N05 — A First Wonder
 
-<img src="/Unciv-Wiki/achievements/N05.svg" alt="First Wonder" width="64" height="64" />
+<img src="/Unciv-Wiki/achievements/N05.svg" alt="A First Wonder" width="64" height="64" loading="lazy" />
 
-**Condition**: Build your first World Wonder. Great Engineer acceleration counts; National Wonders do not.
+**Condition**: Build your first World Wonder yourself; Great Engineer assistance is allowed, but National Wonders do not count.
 
-**Points**: 5
+**Points / minimum difficulty / minimum AI opponents**: 5 / Any / 1
 
-*You have left your first monument to this age.*
+*You have left this age its first monument.*
 
 <span id="N06"></span>
 
-### N06 — First Blood
+### N06 — First Clash
 
-<img src="/Unciv-Wiki/achievements/N06.svg" alt="First Blood" width="64" height="64" />
+<img src="/Unciv-Wiki/achievements/N06.svg" alt="First Clash" width="64" height="64" loading="lazy" />
 
-**Condition**: Destroy an enemy military unit in combat. Barbarians count.
+**Condition**: Destroy an enemy military unit in combat; Barbarians count, but capturing civilians does not.
 
-**Points**: 5
+**Points / minimum difficulty / minimum AI opponents**: 5 / Any / 1
 
-*Your army learns the meaning of victory.*
-
-<span id="N07"></span>
-
-### N07 — Border Guardian
-
-<img src="/Unciv-Wiki/achievements/N07.svg" alt="Border Guardian" width="64" height="64" />
-
-**Condition**: Clear a Barbarian encampment.
-
-**Points**: 5
-
-*Your frontier grows a little more peaceful.*
-
-<span id="N08"></span>
-
-### N08 — Triumphant Banner
-
-<img src="/Unciv-Wiki/achievements/N08.svg" alt="Triumphant Banner" width="64" height="64" />
-
-**Condition**: Capture in combat a city founded by another major civilization.
-
-**Points**: 5
-
-*Your banner rises above a foreign city for the first time.*
+*Your first clash has written a tale of courage.*
 
 <span id="N09"></span>
 
 ### N09 — Working the Land
 
-<img src="/Unciv-Wiki/achievements/N09.svg" alt="Working the Land" width="64" height="64" />
+<img src="/Unciv-Wiki/achievements/N09.svg" alt="Working the Land" width="64" height="64" loading="lazy" />
 
-**Condition**: Have your own Worker build a new Farm, Mine or Pasture. Repairs do not count.
+**Condition**: Have your own Worker build a new Farm, Mine or Pasture; repairing an existing improvement does not count.
 
-**Points**: 5
+**Points / minimum difficulty / minimum AI opponents**: 5 / Any / 1
 
-*The land begins to reward its people's care.*
-
-<span id="N10"></span>
-
-### N10 — Roads to Prosperity
-
-<img src="/Unciv-Wiki/achievements/N10.svg" alt="Roads to Prosperity" width="64" height="64" />
-
-**Condition**: Connect a self-founded non-capital city to your capital through a game-recognized road or Harbor connection.
-
-**Points**: 5
-
-*Shared prosperity begins to flow between your cities.*
-
-<span id="N11"></span>
-
-### N11 — A Thousand Lights
-
-<img src="/Unciv-Wiki/achievements/N11.svg" alt="A Thousand Lights" width="64" height="64" />
-
-**Condition**: Own a city with at least 10 population.
-
-**Points**: 5
-
-*A small settlement now glows with countless lights.*
-
-<span id="N12"></span>
-
-### N12 — Growing Treasury
-
-<img src="/Unciv-Wiki/achievements/N12.svg" alt="Growing Treasury" width="64" height="64" />
-
-**Condition**: Hold at least 500 Gold at once. Previously spent Gold does not count.
-
-**Points**: 5
-
-*Small acts of stewardship build a generous reserve.*
-
-<span id="N13"></span>
-
-### N13 — City-State Friend
-
-<img src="/Unciv-Wiki/achievements/N13.svg" alt="City-State Friend" width="64" height="64" />
-
-**Condition**: Become the ally of a City-State.
-
-**Points**: 5
-
-*A small nation chooses to stand beside you.*
-
-<span id="N14"></span>
-
-### N14 — First Faith
-
-<img src="/Unciv-Wiki/achievements/N14.svg" alt="First Faith" width="64" height="64" />
-
-**Condition**: Found a Pantheon in a game with religion enabled.
-
-**Points**: 5
-
-*Your people begin to understand the world through a shared belief.*
-
-<span id="N15"></span>
-
-### N15 — First Envoy
-
-<img src="/Unciv-Wiki/achievements/N15.svg" alt="First Envoy" width="64" height="64" />
-
-**Condition**: Complete a trade with another major civilization containing Gold, Gold per turn, resources or Open Borders.
-
-**Points**: 5
-
-*A first handshake brings the world a little closer.*
-
-<span id="N16"></span>
-
-### N16 — Nature's Gift
-
-<img src="/Unciv-Wiki/achievements/N16.svg" alt="Nature's Gift" width="64" height="64" />
-
-**Condition**: Discover a Natural Wonder. Revealing it is enough; no unit needs to enter its tile.
-
-**Points**: 5
-
-*The world keeps a wonder for those who explore.*
+*The land begins to reward your labor.*
 
 ## Intermediate
 
-<span id="N17"></span>
+<span id="N04"></span>
 
-### N17 — Beyond the Stars
+### N04 — Festival of Two Cities
 
-<img src="/Unciv-Wiki/achievements/N17.svg" alt="Beyond the Stars" width="64" height="64" />
+<img src="/Unciv-Wiki/achievements/N04.svg" alt="Festival of Two Cities" width="64" height="64" loading="lazy" />
 
-**Condition**: Win a Scientific Victory.
+**Condition**: Prince difficulty or higher; start with at least 3 AI opponents. During one uninterrupted Golden Age, build at least one World Wonder yourself in each of two different cities you own; the count resets if the Golden Age ends.
 
-**Points**: 10
+**Points / minimum difficulty / minimum AI opponents**: 10 / Prince / 3
 
-*Your civilization belongs to more than one world.*
+*Two cities shared the splendor of a Golden Age.*
 
-<span id="N18"></span>
+<span id="N07"></span>
 
-### N18 — Light of Civilization
+### N07 — Frontier Patrol
 
-<img src="/Unciv-Wiki/achievements/N18.svg" alt="Light of Civilization" width="64" height="64" />
+<img src="/Unciv-Wiki/achievements/N07.svg" alt="Frontier Patrol" width="64" height="64" loading="lazy" />
 
-**Condition**: Win a Cultural Victory by completing the required policy branches and the Utopia Project under the built-in rules.
+**Condition**: Prince difficulty or higher; start with at least 3 AI opponents. Use the same military unit to clear Barbarian encampments at 3 different locations. It must still be alive when the third clearance resolves; upgrading preserves its record.
 
-**Points**: 10
+**Points / minimum difficulty / minimum AI opponents**: 10 / Prince / 3
 
-*Your ideas leave an echo that outlives an age.*
+*Along the distant frontier, someone keeps watch.*
 
-<span id="N19"></span>
+<span id="N08"></span>
 
-### N19 — Conqueror
+### N08 — Veteran Conqueror
 
-<img src="/Unciv-Wiki/achievements/N19.svg" alt="Conqueror" width="64" height="64" />
+<img src="/Unciv-Wiki/achievements/N08.svg" alt="Veteran Conqueror" width="64" height="64" loading="lazy" />
 
-**Condition**: Win a Domination Victory.
+**Condition**: Prince difficulty or higher; start with at least 3 AI opponents. Use a military unit with at least 3 combat-earned promotions to capture in battle a city founded by another major civilization. It must survive the capture; free promotions do not count.
 
-**Points**: 10
+**Points / minimum difficulty / minimum AI opponents**: 10 / Prince / 3
 
-*Every capital bears witness to your journey.*
+*A veteran&#x27;s banner now flies over an enemy city.*
 
-<span id="N20"></span>
+<span id="N10"></span>
 
-### N20 — World's Choice
+### N10 — All Roads Connected
 
-<img src="/Unciv-Wiki/achievements/N20.svg" alt="World's Choice" width="64" height="64" />
+<img src="/Unciv-Wiki/achievements/N10.svg" alt="All Roads Connected" width="64" height="64" loading="lazy" />
 
-**Condition**: Win a Diplomatic Victory.
+**Condition**: Prince difficulty or higher; start with at least 3 AI opponents. At turn end, at least 3 cities you founded besides the capital must simultaneously have game-recognized road or harbor connections to the capital; the capital does not count toward the 3.
 
-**Points**: 10
+**Points / minimum difficulty / minimum AI opponents**: 10 / Prince / 3
 
-*The world answers your leadership with its own choice.*
+*Roads and sea routes weave your lands together.*
+
+<span id="N11"></span>
+
+### N11 — A City of Learning
+
+<img src="/Unciv-Wiki/achievements/N11.svg" alt="A City of Learning" width="64" height="64" loading="lazy" />
+
+**Condition**: Prince difficulty or higher; start with at least 3 AI opponents. At turn end, a city you founded must have at least 15 population and both a Library and a University.
+
+**Points / minimum difficulty / minimum AI opponents**: 10 / Prince / 3
+
+*Knowledge and people gather in one city.*
+
+<span id="N12"></span>
+
+### N12 — Trade Brings Gold
+
+<img src="/Unciv-Wiki/achievements/N12.svg" alt="Trade Brings Gold" width="64" height="64" loading="lazy" />
+
+**Condition**: Prince difficulty or higher; start with at least 3 AI opponents. At turn end, hold at least 1,000 gold while at least 3 cities you founded each have both a Market and a Bank.
+
+**Points / minimum difficulty / minimum AI opponents**: 10 / Prince / 3
+
+*Wealth has firm foundations; prosperity is no accident.*
+
+<span id="N13"></span>
+
+### N13 — City-State Round Table
+
+<img src="/Unciv-Wiki/achievements/N13.svg" alt="City-State Round Table" width="64" height="64" loading="lazy" />
+
+**Condition**: Prince difficulty or higher; start with at least 3 AI opponents. At turn end, simultaneously be allied with city-states of at least 3 different types; eliminated city-states do not count.
+
+**Points / minimum difficulty / minimum AI opponents**: 10 / Prince / 3
+
+*Different city-states gather around the same table.*
+
+<span id="N14"></span>
+
+### N14 — Faith Takes Root
+
+<img src="/Unciv-Wiki/achievements/N14.svg" alt="Faith Takes Root" width="64" height="64" loading="lazy" />
+
+**Condition**: Prince difficulty or higher; start with at least 3 AI opponents. Religion must be enabled. Found a full religion yourself and, at turn end, make it the majority religion in at least 3 cities you founded simultaneously; a Pantheon alone does not count.
+
+**Points / minimum difficulty / minimum AI opponents**: 10 / Prince / 3
+
+*Faith has taken root in your lands.*
+
+<span id="N15"></span>
+
+### N15 — Treaties of Trade
+
+<img src="/Unciv-Wiki/achievements/N15.svg" alt="Treaties of Trade" width="64" height="64" loading="lazy" />
+
+**Condition**: Prince difficulty or higher; start with at least 3 AI opponents. In one game, complete a valid trade with each of 3 different major civilizations. Each trade must include a positive amount of gold, gold per turn, resources or Open Borders; embassy-only agreements do not count.
+
+**Points / minimum difficulty / minimum AI opponents**: 10 / Prince / 3
+
+*Three treaties have opened three borders.*
+
+<span id="N16"></span>
+
+### N16 — Wonders of Nature
+
+<img src="/Unciv-Wiki/achievements/N16.svg" alt="Wonders of Nature" width="64" height="64" loading="lazy" />
+
+**Condition**: Prince difficulty or higher; start with at least 3 AI opponents. Discover 3 different types of Natural Wonder through exploration in one game; each type counts only once.
+
+**Points / minimum difficulty / minimum AI opponents**: 10 / Prince / 3
+
+*Nature&#x27;s marvels have become part of your story.*
 
 <span id="N21"></span>
 
-### N21 — Thriving Metropolis
+### N21 — A Peaceful Metropolis
 
-<img src="/Unciv-Wiki/achievements/N21.svg" alt="Thriving Metropolis" width="64" height="64" />
+<img src="/Unciv-Wiki/achievements/N21.svg" alt="A Peaceful Metropolis" width="64" height="64" loading="lazy" />
 
-**Condition**: Own a city with at least 20 population.
+**Condition**: Prince difficulty or higher; start with at least 3 AI opponents. At turn end, a city you founded must have at least 25 population. Throughout the entire game, never own more than 3 cities at once or capture in battle a city founded by another major civilization.
 
-**Points**: 10
+**Points / minimum difficulty / minimum AI opponents**: 10 / Prince / 3
 
-*One city holds the dreams of countless people.*
+*Restraint in expansion can still light countless homes.*
 
 <span id="N22"></span>
 
-### N22 — Art of Governance
+### N22 — The Path of Mastery
 
-<img src="/Unciv-Wiki/achievements/N22.svg" alt="Art of Governance" width="64" height="64" />
+<img src="/Unciv-Wiki/achievements/N22.svg" alt="The Path of Mastery" width="64" height="64" loading="lazy" />
 
-**Condition**: Complete any entire social policy branch.
+**Condition**: Prince difficulty or higher; start with at least 3 AI opponents. Fully adopt 2 social policy trees, having never owned more than 3 cities at once in the game up to that moment.
 
-**Points**: 10
+**Points / minimum difficulty / minimum AI opponents**: 10 / Prince / 3
 
-*Separate principles become a complete art of governance.*
-
-<span id="N23"></span>
-
-### N23 — Wealth of a Nation
-
-<img src="/Unciv-Wiki/achievements/N23.svg" alt="Wealth of a Nation" width="64" height="64" />
-
-**Condition**: Hold at least 2,000 Gold at once. Historical income does not count.
-
-**Points**: 10
-
-*A full treasury reflects years of patient stewardship.*
-
-<span id="N24"></span>
-
-### N24 — Faith Fulfilled
-
-<img src="/Unciv-Wiki/achievements/N24.svg" alt="Faith Fulfilled" width="64" height="64" />
-
-**Condition**: Found a religion and finish enhancing that same religion, with religion enabled.
-
-**Points**: 10
-
-*A first belief becomes a lasting tradition.*
-
-<span id="N25"></span>
-
-### N25 — Circle of Allies
-
-<img src="/Unciv-Wiki/achievements/N25.svg" alt="Circle of Allies" width="64" height="64" />
-
-**Condition**: Be allied with at least 3 City-States at the same time.
-
-**Points**: 10
-
-*Your friends give you strength beyond your borders.*
-
-<span id="N26"></span>
-
-### N26 — Wonder Collector
-
-<img src="/Unciv-Wiki/achievements/N26.svg" alt="Wonder Collector" width="64" height="64" />
-
-**Condition**: Build 8 different World Wonders across qualifying new games. Each type counts once, even across repeated saves.
-
-**Points**: 10
-
-*Across the ages, your monuments remain.*
-
-<span id="N27"></span>
-
-### N27 — Egypt: Epic in Stone
-
-<img src="/Unciv-Wiki/achievements/N27.svg" alt="Egypt: Epic in Stone" width="64" height="64" />
-
-**Condition**: As Egypt, build 3 different World Wonders in one game. Winning is not required.
-
-**Points**: 10
-
-*By the Nile, stone begins to tell the story of your age.*
-
-<span id="N28"></span>
-
-### N28 — Rome: Imperial Foundations
-
-<img src="/Unciv-Wiki/achievements/N28.svg" alt="Rome: Imperial Foundations" width="64" height="64" />
-
-**Condition**: As Rome, simultaneously own 4 self-founded cities that each have a Monument and a Granary. The capital and purchased buildings count.
-
-**Points**: 10
-
-*An empire's greatness takes root in every city.*
+*A compact realm carries mature institutions.*
 
 ## Hard
 
+<span id="N17"></span>
+
+### N17 — A Precise Path to the Stars
+
+<img src="/Unciv-Wiki/achievements/N17.svg" alt="A Precise Path to the Stars" width="64" height="64" loading="lazy" />
+
+**Condition**: King difficulty or higher; start with at least 3 AI opponents. Win a Scientific victory without ever owning more than 4 cities at once or capturing in battle a city founded by another major civilization during the entire game.
+
+**Points / minimum difficulty / minimum AI opponents**: 15 / King / 3
+
+*From limited lands, you reached the boundless stars.*
+
+<span id="N18"></span>
+
+### N18 — A Four-City Masterpiece
+
+<img src="/Unciv-Wiki/achievements/N18.svg" alt="A Four-City Masterpiece" width="64" height="64" loading="lazy" />
+
+**Condition**: King difficulty or higher; start with at least 3 AI opponents. Win a Cultural victory without ever owning more than 4 cities at once during the entire game; cities briefly owned and then abandoned still count toward the limit.
+
+**Points / minimum difficulty / minimum AI opponents**: 15 / King / 3
+
+*A handful of cities has written a civilization&#x27;s masterpiece.*
+
+<span id="N19"></span>
+
+### N19 — One City&#x27;s Campaign
+
+<img src="/Unciv-Wiki/achievements/N19.svg" alt="One City&#x27;s Campaign" width="64" height="64" loading="lazy" />
+
+**Condition**: King difficulty or higher; start with at least 3 AI opponents. Win a Domination victory having founded only your capital throughout the entire game. Capturing other cities is allowed; founding and then abandoning another city is not.
+
+**Points / minimum difficulty / minimum AI opponents**: 15 / King / 3
+
+*One starting point led to the whole world.*
+
+<span id="N20"></span>
+
+### N20 — Diplomacy over Monuments
+
+<img src="/Unciv-Wiki/achievements/N20.svg" alt="Diplomacy over Monuments" width="64" height="64" loading="lazy" />
+
+**Condition**: King difficulty or higher; start with at least 3 AI opponents. Win a Diplomatic victory while building no more than 2 different types of World Wonder yourself throughout the entire game; National Wonders do not count.
+
+**Points / minimum difficulty / minimum AI opponents**: 15 / King / 3
+
+*The world&#x27;s trust outweighs towering stone.*
+
+<span id="N23"></span>
+
+### N23 — A Golden Alliance
+
+<img src="/Unciv-Wiki/achievements/N23.svg" alt="A Golden Alliance" width="64" height="64" loading="lazy" />
+
+**Condition**: King difficulty or higher; start with at least 3 AI opponents. At turn end, hold at least 3,000 gold and simultaneously have at least 4 allied city-states that have not been eliminated.
+
+**Points / minimum difficulty / minimum AI opponents**: 15 / King / 3
+
+*Your treasury and treaties sustain your influence together.*
+
+<span id="N24"></span>
+
+### N24 — One Faith, Three Nations
+
+<img src="/Unciv-Wiki/achievements/N24.svg" alt="One Faith, Three Nations" width="64" height="64" loading="lazy" />
+
+**Condition**: King difficulty or higher; start with at least 3 AI opponents. Religion must be enabled. Found and enhance a religion yourself. At turn end, it must be the majority religion in the current capitals of at least 3 different other major civilizations.
+
+**Points / minimum difficulty / minimum AI opponents**: 15 / King / 3
+
+*Your creed has crossed the capitals of three nations.*
+
+<span id="N25"></span>
+
+### N25 — Guardians of City-States
+
+<img src="/Unciv-Wiki/achievements/N25.svg" alt="Guardians of City-States" width="64" height="64" loading="lazy" />
+
+**Condition**: King difficulty or higher; start with at least 3 AI opponents. At turn end, simultaneously have at least 5 allied city-states that have not been eliminated, covering at least 3 city-state types.
+
+**Points / minimum difficulty / minimum AI opponents**: 15 / King / 3
+
+*Five city-states give the world a shared voice.*
+
+<span id="N26"></span>
+
+### N26 — Pilgrimage of Wonders
+
+<img src="/Unciv-Wiki/achievements/N26.svg" alt="Pilgrimage of Wonders" width="64" height="64" loading="lazy" />
+
+**Condition**: King difficulty or higher; start with at least 3 AI opponents. Build 12 different types of World Wonder yourself across at least 3 new games meeting this achievement&#x27;s difficulty and opponent requirements. Build at least one type in every counted game; reloading the same game does not add a game.
+
+**Points / minimum difficulty / minimum AI opponents**: 15 / King / 3
+
+*Across ages and journeys, you left twelve monuments.*
+
+<span id="N27"></span>
+
+### N27 — Skyline of the Nile
+
+<img src="/Unciv-Wiki/achievements/N27.svg" alt="Skyline of the Nile" width="64" height="64" loading="lazy" />
+
+**Condition**: King difficulty or higher; start with at least 3 AI opponents. As Egypt, build 5 different types of World Wonder yourself in the same city, which you must still own; wonders already present when you acquired the city do not count.
+
+**Points / minimum difficulty / minimum AI opponents**: 15 / King / 3
+
+*Beside the Nile, one city holds a magnificent skyline.*
+
+<span id="N28"></span>
+
+### N28 — Rome&#x27;s Living Network
+
+<img src="/Unciv-Wiki/achievements/N28.svg" alt="Rome&#x27;s Living Network" width="64" height="64" loading="lazy" />
+
+**Condition**: King difficulty or higher; start with at least 3 AI opponents. As Rome, at turn end, at least 5 cities you founded must each have at least 10 population and a Monument, Granary, Library and Barracks simultaneously.
+
+**Points / minimum difficulty / minimum AI opponents**: 15 / King / 3
+
+*Rome&#x27;s strength grows in every city.*
+
 <span id="N29"></span>
 
-### N29 — Four Flourishing Cities
+### N29 — Four Cities in Harmony
 
-<img src="/Unciv-Wiki/achievements/N29.svg" alt="Four Flourishing Cities" width="64" height="64" />
+<img src="/Unciv-Wiki/achievements/N29.svg" alt="Four Cities in Harmony" width="64" height="64" loading="lazy" />
 
-**Condition**: Simultaneously own 4 self-founded cities with at least 15 population each, while your civilization's Happiness is at least 0.
+**Condition**: King difficulty or higher; start with at least 3 AI opponents. At turn end, at least 4 cities you founded must each have at least 20 population, your civilization must have at least 10 Happiness, and you must never previously have captured in battle a city founded by another major civilization.
 
-**Points**: 25
+**Points / minimum difficulty / minimum AI opponents**: 15 / King / 3
 
-*Prosperity reaches beyond one city and across your land.*
-
-<span id="N30"></span>
-
-### N30 — Age of Wonders
-
-<img src="/Unciv-Wiki/achievements/N30.svg" alt="Age of Wonders" width="64" height="64" />
-
-**Condition**: On Prince difficulty or higher, build 8 different World Wonders in one game.
-
-**Points**: 25
-
-*You have changed the skyline of an age.*
+*Four flourishing cities are joined by peace and order.*
 
 <span id="N31"></span>
 
-### N31 — Battle-Hardened
+### N31 — Home from Battle
 
-<img src="/Unciv-Wiki/achievements/N31.svg" alt="Battle-Hardened" width="64" height="64" />
+<img src="/Unciv-Wiki/achievements/N31.svg" alt="Home from Battle" width="64" height="64" loading="lazy" />
 
-**Condition**: Have one living military unit earn 5 experience promotions. Free and starting promotions do not count; normal upgrades preserve its record.
+**Condition**: King difficulty or higher; start with at least 3 AI opponents. The same surviving military unit must earn at least 5 combat promotions and destroy at least 10 military units of major civilizations. Defensive kills count; Barbarians and free promotions do not. Upgrading preserves the record.
 
-**Points**: 25
+**Points / minimum difficulty / minimum AI opponents**: 15 / King / 3
 
-*Time changes a veteran's armor, but never their honor.*
+*A unit returns, carrying memories of countless battles.*
 
 <span id="N32"></span>
 
-### N32 — Twin-City Blitz
+### N32 — Dawn over Three Cities
 
-<img src="/Unciv-Wiki/achievements/N32.svg" alt="Twin-City Blitz" width="64" height="64" />
+<img src="/Unciv-Wiki/achievements/N32.svg" alt="Dawn over Three Cities" width="64" height="64" loading="lazy" />
 
-**Condition**: Capture 2 different foreign cities in combat during one of your turns. Losing military units does not disqualify you.
+**Condition**: King difficulty or higher; start with at least 3 AI opponents. During the same turn of your own, capture 3 different cities in battle, all founded by other major civilizations. Repeated captures of the same city, trades and direct liberation do not count.
 
-**Points**: 25
+**Points / minimum difficulty / minimum AI opponents**: 15 / King / 3
 
-*Two rising banners mark one decisive advance.*
+*One dawn shines on three new banners.*
 
 <span id="N33"></span>
 
-### N33 — Faith Beyond Borders
+### N33 — Faith beyond Borders
 
-<img src="/Unciv-Wiki/achievements/N33.svg" alt="Faith Beyond Borders" width="64" height="64" />
+<img src="/Unciv-Wiki/achievements/N33.svg" alt="Faith beyond Borders" width="64" height="64" loading="lazy" />
 
-**Condition**: Have your own founded religion be the majority religion in 10 cities at once, including 3 currently owned by other major civilizations. Passive spread counts.
+**Condition**: King difficulty or higher; start with at least 3 AI opponents. Religion must be enabled. Your founded religion must simultaneously be the majority religion in at least 15 cities, including at least 5 belonging to other major civilizations and spanning at least 3 different other major civilizations. Natural spread counts; checked at turn end.
 
-**Points**: 25
+**Points / minimum difficulty / minimum AI opponents**: 15 / King / 3
 
-*Belief crosses the border and takes root far away.*
-
-<span id="N34"></span>
-
-### N34 — China: Breaking the Line
-
-<img src="/Unciv-Wiki/achievements/N34.svg" alt="China: Breaking the Line" width="64" height="64" />
-
-**Condition**: As China, have the same Chu-Ko-Nu destroy 2 different military units belonging to other major civilizations during one of your turns.
-
-**Points**: 25
-
-*Before the bowstring rests, the enemy line has broken.*
-
-<span id="N35"></span>
-
-### N35 — Persia: Golden Offensive
-
-<img src="/Unciv-Wiki/achievements/N35.svg" alt="Persia: Golden Offensive" width="64" height="64" />
-
-**Condition**: As Persia, capture 3 different foreign cities in combat during one continuous Golden Age. Extending that Golden Age still counts as the same period.
-
-**Points**: 25
-
-*Prosperity and conquest march beneath one golden banner.*
-
-<span id="N36"></span>
-
-### N36 — Proof of an Emperor
-
-<img src="/Unciv-Wiki/achievements/N36.svg" alt="Proof of an Emperor" width="64" height="64" />
-
-**Condition**: On Emperor difficulty or higher, win any formal victory, including Time.
-
-**Points**: 25
-
-*A true crown is earned through a tested victory.*
+*Faith across borders has found a wide welcome.*
 
 ## Extreme
 
+<span id="N30"></span>
+
+### N30 — City of a Thousand Visions
+
+<img src="/Unciv-Wiki/achievements/N30.svg" alt="City of a Thousand Visions" width="64" height="64" loading="lazy" />
+
+**Condition**: Emperor difficulty or higher; start with at least 4 AI opponents. Build 8 different types of World Wonder yourself in the same city, which you must still own; wonders already present when you acquired the city do not count.
+
+**Points / minimum difficulty / minimum AI opponents**: 30 / Emperor / 4
+
+*One city holds an entire age&#x27;s imagination.*
+
+<span id="N34"></span>
+
+### N34 — Legend of the Repeating Crossbow
+
+<img src="/Unciv-Wiki/achievements/N34.svg" alt="Legend of the Repeating Crossbow" width="64" height="64" loading="lazy" />
+
+**Condition**: Emperor difficulty or higher; start with at least 4 AI opponents. As China, a Cho-Ko-Nu with at least 4 combat-earned promotions must actively attack and kill 2 different military units of major civilizations during the same turn of your own, and survive to turn end; free promotions and Barbarians do not count.
+
+**Points / minimum difficulty / minimum AI opponents**: 30 / Emperor / 4
+
+*A seasoned crossbow wrote a legend in one turn.*
+
+<span id="N35"></span>
+
+### N35 — Persia&#x27;s Long Day
+
+<img src="/Unciv-Wiki/achievements/N35.svg" alt="Persia&#x27;s Long Day" width="64" height="64" loading="lazy" />
+
+**Condition**: Emperor difficulty or higher; start with at least 4 AI opponents. As Persia, during one uninterrupted Golden Age, capture 4 different cities in battle whose founders include at least 2 other major civilizations. Extending the Golden Age counts; the count resets if it ends.
+
+**Points / minimum difficulty / minimum AI opponents**: 30 / Emperor / 4
+
+*The long day of a Golden Age witnessed a campaign across nations.*
+
+<span id="N36"></span>
+
+### N36 — A Small Nation&#x27;s Triumph
+
+<img src="/Unciv-Wiki/achievements/N36.svg" alt="A Small Nation&#x27;s Triumph" width="64" height="64" loading="lazy" />
+
+**Condition**: Emperor difficulty or higher; start with at least 4 AI opponents. Win a victory other than Time without ever owning more than 3 cities at once or capturing in battle a city founded by another major civilization during the entire game.
+
+**Points / minimum difficulty / minimum AI opponents**: 30 / Emperor / 4
+
+*A small nation has room for a great victory.*
+
 <span id="N37"></span>
 
-### N37 — Defying the Gods
+### N37 — Victory against the Gods
 
-<img src="/Unciv-Wiki/achievements/N37.svg" alt="Defying the Gods" width="64" height="64" />
+<img src="/Unciv-Wiki/achievements/N37.svg" alt="Victory against the Gods" width="64" height="64" loading="lazy" />
 
-**Condition**: On Deity difficulty, win any formal victory, including Time.
+**Condition**: Deity difficulty or higher; start with at least 4 AI opponents. Win a victory other than Time; Scientific, Cultural, Domination and Diplomatic victories all count.
 
-**Points**: 50
+**Points / minimum difficulty / minimum AI opponents**: 30 / Deity / 4
 
-*Against mighty opponents, you still write your own ending.*
+*From the hardest beginning, you found your way to victory.*
 
 <span id="N38"></span>
 
-### N38 — One City, Many Stars
+### N38 — One City among the Stars
 
-<img src="/Unciv-Wiki/achievements/N38.svg" alt="One City, Many Stars" width="64" height="64" />
+<img src="/Unciv-Wiki/achievements/N38.svg" alt="One City among the Stars" width="64" height="64" loading="lazy" />
 
-**Condition**: On Emperor difficulty or higher, enable One City Challenge and win a Scientific Victory without ever owning a second city, even temporarily.
+**Condition**: Emperor difficulty or higher; start with at least 4 AI opponents. Enable One City Challenge and win a Scientific victory without ever owning more than 1 city at once during the entire game; even briefly acquiring a second city disqualifies the game.
 
-**Points**: 50
+**Points / minimum difficulty / minimum AI opponents**: 30 / Emperor / 4
 
-*The lights of one city can still reach the stars.*
+*One city sent its banner to the stars.*
 
 <span id="N39"></span>
 
-### N39 — Uncrowned Summit
+### N39 — Culture without Wonders
 
-<img src="/Unciv-Wiki/achievements/N39.svg" alt="Uncrowned Summit" width="64" height="64" />
+<img src="/Unciv-Wiki/achievements/N39.svg" alt="Culture without Wonders" width="64" height="64" loading="lazy" />
 
-**Condition**: On Emperor difficulty or higher, win a Cultural Victory without ever owning a World Wonder, whether built, captured or received. National Wonders are allowed.
+**Condition**: Emperor difficulty or higher; start with at least 4 AI opponents. Win a Cultural victory without ever owning any World Wonder throughout the entire game, including wonders in conquered or acquired cities; National Wonders are unrestricted.
 
-**Points**: 50
+**Points / minimum difficulty / minimum AI opponents**: 30 / Emperor / 4
 
-*Even without a wonder to crown it, your civilization shines.*
+*Even without World Wonders, your civilization is remembered.*
 
 <span id="N40"></span>
 
-### N40 — Book of Civilizations
+### N40 — The Complete Chronicle
 
-<img src="/Unciv-Wiki/achievements/N40.svg" alt="Book of Civilizations" width="64" height="64" />
+<img src="/Unciv-Wiki/achievements/N40.svg" alt="The Complete Chronicle" width="64" height="64" loading="lazy" />
 
-**Condition**: Unlock the other 39 achievements in this new catalog. This achievement itself and old-catalog medals do not count.
+**Condition**: Complete the other 39 achievements in this preview catalog.
 
-**Points**: 50
+**Points / minimum difficulty / minimum AI opponents**: 30 / Any / 1
 
-*Your journey has become a book of civilizations.*
-
+*Every road has left a chapter in your civilization.*
 

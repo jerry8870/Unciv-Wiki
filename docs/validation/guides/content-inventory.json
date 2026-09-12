@@ -1,0 +1,179 @@
+{
+  "baseline": {
+    "contentPages": 764,
+    "pagesPerLocale": 382,
+    "databasePagesPerLocale": 370,
+    "dedicatedMatchGuidesPerLocale": 0,
+    "strategyHubIndexable": false
+  },
+  "current": {
+    "contentPages": 780,
+    "pagesPerLocale": 390,
+    "databasePagesPerLocale": 370,
+    "dedicatedMatchGuidesPerLocale": 8,
+    "strategyHubIndexable": true
+  },
+  "metricNotes": "Counts exclude frontmatter; Chinese characters use the basic Han range; English word counts exclude Markdown link targets. Length is evidence of scope, not a quality score.",
+  "articles": [
+    {
+      "path": "src/content/docs/strategies/combat-siege/index.md",
+      "title": "Combat and sieges: positioning, focus fire and capture",
+      "locale": "en",
+      "sha256": "db9c04877e730f2fe183cf18d99660daf1ae77aa1c15b4e2a2dcc52870cc2ed7",
+      "bodyCharacters": 6067,
+      "chineseCharacters": 0,
+      "englishWords": 884,
+      "h2Count": 8
+    },
+    {
+      "path": "src/content/docs/strategies/culture-victory/index.md",
+      "title": "Culture victory: five policy branches and Utopia",
+      "locale": "en",
+      "sha256": "59ccd05c5e5703221e26795573915c9f81a7174c1e4bd28309c659c0851024d5",
+      "bodyCharacters": 5900,
+      "chineseCharacters": 0,
+      "englishWords": 814,
+      "h2Count": 7
+    },
+    {
+      "path": "src/content/docs/strategies/diplomatic-victory/index.md",
+      "title": "Diplomatic victory: city-states, reserves and the UN vote",
+      "locale": "en",
+      "sha256": "4db2e4bb97053950f7c3016229ec4e4c9306e646c274cb4360629f19ea222c99",
+      "bodyCharacters": 6134,
+      "chineseCharacters": 0,
+      "englishWords": 883,
+      "h2Count": 7
+    },
+    {
+      "path": "src/content/docs/strategies/domination-victory/index.md",
+      "title": "Domination victory: a campaign for every original capital",
+      "locale": "en",
+      "sha256": "16925a11eb465110260396a48703ffd1aa50005b8914fa4c7d1abc362960e391",
+      "bodyCharacters": 6190,
+      "chineseCharacters": 0,
+      "englishWords": 900,
+      "h2Count": 7
+    },
+    {
+      "path": "src/content/docs/strategies/expansion-economy/index.md",
+      "title": "Expansion and economy: cities, happiness and gold",
+      "locale": "en",
+      "sha256": "1cb360420b883e5d242a79970d9a929b853e73f12d0b746ca3540b2a63a09d33",
+      "bodyCharacters": 6481,
+      "chineseCharacters": 0,
+      "englishWords": 922,
+      "h2Count": 7
+    },
+    {
+      "path": "src/content/docs/strategies/opening/index.md",
+      "title": "The first 50 turns: settle, scout and expand safely",
+      "locale": "en",
+      "sha256": "65dc4ac9ccbd7ba3b93c84d20675087d5f09508329b58958506910f024797b8b",
+      "bodyCharacters": 6261,
+      "chineseCharacters": 0,
+      "englishWords": 903,
+      "h2Count": 6
+    },
+    {
+      "path": "src/content/docs/strategies/religion/index.md",
+      "title": "Religion: investment, beliefs and sustainable spread",
+      "locale": "en",
+      "sha256": "6c4f021cc74945c3ec8e87fa297c301eec29924ff578728683191b61b7b44a70",
+      "bodyCharacters": 6495,
+      "chineseCharacters": 0,
+      "englishWords": 924,
+      "h2Count": 7
+    },
+    {
+      "path": "src/content/docs/strategies/science-victory/index.md",
+      "title": "Science victory: from population to spaceship assembly",
+      "locale": "en",
+      "sha256": "23eaf3d654cee006853705a117adcb79734fa17d97a69237e4a9783806c73b80",
+      "bodyCharacters": 6516,
+      "chineseCharacters": 0,
+      "englishWords": 843,
+      "h2Count": 7
+    },
+    {
+      "path": "src/content/docs/zh/strategies/combat-siege/index.md",
+      "title": "战斗与攻城：站位、集火、轮换和占领",
+      "locale": "zh",
+      "sha256": "00335955e8e7336e2bc7c459cb2627ae452527ce9293b8bd7e4d4bc4fd0d62ff",
+      "bodyCharacters": 2175,
+      "chineseCharacters": 1687,
+      "englishWords": 2,
+      "h2Count": 8
+    },
+    {
+      "path": "src/content/docs/zh/strategies/culture-victory/index.md",
+      "title": "文化胜利：五个政策分支与乌托邦计划",
+      "locale": "zh",
+      "sha256": "9a53b2cbdf94ba353592210b29f434edd790dc890a7f1aaf7cb65a9fe254e3e0",
+      "bodyCharacters": 2381,
+      "chineseCharacters": 1689,
+      "englishWords": 3,
+      "h2Count": 8
+    },
+    {
+      "path": "src/content/docs/zh/strategies/diplomatic-victory/index.md",
+      "title": "外交胜利：城邦关系、金币储备与联合国投票",
+      "locale": "zh",
+      "sha256": "a8c9e246e9557980e9148e287ad2a97ee426dd136c26d712762065a8676ef7a9",
+      "bodyCharacters": 2138,
+      "chineseCharacters": 1658,
+      "englishWords": 3,
+      "h2Count": 7
+    },
+    {
+      "path": "src/content/docs/zh/strategies/domination-victory/index.md",
+      "title": "征服胜利：从第一场战争到控制全部原始首都",
+      "locale": "zh",
+      "sha256": "b697ec44533cadcb8c45ea78f29210b77c7583304d29ef3b93f8e601ac22fd0f",
+      "bodyCharacters": 2122,
+      "chineseCharacters": 1684,
+      "englishWords": 3,
+      "h2Count": 8
+    },
+    {
+      "path": "src/content/docs/zh/strategies/expansion-economy/index.md",
+      "title": "扩张与经济：城市、快乐和金币如何一起规划",
+      "locale": "zh",
+      "sha256": "2a81301653c18ede2f9499d97a3aa15c5c25f92c671c8a1b42cfdbb700bdfd44",
+      "bodyCharacters": 2511,
+      "chineseCharacters": 1890,
+      "englishWords": 2,
+      "h2Count": 8
+    },
+    {
+      "path": "src/content/docs/zh/strategies/opening/index.md",
+      "title": "前 50 回合：从落地到稳定扩张",
+      "locale": "zh",
+      "sha256": "c17cb0efbb892cbd5fb0ebe1d60e2d33a876ec5856ea217fee898b15d3f6a093",
+      "bodyCharacters": 2380,
+      "chineseCharacters": 1724,
+      "englishWords": 3,
+      "h2Count": 6
+    },
+    {
+      "path": "src/content/docs/zh/strategies/religion/index.md",
+      "title": "宗教攻略：何时投入、怎样选信条与维护传播",
+      "locale": "zh",
+      "sha256": "df81ed8367cfed6f8cef733bbfccc1c6d182c2261dacba186edb71907733b827",
+      "bodyCharacters": 2262,
+      "chineseCharacters": 1760,
+      "englishWords": 4,
+      "h2Count": 8
+    },
+    {
+      "path": "src/content/docs/zh/strategies/science-victory/index.md",
+      "title": "科技胜利：从人口科研到飞船组装",
+      "locale": "zh",
+      "sha256": "ed3b2a309e263c5eb54b45a4e9778d2392f50b9a723274d1a78d4d5404a31408",
+      "bodyCharacters": 2904,
+      "chineseCharacters": 1729,
+      "englishWords": 2,
+      "h2Count": 8
+    }
+  ]
+}

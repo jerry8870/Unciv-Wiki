@@ -1,31 +1,37 @@
 ---
-title: Berserker
-description: Berserker — stats, abilities and tech requirements in Unciv.
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://jerry8870.github.io/Unciv-Wiki/database/"},{"@type":"ListItem","position":3,"name":"Units","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/"},{"@type":"ListItem","position":4,"name":"Berserker","item":"https://jerry8870.github.io/Unciv-Wiki/database/units/berserker/"}]}'
+{
+  "title": "Berserker",
+  "description": "Berserker: base values, rules and related units in Unciv 4.21.20 (1293).",
+  "gameVersion": "4.21.20",
+  "appBuild": 1293,
+  "ruleset": "Civ V - Gods & Kings",
+  "sources": [
+    "snapshot:4.21.20-1293"
+  ],
+  "lastUpdated": "2026-09-12"
+}
 ---
-# Berserker
 
-## Stats
+<span class="database-icon-frame"><img class="database-icon" src="/Unciv-Wiki/game-assets/unit/berserker.png" alt="Berserker" width="80" height="80" loading="lazy" decoding="async" /></span>
+
+[Icon sources and credits](/Unciv-Wiki/credits/)
+
+**Gods & Kings ruleset base values** are not final prices in every game. Speed, difficulty, city count and rule effects can modify costs. [How costs work](/Unciv-Wiki/mechanics/).
 
 | Attribute | Value |
 | --- | --- |
 | Type | Sword |
 | Movement | 3 |
 | Strength | 21 |
-| Cost | 120 |
-| Required Tech | Metal Casting |
-| Obsolete Tech | Metallurgy |
-| Upgrades To | Musketman |
-| Required Resource | Iron |
-| Replaces | Longswordsman |
-| Unique To | Denmark |
+| Base cost | 120 |
+| Required technology | [Metal Casting](/Unciv-Wiki/database/technologies/metal-casting/) |
+| Obsolete technology | [Metallurgy](/Unciv-Wiki/database/technologies/metallurgy/) |
+| Upgrades to | [Musketman](/Unciv-Wiki/database/units/musketman/) |
+| Required resource | Iron |
+| Replaces | [Longswordsman](/Unciv-Wiki/database/units/longswordsman/) |
+| Unique to | [Denmark](/Unciv-Wiki/database/civilizations/denmark/) |
 
 ## Promotions
 
 - Amphibious
-
 
