@@ -1,12 +1,23 @@
 ---
 title: Achievements
 description: All 40 iOS achievements with conditions, points and icons.
+head:
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/"},{"@type":"ListItem","position":2,"name":"Achievements","item":"https://jerry8870.github.io/Unciv-Wiki/achievements/"}]}'
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: '{"@context":"https://schema.org","@type":"ItemList","name":"iOS Achievements","itemListElement":[{"@type":"ListItem","position":1,"name":"First Taste of Victory","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N01"},{"@type":"ListItem","position":2,"name":"Pioneer","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N02"},{"@type":"ListItem","position":3,"name":"Seeds of Culture","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N03"},{"@type":"ListItem","position":4,"name":"Golden Dawn","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N04"},{"@type":"ListItem","position":5,"name":"First Wonder","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N05"},{"@type":"ListItem","position":6,"name":"First Blood","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N06"},{"@type":"ListItem","position":7,"name":"Border Guardian","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N07"},{"@type":"ListItem","position":8,"name":"Triumphant Banner","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N08"},{"@type":"ListItem","position":9,"name":"Working the Land","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N09"},{"@type":"ListItem","position":10,"name":"Roads to Prosperity","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N10"},{"@type":"ListItem","position":11,"name":"A Thousand Lights","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N11"},{"@type":"ListItem","position":12,"name":"Growing Treasury","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N12"},{"@type":"ListItem","position":13,"name":"City-State Friend","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N13"},{"@type":"ListItem","position":14,"name":"First Faith","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N14"},{"@type":"ListItem","position":15,"name":"First Envoy","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N15"},{"@type":"ListItem","position":16,"name":"Nature''s Gift","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N16"},{"@type":"ListItem","position":17,"name":"Beyond the Stars","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N17"},{"@type":"ListItem","position":18,"name":"Light of Civilization","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N18"},{"@type":"ListItem","position":19,"name":"Conqueror","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N19"},{"@type":"ListItem","position":20,"name":"World''s Choice","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N20"},{"@type":"ListItem","position":21,"name":"Thriving Metropolis","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N21"},{"@type":"ListItem","position":22,"name":"Art of Governance","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N22"},{"@type":"ListItem","position":23,"name":"Wealth of a Nation","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N23"},{"@type":"ListItem","position":24,"name":"Faith Fulfilled","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N24"},{"@type":"ListItem","position":25,"name":"Circle of Allies","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N25"},{"@type":"ListItem","position":26,"name":"Wonder Collector","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N26"},{"@type":"ListItem","position":27,"name":"Egypt: Epic in Stone","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N27"},{"@type":"ListItem","position":28,"name":"Rome: Imperial Foundations","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N28"},{"@type":"ListItem","position":29,"name":"Four Flourishing Cities","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N29"},{"@type":"ListItem","position":30,"name":"Age of Wonders","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N30"},{"@type":"ListItem","position":31,"name":"Battle-Hardened","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N31"},{"@type":"ListItem","position":32,"name":"Twin-City Blitz","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N32"},{"@type":"ListItem","position":33,"name":"Faith Beyond Borders","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N33"},{"@type":"ListItem","position":34,"name":"China: Breaking the Line","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N34"},{"@type":"ListItem","position":35,"name":"Persia: Golden Offensive","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N35"},{"@type":"ListItem","position":36,"name":"Proof of an Emperor","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N36"},{"@type":"ListItem","position":37,"name":"Defying the Gods","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N37"},{"@type":"ListItem","position":38,"name":"One City, Many Stars","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N38"},{"@type":"ListItem","position":39,"name":"Uncrowned Summit","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N39"},{"@type":"ListItem","position":40,"name":"Book of Civilizations","url":"https://jerry8870.github.io/Unciv-Wiki/achievements/#N40"}]}'
 ---
 # Achievements
 
 There are **40 achievements** on the iOS port (600 points total). Each is tracked across qualifying new games.
 
 ## Simple
+
+<span id="N01"></span>
 
 ### N01 — First Taste of Victory
 
@@ -18,6 +29,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 
 *Your civilization has found its first victory.*
 
+<span id="N02"></span>
+
 ### N02 — Pioneer
 
 <img src="/Unciv-Wiki/achievements/N02.svg" alt="Pioneer" width="64" height="64" />
@@ -27,6 +40,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 **Points**: 5
 
 *Beyond the border, another banner rises.*
+
+<span id="N03"></span>
 
 ### N03 — Seeds of Culture
 
@@ -38,6 +53,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 
 *A civilization's spirit begins with its first principle.*
 
+<span id="N04"></span>
+
 ### N04 — Golden Dawn
 
 <img src="/Unciv-Wiki/achievements/N04.svg" alt="Golden Dawn" width="64" height="64" />
@@ -47,6 +64,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 **Points**: 5
 
 *Prosperity shines across your land for the first time.*
+
+<span id="N05"></span>
 
 ### N05 — First Wonder
 
@@ -58,6 +77,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 
 *You have left your first monument to this age.*
 
+<span id="N06"></span>
+
 ### N06 — First Blood
 
 <img src="/Unciv-Wiki/achievements/N06.svg" alt="First Blood" width="64" height="64" />
@@ -67,6 +88,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 **Points**: 5
 
 *Your army learns the meaning of victory.*
+
+<span id="N07"></span>
 
 ### N07 — Border Guardian
 
@@ -78,6 +101,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 
 *Your frontier grows a little more peaceful.*
 
+<span id="N08"></span>
+
 ### N08 — Triumphant Banner
 
 <img src="/Unciv-Wiki/achievements/N08.svg" alt="Triumphant Banner" width="64" height="64" />
@@ -87,6 +112,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 **Points**: 5
 
 *Your banner rises above a foreign city for the first time.*
+
+<span id="N09"></span>
 
 ### N09 — Working the Land
 
@@ -98,6 +125,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 
 *The land begins to reward its people's care.*
 
+<span id="N10"></span>
+
 ### N10 — Roads to Prosperity
 
 <img src="/Unciv-Wiki/achievements/N10.svg" alt="Roads to Prosperity" width="64" height="64" />
@@ -107,6 +136,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 **Points**: 5
 
 *Shared prosperity begins to flow between your cities.*
+
+<span id="N11"></span>
 
 ### N11 — A Thousand Lights
 
@@ -118,6 +149,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 
 *A small settlement now glows with countless lights.*
 
+<span id="N12"></span>
+
 ### N12 — Growing Treasury
 
 <img src="/Unciv-Wiki/achievements/N12.svg" alt="Growing Treasury" width="64" height="64" />
@@ -127,6 +160,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 **Points**: 5
 
 *Small acts of stewardship build a generous reserve.*
+
+<span id="N13"></span>
 
 ### N13 — City-State Friend
 
@@ -138,6 +173,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 
 *A small nation chooses to stand beside you.*
 
+<span id="N14"></span>
+
 ### N14 — First Faith
 
 <img src="/Unciv-Wiki/achievements/N14.svg" alt="First Faith" width="64" height="64" />
@@ -148,6 +185,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 
 *Your people begin to understand the world through a shared belief.*
 
+<span id="N15"></span>
+
 ### N15 — First Envoy
 
 <img src="/Unciv-Wiki/achievements/N15.svg" alt="First Envoy" width="64" height="64" />
@@ -157,6 +196,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 **Points**: 5
 
 *A first handshake brings the world a little closer.*
+
+<span id="N16"></span>
 
 ### N16 — Nature's Gift
 
@@ -170,6 +211,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 
 ## Intermediate
 
+<span id="N17"></span>
+
 ### N17 — Beyond the Stars
 
 <img src="/Unciv-Wiki/achievements/N17.svg" alt="Beyond the Stars" width="64" height="64" />
@@ -179,6 +222,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 **Points**: 10
 
 *Your civilization belongs to more than one world.*
+
+<span id="N18"></span>
 
 ### N18 — Light of Civilization
 
@@ -190,6 +235,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 
 *Your ideas leave an echo that outlives an age.*
 
+<span id="N19"></span>
+
 ### N19 — Conqueror
 
 <img src="/Unciv-Wiki/achievements/N19.svg" alt="Conqueror" width="64" height="64" />
@@ -199,6 +246,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 **Points**: 10
 
 *Every capital bears witness to your journey.*
+
+<span id="N20"></span>
 
 ### N20 — World's Choice
 
@@ -210,6 +259,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 
 *The world answers your leadership with its own choice.*
 
+<span id="N21"></span>
+
 ### N21 — Thriving Metropolis
 
 <img src="/Unciv-Wiki/achievements/N21.svg" alt="Thriving Metropolis" width="64" height="64" />
@@ -219,6 +270,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 **Points**: 10
 
 *One city holds the dreams of countless people.*
+
+<span id="N22"></span>
 
 ### N22 — Art of Governance
 
@@ -230,6 +283,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 
 *Separate principles become a complete art of governance.*
 
+<span id="N23"></span>
+
 ### N23 — Wealth of a Nation
 
 <img src="/Unciv-Wiki/achievements/N23.svg" alt="Wealth of a Nation" width="64" height="64" />
@@ -239,6 +294,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 **Points**: 10
 
 *A full treasury reflects years of patient stewardship.*
+
+<span id="N24"></span>
 
 ### N24 — Faith Fulfilled
 
@@ -250,6 +307,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 
 *A first belief becomes a lasting tradition.*
 
+<span id="N25"></span>
+
 ### N25 — Circle of Allies
 
 <img src="/Unciv-Wiki/achievements/N25.svg" alt="Circle of Allies" width="64" height="64" />
@@ -259,6 +318,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 **Points**: 10
 
 *Your friends give you strength beyond your borders.*
+
+<span id="N26"></span>
 
 ### N26 — Wonder Collector
 
@@ -270,6 +331,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 
 *Across the ages, your monuments remain.*
 
+<span id="N27"></span>
+
 ### N27 — Egypt: Epic in Stone
 
 <img src="/Unciv-Wiki/achievements/N27.svg" alt="Egypt: Epic in Stone" width="64" height="64" />
@@ -279,6 +342,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 **Points**: 10
 
 *By the Nile, stone begins to tell the story of your age.*
+
+<span id="N28"></span>
 
 ### N28 — Rome: Imperial Foundations
 
@@ -292,6 +357,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 
 ## Hard
 
+<span id="N29"></span>
+
 ### N29 — Four Flourishing Cities
 
 <img src="/Unciv-Wiki/achievements/N29.svg" alt="Four Flourishing Cities" width="64" height="64" />
@@ -301,6 +368,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 **Points**: 25
 
 *Prosperity reaches beyond one city and across your land.*
+
+<span id="N30"></span>
 
 ### N30 — Age of Wonders
 
@@ -312,6 +381,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 
 *You have changed the skyline of an age.*
 
+<span id="N31"></span>
+
 ### N31 — Battle-Hardened
 
 <img src="/Unciv-Wiki/achievements/N31.svg" alt="Battle-Hardened" width="64" height="64" />
@@ -321,6 +392,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 **Points**: 25
 
 *Time changes a veteran's armor, but never their honor.*
+
+<span id="N32"></span>
 
 ### N32 — Twin-City Blitz
 
@@ -332,6 +405,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 
 *Two rising banners mark one decisive advance.*
 
+<span id="N33"></span>
+
 ### N33 — Faith Beyond Borders
 
 <img src="/Unciv-Wiki/achievements/N33.svg" alt="Faith Beyond Borders" width="64" height="64" />
@@ -341,6 +416,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 **Points**: 25
 
 *Belief crosses the border and takes root far away.*
+
+<span id="N34"></span>
 
 ### N34 — China: Breaking the Line
 
@@ -352,6 +429,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 
 *Before the bowstring rests, the enemy line has broken.*
 
+<span id="N35"></span>
+
 ### N35 — Persia: Golden Offensive
 
 <img src="/Unciv-Wiki/achievements/N35.svg" alt="Persia: Golden Offensive" width="64" height="64" />
@@ -361,6 +440,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 **Points**: 25
 
 *Prosperity and conquest march beneath one golden banner.*
+
+<span id="N36"></span>
 
 ### N36 — Proof of an Emperor
 
@@ -374,6 +455,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 
 ## Extreme
 
+<span id="N37"></span>
+
 ### N37 — Defying the Gods
 
 <img src="/Unciv-Wiki/achievements/N37.svg" alt="Defying the Gods" width="64" height="64" />
@@ -383,6 +466,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 **Points**: 50
 
 *Against mighty opponents, you still write your own ending.*
+
+<span id="N38"></span>
 
 ### N38 — One City, Many Stars
 
@@ -394,6 +479,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 
 *The lights of one city can still reach the stars.*
 
+<span id="N39"></span>
+
 ### N39 — Uncrowned Summit
 
 <img src="/Unciv-Wiki/achievements/N39.svg" alt="Uncrowned Summit" width="64" height="64" />
@@ -403,6 +490,8 @@ There are **40 achievements** on the iOS port (600 points total). Each is tracke
 **Points**: 50
 
 *Even without a wonder to crown it, your civilization shines.*
+
+<span id="N40"></span>
 
 ### N40 — Book of Civilizations
 

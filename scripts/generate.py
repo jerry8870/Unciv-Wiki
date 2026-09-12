@@ -228,11 +228,92 @@ def uniques_list(uniques) -> str:
 
 
 # ---------------------------------------------------------------------------
+# 结构化数据 (JSON-LD) 辅助
+# ---------------------------------------------------------------------------
+SITE = "https://jerry8870.github.io"
+BASE = "/Unciv-Wiki/"
+
+CAT_LABELS = {
+    "civilizations": {"en": "Civilizations", "zh": "文明"},
+    "units": {"en": "Units", "zh": "单位"},
+    "buildings": {"en": "Buildings", "zh": "建筑"},
+    "technologies": {"en": "Technologies", "zh": "科技"},
+}
+
+
+def abs_url(rel: str, lang: str = "en") -> str:
+    """构建带语言前缀的绝对 URL。rel 不含前导斜杠。"""
+    prefix = "zh/" if lang == "zh" else ""
+    return SITE + BASE + prefix + rel
+
+
+def _ld_script(ld: dict) -> dict:
+    return {
+        "tag": "script",
+        "attrs": {"type": "application/ld+json"},
+        "content": json.dumps(ld, ensure_ascii=False, separators=(",", ":")),
+    }
+
+
+def breadcrumb_ld(crumbs) -> dict:
+    return {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "name": n, "item": u}
+            for i, (n, u) in enumerate(crumbs)
+        ],
+    }
+
+
+def itemlist_ld(name: str, items) -> dict:
+    """items: list of (name, url)"""
+    return {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": name,
+        "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "name": n, "url": u}
+            for i, (n, u) in enumerate(items)
+        ],
+    }
+
+
+def db_crumbs(category: str, lang: str = "en", entity_name=None, entity_slug=None):
+    crumbs = [
+        ("Home", abs_url("", lang)),
+        ("Database", abs_url("database/", lang)),
+        (CAT_LABELS[category][lang], abs_url(f"database/{category}/", lang)),
+    ]
+    if entity_name and entity_slug:
+        crumbs.append((entity_name, abs_url(f"database/{category}/{entity_slug}/", lang)))
+    return crumbs
+
+
+def ach_crumbs(lang: str = "en"):
+    label = "Achievements" if lang == "en" else "成就"
+    return [("Home", abs_url("", lang)), (label, abs_url("achievements/", lang))]
+
+
+# ---------------------------------------------------------------------------
 # 页面生成
 # ---------------------------------------------------------------------------
 def write_page(path: Path, frontmatter: dict, body: str):
     fm_lines = ["---"]
     for k, v in frontmatter.items():
+        if k == "head":
+            fm_lines.append("head:")
+            for entry in v:
+                fm_lines.append(f"  - tag: {entry['tag']}")
+                if entry.get("attrs"):
+                    fm_lines.append("    attrs:")
+                    for ak, av in entry["attrs"].items():
+                        fm_lines.append(f"      {ak}: {av}")
+                if "content" in entry:
+                    # 单引号标量：YAML 内仅 ' 需转义为 ''
+                    c = entry["content"].replace("'", "''")
+                    fm_lines.append(f"    content: '{c}'")
+            continue
         if isinstance(v, str):
             # 冒号需转义，避免 YAML 解析错误
             v = v.replace(": ", "：")
@@ -298,9 +379,14 @@ def gen_nations():
         ]
     )
     body += cs_table + "\n"
+    civ_items = [(n["name"], abs_url(f"database/civilizations/{slugify(n['name'])}/", "en")) for n in majors]
+    civ_head = [
+        _ld_script(breadcrumb_ld(db_crumbs("civilizations", "en"))),
+        _ld_script(itemlist_ld("Civilizations", civ_items)),
+    ]
     write_page(
         OUT_EN_DB / "civilizations" / "index.md",
-        {"title": "Civilizations", "description": "All civilizations and city-states in Unciv."},
+        {"title": "Civilizations", "description": "All civilizations and city-states in Unciv.", "head": civ_head},
         body,
     )
     # 中文聚合页
@@ -341,9 +427,14 @@ def gen_nations():
         ]
     )
     zh_body += zh_cs_table + "\n"
+    zh_civ_items = [(tr(n["name"]), abs_url(f"database/civilizations/{slugify(n['name'])}/", "zh")) for n in majors]
+    zh_civ_head = [
+        _ld_script(breadcrumb_ld(db_crumbs("civilizations", "zh"))),
+        _ld_script(itemlist_ld("文明", zh_civ_items)),
+    ]
     write_page(
         OUT_ZH_DB / "civilizations" / "index.md",
-        {"title": "文明", "description": "Unciv 的全部文明与城邦。"},
+        {"title": "文明", "description": "Unciv 的全部文明与城邦。", "head": zh_civ_head},
         zh_body,
     )
     # 实体独立页（主要文明，全量）
@@ -356,7 +447,8 @@ def gen_nation_page(n):
     slug = slugify(name)
     leader = n.get("leaderName", "")
     # 英文
-    fm = {"title": name, "description": f"{name} — leader, unique ability and start bias in Unciv."}
+    fm = {"title": name, "description": f"{name} — leader, unique ability and start bias in Unciv.",
+          "head": [_ld_script(breadcrumb_ld(db_crumbs("civilizations", "en", name, slug)))]}
     body = f"""# {name}
 
 **Leader**: {leader}
@@ -373,7 +465,8 @@ def gen_nation_page(n):
     write_page(OUT_EN_DB / "civilizations" / slug / "index.md", fm, body)
     # 中文
     zh_name = tr(name)
-    zh_fm = {"title": zh_name, "description": f"{zh_name}——领袖、独特能力与开局倾向。"}
+    zh_fm = {"title": zh_name, "description": f"{zh_name}——领袖、独特能力与开局倾向。",
+             "head": [_ld_script(breadcrumb_ld(db_crumbs("civilizations", "zh", zh_name, slug)))]}
     zh_body = f"""# {zh_name}
 
 **领袖**：{tr(leader)}
@@ -411,9 +504,14 @@ def gen_units():
         ]
     )
     body = f"# Units\n\n{table}\n"
+    unit_items = [(u["name"], abs_url(f"database/units/{slugify(u['name'])}/", "en")) for u in units]
+    unit_head = [
+        _ld_script(breadcrumb_ld(db_crumbs("units", "en"))),
+        _ld_script(itemlist_ld("Units", unit_items)),
+    ]
     write_page(
         OUT_EN_DB / "units" / "index.md",
-        {"title": "Units", "description": "All units in Unciv — type, cost and required technology."},
+        {"title": "Units", "description": "All units in Unciv — type, cost and required technology.", "head": unit_head},
         body,
     )
     # 中文聚合
@@ -434,9 +532,14 @@ def gen_units():
         ]
     )
     zh_body = f"# 单位\n\n{zh_table}\n"
+    zh_unit_items = [(tr(u["name"]), abs_url(f"database/units/{slugify(u['name'])}/", "zh")) for u in units]
+    zh_unit_head = [
+        _ld_script(breadcrumb_ld(db_crumbs("units", "zh"))),
+        _ld_script(itemlist_ld("单位", zh_unit_items)),
+    ]
     write_page(
         OUT_ZH_DB / "units" / "index.md",
-        {"title": "单位", "description": "Unciv 的全部单位——类型、造价与所需科技。"},
+        {"title": "单位", "description": "Unciv 的全部单位——类型、造价与所需科技。", "head": zh_unit_head},
         zh_body,
     )
     # 实体独立页（全量）
@@ -448,7 +551,8 @@ def gen_unit_page(u):
     name = u["name"]
     slug = slugify(name)
     # 英文
-    fm = {"title": name, "description": f"{name} — stats, abilities and tech requirements in Unciv."}
+    fm = {"title": name, "description": f"{name} — stats, abilities and tech requirements in Unciv.",
+          "head": [_ld_script(breadcrumb_ld(db_crumbs("units", "en", name, slug)))]}
     body = f"# {name}\n\n"
     stat_rows = []
     label_map = {
@@ -483,7 +587,8 @@ def gen_unit_page(u):
     write_page(OUT_EN_DB / "units" / slug / "index.md", fm, body)
     # 中文
     zh_name = tr(name)
-    zh_fm = {"title": zh_name, "description": f"{zh_name}——属性、能力与科技需求。"}
+    zh_fm = {"title": zh_name, "description": f"{zh_name}——属性、能力与科技需求。",
+             "head": [_ld_script(breadcrumb_ld(db_crumbs("units", "zh", zh_name, slug)))]}
     zh_body = f"# {zh_name}\n\n"
     zh_label_map = {
         "unitType": "类型",
@@ -540,9 +645,14 @@ def gen_buildings():
         ]
     )
     body = f"# Buildings\n\n{table}\n"
+    bld_items = [(b["name"], abs_url(f"database/buildings/{slugify(b['name'])}/", "en")) for b in buildings]
+    bld_head = [
+        _ld_script(breadcrumb_ld(db_crumbs("buildings", "en"))),
+        _ld_script(itemlist_ld("Buildings", bld_items)),
+    ]
     write_page(
         OUT_EN_DB / "buildings" / "index.md",
-        {"title": "Buildings", "description": "All buildings, wonders and national wonders in Unciv."},
+        {"title": "Buildings", "description": "All buildings, wonders and national wonders in Unciv.", "head": bld_head},
         body,
     )
     # 中文聚合
@@ -563,9 +673,14 @@ def gen_buildings():
         ]
     )
     zh_body = f"# 建筑\n\n{zh_table}\n"
+    zh_bld_items = [(tr(b["name"]), abs_url(f"database/buildings/{slugify(b['name'])}/", "zh")) for b in buildings]
+    zh_bld_head = [
+        _ld_script(breadcrumb_ld(db_crumbs("buildings", "zh"))),
+        _ld_script(itemlist_ld("建筑", zh_bld_items)),
+    ]
     write_page(
         OUT_ZH_DB / "buildings" / "index.md",
-        {"title": "建筑", "description": "Unciv 的全部建筑、奇观与国家奇观。"},
+        {"title": "建筑", "description": "Unciv 的全部建筑、奇观与国家奇观。", "head": zh_bld_head},
         zh_body,
     )
     # 实体独立页（全量）
@@ -577,7 +692,8 @@ def gen_building_page(b):
     name = b["name"]
     slug = slugify(name)
     # 英文
-    fm = {"title": name, "description": f"{name} — cost, effects and tech requirements in Unciv."}
+    fm = {"title": name, "description": f"{name} — cost, effects and tech requirements in Unciv.",
+          "head": [_ld_script(breadcrumb_ld(db_crumbs("buildings", "en", name, slug)))]}
     body = f"# {name}\n\n"
     stat_rows = []
     label_map = {
@@ -611,7 +727,8 @@ def gen_building_page(b):
     write_page(OUT_EN_DB / "buildings" / slug / "index.md", fm, body)
     # 中文
     zh_name = tr(name)
-    zh_fm = {"title": zh_name, "description": f"{zh_name}——造价、效果与科技需求。"}
+    zh_fm = {"title": zh_name, "description": f"{zh_name}——造价、效果与科技需求。",
+             "head": [_ld_script(breadcrumb_ld(db_crumbs("buildings", "zh", zh_name, slug)))]}
     zh_body = f"# {zh_name}\n\n"
     zh_label_map = {
         "cost": "造价",
@@ -669,9 +786,14 @@ def gen_techs():
         ]
     )
     body = f"# Technologies\n\n{table}\n"
+    tech_items = [(t["name"], abs_url(f"database/technologies/{slugify(t['name'])}/", "en")) for t in techs]
+    tech_head = [
+        _ld_script(breadcrumb_ld(db_crumbs("technologies", "en"))),
+        _ld_script(itemlist_ld("Technologies", tech_items)),
+    ]
     write_page(
         OUT_EN_DB / "technologies" / "index.md",
-        {"title": "Technologies", "description": "All technologies in Unciv — era, cost and prerequisites."},
+        {"title": "Technologies", "description": "All technologies in Unciv — era, cost and prerequisites.", "head": tech_head},
         body,
     )
     # 中文聚合
@@ -692,9 +814,14 @@ def gen_techs():
         ]
     )
     zh_body = f"# 科技\n\n{zh_table}\n"
+    zh_tech_items = [(tr(t["name"]), abs_url(f"database/technologies/{slugify(t['name'])}/", "zh")) for t in techs]
+    zh_tech_head = [
+        _ld_script(breadcrumb_ld(db_crumbs("technologies", "zh"))),
+        _ld_script(itemlist_ld("科技", zh_tech_items)),
+    ]
     write_page(
         OUT_ZH_DB / "technologies" / "index.md",
-        {"title": "科技", "description": "Unciv 的全部科技——时代、花费与前置科技。"},
+        {"title": "科技", "description": "Unciv 的全部科技——时代、花费与前置科技。", "head": zh_tech_head},
         zh_body,
     )
     # 实体独立页（全量）
@@ -706,7 +833,8 @@ def gen_tech_page(t):
     name = t["name"]
     slug = slugify(name)
     # 英文
-    fm = {"title": name, "description": f"{name} — era, cost and what it unlocks in Unciv."}
+    fm = {"title": name, "description": f"{name} — era, cost and what it unlocks in Unciv.",
+          "head": [_ld_script(breadcrumb_ld(db_crumbs("technologies", "en", name, slug)))]}
     body = f"# {name}\n\n"
     stat_rows = []
     label_map = {
@@ -731,7 +859,8 @@ def gen_tech_page(t):
     write_page(OUT_EN_DB / "technologies" / slug / "index.md", fm, body)
     # 中文
     zh_name = tr(name)
-    zh_fm = {"title": zh_name, "description": f"{zh_name}——时代、花费与解锁内容。"}
+    zh_fm = {"title": zh_name, "description": f"{zh_name}——时代、花费与解锁内容。",
+             "head": [_ld_script(breadcrumb_ld(db_crumbs("technologies", "zh", zh_name, slug)))]}
     zh_body = f"# {zh_name}\n\n"
     zh_label_map = {"era": "时代", "cost": "花费", "prerequisites": "前置科技"}
     zh_stat_rows = []
@@ -784,15 +913,20 @@ def gen_achievements():
             continue
         body += f"## {tier}\n\n"
         for e in sorted(tier_entries, key=lambda x: x["id"]):
-            body += f"### {e['id']} — {e['name']}\n\n"
+            body += f'<span id="{e["id"]}"></span>\n\n### {e["id"]} — {e["name"]}\n\n'
             body += f"<img src=\"/Unciv-Wiki/achievements/{e['id']}.svg\" alt=\"{e['name']}\" width=\"64\" height=\"64\" />\n\n"
             body += f"**Condition**: {e['condition']}\n\n"
             body += f"**Points**: {e['points']}\n\n"
             if e.get("honor"):
                 body += f"*{e['honor']}*\n\n"
+    ach_items = [(e["name"], abs_url("achievements/") + "#" + e["id"]) for e in sorted(en_entries.values(), key=lambda x: x["id"])]
+    ach_head = [
+        _ld_script(breadcrumb_ld(ach_crumbs("en"))),
+        _ld_script(itemlist_ld("iOS Achievements", ach_items)),
+    ]
     write_page(
         OUT_ACH / "index.md",
-        {"title": "Achievements", "description": "All 40 iOS achievements with conditions, points and icons."},
+        {"title": "Achievements", "description": "All 40 iOS achievements with conditions, points and icons.", "head": ach_head},
         body,
     )
     # 中文列表页
@@ -805,15 +939,20 @@ def gen_achievements():
             continue
         zh_body += f"## {tier_zh[tier]}\n\n"
         for e in sorted(tier_entries, key=lambda x: x["id"]):
-            zh_body += f"### {e['id']} — {e['name']}\n\n"
+            zh_body += f'<span id="{e["id"]}"></span>\n\n### {e["id"]} — {e["name"]}\n\n'
             zh_body += f"<img src=\"/Unciv-Wiki/achievements/{e['id']}.svg\" alt=\"{e['name']}\" width=\"64\" height=\"64\" />\n\n"
             zh_body += f"**达成条件**：{e['condition']}\n\n"
             zh_body += f"**分值**：{e['points']}\n\n"
             if e.get("honor"):
                 zh_body += f"*{e['honor']}*\n\n"
+    zh_ach_items = [(e["name"], abs_url("achievements/", "zh") + "#" + e["id"]) for e in sorted(zh_entries.values(), key=lambda x: x["id"])]
+    zh_ach_head = [
+        _ld_script(breadcrumb_ld(ach_crumbs("zh"))),
+        _ld_script(itemlist_ld("iOS 成就", zh_ach_items)),
+    ]
     write_page(
         OUT_ZH_ACH / "index.md",
-        {"title": "成就", "description": "iOS 版全部 40 项成就，含达成条件、分值与图标。"},
+        {"title": "成就", "description": "iOS 版全部 40 项成就，含达成条件、分值与图标。", "head": zh_ach_head},
         zh_body,
     )
 

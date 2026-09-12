@@ -1,12 +1,23 @@
 ---
 title: 成就
 description: iOS 版全部 40 项成就，含达成条件、分值与图标。
+head:
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jerry8870.github.io/Unciv-Wiki/zh/"},{"@type":"ListItem","position":2,"name":"成就","item":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/"}]}'
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: '{"@context":"https://schema.org","@type":"ItemList","name":"iOS 成就","itemListElement":[{"@type":"ListItem","position":1,"name":"初尝胜果","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N01"},{"@type":"ListItem","position":2,"name":"拓荒者","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N02"},{"@type":"ListItem","position":3,"name":"文化萌芽","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N03"},{"@type":"ListItem","position":4,"name":"双城盛典","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N04"},{"@type":"ListItem","position":5,"name":"奇迹初成","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N05"},{"@type":"ListItem","position":6,"name":"初试锋芒","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N06"},{"@type":"ListItem","position":7,"name":"边境清剿","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N07"},{"@type":"ListItem","position":8,"name":"百战夺城","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N08"},{"@type":"ListItem","position":9,"name":"耕耘大地","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N09"},{"@type":"ListItem","position":10,"name":"四通八达","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N10"},{"@type":"ListItem","position":11,"name":"学城崛起","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N11"},{"@type":"ListItem","position":12,"name":"商路生金","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N12"},{"@type":"ListItem","position":13,"name":"城邦圆桌","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N13"},{"@type":"ListItem","position":14,"name":"信仰扎根","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N14"},{"@type":"ListItem","position":15,"name":"列国商约","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N15"},{"@type":"ListItem","position":16,"name":"博览山河","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N16"},{"@type":"ListItem","position":17,"name":"精密星程","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N17"},{"@type":"ListItem","position":18,"name":"四城华章","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N18"},{"@type":"ListItem","position":19,"name":"孤城出征","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N19"},{"@type":"ListItem","position":20,"name":"无奇而治","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N20"},{"@type":"ListItem","position":21,"name":"高城不战","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N21"},{"@type":"ListItem","position":22,"name":"专精之道","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N22"},{"@type":"ListItem","position":23,"name":"金融同盟","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N23"},{"@type":"ListItem","position":24,"name":"一教三邦","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N24"},{"@type":"ListItem","position":25,"name":"城邦守望","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N25"},{"@type":"ListItem","position":26,"name":"奇迹巡礼","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N26"},{"@type":"ListItem","position":27,"name":"尼罗天际","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N27"},{"@type":"ListItem","position":28,"name":"罗马织网","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N28"},{"@type":"ListItem","position":29,"name":"四城共荣","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N29"},{"@type":"ListItem","position":30,"name":"万象之城","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N30"},{"@type":"ListItem","position":31,"name":"百战归来","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N31"},{"@type":"ListItem","position":32,"name":"三城破晓","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N32"},{"@type":"ListItem","position":33,"name":"信仰远播","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N33"},{"@type":"ListItem","position":34,"name":"连弩传奇","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N34"},{"@type":"ListItem","position":35,"name":"波斯长昼","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N35"},{"@type":"ListItem","position":36,"name":"小国问鼎","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N36"},{"@type":"ListItem","position":37,"name":"逆神而胜","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N37"},{"@type":"ListItem","position":38,"name":"一城群星","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N38"},{"@type":"ListItem","position":39,"name":"无碑华章","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N39"},{"@type":"ListItem","position":40,"name":"文明全书","url":"https://jerry8870.github.io/Unciv-Wiki/zh/achievements/#N40"}]}'
 ---
 # 成就
 
 iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对局中累计。
 
 ## 简单
+
+<span id="N01"></span>
 
 ### N01 — 初尝胜果
 
@@ -18,6 +29,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 
 *你的文明，迎来了属于自己的胜利。*
 
+<span id="N02"></span>
+
 ### N02 — 拓荒者
 
 <img src="/Unciv-Wiki/achievements/N02.svg" alt="拓荒者" width="64" height="64" />
@@ -27,6 +40,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 **分值**：5
 
 *新的城墙，在远方升起。*
+
+<span id="N03"></span>
 
 ### N03 — 文化萌芽
 
@@ -38,6 +53,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 
 *文明的思想，从第一项选择开始。*
 
+<span id="N05"></span>
+
 ### N05 — 奇迹初成
 
 <img src="/Unciv-Wiki/achievements/N05.svg" alt="奇迹初成" width="64" height="64" />
@@ -48,6 +65,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 
 *你为这个时代留下了第一座丰碑。*
 
+<span id="N06"></span>
+
 ### N06 — 初试锋芒
 
 <img src="/Unciv-Wiki/achievements/N06.svg" alt="初试锋芒" width="64" height="64" />
@@ -57,6 +76,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 **分值**：5
 
 *第一场交锋，写下了勇气。*
+
+<span id="N09"></span>
 
 ### N09 — 耕耘大地
 
@@ -70,6 +91,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 
 ## 中等
 
+<span id="N04"></span>
+
 ### N04 — 双城盛典
 
 <img src="/Unciv-Wiki/achievements/N04.svg" alt="双城盛典" width="64" height="64" />
@@ -79,6 +102,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 **分值**：10
 
 *两座城，共同见证了黄金时代。*
+
+<span id="N07"></span>
 
 ### N07 — 边境清剿
 
@@ -90,6 +115,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 
 *漫长边境上，有人始终守望。*
 
+<span id="N08"></span>
+
 ### N08 — 百战夺城
 
 <img src="/Unciv-Wiki/achievements/N08.svg" alt="百战夺城" width="64" height="64" />
@@ -99,6 +126,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 **分值**：10
 
 *老兵的旗帜，升上了敌城。*
+
+<span id="N10"></span>
 
 ### N10 — 四通八达
 
@@ -110,6 +139,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 
 *道路与航线，将疆土连成一体。*
 
+<span id="N11"></span>
+
 ### N11 — 学城崛起
 
 <img src="/Unciv-Wiki/achievements/N11.svg" alt="学城崛起" width="64" height="64" />
@@ -119,6 +150,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 **分值**：10
 
 *知识与人口，在同一座城汇聚。*
+
+<span id="N12"></span>
 
 ### N12 — 商路生金
 
@@ -130,6 +163,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 
 *财富有了根基，繁荣不再偶然。*
 
+<span id="N13"></span>
+
 ### N13 — 城邦圆桌
 
 <img src="/Unciv-Wiki/achievements/N13.svg" alt="城邦圆桌" width="64" height="64" />
@@ -139,6 +174,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 **分值**：10
 
 *不同的城邦，围坐在同一张桌旁。*
+
+<span id="N14"></span>
 
 ### N14 — 信仰扎根
 
@@ -150,6 +187,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 
 *信仰已经在你的土地上生根。*
 
+<span id="N15"></span>
+
 ### N15 — 列国商约
 
 <img src="/Unciv-Wiki/achievements/N15.svg" alt="列国商约" width="64" height="64" />
@@ -159,6 +198,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 **分值**：10
 
 *三份契约，打开了三扇国门。*
+
+<span id="N16"></span>
 
 ### N16 — 博览山河
 
@@ -170,6 +211,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 
 *山河的奇迹，已收入你的见闻。*
 
+<span id="N21"></span>
+
 ### N21 — 高城不战
 
 <img src="/Unciv-Wiki/achievements/N21.svg" alt="高城不战" width="64" height="64" />
@@ -179,6 +222,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 **分值**：10
 
 *克制扩张，也能成就万家灯火。*
+
+<span id="N22"></span>
 
 ### N22 — 专精之道
 
@@ -192,6 +237,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 
 ## 困难
 
+<span id="N17"></span>
+
 ### N17 — 精密星程
 
 <img src="/Unciv-Wiki/achievements/N17.svg" alt="精密星程" width="64" height="64" />
@@ -201,6 +248,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 **分值**：15
 
 *有限疆土，抵达无限星空。*
+
+<span id="N18"></span>
 
 ### N18 — 四城华章
 
@@ -212,6 +261,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 
 *少数几座城，写下了文明的华章。*
 
+<span id="N19"></span>
+
 ### N19 — 孤城出征
 
 <img src="/Unciv-Wiki/achievements/N19.svg" alt="孤城出征" width="64" height="64" />
@@ -221,6 +272,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 **分值**：15
 
 *一座起点，通向整片世界。*
+
+<span id="N20"></span>
 
 ### N20 — 无奇而治
 
@@ -232,6 +285,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 
 *世界的信任，胜过宏伟石壁。*
 
+<span id="N23"></span>
+
 ### N23 — 金融同盟
 
 <img src="/Unciv-Wiki/achievements/N23.svg" alt="金融同盟" width="64" height="64" />
@@ -241,6 +296,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 **分值**：15
 
 *金库与盟约，共同支撑你的影响力。*
+
+<span id="N24"></span>
 
 ### N24 — 一教三邦
 
@@ -252,6 +309,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 
 *你的信条，跨越了三国的首都。*
 
+<span id="N25"></span>
+
 ### N25 — 城邦守望
 
 <img src="/Unciv-Wiki/achievements/N25.svg" alt="城邦守望" width="64" height="64" />
@@ -261,6 +320,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 **分值**：15
 
 *五座城邦，让世界听见共同的声音。*
+
+<span id="N26"></span>
 
 ### N26 — 奇迹巡礼
 
@@ -272,6 +333,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 
 *穿越不同的时代与征程，留下十二座丰碑。*
 
+<span id="N27"></span>
+
 ### N27 — 尼罗天际
 
 <img src="/Unciv-Wiki/achievements/N27.svg" alt="尼罗天际" width="64" height="64" />
@@ -281,6 +344,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 **分值**：15
 
 *尼罗河畔，一城撑起恢宏天际。*
+
+<span id="N28"></span>
 
 ### N28 — 罗马织网
 
@@ -292,6 +357,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 
 *罗马的力量，生长在每一座城里。*
 
+<span id="N29"></span>
+
 ### N29 — 四城共荣
 
 <img src="/Unciv-Wiki/achievements/N29.svg" alt="四城共荣" width="64" height="64" />
@@ -301,6 +368,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 **分值**：15
 
 *四座繁荣之城，由和平与秩序相连。*
+
+<span id="N31"></span>
 
 ### N31 — 百战归来
 
@@ -312,6 +381,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 
 *归来的不只是一支军队，还有百战的记忆。*
 
+<span id="N32"></span>
+
 ### N32 — 三城破晓
 
 <img src="/Unciv-Wiki/achievements/N32.svg" alt="三城破晓" width="64" height="64" />
@@ -321,6 +392,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 **分值**：15
 
 *同一轮晨光，照亮了三面新的旗帜。*
+
+<span id="N33"></span>
 
 ### N33 — 信仰远播
 
@@ -334,6 +407,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 
 ## 极难
 
+<span id="N30"></span>
+
 ### N30 — 万象之城
 
 <img src="/Unciv-Wiki/achievements/N30.svg" alt="万象之城" width="64" height="64" />
@@ -343,6 +418,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 **分值**：30
 
 *一个城市，容纳了整个时代的想象。*
+
+<span id="N34"></span>
 
 ### N34 — 连弩传奇
 
@@ -354,6 +431,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 
 *老练的连弩，在一回合写下传奇。*
 
+<span id="N35"></span>
+
 ### N35 — 波斯长昼
 
 <img src="/Unciv-Wiki/achievements/N35.svg" alt="波斯长昼" width="64" height="64" />
@@ -363,6 +442,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 **分值**：30
 
 *黄金时代的长昼，见证跨国的远征。*
+
+<span id="N36"></span>
 
 ### N36 — 小国问鼎
 
@@ -374,6 +455,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 
 *小国的尺度，容得下伟大的胜利。*
 
+<span id="N37"></span>
+
 ### N37 — 逆神而胜
 
 <img src="/Unciv-Wiki/achievements/N37.svg" alt="逆神而胜" width="64" height="64" />
@@ -383,6 +466,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 **分值**：30
 
 *在最艰难的起点，你走到了胜利。*
+
+<span id="N38"></span>
 
 ### N38 — 一城群星
 
@@ -394,6 +479,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 
 *一座城市，将旗帜送向群星。*
 
+<span id="N39"></span>
+
 ### N39 — 无碑华章
 
 <img src="/Unciv-Wiki/achievements/N39.svg" alt="无碑华章" width="64" height="64" />
@@ -403,6 +490,8 @@ iOS 版共有 **40 项成就**（总计 600 分），每项都在合格的新对
 **分值**：30
 
 *没有世界奇观，文明依然被铭记。*
+
+<span id="N40"></span>
 
 ### N40 — 文明全书
 

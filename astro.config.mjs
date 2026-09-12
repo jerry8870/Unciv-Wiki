@@ -36,9 +36,49 @@ export default defineConfig({
         { label: 'Changelog', translations: { zh: '更新日志' }, link: 'changelog/' },
       ],
       head: [
-        // Cloudflare Web Analytics —— 部署后替换为真实 beacon token
-        // <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
-        //   data-cf-beacon='{"token": "YOUR_TOKEN"}'></script>
+        // 站点级结构化数据：WebSite + Organization（Unciv4iOS）+ Sitelinks SearchAction
+        {
+          tag: 'script',
+          attrs: { type: 'application/ld+json' },
+          content: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            name: 'Unciv Wiki',
+            url: 'https://jerry8870.github.io/Unciv-Wiki/',
+            description:
+              'The community guide and database for Unciv, the open-source Civilization V remake.',
+            inLanguage: 'en',
+            publisher: {
+              '@type': 'Organization',
+              name: 'Unciv4iOS',
+              url: 'https://github.com/jerry8870/Unciv-Wiki',
+            },
+            potentialAction: {
+              '@type': 'SearchAction',
+              target: {
+                '@type': 'EntryPoint',
+                urlTemplate:
+                  'https://jerry8870.github.io/Unciv-Wiki/?q={search_term_string}',
+              },
+              'query-input': 'required name=search_term_string',
+            },
+          }),
+        },
+        // 默认社交分享图（所有页面共用，成就页可用各自图标覆盖）
+        {
+          tag: 'meta',
+          attrs: {
+            property: 'og:image',
+            content: 'https://jerry8870.github.io/Unciv-Wiki/og-default.png',
+          },
+        },
+        {
+          tag: 'meta',
+          attrs: {
+            name: 'twitter:image',
+            content: 'https://jerry8870.github.io/Unciv-Wiki/og-default.png',
+          },
+        },
       ],
     }),
   ],
