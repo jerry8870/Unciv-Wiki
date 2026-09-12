@@ -1,0 +1,34 @@
+# Unciv Wiki — robots.txt
+# 检索型爬虫（必须允许，否则 Google / Bing / AI 搜索搜不到本站）
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# 训练型爬虫 —— 本项目决定全部允许（无广告变现，屏蔽无收益反损长期曝光）
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://jerry8870.github.io/Unciv-Wiki/sitemap-index.xml
