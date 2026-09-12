@@ -1,0 +1,43 @@
+# Unciv Wiki
+
+> The community guide and database for Unciv, the open-source Civilization V remake. Bilingual reference (English / Simplified Chinese). All gameplay numbers are parsed directly from the game's Gods & Kings ruleset, so they match the app exactly — including the iOS port, which changes no values.
+
+## Start Here
+- [Home](https://jerry8870.github.io/Unciv-Wiki/): Entry point — guide and database overview.
+- [Getting Started](https://jerry8870.github.io/Unciv-Wiki/getting-started/): New-player guide and core concepts.
+- [iOS Achievements](https://jerry8870.github.io/Unciv-Wiki/achievements/): All 40 iOS Game Center achievements with conditions, points, and original icons.
+
+## Database
+- [Civilizations](https://jerry8870.github.io/Unciv-Wiki/database/civilizations/): 83 civilizations and city-states — leaders, unique abilities, start bias.
+- [Units](https://jerry8870.github.io/Unciv-Wiki/database/units/): 127 units — stats, abilities, and required technology.
+- [Buildings](https://jerry8870.github.io/Unciv-Wiki/database/buildings/): 124 buildings and wonders — cost, effects, and prerequisites.
+- [Technologies](https://jerry8870.github.io/Unciv-Wiki/database/technologies/): 80 technologies — era, cost, and what they unlock.
+
+## Notable Civilizations
+- [Rome](https://jerry8870.github.io/Unciv-Wiki/database/civilizations/rome/): The Roman civilization — leader, unique unit, and unique ability.
+- [America](https://jerry8870.github.io/Unciv-Wiki/database/civilizations/america/): The American civilization — leader, unique unit, and unique ability.
+- [Babylon](https://jerry8870.github.io/Unciv-Wiki/database/civilizations/babylon/): The Babylonian civilization — leader, unique unit, and unique ability.
+- [Egypt](https://jerry8870.github.io/Unciv-Wiki/database/civilizations/egypt/): The Egyptian civilization — leader, unique unit, and unique ability.
+- [Greece](https://jerry8870.github.io/Unciv-Wiki/database/civilizations/greece/): The Greek civilization — leader, unique unit, and unique ability.
+
+## Notable Units
+- [Archer](https://jerry8870.github.io/Unciv-Wiki/database/units/archer/): The base ranged unit of the Ancient era.
+- [Knight](https://jerry8870.github.io/Unciv-Wiki/database/units/knight/): The Medieval-era mounted power unit.
+- [Tank](https://jerry8870.github.io/Unciv-Wiki/database/units/tank/): The Modern-era armored unit.
+- [Settler](https://jerry8870.github.io/Unciv-Wiki/database/units/settler/): The unit that founds new cities.
+
+## Notable Buildings
+- [Library](https://jerry8870.github.io/Unciv-Wiki/database/buildings/library/): Boosts science in a city.
+- [Granary](https://jerry8870.github.io/Unciv-Wiki/database/buildings/granary/): Stores food and speeds population growth.
+- [University](https://jerry8870.github.io/Unciv-Wiki/database/buildings/university/): Major science multiplier.
+
+## Notable Technologies
+- [Agriculture](https://jerry8870.github.io/Unciv-Wiki/database/technologies/agriculture/): The first technology — unlocks farms.
+- [Writing](https://jerry8870.github.io/Unciv-Wiki/database/technologies/writing/): Unlocks the Library and the path to culture.
+- [Mathematics](https://jerry8870.github.io/Unciv-Wiki/database/technologies/mathematics/): Unlocks key wonders and ranged improvements.
+
+## Chinese (简体中文)
+- [首页](https://jerry8870.github.io/Unciv-Wiki/zh/): 中文入口。
+- [新手上路](https://jerry8870.github.io/Unciv-Wiki/zh/getting-started/): 新手指南与核心概念。
+- [数据百科·文明](https://jerry8870.github.io/Unciv-Wiki/zh/database/civilizations/): 全部 83 个文明与城邦。
+- [成就系统](https://jerry8870.github.io/Unciv-Wiki/zh/achievements/): iOS 版全部 40 项成就。
