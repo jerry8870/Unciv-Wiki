@@ -26,7 +26,6 @@ const copy = {
     title: 'Game invitation', intro: 'Open this invitation on your iPhone or iPad to view the multiplayer game.',
     gameLabel: 'Game ID', serverLabel: 'Server', copy: 'Copy invitation link', install: 'Install Unciv4iOS',
     manual: 'In the game, go to Multiplayer → Add game by Game ID, then paste this link.',
-    browser: 'If WeChat keeps this page open, use its menu to open in your browser, or copy the link into the game. You can also long-press the link in Notes and choose to open it in Unciv4iOS, if available.',
     invalid: 'This invitation is invalid. Ask the creator to share a new link.',
     copied: 'Link copied. Open Unciv4iOS and paste it in Multiplayer.',
     select: 'Automatic copying is unavailable. Long-press the link below to copy it.',
@@ -35,7 +34,6 @@ const copy = {
     title: '多人游戏邀请', intro: '在 iPhone 或 iPad 上打开邀请，查看这场多人游戏。',
     gameLabel: 'Game ID', serverLabel: '游戏服务器', copy: '复制邀请链接', install: '安装 Unciv4iOS',
     manual: '打开游戏 → 多人游戏 → 通过 Game ID 添加，再粘贴邀请链接。',
-    browser: '如果微信停留在此页面，可通过右上角菜单用浏览器打开，或复制链接到游戏中粘贴。也可以把链接放入备忘录，长按后选择用 Unciv4iOS 打开（若有该选项）。',
     invalid: '邀请链接无效，请让创建者重新分享。',
     copied: '邀请链接已复制，请打开 Unciv4iOS，在多人游戏中粘贴。',
     select: '无法自动复制，请长按下方链接手动复制。',
@@ -47,7 +45,7 @@ if (typeof document !== 'undefined') {
   const text = copy[lang];
   document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
   document.title = `${text.title} · Unciv4iOS`;
-  for (const [id, key] of Object.entries({ title: 'title', intro: 'intro', 'game-label': 'gameLabel', 'server-label': 'serverLabel', copy: 'copy', install: 'install', manual: 'manual', browser: 'browser', invalid: 'invalid' })) {
+  for (const [id, key] of Object.entries({ title: 'title', intro: 'intro', 'game-label': 'gameLabel', 'server-label': 'serverLabel', copy: 'copy', install: 'install', manual: 'manual', invalid: 'invalid' })) {
     document.getElementById(id).textContent = text[key];
   }
   try {
