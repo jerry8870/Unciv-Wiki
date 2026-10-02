@@ -16,13 +16,16 @@ https://jerry8870.github.io/Unciv-Wiki/invite.html?gameId=<UUID>&server=<URL-enc
 - `pnpm check:invitation` 验证参数、服务器地址和关联规则；`pnpm validate` 包含此检查。
 - 邀请页面不进入搜索索引或站点地图，不影响博客现有导航。
 
-## 2. 域名根目录的独立用户站点仓库
+## 2. 同一个仓库发布根站点与博客
 
-`universal-links/root-site/` 是可发布的静态文件包。将其中内容（包括隐藏文件）放到
-`jerry8870/jerry8870.github.io` 仓库的发布根目录。保留已有站点文件，并在已有 AASA 中合并
-本应用规则，不覆盖其他应用的关联配置。
+现有博客仓库已改名为 `jerry8870/jerry8870.github.io`，本地目录仍为 `Unciv4iOS-Blog`。
+`universal-links/root-site/` 保存根站点文件，博客源码与 `site.config.json` 的
+`/Unciv-Wiki/` 路径保持不变。无需另建仓库。
 
-在 GitHub 仓库 Settings → Pages 选择对应发布分支的根目录。`.nojekyll` 保留 `.well-known`。
+`pnpm validate` 构建并校验博客后，执行 `pnpm prepare:pages`：将根站点文件放入
+`.pages-dist/`，将 `dist/` 放入 `.pages-dist/Unciv-Wiki/`，核对邀请页面和关联规则。
+现有 GitHub Actions 工作流发布 `.pages-dist/`。仓库 Settings → Pages 的 Source
+应保持 GitHub Actions。`.nojekyll` 和 `.well-known` 随发布包保留。
 关联文件必须最终位于：
 
 ```
@@ -33,7 +36,7 @@ https://jerry8870.github.io/.well-known/apple-app-site-association
 `ZHMX53WRKQ.com.aishuati.unciv` 来自已签名 IPA 的 application-identifier。
 只关联 `/Unciv-Wiki/invite.html`，不关联整个博客。
 
-发布前遵守项目的 Git 推送确认规则。根站点仓库尚需创建或确认访问权限；本地准备文件不等于远端发布。
+发布前遵守项目的 Git 推送确认规则。本地准备文件不等于远端发布。
 
 ## 3. Apple 和 App 配置
 

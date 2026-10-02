@@ -12,7 +12,8 @@
     "check:data": "python3 scripts/generate.py --check && python3 scripts/test_pipeline.py",
     "check:analytics": "node scripts/test-analytics.mjs",
     "check:site": "python3 scripts/check-site.py",
-    "validate": "pnpm check:data && pnpm check:analytics && pnpm check:invitation && pnpm build && pnpm check:site",
+    "validate": "pnpm check:data && pnpm check:analytics && pnpm check:invitation && pnpm build && pnpm check:site && pnpm prepare:pages",
+    "prepare:pages": "node scripts/prepare-pages.mjs",
     "check:invitation": "node --test scripts/test-invitation.mjs"
   },
   "dependencies": {
