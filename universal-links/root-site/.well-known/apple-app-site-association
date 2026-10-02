@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["ZHMX53WRKQ.com.aishuati.unciv"],
+        "components": [
+          { "/": "/Unciv-Wiki/invite.html" }
+        ]
+      }
+    ]
+  }
+}
