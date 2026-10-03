@@ -13,9 +13,9 @@ cpSync(dist, new URL('Unciv-Wiki/', output), { recursive: true });
 const association = JSON.parse(readFileSync(new URL('.well-known/apple-app-site-association', output), 'utf8'));
 assert.deepEqual(association.applinks.details, [{
   appIDs: ['ZHMX53WRKQ.com.aishuati.unciv'],
-  components: [{ '/': '/Unciv-Wiki/invite.html' }],
+  components: [{ '/': '/Unciv-Wiki/invite.html' }, { '/': '/Unciv-Wiki/lobby.html' }],
 }]);
-for (const file of ['index.html', 'invite.html', 'invitation/invite.mjs', 'sitemap-index.xml', 'sitemap-0.xml']) {
+for (const file of ['index.html', 'invite.html', 'invitation/invite.mjs', 'lobby.html', 'invitation/lobby.mjs', 'sitemap-index.xml', 'sitemap-0.xml']) {
   assert.deepEqual(readFileSync(new URL('Unciv-Wiki/' + file, output)), readFileSync(new URL(file, dist)));
 }
 assert.ok(existsSync(new URL('.nojekyll', output)));
