@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { parseInvitation } from '../public/invitation/invite.mjs';
+import { parseInvitation as parseLobbyInvitation } from '../public/invitation/lobby.mjs';
 
 const gameId = '4e2a8b72-3f04-4fa1-a7a9-81d6e3e0a092';
 const params = (server = 'https://uncivserver.xyz') => new URLSearchParams({ gameId, server }).toString();
@@ -34,16 +35,38 @@ test('server URLs never carry credentials or target local networks', () => {
   }
 });
 
-test('domain-root association is limited to the invitation page', () => {
+test('domain-root association is limited to game and lobby invitation pages', () => {
   const file = new URL('../universal-links/root-site/.well-known/apple-app-site-association', import.meta.url);
   const association = JSON.parse(readFileSync(file, 'utf8'));
   assert.deepEqual(association.applinks.details, [{
     appIDs: ['ZHMX53WRKQ.com.aishuati.unciv'],
-    components: [{ '/': '/Unciv-Wiki/invite.html' }],
+    components: [{ '/': '/Unciv-Wiki/invite.html' }, { '/': '/Unciv-Wiki/lobby.html' }],
   }]);
   const html = readFileSync(new URL('../public/invite.html', import.meta.url), 'utf8');
   assert.match(html, /name="referrer" content="no-referrer"/);
   assert.match(html, /name="robots" content="noindex, nofollow"/);
   assert.match(html, /id="copy-fallback"[^>]*readonly hidden/);
   assert.doesNotMatch(html, /unciv4ios:\/\//);
+});
+
+
+test('lobby links preserve room identity and source and reject invalid parameters', () => {
+  const invite = parseLobbyInvitation('?' + params('https://example.com:8443/multiplayer/'));
+  assert.equal(invite.gameId, gameId);
+  assert.equal(invite.server, 'https://example.com:8443/multiplayer');
+  const link = new URL(invite.link);
+  assert.equal(link.pathname, '/Unciv-Wiki/lobby.html');
+  assert.equal(link.hostname, 'jerry8870.github.io');
+  assert.equal(link.searchParams.get('gameId'), gameId);
+  assert.equal(link.searchParams.get('server'), invite.server);
+  for (const search of ['', '?' + params() + '&playerId=' + gameId,
+    '?' + params('http://example.com'), '?' + params('https://127.0.0.1'),
+    '?' + params('https://user:password@example.com')]) {
+    assert.throws(() => parseLobbyInvitation(search), undefined, search);
+  }
+  const html = readFileSync(new URL('../public/lobby.html', import.meta.url), 'utf8');
+  assert.match(html, /name="referrer" content="no-referrer"/);
+  assert.match(html, /name="robots" content="noindex, nofollow"/);
+  assert.match(html, /id="copy-fallback"[^>]*readonly hidden/);
+  assert.match(html, /invitation\/lobby\.mjs/);
 });
