@@ -9,7 +9,10 @@
   <style>
     :root { color-scheme: dark; font-family: system-ui, sans-serif; background: #09172d; color: #edf3ff; }
     body { margin: 0; min-height: 100svh; display: grid; place-items: center; }
-    main { width: min(32rem, calc(100% - 3rem)); padding: 2rem 0; }
+    main { width: min(32rem, calc(100% - 3rem)); padding: 8rem 0 2rem; }
+    .browser-guide { position: absolute; top: max(1rem, env(safe-area-inset-top)); right: max(1rem, env(safe-area-inset-right)); display: flex; align-items: center; gap: .5rem; max-width: calc(100% - 2rem); color: #edf3ff; }
+    .browser-guide p { max-width: 16rem; margin: 0; padding: .7rem .9rem; border: 1px solid #3d6483; border-radius: .8rem; background: #142743; font-size: .95rem; white-space: pre-line; }
+    .browser-guide svg { width: 4rem; height: 4.5rem; flex-shrink: 0; color: #82dfbd; }
     .brand { color: #a9bbdc; letter-spacing: .08em; }
     h1 { font-size: 1.8rem; margin-top: .6rem; }
     p { line-height: 1.65; }
@@ -28,6 +31,13 @@
   <script type="module" src="./invitation/invite.mjs"></script>
 </head>
 <body>
+  <aside class="browser-guide" id="browser-guide" hidden>
+    <p id="browser-hint">Tap the top-right menu
+Choose “Open in browser”</p>
+    <svg viewBox="0 0 84 76" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M8 66C8 34 64 54 64 8M50 22L64 8L78 22" />
+    </svg>
+  </aside>
   <main>
     <div class="brand">UNCIV4IOS</div>
     <h1 id="title">Game invitation</h1>
@@ -41,7 +51,6 @@
         <button class="primary" id="copy" type="button">Copy invitation link</button>
         <a class="button" id="install" href="https://testflight.apple.com/join/XSgMMQjt" rel="noreferrer">Install Unciv4iOS</a>
       </div>
-      <p class="hint" id="manual">In the game, go to Multiplayer → Add game by Game ID, then paste this link.</p>
       <p id="status" role="status" aria-live="polite"></p>
       <textarea id="copy-fallback" rows="4" readonly hidden aria-label="Invitation link"></textarea>
     </section>
